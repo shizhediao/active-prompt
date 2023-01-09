@@ -4,6 +4,7 @@ import re
 from tqdm import tqdm
 import concurrent
 import time
+import argparse
 
 
 def main():
@@ -71,7 +72,6 @@ def inference_cot_parallel(args, question_pool, given_prompt):
 
         for future in concurrent.futures.as_completed(futures):
             correct += future.result()
-            # print(correct)
         print(f"correct: {correct}")
         print(f"total: {total}")
         print(f"Accuracy: {correct / total}")
@@ -79,8 +79,6 @@ def inference_cot_parallel(args, question_pool, given_prompt):
 
 
 def inference_cot(args, question_pool, batch_limit, given_prompt):
-    # correct_list = []
-    # wrong_list = []
     correct = 0
     batch_count = 0
 
@@ -93,48 +91,21 @@ def inference_cot(args, question_pool, batch_limit, given_prompt):
             prompt_list.append(prompt)
 
         if args.dataset == "gsm8k":
-            responses = GPT3_request(model='code-davinci-002', input_prompt=prompt_list, max_tokens=256, temperature=0, stop='\n')
+            responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=256, temperature=0, stop='\n')
+        elif args.dataset == "aqua":
+            responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=256, temperature=0, stop='\n')
         else:
             print("Dataset process not implemented")
             raise NotImplementedError
 
-        for resp_idx in range(len(responses['choices'])):
-            temp = responses['choices'][resp_idx].text.replace(",", "")
-            temp = [s for s in re.findall(r'-?\d+\.?\d*', temp)]
-            if len(temp) != 0:
-                answer = temp[-1]
+        ans_list = answer_extraction(args, responses)
 
-                # if there is . at the end of answer, remove it
-                # e.g. answer = 64.
-                if answer != "":
-                    if answer[-1] == ".":
-                        answer = answer[:-1]
+        for ans_idx in range(len(ans_list)):
+            if ans_list[ans_idx] == batch[ans_idx]['answer']:
+                correct += 1
 
-                # round the answer to nearest integer
-                if args.dataset == "gsm8k":
-                    answer = str(round(float(answer)))
-                
-                if answer == batch[resp_idx]['answer']:
-                    correct += 1
-                    # correct_list.append(batch[resp_idx]['q_idx'])
-                else:
-                    pass
-                    # wrong_list.append(batch[resp_idx]['q_idx'])
-                    # print(f"responses: {responses}")
-                    # print(f"Completion: {responses['choices'][resp_idx].text}")
-                    # print(f"Completion Answer: {answer}")
-                    # print(f"Ground Truth: {extract_answer(batch[resp_idx]['answer'])}")
-                    # print(f"Correct Rationale: {batch[resp_idx]['answer']}")
-                    # print(f"resp_idx: {resp_idx}")
-            else:
-                # no sol
-                pass
-                # wrong_list.append(batch[resp_idx]['q_idx'])
         batch_count += 1
 
-    # print(f"correct: {correct}")
-    # print(f"total: {batch_count * args.minibatch_size}")
-    # print(f"Accuracy: {correct / (batch_count * args.minibatch_size)}")
     return correct
 
 
@@ -142,7 +113,7 @@ def arg_parser():
     parser = argparse.ArgumentParser(description="CoT")
     parser.add_argument("--random_seed", type=int, default=1, help="random seed")
     parser.add_argument(
-        "--dataset", type=str, default="gsm8k", choices=["gsm8k","svamp"], help="dataset to inference"
+        "--dataset", type=str, default="gsm8k", choices=["gsm8k","svamp", "aqua"], help="dataset to inference"
     )
     parser.add_argument(
         "--prompt_path", type=str, default="prompts/active", help="type of prompts to use"
@@ -171,7 +142,7 @@ def arg_parser():
         "--limit_batch_size", type=int, default=0, help="whether to limit test dataset size. if 0, the dataset size is unlimited and we use all the samples in the dataset for testing."
     )
     parser.add_argument(
-        "--api_time_interval", type=float, default=1.0, help="how many seconds sleep between each request"
+        "--api_time_interval", type=float, default=1.0, help="how many seconds to sleep between each request"
     )
     parser.add_argument(
         "--temperature", type=float, default=0, help=""
@@ -185,13 +156,16 @@ def arg_parser():
     
     if args.dataset == "gsm8k":
         # args.dataset_path = "./dataset/grade-school-math/test.jsonl"
-        args.dataset_path = ""
+        args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\grade_school_math\data\test.jsonl"
         args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
         args.datset_size = 1319
     elif args.dataset == "svamp":
         pass
         # args.dataset_path = "./dataset/SVAMP/SVAMP.json"
         # args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
+    elif args.dataset == "aqua":
+        args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\AQuA\test.json"
+        args.direct_answer_trigger = "The answer is"
     else:
         raise ValueError("dataset is not properly defined ...")
         

@@ -7,6 +7,7 @@ import concurrent
 import time
 import argparse
 import numpy as np
+import math
 
 
 def main():
@@ -19,6 +20,12 @@ def main():
 
     dataloader = create_dataloader(args)
 
+    if args.setting == "fair":
+        if args.dataset_size > 1000:
+            batch_amount = math.floor(1000 / args.minibatch_size)
+            dataloader = dataloader[:batch_amount] # only take 1000 questions randomly to annotate, randomness decided by seed
+        print(f"Use Fair Setting, dataloader size: {len(dataloader)}")
+
     start =time.time()
     result = create_uncertainty(args, dataloader)
 
@@ -29,6 +36,11 @@ def main():
 
     end = time.time()
     print('Total Execution Time: ', end - start, " seconds")
+
+    # if args.dataset == "gsm8k":
+    #     print("Start generates prompt files")
+    #     generate_prompt_file(args, result)
+
 
 # give the questions bank, and how many trails to run for each question
 def generate_uncertainty_batch(args, question_pool, batch_limit=None):
@@ -43,16 +55,20 @@ def generate_uncertainty_batch(args, question_pool, batch_limit=None):
     for _, batch in enumerate(question_pool):
         if batch_limit is not None and batch_count == batch_limit:
             break
-        uncertainty_batch = [[qes['question_idx'], float, {}] for qes in batch]
+        if args.dataset == "gsm8k":
+            uncertainty_batch = [[qes['question_idx'], float, {}] for qes in batch]
+        else:
+            uncertainty_batch = [[qes['question_idx'], {}] for qes in batch]
+            NO_SOLUTION = '<NO_SOL>'
 
         for trail in range(args.num_trails):
             # construct first stage zero-shot prompt (step by step)
             prompt_list = []
             for example in batch:
                 if args.method == "few_shot_cot":
-                    prompt = given_prompt + "Q: " + example['question'] + "A:"
+                    prompt = given_prompt + "Q: " + example['question'] + "\nA:"
                 elif args.method == "zero_shot_cot":
-                    prompt = "Q: " + example['question'] + "A: Let's think step by step."
+                    prompt = "Q: " + example['question'] + "\nA: Let's think step by step."
                 prompt_list.append(prompt)
 
             # get the first stage zero-shot result
@@ -61,44 +77,40 @@ def generate_uncertainty_batch(args, question_pool, batch_limit=None):
             # construct second stage prompt, to generate a single arabic num answer
             if args.method == "zero_shot_cot":
                 for i in range(len(prompt_list)):
-                    prompt_list[i] += responses.choices[i].text + "\nTherefore, the answer (arabic numerals) is"
+                    prompt_list[i] += responses.choices[i].text + args.direct_answer_trigger
 
                 # get the second stage zero-shot rationale result -> arabic num answer
                 responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=args.max_length_cot, stop='.')
 
             # check uncertainty
-            for resp_idx in range(len(responses['choices'])):
-                answer = responses['choices'][resp_idx].text
-                answer = answer.replace("$","").replace(",","").replace("%","")
-                answer = [s for s in re.findall(r'-?\d+\.?\d*', answer)]
-                try:
-                    answer = answer[-1]
+            ans_list = answer_extraction(args, responses)
 
-                    if answer != "":
-                        if answer[-1] == ".":
-                            answer = answer[:-1]
-
-                    answer = str(round(float(answer)))
-                    
-                    if answer in uncertainty_batch[resp_idx][-1]:
-                        uncertainty_batch[resp_idx][-1][answer] += 1 # increment answer occurrence
+            for ans_idx in range(len(ans_list)):
+                answer = ans_list[ans_idx]
+                if answer != "":
+                    if answer in uncertainty_batch[ans_idx][-1]:
+                        uncertainty_batch[ans_idx][-1][answer] += 1 # increment answer occurrence
                     else:
-                        uncertainty_batch[resp_idx][-1][answer] = 1 # first occurence
-                except:
+                        uncertainty_batch[ans_idx][-1][answer] = 1 # first occurence
+                else:
                     # Handle no solution case
-                    if NO_SOLUTION in uncertainty_batch[resp_idx][-1]:
-                        uncertainty_batch[resp_idx][-1][NO_SOLUTION] += 1
+                    if NO_SOLUTION in uncertainty_batch[ans_idx][-1]:
+                        uncertainty_batch[ans_idx][-1][NO_SOLUTION] += 1
                     else:
-                        uncertainty_batch[resp_idx][-1][NO_SOLUTION] = 1
+                        uncertainty_batch[ans_idx][-1][NO_SOLUTION] = 1
 
         # calculate variance for each question
-        for uncertainty in uncertainty_batch:
-            ans_list = []
-            for ans, occurs in uncertainty[-1].items():
-                for i in range(int(occurs)):
-                    ans_list.append(float(ans))
-            uncertainty[1] = np.var(ans_list)
-            uncertainty_list.append(uncertainty)
+        if args.dataset == "gsm8k":
+            for uncertainty in uncertainty_batch:
+                ans_list = []
+                for ans, occurs in uncertainty[-1].items():
+                    for i in range(int(occurs)):
+                        ans_list.append(float(ans))
+                uncertainty[1] = np.var(ans_list)
+                uncertainty_list.append(uncertainty)
+        else:
+            for uncertainty in uncertainty_batch:
+                uncertainty_list.append(uncertainty)
         batch_count += 1
     
     return uncertainty_list
@@ -213,19 +225,29 @@ def arg_parser():
     parser.add_argument(
         "--sort_by", type=str, default='disagreement', choices=['disagreement', 'variance'], help="sort the final result by given option"
     )
+    parser.add_argument(
+        "--setting", type=str, default='unfair', choices=['fair', 'unfair'], help="decide whether annotate on test data or not"
+    )
     
     args = parser.parse_args()
     
     # Fill in the dataset path
     if args.dataset == "gsm8k":
-        args.dataset_path = ""
+        if args.setting == "unfair":
+            args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\grade_school_math\data\test.jsonl" # test data path
+        elif args.setting == "fair":
+            args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\grade_school_math\data\train.jsonl" # train data path
         args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
-        args.datset_size = 1319
+        # args.datset_size = 1319
     elif args.dataset == "svamp":
         raise ValueError("dataset is not properly defined ...")
     elif args.dataset == "aqua":
-        args.dataset_path = ""
-        args.direct_answer_trigger = "The answer is"
+        if args.setting == "unfair":
+            args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\AQuA\test.json" # test data path
+        elif args.setting == "fair":
+            args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\AQuA\train.json" # train data path
+            # args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\AQuA\dev.json" # dev data path
+        args.direct_answer_trigger = "\nThe answer is"
     else:
         raise ValueError("dataset is not properly defined ...")
         

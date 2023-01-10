@@ -75,6 +75,7 @@ def inference_cot_parallel(args, question_pool, given_prompt):
 
         for future in concurrent.futures.as_completed(futures):
             correct += future.result()
+            print("Done one chunk")
         print(f"correct: {correct}")
         print(f"total: {total}")
         print(f"Accuracy: {correct / total}")
@@ -88,23 +89,34 @@ def inference_cot(args, question_pool, batch_limit, given_prompt, worker_id):
     for batch in question_pool:
         if batch_limit is not None and batch_count == batch_limit:
             break
+        if args.multipath > 1:
+            all_self_consistency_ans = [[] for i in range(len(batch))]
+        
         prompt_list = []
         for qes in batch:
             prompt = given_prompt + "Q: " + qes['question'] + "\nA: Let's think step by step."
             prompt_list.append(prompt)
 
-        if args.dataset == "gsm8k":
+        for path in range(0, args.multipath):
             responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=256, temperature=0, stop='\n', worker_id=worker_id)
-        elif args.dataset == "aqua":
-            responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=256, temperature=0, stop='\n', worker_id=worker_id)
-        else:
-            print("Dataset process not implemented")
-            raise NotImplementedError
+            # if args.dataset == "gsm8k":
+            #     responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=256, temperature=0, stop='\n', worker_id=worker_id)
+            # elif args.dataset == "aqua":
+            #     responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=256, temperature=0, stop='\n', worker_id=worker_id)
+            # else:
+            #     print("Dataset process not implemented")
+            #     raise NotImplementedError
 
-        ans_list = answer_extraction(args, responses)
+            ans_list = answer_extraction(args, responses)
 
-        for ans_idx in range(len(ans_list)):
-            if ans_list[ans_idx] == batch[ans_idx]['answer']:
+            # record all answers into the self-consistency list to find the most frequent one
+            for ans_idx in range(len(ans_list)):
+                all_self_consistency_ans[ans_idx].append(ans_list[ans_idx])
+
+        final_consistent_ans = [find_most_frequent(x, args.multipath)[-1] for x in all_self_consistency_ans]
+
+        for ans_idx in range(len(final_consistent_ans)):
+            if final_consistent_ans[ans_idx] == batch[ans_idx]['answer']:
                 correct += 1
 
         batch_count += 1
@@ -154,7 +166,7 @@ def arg_parser():
         "--log_dir", type=str, default="./log/", help="log directory"
     )
     parser.add_argument(
-        "--multi_path", type=int, default=0, help="self-consistency num"
+        "--multipath", type=int, default=1, help="self-consistency num"
     )
     
     args = parser.parse_args()

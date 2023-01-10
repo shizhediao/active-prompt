@@ -10,6 +10,7 @@ from torch.utils.data import Dataset
 from pathlib import Path
 import json
 import re
+from collections import Counter
 
 # put your API key in the list
 API_KEY_POOL = [
@@ -40,7 +41,57 @@ API_KEY_POOL = [
 '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',
 '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',
 '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',
-'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'
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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',
+'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'
 ]
 NUM_API_KEYS = len(API_KEY_POOL)
 # NO_SOLUTION = '<NO_SOL>'
@@ -95,7 +146,7 @@ def GPT3_request(model:str, input_prompt:list, max_tokens:int, temperature=0.7, 
                 assert False
             else:
                 print(f"Error: {errno[0]}\n")
-                print(f"Reason: {errno[1]}\n")
+                # print(f"Reason: {errno[1]}\n")
 
             # key_index = API_PARTITION_POOL[worker_id]['cur_index']
             # key_index += 1
@@ -132,9 +183,23 @@ def load_data(args):
                 questions.append(qes)
                 answers.append(json_res["correct"])
     elif args.dataset == "svamp":
-        pass
+        with open(args.dataset_path) as f:
+            json_data = json.load(f)
+            for line in json_data:
+                q = line["Body"].strip() + " " + line["Question"].strip()
+                a = str(line["Answer"])
+                if a[-2:] == ".0":
+                    a = a[:-2]
+                questions.append(q)
+                answers.append(a)
     elif args.dataset == "asdiv":
-        pass
+        with open(args.dataset_path) as f:
+            json_data = json.load(f)
+            for line in json_data:
+                q = line["Body"].strip() + " " + line["Question"].strip()
+                a = line['Answer'].split(" ")[0]
+                questions.append(q)
+                answers.append(a)
     else:
         raise NotImplementedError
 
@@ -305,3 +370,11 @@ def generate_prompt_file(args, result, output_dir=None):
         
         if args.sort_by == "variance":
             return
+
+
+def find_most_frequent(arr, n):
+    # method 1: return max(arr[:n], key=arr.count)
+    # method 2:
+    arr_acounts = Counter(arr[:n])
+    most_frequent_item, frequency = arr_acounts.most_common(1)[0]
+    return frequency, most_frequent_item

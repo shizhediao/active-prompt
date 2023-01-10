@@ -59,14 +59,14 @@ def generate_uncertainty_batch(args, question_pool, batch_limit=None):
             uncertainty_batch = [[qes['question_idx'], float, {}] for qes in batch]
         else:
             uncertainty_batch = [[qes['question_idx'], {}] for qes in batch]
-            NO_SOLUTION = '<NO_SOL>'
+            # NO_SOLUTION = '<NO_SOL>'
 
         for trail in range(args.num_trails):
             # construct first stage zero-shot prompt (step by step)
             prompt_list = []
             for example in batch:
                 if args.method == "few_shot_cot":
-                    prompt = given_prompt + "Q: " + example['question'] + "\nA:"
+                    prompt = given_prompt + "Q: " + example['question'] + "\nA: Let's think step by step."
                 elif args.method == "zero_shot_cot":
                     prompt = "Q: " + example['question'] + "\nA: Let's think step by step."
                 prompt_list.append(prompt)
@@ -211,7 +211,7 @@ def arg_parser():
         "--api_time_interval", type=float, default=1.0, help="how many seconds sleep between each request"
     )
     parser.add_argument(
-        "--temperature", type=float, default=0, help=""
+        "--temperature", type=float, default=0.7, help=""
     )
     parser.add_argument(
         "--log_dir", type=str, default="./log/", help="log directory"

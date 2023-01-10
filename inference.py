@@ -57,7 +57,11 @@ def inference_cot_parallel(args, question_pool, given_prompt):
 
     question_bank = question_pool[:batch_limit]
 
-    work_size = int(len(question_bank) / MAX_WORKERS)
+    # work_size = int(len(question_bank) / MAX_WORKERS)
+    if len(question_bank) < MAX_WORKERS:
+        work_size = 1
+    else:
+        work_size = int(len(question_bank) / MAX_WORKERS)
     correct = 0
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
@@ -98,7 +102,7 @@ def inference_cot(args, question_pool, batch_limit, given_prompt, worker_id):
             prompt_list.append(prompt)
 
         for path in range(0, args.multipath):
-            responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=256, temperature=0, stop='\n', worker_id=worker_id)
+            responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=256, temperature=args.temperature, stop='\n', worker_id=worker_id)
             # if args.dataset == "gsm8k":
             #     responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=256, temperature=0, stop='\n', worker_id=worker_id)
             # elif args.dataset == "aqua":
@@ -114,6 +118,10 @@ def inference_cot(args, question_pool, batch_limit, given_prompt, worker_id):
                 all_self_consistency_ans[ans_idx].append(ans_list[ans_idx])
 
         final_consistent_ans = [find_most_frequent(x, args.multipath)[-1] for x in all_self_consistency_ans]
+        # with open(r'D:\HKUST_NLP_Research\cot_active_learning\temp_ans_result.txt', 'w') as f:
+        #     for idx, answers in enumerate(final_consistent_ans):
+        #         temp = "idx: " + str(batch[idx]["question_idx"]) + " " + str(answers) + "\n"
+        #         f.write(temp)
 
         for ans_idx in range(len(final_consistent_ans)):
             if final_consistent_ans[ans_idx] == batch[ans_idx]['answer']:
@@ -171,6 +179,12 @@ def arg_parser():
     
     args = parser.parse_args()
     args.output_dir = Path(args.output_dir)
+
+    if args.multipath > 1:
+        args.temperature = 0.7
+    else:
+        args.temperature = 0
+    print(f"Temperature: {args.temperature}")
     
     if args.dataset == "gsm8k":
         # args.dataset_path = "./dataset/grade-school-math/test.jsonl"
@@ -178,9 +192,8 @@ def arg_parser():
         args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
         args.datset_size = 1319
     elif args.dataset == "svamp":
-        pass
-        # args.dataset_path = "./dataset/SVAMP/SVAMP.json"
-        # args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
+        args.dataset_path = "./dataset/SVAMP/SVAMP.json"
+        args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
     elif args.dataset == "aqua":
         args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\AQuA\test.json"
         args.direct_answer_trigger = "The answer is"

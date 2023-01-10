@@ -46,6 +46,12 @@ NUM_API_KEYS = len(API_KEY_POOL)
 # NO_SOLUTION = '<NO_SOL>'
 NO_SOLUTION = '-10086'
 
+API_PARTITION_POOL = [
+    {"cur_index":0, "keys":API_KEY_POOL[0:7]},
+    {"cur_index":0, "keys":API_KEY_POOL[7:14]},
+    {"cur_index":0, "keys":API_KEY_POOL[14:21]},
+    {"cur_index":0, "keys":API_KEY_POOL[21:28]}
+]
 
 # set the random seed for reproducibility
 def set_random_seed(seed):
@@ -57,13 +63,15 @@ def set_random_seed(seed):
 
 
 # pass in a list of prompts and returns a response body contains a list of responses
-def GPT3_request(model:str, input_prompt:list, max_tokens:int, temperature=0.7, stop=None):
+def GPT3_request(model:str, input_prompt:list, max_tokens:int, temperature=0.7, stop=None, worker_id=None):
     resp = None
     done = False
     while not done:
         try:
             key_index = random.randint(0, NUM_API_KEYS - 1)
             openai.api_key = API_KEY_POOL[key_index]
+            # key_index = API_PARTITION_POOL[worker_id]['cur_index']
+            # openai.api_key = API_PARTITION_POOL[worker_id]["keys"][key_index]
             resp = openai.Completion.create(
                 model=model,
                 prompt=input_prompt,
@@ -75,13 +83,26 @@ def GPT3_request(model:str, input_prompt:list, max_tokens:int, temperature=0.7, 
                 stop = stop
             )
             done = True
+            # key_index += 1
+            # if key_index == len(API_PARTITION_POOL[worker_id]['keys']):
+            #     API_PARTITION_POOL[worker_id]['cur_index'] = 0
+            # else:
+            #     API_PARTITION_POOL[worker_id]['cur_index'] = key_index
         except:
-            errno = sys.exc_info()[0]
-            if errno == openai.error.InvalidRequestError:
+            errno = sys.exc_info()[:2]
+            if errno[0] == openai.error.InvalidRequestError:
                 print(f"Invalid Request\nPrompt: {input_prompt}\n")
                 assert False
             else:
-                print(f"Error: {errno}\n")
+                print(f"Error: {errno[0]}\n")
+                print(f"Reason: {errno[1]}\n")
+
+            # key_index = API_PARTITION_POOL[worker_id]['cur_index']
+            # key_index += 1
+            # if key_index == len(API_PARTITION_POOL[worker_id]['keys']):
+            #     API_PARTITION_POOL[worker_id]['cur_index'] = 0
+            # else:
+            #     API_PARTITION_POOL[worker_id]['cur_index'] = key_index
             # time.sleep(5)
     return resp
 

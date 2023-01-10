@@ -63,12 +63,15 @@ def inference_cot_parallel(args, question_pool, given_prompt):
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         futures = []
 
+        idx_count = 0
         for batch_count in range(0, len(question_bank), work_size):
             # handle last batch
+            worker_id = idx_count % len(API_PARTITION_POOL)
             if len(question_bank) - batch_count > work_size:
-                futures.append(executor.submit(inference_cot, args, question_pool[batch_count:batch_count + work_size], None, given_prompt))
+                futures.append(executor.submit(inference_cot, args, question_pool[batch_count:batch_count + work_size], None, given_prompt, worker_id))
             else:
-                futures.append(executor.submit(inference_cot, args, question_pool[batch_count:len(question_bank)], None, given_prompt))
+                futures.append(executor.submit(inference_cot, args, question_pool[batch_count:len(question_bank)], None, given_prompt, worker_id))
+            idx_count += 1
 
         for future in concurrent.futures.as_completed(futures):
             correct += future.result()
@@ -78,7 +81,7 @@ def inference_cot_parallel(args, question_pool, given_prompt):
     return correct / total
 
 
-def inference_cot(args, question_pool, batch_limit, given_prompt):
+def inference_cot(args, question_pool, batch_limit, given_prompt, worker_id):
     correct = 0
     batch_count = 0
 
@@ -87,13 +90,13 @@ def inference_cot(args, question_pool, batch_limit, given_prompt):
             break
         prompt_list = []
         for qes in batch:
-            prompt = given_prompt + "Q: " + qes['question'] + "\nA:"
+            prompt = given_prompt + "Q: " + qes['question'] + "\nA: Let's think step by step."
             prompt_list.append(prompt)
 
         if args.dataset == "gsm8k":
-            responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=256, temperature=0, stop='\n')
+            responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=256, temperature=0, stop='\n', worker_id=worker_id)
         elif args.dataset == "aqua":
-            responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=256, temperature=0, stop='\n')
+            responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=256, temperature=0, stop='\n', worker_id=worker_id)
         else:
             print("Dataset process not implemented")
             raise NotImplementedError
@@ -149,6 +152,9 @@ def arg_parser():
     )
     parser.add_argument(
         "--log_dir", type=str, default="./log/", help="log directory"
+    )
+    parser.add_argument(
+        "--multi_path", type=int, default=0, help="self-consistency num"
     )
     
     args = parser.parse_args()

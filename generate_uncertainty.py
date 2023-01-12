@@ -43,7 +43,7 @@ def main():
 
 
 # give the questions bank, and how many trails to run for each question
-def generate_uncertainty_batch(args, question_pool, batch_limit=None):
+def generate_uncertainty_batch(args, question_pool, batch_limit=None, worker_id=None):
     # maintain a list of uncertaintie for each question
     # each element is a tuple of 2 element, tuple[0] is quesiton idx
     # tuple[1] is the uncertainty dict, record how many occurrences of each case
@@ -57,6 +57,8 @@ def generate_uncertainty_batch(args, question_pool, batch_limit=None):
             break
         if args.dataset == "gsm8k":
             uncertainty_batch = [[qes['question_idx'], float, {}] for qes in batch]
+        elif args.dataset == "strategyqa":
+            uncertainty_batch = [[qes['question_idx'], {"yes":0, "no":0}] for qes in batch]
         else:
             uncertainty_batch = [[qes['question_idx'], {}] for qes in batch]
             # NO_SOLUTION = '<NO_SOL>'
@@ -66,13 +68,13 @@ def generate_uncertainty_batch(args, question_pool, batch_limit=None):
             prompt_list = []
             for example in batch:
                 if args.method == "few_shot_cot":
-                    prompt = given_prompt + "Q: " + example['question'] + "\nA: Let's think step by step."
+                    prompt = given_prompt + "Question: " + example['question'] + "\nA: Let's think step by step."
                 elif args.method == "zero_shot_cot":
-                    prompt = "Q: " + example['question'] + "\nA: Let's think step by step."
+                    prompt = "Question: " + example['question'] + "\nA: Let's think step by step."
                 prompt_list.append(prompt)
 
             # get the first stage zero-shot result
-            responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=args.max_length_cot, stop='Q:')
+            responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=args.max_length_cot, stop=['Question:', "Q:"], worker_id=worker_id)
                 
             # construct second stage prompt, to generate a single arabic num answer
             if args.method == "zero_shot_cot":
@@ -80,7 +82,7 @@ def generate_uncertainty_batch(args, question_pool, batch_limit=None):
                     prompt_list[i] += responses.choices[i].text + args.direct_answer_trigger
 
                 # get the second stage zero-shot rationale result -> arabic num answer
-                responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=args.max_length_cot, stop='.')
+                responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=args.max_length_cot, stop='.', worker_id=worker_id)
 
             # check uncertainty
             ans_list = answer_extraction(args, responses)
@@ -135,13 +137,16 @@ def generate_uncertainty_parallel(args, question_pool, batch_limit):
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         futures = []
 
+        idx_count = 0
         for batch_count in range(0, len(question_bank), work_size):
             # handle last batch
+            worker_id = idx_count % len(API_PARTITION_POOL)
             if len(question_bank) - batch_count > work_size:
                 futures.append(executor.submit(generate_uncertainty_batch, args, question_bank[batch_count:batch_count + work_size], 
-                None))
+                None, worker_id))
             else:
-                futures.append(executor.submit(generate_uncertainty_batch, args, question_pool[batch_count:len(question_bank)], None))
+                futures.append(executor.submit(generate_uncertainty_batch, args, question_pool[batch_count:len(question_bank)], None, worker_id))
+            idx_count += 1
 
         uncertainty_list = []
         for future in concurrent.futures.as_completed(futures):
@@ -172,7 +177,13 @@ def create_uncertainty(args, questions):
             result.append(item)
         time.sleep(5)
     if args.sort_by == "disagreement":
-        result.sort(key=lambda x: -len(x[-1]))
+        if args.dataset == "strategyqa":
+            try:
+                result.sort(key=lambda x: abs(x[-1]['yes'] - x[-1]['no']))
+            except:
+                result.sort(key=lambda x: -len(x[-1]))
+        else:
+            result.sort(key=lambda x: -len(x[-1]))
     elif args.sort_by == "variance":
         result.sort(key=lambda x: -x[1])
     return result
@@ -182,7 +193,7 @@ def arg_parser():
     parser = argparse.ArgumentParser(description="Uncertainty_Generation")
     parser.add_argument("--random_seed", type=int, default=1, help="random seed")
     parser.add_argument(
-        "--dataset", type=str, default="gsm8k", choices=["gsm8k","svamp", "aqua"], help="dataset to inference"
+        "--dataset", type=str, default="gsm8k", choices=["gsm8k","svamp", "aqua", "csqa", "last_letters", "strategyqa"], help="dataset to inference"
     )
     parser.add_argument(
         "--prompt_path", type=str, default="prompts/active", help="type of prompts to use"
@@ -228,6 +239,9 @@ def arg_parser():
     parser.add_argument(
         "--setting", type=str, default='unfair', choices=['fair', 'unfair'], help="decide whether annotate on test data or not"
     )
+    parser.add_argument(
+        "--concat_length", type=int, default=3, help='Used for task last_letters, indicates length of last letter concat'
+    )
     
     args = parser.parse_args()
     
@@ -248,6 +262,24 @@ def arg_parser():
             args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\AQuA\train.json" # train data path
             # args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\AQuA\dev.json" # dev data path
         args.direct_answer_trigger = "\nThe answer is"
+    elif args.dataset == "csqa":
+        if args.setting == "unfair":
+            args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\CSQA\dev_rand_split.jsonl" # test(dev) data path
+        elif args.setting == "fair":
+            args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\CSQA\train_rand_split.jsonl" # train data path
+        args.direct_answer_trigger = "\nSo the answer is"
+    elif args.dataset == "strategyqa":
+        if args.setting == "unfair":
+            args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\strategyqa\dev.json" # test(dev) data path
+        elif args.setting == "fair":
+            args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\strategyqa\train.json" # train data path
+        args.direct_answer_trigger = "\nTherefore, the answer (Yes or No) is"
+    elif args.dataset == "last_letters":
+        if args.setting == "unfair":
+            args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\last_letters\last_letters_test.json" # test(dev) data path
+        elif args.setting == "fair":
+            args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\last_letters\last_letters_train.json" # train data path
+        args.direct_answer_trigger = "\nTherefore, the answer is"
     else:
         raise ValueError("dataset is not properly defined ...")
         

@@ -98,7 +98,7 @@ def inference_cot(args, question_pool, batch_limit, given_prompt, worker_id):
         
         prompt_list = []
         for qes in batch:
-            prompt = given_prompt + "Q: " + qes['question'] + "\nA: Let's think step by step."
+            prompt = given_prompt + "Question: " + qes['question'] + "\nA: Let's think step by step."
             prompt_list.append(prompt)
 
         for path in range(0, args.multipath):
@@ -136,7 +136,7 @@ def arg_parser():
     parser = argparse.ArgumentParser(description="CoT")
     parser.add_argument("--random_seed", type=int, default=1, help="random seed")
     parser.add_argument(
-        "--dataset", type=str, default="gsm8k", choices=["gsm8k","svamp", "aqua"], help="dataset to inference"
+        "--dataset", type=str, default="gsm8k", choices=["gsm8k","svamp", "aqua", "csqa", "asdiv", "last_letters", "addsub", "singleeq", "strategyqa"], help="dataset to inference"
     )
     parser.add_argument(
         "--prompt_path", type=str, default="prompts/active", help="type of prompts to use"
@@ -176,6 +176,9 @@ def arg_parser():
     parser.add_argument(
         "--multipath", type=int, default=1, help="self-consistency num"
     )
+    parser.add_argument(
+        "--concat_length", type=int, default=4, help='Used for task last_letters, indicates length of last letter concat'
+    )
     
     args = parser.parse_args()
     args.output_dir = Path(args.output_dir)
@@ -187,16 +190,33 @@ def arg_parser():
     print(f"Temperature: {args.temperature}")
     
     if args.dataset == "gsm8k":
-        # args.dataset_path = "./dataset/grade-school-math/test.jsonl"
         args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\grade_school_math\data\test.jsonl"
         args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
         args.datset_size = 1319
     elif args.dataset == "svamp":
-        args.dataset_path = "./dataset/SVAMP/SVAMP.json"
+        args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\SVAMP.json"
+        args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
+    elif args.dataset == "asdiv":
+        args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\ASDiv.json"
         args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
     elif args.dataset == "aqua":
         args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\AQuA\test.json"
         args.direct_answer_trigger = "The answer is"
+    elif args.dataset == "csqa":
+        args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\CSQA\dev_rand_split.jsonl"
+        args.direct_answer_trigger = "So the answer is"
+    elif args.dataset == "strategyqa":
+        args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\strategyqa\dev.json"
+        args.direct_answer_trigger = "\nTherefore, the answer (Yes or No) is"
+    elif args.dataset == "last_letters":
+        args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\last_letters\last_letters_test.json"
+        args.direct_answer_trigger = "\nTherefore, the answer is"
+    elif args.dataset == "addsub":
+        args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\MAWPS\AddSub.json"
+        args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
+    elif args.dataset == "singleeq":
+        args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\MAWPS\SingleEq.json"
+        args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
     else:
         raise ValueError("dataset is not properly defined ...")
         

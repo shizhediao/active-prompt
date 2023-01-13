@@ -1,0 +1,24 @@
+{
+    "prompt": [
+        {
+            "question": "Q: Take the last letters of each words in \"Adolfo Reina\" and concatenate them.\nA:",
+            "rationale": "Let's think step by step in Python. Let variable string1 = \"Adolfo\", and string1[-1] is \"o\". Let variable string2 = \"Reina\", and string2[-1] is \"a\". Let variable concat = \"\". concat += string1[-1](o) is \"o\". concat += string2[-1](a) is \"oa\".",
+            "pred_ans": "oa"
+        },
+        {
+            "question": "Question: Take the last letters of the words in \"Gladis Monica\" and concatenate them.\nA:",
+            "rationale": "Let's think step by step in Python. Let variable string1 = \"Gladis\", and string1[-1] is \"s\". Let variable string2 = \"Monica\", and string2[-1] is \"a\". Let variable concat = \"\". concat += string1[-1](s) is \"s\". concat += string2[-1](a) is \"sa\".",
+            "pred_ans": "sa"
+        },
+        {
+            "question": "Question: Take the last letters of the words in \"Denny Carlo\" and concatenate them.\nA:",
+            "rationale": "Let's think step by step in Python. Let variable string1 = \"Denny\", and string1[-1] is \"y\". Let variable string2 = \"Carlo\", and string2[-1] is \"o\". Let variable concat = \"\". concat += string1[-1](y) is \"y\". concat += string2[-1](o) is \"yo\".",
+            "pred_ans": "yo"
+        },
+        {
+            "question": "Question: Take the last letters of the words in \"Bobbi Tamika\" and concatenate them.\nA:",
+            "rationale": "Let's think step by step in Python. Let variable string1 = \"Bobbi\", and string1[-1] is \"i\". Let variable string2 = \"Tamika\", and string2[-1] is \"a\". Let variable concat = \"\". concat += string1[-1](i) is \"i\". concat += string2[-1](a) is \"ia\".",
+            "pred_ans": "ia"
+        }
+    ]
+}

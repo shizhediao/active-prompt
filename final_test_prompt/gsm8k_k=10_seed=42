@@ -1,0 +1,44 @@
+{
+    "prompt": [
+        {
+            "question": "Q: As a freelancer, Baylor is paid for every finished work of a client he does on a freelance marketplace. Currently, he has $4000 on his dashboard from previous work done. He is currently working for three clients, with the first client paying him half the amount of money he currently has on his dashboard once the job is done. The second client will pay him 2/5 times more money than the first client once Baylor finishes his work. The third client will pay him twice the amount of money the first and second clients pay him together once he finishes the job. How much money will Baylor have in his dashboard after all the clients pay him for his work?\nA:",
+            "rationale": "Let's think step by step. The first client will pay Baylor 1/2*$4000=$2000. The second client will pay Baylor 2/5 times more money than the first client, a total of 2/5*$2000 = $800. The total amount of money the second client will pay Baylor once the job is done is $2000+$800 = $2800. The total amount of money the first and the second client will pay Baylor after their work is finished is $2800+$2000 = $4800. The third client will pay him twice the amount of money the first and second clients pay him together, a total of 2*$4800 = $9600. Together, the three clients will pay Baylor $9600+$4800 = $14400 once he finishes their jobs. In his dashboard, Baylor will have $14400+$4000 = $18400",
+            "pred_ans": "18400"
+        },
+        {
+            "question": "Q: Josh and Anna were both born on August 17th, but in different years. To consolidate celebrations they also got married on August 17 when Josh turned 22. If today they're celebrating 30 years of marriage and their combined age is exactly 5 times what Josh's age was when they married, how old was Anna when they got married?\nA:",
+            "rationale": "Let's think step by step. We know that Josh must be 30 years older than his age when they got married, therefore he is 30 + 22 = 52 years old today. If their current combined age is 5 times the age Josh was when they married (22), then their total combined age is 5 * 22 = 110 years. That means that Anna must be 110 - 52 = 58 years old today. If they married 30 years ago, Anna must have been 58 - 30 = 28 years old when they married",
+            "pred_ans": "28"
+        },
+        {
+            "question": "Q: Mary is trying to get Zoom set up for the first time. She spent 10 minutes downloading the Mac version, only to realize she needed the Windows version, which took three times as long to download. During her first call, the audio glitched twice for 4 minutes each time and the video glitched once for 6 minutes. She spent twice as long talking without glitches as with glitches. How much time did Mary spend downloading Zoom and talking total?\nA:",
+            "rationale": "Let's think step by step. First find the time Mary spent downloading the Windows version: 10 minutes * 3 = 30 minutes. Then find the total time the audio glitches took: 4 minutes/glitch * 2 glitches = 8 minutes. Then add the video glitch time to find the total glitch time: 8 minutes + 6 minutes = 14 minutes. Then double that time to find the total glitch-free time: 14 minutes * 2 = 28 minutes. Then add the talking time to the download time to find the total time: 30 minutes + 10 minutes + 14 minutes + 28 minutes = 82 minutes",
+            "pred_ans": "82"
+        },
+        {
+            "question": "Q: Valerie needs to put stamps on the envelopes she is about to mail. She has thank you cards for each of her grandmother, uncle and aunt for the birthday presents they sent. She also has to pay the water bill and the electric bill separately. She wants to send three more mail-in rebates than she does bills and she has twice as many job applications as rebates to mail. How many stamps does she need if everything needs 1 stamp except the electric bill, which needs 2?\nA:",
+            "rationale": "Let's think step by step. Valerie has to send a thank you card to each of 3 people, so she has 3 * 1 = 3 thank you cards to mail. She has 2 bills to mail. She has 3 more rebates than bills, so 3 + 2 = 5 mail-in rebates to mail. She has twice as many job applications as rebates, so she has 2 * 5 = 10 applications to mail. She has 3 + 2 + 5 + 10 = 20 pieces of mail to send. The electric bill needs an extra stamp, so she needs 20 + 1 = 21 stamps.",
+            "pred_ans": "21"
+        },
+        {
+            "question": "Q: At the duck park, there are 25 mallard ducks and ten less than twice as many geese as ducks.  Then, a small flock of 4 ducks arrived at the park and joined the birds already there.  If five less than 15 geese leave the park, how many more geese than ducks remain at the park?\nA:",
+            "rationale": "Let's think step by step. Initially, twice as many geese as ducks is 25*2=50 geese. Therefore, ten less than twice as many geese as ducks is 50-10=40 geese. Then, 4 ducks arrived at the park, resulting in 25+4=29 ducks. Five less than 15 geese is 15-5=10 geese. Thus, if 5 less than 15 geese leave, then 40-10=30 geese remain. Thus, there are 30-29=1 more geese than ducks remaining at the park.",
+            "pred_ans": "1"
+        },
+        {
+            "question": "Q: John decides to stop delivering the newspapers he is supposed to deliver and instead steals them to recycle them for cash.  The Monday-Saturday papers weigh 8 ounces each.  The Sunday paper weighs twice as much.  He is supposed to deliver 250 papers a day.  He doesn't deliver them for 10 weeks.  If one ton of paper recycles for $20, how much did he make?\nA:",
+            "rationale": "Let's think step by step. We know that 7-1=6 days the paper weighs 8 ounces. So those contribute 6*8=48 ounces per week. So in total a weekly delivery of papers weighs 48+16=64 ounces. That means it weighs 64/16=4 pounds. So each week he delivers 4*250=1000 pounds of paper. So in 10 weeks, he delivers 10*1000=10000 pounds of paper. That weighs 10000/2000=5 tons of paper. So he makes 5*20=$100 from recycling the paper",
+            "pred_ans": "100"
+        },
+        {
+            "question": "Q: John buys a chair. He then buys a table that is 3 times the price of the chair. Then, he buys a couch that is 5 times the price of the table. If John paid $380 for all these items, what is the price of the couch?\nA:",
+            "rationale": "Let's think step by step. Let x be the price of the chair. The table costs 3*x. The couch costs 3*x*5=15*x. x+3*x+15*x=380. 19*x=380. x=20. The couch costs 20*15=300 dollars.",
+            "pred_ans": "300"
+        },
+        {
+            "question": "Q: A hay farmer harvested 560 bales of hay from 5 acres of grass per month last year. This year, he planted an additional 7 acres of grass. If the farmer also owns 9 horses and each horse consumes 3 bales of hay a day, how many bales of hay would the farmer have left by the end of December if he starts feeding them this year's hay beginning the first day of September?\nA:",
+            "rationale": "Let's think step by step. For every acre of grass, the farmer can harvest 560/5 = 112 bales of hay each month. This year, the farmer has 7 + 5 = 12 acres of grass. He can expect to harvest 12 x 112 = 1344 bales of hay per month. The total hay production this year is 1344*12 = 16128. From September to December, the farmer would have to feed his horses for a total of 30 + 31 + 30 + 31 = 122 days. Each day his horse eats a total of 3*9 = 27 bales of hay. For the 122 days, the horses will eat a total of 27*122 = 3294 bales. The total number of bales remaining will be 16128-3294 = 12834.",
+            "pred_ans": "12834"
+        }
+    ]
+}

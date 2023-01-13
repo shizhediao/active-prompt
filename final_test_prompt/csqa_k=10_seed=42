@@ -1,0 +1,39 @@
+{
+    "prompt": [
+        {
+            "question": "Q: Where would you find a sloth that is not afraid of being hunted? Answer Choices: (A) forest canopy (B) nature preserve (C) zoo (D) tropical rainforest (E) commercial\nA:",
+            "pred_ans": "B",
+            "rationale": "Let's think step by step. The answer should be a place where the habitats of sloth are well protected. Of the above choices, nature preserve makes the most sense for protecting sloth's habitats."
+        },
+        {
+            "question": "Q: What gift do people claim that god has for people? Answer Choices: (A) bible (B) everywhere (C) judge people (D) care for people (E) work miracles\nA:",
+            "pred_ans": "E",
+            "rationale": "Let's think step by step. The answer should be something that people normally cannot achieve. Of the above choices, work miracles make the most sense for people normally cannot do."
+        },
+        {
+            "question": "Q: What is probably not built out of a wooden rod? Answer Choices: (A) broom (B) broom closet (C) old clock (D) hardware store (E) old houses\nA:",
+            "pred_ans": "E",
+            "rationale": "Let's think step by step. The answer should be something that is not built out of a wooden rod. Of the above choices, old houses may use materials other than the wooden rod."
+        },
+        {
+            "question": "Q: Where do you use condoms? Answer Choices: (A) supermarket (B) dick (C) bedroom (D) medicine chest (E) bed\nA:",
+            "pred_ans": "C",
+            "rationale": "Let's think step by step. The answer should be a place where people usually have sex. Of the above choices, the bedroom is the place."
+        },
+        {
+            "question": "Q: What happens soon after Christmas? Answer Choices: (A) buy presents for others (B) summer (C) easter (D) see work (E) halloween\nA:",
+            "pred_ans": "C",
+            "rationale": "Let's think step by step. The answer must be a festival soon after Christmas (December 25). Of the above choices, easter happens soon after Christmas, usually in March or April."
+        },
+        {
+            "question": "Q: Finding information requires what other than research materials? Answer Choices: (A) internet (B) ask questions (C) time (D) searching for (E) logic\nA:",
+            "pred_ans": "C",
+            "rationale": "Let's think step by step. The answer should be an important thing for finding information. Of the above choices, time is the most important one."
+        },
+        {
+            "question": "Q: Before someone can adopt the parent must do what with their offspring? Answer Choices: (A) biological child (B) give away (C) birth (D) abandon (E) orphan\nA:",
+            "pred_ans": "B",
+            "rationale": "Let's think step by step. The answer should be an action of the parent. Of the above choices, the parent must give away their offspring and give up their parental rights."
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "prompt": [
+        {
+            "question": "Question: Take the last letters of the words in \"Willie Valeria Zane\" and concatenate them.\nA:",
+            "rationale": "Let's think step by step. The last letter of \"Willie \" is \"e\". The last letter of \"Valeria \" is \"a\". The last letter of \"Zane\" is \"e\". Concatenating them is \"eae\".",
+            "pred_ans": "eae"
+        },
+        {
+            "question": "Question: Take the last letters of the words in \"Kylie Guille Lakshmi\" and concatenate them.\nA:",
+            "rationale": "Let's think step by step. The last letter of \"Kylie\" is \"e\". The last letter of \"Guille \" is \"e\". The last letter of \"Lakshmi\" is \"i\". Concatenating them is \"eei\".",
+            "pred_ans": "eei"
+        },
+        {
+            "question": "Question: Take the last letters of the words in \"Carmelo Reinaldo Sade\" and concatenate them.\nA:",
+            "rationale": "Let's think step by step. The last letter of \"Carmelo \" is \"o\". The last letter of \"Reinaldo \" is \"o\". The last letter of \"Sade\" is \"e\". Concatenating them is \"ooe\".",
+            "pred_ans": "ooe"
+        },
+        {
+            "question": "Question: Take the last letters of the words in \"Gabe Ventura Woody\" and concatenate them.\nA:",
+            "rationale": "Let's think step by step. The last letter of \"Gabe \" is \"e\". The last letter of \"Ventura \" is \"a\". The last letter of \"Woody\" is \"y\". Concatenating them is \"eay\".",
+            "pred_ans": "eay"
+        }
+    ]
+}

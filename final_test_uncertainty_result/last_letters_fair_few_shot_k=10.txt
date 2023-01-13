@@ -1,0 +1,1000 @@
+[559, {'aie': 1, 'eea': 1, 'aei': 1, 'aea': 1, 'sae': 1, 'aae': 2, 'aoe': 1, 'eae': 1, 'the': 1}], uncertainty: 9, variance: {'aie': 1, 'eea': 1, 'aei': 1, 'aea': 1, 'sae': 1, 'aae': 2, 'aoe': 1, 'eae': 1, 'the': 1}
+[197, {'sei': 2, 'iei': 2, 'eii': 1, 'eie': 1, 'iie': 1, 'eei': 2, 'eai': 1}], uncertainty: 7, variance: {'sei': 2, 'iei': 2, 'eii': 1, 'eie': 1, 'iie': 1, 'eei': 2, 'eai': 1}
+[98, {'ooe': 4, 'ode': 1, 'oee': 1, 'eoe': 1, 'ose': 1, 'soe': 1, 'oeo': 1}], uncertainty: 7, variance: {'ooe': 4, 'ode': 1, 'oee': 1, 'eoe': 1, 'ose': 1, 'soe': 1, 'oeo': 1}
+[446, {'sea': 1, 'eay': 3, 'ayy': 1, 'eyy': 1, 'yae': 1, 'eya': 2, 'yaa': 1}], uncertainty: 7, variance: {'sea': 1, 'eay': 3, 'ayy': 1, 'eyy': 1, 'yae': 1, 'eya': 2, 'yaa': 1}
+[529, {'sao': 1, 'ooo': 1, 'aoa': 1, 'aoo': 4, 'ado': 1, 'oao': 1, 'ers': 1}], uncertainty: 7, variance: {'sao': 1, 'ooo': 1, 'aoa': 1, 'aoo': 4, 'ado': 1, 'oao': 1, 'ers': 1}
+[930, {'ext': 1, 'sen': 1, 'sne': 1, 'nne': 2, 'enn': 1, 'eyn': 1, 'nen': 3}], uncertainty: 7, variance: {'ext': 1, 'sen': 1, 'sne': 1, 'nne': 2, 'enn': 1, 'eyn': 1, 'nen': 3}
+[763, {'Loe': 5, 'sle': 1, 'ole': 1, 'loe': 1, 'LoL': 1, 'oie': 1}], uncertainty: 6, variance: {'Loe': 5, 'sle': 1, 'ole': 1, 'loe': 1, 'LoL': 1, 'oie': 1}
+[493, {'yen': 2, 'yet': 1, 'eyn': 4, 'ynn': 1, 'sen': 1, 'eny': 1}], uncertainty: 6, variance: {'yen': 2, 'yet': 1, 'eyn': 4, 'ynn': 1, 'sen': 1, 'eny': 1}
+[879, {'yii': 1, 'iyy': 1, 'yyi': 2, 'yiy': 3, 'iyi': 2, 'syi': 1}], uncertainty: 6, variance: {'yii': 1, 'iyy': 1, 'yyi': 2, 'yiy': 3, 'iyi': 2, 'syi': 1}
+[355, {'eya': 3, 'yae': 1, 'eay': 3, 'eea': 1, 'eia': 1, 'say': 1}], uncertainty: 6, variance: {'eya': 3, 'yae': 1, 'eay': 3, 'eea': 1, 'eia': 1, 'say': 1}
+[664, {'eae': 1, 'ean': 1, 'eea': 2, 'nea': 1, 'sea': 4, 'eaa': 1}], uncertainty: 6, variance: {'eae': 1, 'ean': 1, 'eea': 2, 'nea': 1, 'sea': 4, 'eaa': 1}
+[628, {'rau': 5, 'ruu': 1, 'agu': 1, 'auu': 1, 'sra': 1, 'rua': 1}], uncertainty: 6, variance: {'rau': 5, 'ruu': 1, 'agu': 1, 'auu': 1, 'sra': 1, 'rua': 1}
+[199, {'hey': 2, 'yey': 1, 'sey': 1, 'eyh': 2, 'ehc': 1, 'ehy': 3}], uncertainty: 6, variance: {'hey': 2, 'yey': 1, 'sey': 1, 'eyh': 2, 'ehc': 1, 'ehy': 3}
+[775, {'eox': 3, 'exo': 3, 'seo': 1, 'B[-': 1, 'exe': 1, 'are': 1}], uncertainty: 6, variance: {'eox': 3, 'exo': 3, 'seo': 1, 'B[-': 1, 'exe': 1, 'are': 1}
+[537, {'aya': 1, 'aay': 3, 'aaa': 2, 'say': 2, 'ayy': 1, 'yaa': 1}], uncertainty: 6, variance: {'aya': 1, 'aay': 3, 'aaa': 2, 'say': 2, 'ayy': 1, 'yaa': 1}
+[132, {'t:`': 1, 'ret': 1, 'iyy': 2, 'iay': 1, 'yyy': 3, 'yiy': 2}], uncertainty: 6, variance: {'t:`': 1, 'ret': 1, 'iyy': 2, 'iay': 1, 'yyy': 3, 'yiy': 2}
+[737, {'eea': 3, 'ave': 2, 'ise': 1, 'sea': 1, 'eva': 2, 'eve': 1}], uncertainty: 6, variance: {'eea': 3, 'ave': 2, 'ise': 1, 'sea': 1, 'eva': 2, 'eve': 1}
+[649, {'eaa': 5, 'aca': 1, 'aea': 1, 'eia': 1, 'sae': 1, 'eea': 1}], uncertainty: 6, variance: {'eaa': 5, 'aca': 1, 'aea': 1, 'eia': 1, 'sae': 1, 'eea': 1}
+[105, {'yeu': 5, 'yau': 1, 'yue': 1, 'yen': 1, 'eyu': 1, 'seu': 1}], uncertainty: 6, variance: {'yeu': 5, 'yau': 1, 'yue': 1, 'yen': 1, 'eyu': 1, 'seu': 1}
+[905, {'uoy': 4, 'uyo': 2, 'you': 1, 'uyy': 1, 'suy': 1, 'uuy': 1}], uncertainty: 6, variance: {'uoy': 4, 'uyo': 2, 'you': 1, 'uyy': 1, 'suy': 1, 'uuy': 1}
+[452, {'aea': 5, 'yae': 1, 'aee': 1, 'aae': 1, 'eae': 1, 'sae': 1}], uncertainty: 6, variance: {'aea': 5, 'yae': 1, 'aee': 1, 'aae': 1, 'eae': 1, 'sae': 1}
+[953, {'nee': 1, 'nen': 5, 'ene': 1, 'nne': 1, 'enn': 1, 'ate': 1}], uncertainty: 6, variance: {'nee': 1, 'nen': 5, 'ene': 1, 'nne': 1, 'enn': 1, 'ate': 1}
+[246, {'nri': 1, 'noi': 5, '-/*': 1, 'nio': 1, 'oni': 1, 'isi': 1}], uncertainty: 6, variance: {'nri': 1, 'noi': 5, '-/*': 1, 'nio': 1, 'oni': 1, 'isi': 1}
+[894, {'sse': 2, 'ese': 3, 'eee': 1, 'ete': 2, 'ste': 1, 'see': 1}], uncertainty: 6, variance: {'sse': 2, 'ese': 3, 'eee': 1, 'ete': 2, 'ste': 1, 'see': 1}
+[798, {'ooo': 1, 'nno': 1, 'eno': 1, 'ono': 5, 'oto': 1, 'non': 1}], uncertainty: 6, variance: {'ooo': 1, 'nno': 1, 'eno': 1, 'ono': 5, 'oto': 1, 'non': 1}
+[974, {'yer': 1, 'rre': 1, 'yyr': 3, 'yry': 1, 'ery': 2, 'eyr': 2}], uncertainty: 6, variance: {'yer': 1, 'rre': 1, 'yyr': 3, 'yry': 1, 'ery': 2, 'eyr': 2}
+[986, {'iai': 5, 'i*/': 1, 'sai': 1, 'iia': 1, 'iah': 1, 'aai': 1}], uncertainty: 6, variance: {'iai': 5, 'i*/': 1, 'sai': 1, 'iia': 1, 'iah': 1, 'aai': 1}
+[344, {'syi': 4, 'syy': 2, 'ssy': 1, 'iyy': 1, 'isy': 1, 'sis': 1}], uncertainty: 6, variance: {'syi': 4, 'syy': 2, 'ssy': 1, 'iyy': 1, 'isy': 1, 'sis': 1}
+[89, {'ian': 1, 'iya': 1, 'iai': 1, 'iay': 5, 'iat': 1, 'yaa': 1}], uncertainty: 6, variance: {'ian': 1, 'iya': 1, 'iai': 1, 'iay': 5, 'iat': 1, 'yaa': 1}
+[290, {'aye': 5, 'say': 1, 'aey': 2, 'yea': 1, 'eya': 1}], uncertainty: 5, variance: {'aye': 5, 'say': 1, 'aey': 2, 'yea': 1, 'eya': 1}
+[896, {'eae': 1, 'eea': 6, 'aae': 1, 'sae': 1, 'sea': 1}], uncertainty: 5, variance: {'eae': 1, 'eea': 6, 'aae': 1, 'sae': 1, 'sea': 1}
+[694, {'ayy': 5, 'aya': 2, 'say': 1, 'yya': 1, 'ara': 1}], uncertainty: 5, variance: {'ayy': 5, 'aya': 2, 'say': 1, 'yya': 1, 'ara': 1}
+[113, {'eyi': 5, 'yei': 2, 'yie': 1, 'iye': 1, 'eiy': 1}], uncertainty: 5, variance: {'eyi': 5, 'yei': 2, 'yie': 1, 'iye': 1, 'eiy': 1}
+[501, {'ooo': 1, 'onn': 1, 'ono': 6, 'oon': 1, 'nno': 1}], uncertainty: 5, variance: {'ooo': 1, 'onn': 1, 'ono': 6, 'oon': 1, 'nno': 1}
+[33, {'all': 1, 'aal': 4, 'ala': 3, 'sal': 1, 'rry': 1}], uncertainty: 5, variance: {'all': 1, 'aal': 4, 'ala': 3, 'sal': 1, 'rry': 1}
+[790, {'iya': 6, 'iyi': 1, 'yia': 1, 'yaa': 1, 'yai': 1}], uncertainty: 5, variance: {'iya': 6, 'iyi': 1, 'yia': 1, 'yaa': 1, 'yai': 1}
+[461, {'tae': 1, 'eta': 6, 'sea': 1, 'eat': 1, 'eet': 1}], uncertainty: 5, variance: {'tae': 1, 'eta': 6, 'sea': 1, 'eat': 1, 'eet': 1}
+[393, {'lym': 4, 'lmy': 1, 'slm': 2, 'lkm': 1, 'lmm': 2}], uncertainty: 5, variance: {'lym': 4, 'lmy': 1, 'slm': 2, 'lkm': 1, 'lmm': 2}
+[969, {'pe)': 1, 'sei': 1, 'eye': 1, 'yee': 6, 'yea': 1}], uncertainty: 5, variance: {'pe)': 1, 'sei': 1, 'eye': 1, 'yee': 6, 'yea': 1}
+[92, {'eay': 5, 'eya': 1, 'eee': 1, 'aye': 2, 'ayy': 1}], uncertainty: 5, variance: {'eay': 5, 'eya': 1, 'eee': 1, 'aye': 2, 'ayy': 1}
+[516, {'yrr': 5, 'rvr': 1, 'yyr': 2, 'yrj': 1, 'syr': 1}], uncertainty: 5, variance: {'yrr': 5, 'rvr': 1, 'yyr': 2, 'yrj': 1, 'syr': 1}
+[585, {'ene': 5, 'nne': 1, 'nee': 2, 'cne': 1, 'eln': 1}], uncertainty: 5, variance: {'ene': 5, 'nne': 1, 'nee': 2, 'cne': 1, 'eln': 1}
+[823, {'int': 1, 'aol': 6, 'oal': 1, 'ool': 1, 'olo': 1}], uncertainty: 5, variance: {'int': 1, 'aol': 6, 'oal': 1, 'ool': 1, 'olo': 1}
+[229, {'nbn': 1, 'ana': 2, 'snn': 1, 'nan': 5, 'nna': 1}], uncertainty: 5, variance: {'nbn': 1, 'ana': 2, 'snn': 1, 'nan': 5, 'nna': 1}
+[560, {'aeo': 1, 'aee': 4, 'eae': 1, 'ate': 3, 'sae': 1}], uncertainty: 5, variance: {'aeo': 1, 'aee': 4, 'eae': 1, 'ate': 3, 'sae': 1}
+[231, {'yzy': 5, 'yyt': 1, '```': 1, 'yzz': 1, 'syz': 2}], uncertainty: 5, variance: {'yzy': 5, 'yyt': 1, '```': 1, 'yzz': 1, 'syz': 2}
+[509, {'hnn': 4, 'shn': 2, 'nhn': 2, 'hhn': 1, 'hnh': 1}], uncertainty: 5, variance: {'hnn': 4, 'shn': 2, 'nhn': 2, 'hhn': 1, 'hnh': 1}
+[871, {'enn': 3, 'nne': 2, 'nen': 2, 'ene': 2, 'een': 1}], uncertainty: 5, variance: {'enn': 3, 'nne': 2, 'nen': 2, 'ene': 2, 'een': 1}
+[301, {'eoe': 4, 'oee': 3, 'oei': 1, 'oeo': 1, 'soe': 1}], uncertainty: 5, variance: {'eoe': 4, 'oee': 3, 'oei': 1, 'oeo': 1, 'soe': 1}
+[810, {'())': 1, 'ada': 5, 'daa': 1, 'aad': 2, 'add': 1}], uncertainty: 5, variance: {'())': 1, 'ada': 5, 'daa': 1, 'aad': 2, 'add': 1}
+[425, {'aoi': 5, 'oai': 2, 'ayi': 1, 'aiy': 1, 'aio': 1}], uncertainty: 5, variance: {'aoi': 5, 'oai': 2, 'ayi': 1, 'aiy': 1, 'aio': 1}
+[683, {'eoe': 6, 'eke': 1, 'oeo': 1, 'ds=': 1, 'eoo': 1}], uncertainty: 5, variance: {'eoe': 6, 'eke': 1, 'oeo': 1, 'ds=': 1, 'eoo': 1}
+[679, {'ada': 3, 'daa': 3, 'dad': 1, 'dta': 2, 'dia': 1}], uncertainty: 5, variance: {'ada': 3, 'daa': 3, 'dad': 1, 'dta': 2, 'dia': 1}
+[277, {'eer': 4, 'ere': 2, 'err': 2, 'epe': 1, 'eel': 1}], uncertainty: 5, variance: {'eer': 4, 'ere': 2, 'err': 2, 'epe': 1, 'eel': 1}
+[900, {'oeo': 1, 'ioe': 1, 'ooo': 1, 'ooe': 3, 'oee': 4}], uncertainty: 5, variance: {'oeo': 1, 'ioe': 1, 'ooo': 1, 'ooe': 3, 'oee': 4}
+[644, {'sno': 1, 'neo': 5, 'nte': 1, 'eno': 2, 'noe': 1}], uncertainty: 5, variance: {'sno': 1, 'neo': 5, 'nte': 1, 'eno': 2, 'noe': 1}
+[324, {'ted': 2, 'tee': 4, 'te>': 1, 'tet': 1, 'tte': 2}], uncertainty: 5, variance: {'ted': 2, 'tee': 4, 'te>': 1, 'tet': 1, 'tte': 2}
+[880, {'ysn': 6, 'nnn': 1, 'yin': 1, 'ync': 1, 'syn': 1}], uncertainty: 5, variance: {'ysn': 6, 'nnn': 1, 'yin': 1, 'ync': 1, 'syn': 1}
+[263, {'aoa': 6, 'oaa': 1, 'aao': 1, 'soa': 1, 'oao': 1}], uncertainty: 5, variance: {'aoa': 6, 'oaa': 1, 'aao': 1, 'soa': 1, 'oao': 1}
+[207, {'eyt': 1, 'ety': 4, 'yet': 1, 'yte': 3, 'ytt': 1}], uncertainty: 5, variance: {'eyt': 1, 'ety': 4, 'yet': 1, 'yte': 3, 'ytt': 1}
+[979, {'sas': 6, 'ase': 1, 'ssa': 1, 'asa': 1, 'ass': 1}], uncertainty: 5, variance: {'sas': 6, 'ase': 1, 'ssa': 1, 'asa': 1, 'ass': 1}
+[434, {'liy': 5, 'lky': 1, 'lic': 1, 'lil': 2, 'lyi': 1}], uncertainty: 5, variance: {'liy': 5, 'lky': 1, 'lic': 1, 'lil': 2, 'lyi': 1}
+[343, {'ore': 1, 'oor': 3, 'oer': 4, 'eor': 1, 'sor': 1}], uncertainty: 5, variance: {'ore': 1, 'oor': 3, 'oer': 4, 'eor': 1, 'sor': 1}
+[328, {'daa': 1, 'aha': 1, 'haa': 5, 'dda': 1, 'hha': 2}], uncertainty: 5, variance: {'daa': 1, 'aha': 1, 'haa': 5, 'dda': 1, 'hha': 2}
+[179, {'sos': 2, 'yse': 1, 'syo': 5, 'soy': 1, 'sys': 1}], uncertainty: 5, variance: {'sos': 2, 'yse': 1, 'syo': 5, 'soy': 1, 'sys': 1}
+[12, {'byo': 3, 'boy': 4, 'oby': 1, 'roy': 1, 'oyb': 1}], uncertainty: 5, variance: {'byo': 3, 'boy': 4, 'oby': 1, 'roy': 1, 'oyb': 1}
+[358, {'ayl': 6, 'aly': 1, 'yla': 1, 'yal': 1, 'sal': 1}], uncertainty: 5, variance: {'ayl': 6, 'aly': 1, 'yla': 1, 'yal': 1, 'sal': 1}
+[712, {'sea': 2, 'aea': 2, 'eaa': 4, 'aae': 1, 'saa': 1}], uncertainty: 5, variance: {'sea': 2, 'aea': 2, 'eaa': 4, 'aae': 1, 'saa': 1}
+[620, {'nde': 1, 'oeo': 3, 'eoe': 3, 'ooe': 2, 'oee': 1}], uncertainty: 5, variance: {'nde': 1, 'oeo': 3, 'eoe': 3, 'ooe': 2, 'oee': 1}
+[315, {'lyy': 5, 'lly': 2, 'yry': 1, 'yey': 1, 'yyy': 1}], uncertainty: 5, variance: {'lyy': 5, 'lly': 2, 'yry': 1, 'yey': 1, 'yyy': 1}
+[869, {'lys': 4, 'lsy': 3, '###': 1, 'lsl': 1, 'yls': 1}], uncertainty: 5, variance: {'lys': 4, 'lsy': 3, '###': 1, 'lsl': 1, 'yls': 1}
+[190, {'aiy': 6, 'kis': 1, 'aya': 1, 'ayi': 1, 'aay': 1}], uncertainty: 5, variance: {'aiy': 6, 'kis': 1, 'aya': 1, 'ayi': 1, 'aay': 1}
+[187, {'oee': 6, 'eee': 1, 'ooe': 1, 'gey': 1, 'soe': 1}], uncertainty: 5, variance: {'oee': 6, 'eee': 1, 'ooe': 1, 'gey': 1, 'soe': 1}
+[254, {'eye': 5, 'yye': 2, 'epe': 1, 'eee': 1, 'eyo': 1}], uncertainty: 5, variance: {'eye': 5, 'yye': 2, 'epe': 1, 'eee': 1, 'eyo': 1}
+[685, {'yac': 2, 'ayc': 5, 'yca': 1, 'acy': 1, 'hyc': 1}], uncertainty: 5, variance: {'yac': 2, 'ayc': 5, 'yca': 1, 'acy': 1, 'hyc': 1}
+[613, {'itl': 1, 'nli': 2, 'inl': 5, 'nil': 1, 'tli': 1}], uncertainty: 5, variance: {'itl': 1, 'nli': 2, 'inl': 5, 'nil': 1, 'tli': 1}
+[834, {'ynr': 6, 'ync': 1, 'yrr': 1, 'syr': 1, 'yng': 1}], uncertainty: 5, variance: {'ynr': 6, 'ync': 1, 'yrr': 1, 'syr': 1, 'yng': 1}
+[497, {'eae': 4, 'gt;': 1, 'aea': 2, 'sae': 2, 'aee': 1}], uncertainty: 5, variance: {'eae': 4, 'gt;': 1, 'aea': 2, 'sae': 2, 'aee': 1}
+[117, {'nan': 6, 'nnn': 1, 'ans': 1, 'nna': 1, 'de>': 1}], uncertainty: 5, variance: {'nan': 6, 'nnn': 1, 'ans': 1, 'nna': 1, 'de>': 1}
+[992, {'soe': 6, 'seo': 1, 'sse': 1, 'ose': 1, 'eoe': 1}], uncertainty: 5, variance: {'soe': 6, 'seo': 1, 'sse': 1, 'ose': 1, 'eoe': 1}
+[469, {'ssi': 1, 'sii': 6, 'iis': 1, 'isi': 1, 'sis': 1}], uncertainty: 5, variance: {'ssi': 1, 'sii': 6, 'iis': 1, 'isi': 1, 'sis': 1}
+[794, {'see': 1, 'sen': 1, 'ene': 1, 'een': 6, 'ofv': 1}], uncertainty: 5, variance: {'see': 1, 'sen': 1, 'ene': 1, 'een': 6, 'ofv': 1}
+[642, {'eaa': 5, 'sea': 2, 'aaa': 1, 'eea': 1, 'saa': 1}], uncertainty: 5, variance: {'eaa': 5, 'sea': 2, 'aaa': 1, 'eea': 1, 'saa': 1}
+[112, {'aea': 1, 'eea': 1, 'eae': 3, 'sae': 1, 'sea': 4}], uncertainty: 5, variance: {'aea': 1, 'eea': 1, 'eae': 3, 'sae': 1, 'sea': 4}
+[505, {'nlr': 6, 'elr': 1, 'snl': 1, 'nlp': 1, 'nrl': 1}], uncertainty: 5, variance: {'nlr': 6, 'elr': 1, 'snl': 1, 'nlp': 1, 'nrl': 1}
+[521, {'yie': 3, 'eyi': 4, 'iei': 1, 'yei': 1, 'yyi': 1}], uncertainty: 5, variance: {'yie': 3, 'eyi': 4, 'iei': 1, 'yei': 1, 'yyi': 1}
+[390, {'eay': 5, 'ayy': 1, 'eya': 2, 'yae': 1, 'yay': 1}], uncertainty: 5, variance: {'eay': 5, 'ayy': 1, 'eya': 2, 'yae': 1, 'yay': 1}
+[394, {'eoe': 4, 'eee': 3, 'wer': 1, 'see': 1, 'oee': 1}], uncertainty: 5, variance: {'eoe': 4, 'eee': 3, 'wer': 1, 'see': 1, 'oee': 1}
+[348, {'ynn': 3, 'nnn': 1, 'nye': 2, 'nyn': 3, 'nny': 1}], uncertainty: 5, variance: {'ynn': 3, 'nnn': 1, 'nye': 2, 'nyn': 3, 'nny': 1}
+[71, {'ffa': 2, 'aaf': 1, 'afa': 5, 'faa': 1, 'sfa': 1}], uncertainty: 5, variance: {'ffa': 2, 'aaf': 1, 'afa': 5, 'faa': 1, 'sfa': 1}
+[633, {'aae': 3, 'eae': 3, 'aei': 1, 'aee': 2, 'aea': 1}], uncertainty: 5, variance: {'aae': 3, 'eae': 3, 'aei': 1, 'aee': 2, 'aea': 1}
+[81, {'yrr': 2, 'iyr': 4, 'iri': 1, 'yir': 1, 'iry': 2}], uncertainty: 5, variance: {'yrr': 2, 'iyr': 4, 'iri': 1, 'yir': 1, 'iry': 2}
+[791, {'aya': 5, 'ays': 1, 'ayy': 2, 'say': 1, 'aay': 1}], uncertainty: 5, variance: {'aya': 5, 'ays': 1, 'ayy': 2, 'say': 1, 'aay': 1}
+[270, {'eea': 1, 'eya': 6, 'eoa': 1, 'yae': 1, 'yaa': 1}], uncertainty: 5, variance: {'eea': 1, 'eya': 6, 'eoa': 1, 'yae': 1, 'yaa': 1}
+[990, {'nae': 1, 'aen': 6, 'ane': 1, 'aan': 1, 'san': 1}], uncertainty: 5, variance: {'nae': 1, 'aen': 6, 'ane': 1, 'aan': 1, 'san': 1}
+[428, {'ggo': 2, 'goo': 5, 'ogo': 2, 'sgo': 1}], uncertainty: 4, variance: {'ggo': 2, 'goo': 5, 'ogo': 2, 'sgo': 1}
+[18, {'yry': 1, 'yan': 1, 'ryy': 7, 'yyr': 1}], uncertainty: 4, variance: {'yry': 1, 'yan': 1, 'ryy': 7, 'yyr': 1}
+[221, {'olo': 6, 'oil': 1, 'oll': 2, 'sol': 1}], uncertainty: 4, variance: {'olo': 6, 'oil': 1, 'oll': 2, 'sol': 1}
+[586, {'iaa': 7, 'iea': 1, 'lia': 1, 'aia': 1}], uncertainty: 4, variance: {'iaa': 7, 'iea': 1, 'lia': 1, 'aia': 1}
+[638, {'rrs': 4, 'rss': 3, 'rsr': 2, 'rrr': 1}], uncertainty: 4, variance: {'rrs': 4, 'rss': 3, 'rsr': 2, 'rrr': 1}
+[496, {'eye': 7, 'eyy': 1, 'sey': 1, 'ele': 1}], uncertainty: 4, variance: {'eye': 7, 'eyy': 1, 'sey': 1, 'ele': 1}
+[792, {'yet': 3, 'ett': 2, 'yte': 4, 'ytt': 1}], uncertainty: 4, variance: {'yet': 3, 'ett': 2, 'yte': 4, 'ytt': 1}
+[210, {'any': 1, 'ayn': 7, 'yan': 1, ';do': 1}], uncertainty: 4, variance: {'any': 1, 'ayn': 7, 'yan': 1, ';do': 1}
+[184, {'nnl': 2, 'nln': 5, 'snl': 2, 'dle': 1}], uncertainty: 4, variance: {'nnl': 2, 'nln': 5, 'snl': 2, 'dle': 1}
+[615, {'aim': 1, 'ain': 7, 'ian': 1, 'ani': 1}], uncertainty: 4, variance: {'aim': 1, 'ain': 7, 'ian': 1, 'ani': 1}
+[49, {'ayy': 3, 'aya': 2, 'aay': 4, 'say': 1}], uncertainty: 4, variance: {'ayy': 3, 'aya': 2, 'aay': 4, 'say': 1}
+[467, {'iia': 3, 'iaa': 4, 'aaa': 1, 'aia': 2}], uncertainty: 4, variance: {'iia': 3, 'iaa': 4, 'aaa': 1, 'aia': 2}
+[26, {'mem': 2, 'mye': 3, 'emy': 1, 'mey': 4}], uncertainty: 4, variance: {'mem': 2, 'mye': 3, 'emy': 1, 'mey': 4}
+[381, {'eyt': 4, 'ety': 2, 'yet': 2, 'yte': 2}], uncertainty: 4, variance: {'eyt': 4, 'ety': 2, 'yet': 2, 'yte': 2}
+[944, {'mnn': 1, 'myn': 7, 'mty': 1, 'mnt': 1}], uncertainty: 4, variance: {'mnn': 1, 'myn': 7, 'mty': 1, 'mnt': 1}
+[920, {'enn': 6, 'een': 1, 'nen': 2, 'enm': 1}], uncertainty: 4, variance: {'enn': 6, 'een': 1, 'nen': 2, 'enm': 1}
+[330, {'ria': 1, 'rai': 7, 'ara': 1, 'ari': 1}], uncertainty: 4, variance: {'ria': 1, 'rai': 7, 'ara': 1, 'ari': 1}
+[727, {'ace': 2, 'aec': 1, 'eac': 6, 'eca': 1}], uncertainty: 4, variance: {'ace': 2, 'aec': 1, 'eac': 6, 'eca': 1}
+[396, {'aea': 7, 'ara': 1, 'sae': 1, 'aae': 1}], uncertainty: 4, variance: {'aea': 7, 'ara': 1, 'sae': 1, 'aae': 1}
+[361, {'nns': 2, 'snn': 2, 'nsn': 5, 'nna': 1}], uncertainty: 4, variance: {'nns': 2, 'snn': 2, 'nsn': 5, 'nna': 1}
+[788, {'bna': 5, 'nab': 2, 'ban': 2, 'nba': 1}], uncertainty: 4, variance: {'bna': 5, 'nab': 2, 'ban': 2, 'nba': 1}
+[742, {'srr': 4, 'svr': 4, 'srv': 1, 'rst': 1}], uncertainty: 4, variance: {'srr': 4, 'svr': 4, 'srv': 1, 'rst': 1}
+[191, {'yoj': 4, 'yjo': 1, 'syo': 4, 'oyj': 1}], uncertainty: 4, variance: {'yoj': 4, 'yjo': 1, 'syo': 4, 'oyj': 1}
+[360, {'rry': 6, 'rur': 1, 'rrr': 2, 'ryr': 1}], uncertainty: 4, variance: {'rry': 6, 'rur': 1, 'rrr': 2, 'ryr': 1}
+[236, {'siy': 2, 'syi': 6, 'sys': 1, 'siu': 1}], uncertainty: 4, variance: {'siy': 2, 'syi': 6, 'sys': 1, 'siu': 1}
+[13, {'tnn': 7, 'ton': 1, 'nnt': 1, 'ttn': 1}], uncertainty: 4, variance: {'tnn': 7, 'ton': 1, 'nnt': 1, 'ttn': 1}
+[532, {'kss': 6, 's*/': 1, 'kks': 2, 'ksk': 1}], uncertainty: 4, variance: {'kss': 6, 's*/': 1, 'kks': 2, 'ksk': 1}
+[172, {'yea': 7, 'eya': 1, 'yaa': 1, 'yua': 1}], uncertainty: 4, variance: {'yea': 7, 'eya': 1, 'yaa': 1, 'yua': 1}
+[525, {'eti': 2, 'eit': 6, 'sit': 1, 'iet': 1}], uncertainty: 4, variance: {'eti': 2, 'eit': 6, 'sit': 1, 'iet': 1}
+[625, {'yzo': 7, 'yoz': 1, 'ex(': 1, '```': 1}], uncertainty: 4, variance: {'yzo': 7, 'yoz': 1, 'ex(': 1, '```': 1}
+[494, {'rnx': 7, 'xnr': 1, 'rxx': 1, 'rnm': 1}], uncertainty: 4, variance: {'rnx': 7, 'xnr': 1, 'rxx': 1, 'rnm': 1}
+[29, {'aen': 3, 'aan': 2, 'ean': 4, 'ane': 1}], uncertainty: 4, variance: {'aen': 3, 'aan': 2, 'ean': 4, 'ane': 1}
+[121, {'aee': 5, 'ane': 3, 'ana': 1, 'aea': 1}], uncertainty: 4, variance: {'aee': 5, 'ane': 3, 'ana': 1, 'aea': 1}
+[752, {'oaa': 6, 'ooa': 1, 'soa': 2, 'aao': 1}], uncertainty: 4, variance: {'oaa': 6, 'ooa': 1, 'soa': 2, 'aao': 1}
+[423, {'eya': 7, 'eye': 1, 'sea': 1, 'sya': 1}], uncertainty: 4, variance: {'eya': 7, 'eye': 1, 'sea': 1, 'sya': 1}
+[79, {'aoo': 6, 'too': 1, 'sao': 2, 'ooo': 1}], uncertainty: 4, variance: {'aoo': 6, 'too': 1, 'sao': 2, 'ooo': 1}
+[302, {'ksr': 6, 'krr': 1, 'skr': 2, 'krs': 1}], uncertainty: 4, variance: {'ksr': 6, 'krr': 1, 'skr': 2, 'krs': 1}
+[329, {'rot': 7, 'rto': 1, 'de>': 1, '```': 1}], uncertainty: 4, variance: {'rot': 7, 'rto': 1, 'de>': 1, '```': 1}
+[708, {'oye': 6, 'oge': 1, 'epe': 1, 'oey': 2}], uncertainty: 4, variance: {'oye': 6, 'oge': 1, 'epe': 1, 'oey': 2}
+[835, {'aya': 6, 'yaa': 1, 'aay': 2, 'say': 1}], uncertainty: 4, variance: {'aya': 6, 'yaa': 1, 'aay': 2, 'say': 1}
+[862, {'ojt': 2, 'oej': 6, 'otj': 1, 'ojj': 1}], uncertainty: 4, variance: {'ojt': 2, 'oej': 6, 'otj': 1, 'ojj': 1}
+[657, {'sag': 7, 'aga': 1, 'aag': 1, 'agl': 1}], uncertainty: 4, variance: {'sag': 7, 'aga': 1, 'aag': 1, 'agl': 1}
+[771, {'naa': 3, 'nna': 1, 'ana': 5, 'nan': 1}], uncertainty: 4, variance: {'naa': 3, 'nna': 1, 'ana': 5, 'nan': 1}
+[372, {'air': 1, 'iay': 6, 'iat': 1, 'iya': 2}], uncertainty: 4, variance: {'air': 1, 'iay': 6, 'iat': 1, 'iya': 2}
+[722, {'lnh': 4, 'lhn': 4, 'nlh': 1, 'nhl': 1}], uncertainty: 4, variance: {'lnh': 4, 'lhn': 4, 'nlh': 1, 'nhl': 1}
+[294, {'naa': 6, 'nna': 2, 'daa': 1, 'nda': 1}], uncertainty: 4, variance: {'naa': 6, 'nna': 2, 'daa': 1, 'nda': 1}
+[918, {'ora': 6, 'roa': 2, 'rao': 1, 'aro': 1}], uncertainty: 4, variance: {'ora': 6, 'roa': 2, 'rao': 1, 'aro': 1}
+[943, {'ayy': 3, 'say': 1, 'aya': 4, 'aay': 2}], uncertainty: 4, variance: {'ayy': 3, 'say': 1, 'aya': 4, 'aay': 2}
+[406, {'rry': 1, 'nne': 1, 'nnn': 1, 'nen': 7}], uncertainty: 4, variance: {'rry': 1, 'nne': 1, 'nnn': 1, 'nen': 7}
+[126, {'sna': 6, 'nsa': 2, 'naa': 1, 'ssn': 1}], uncertainty: 4, variance: {'sna': 6, 'nsa': 2, 'naa': 1, 'ssn': 1}
+[915, {'```': 1, 'nnn': 1, 'ann': 7, 'san': 1}], uncertainty: 4, variance: {'```': 1, 'nnn': 1, 'ann': 7, 'san': 1}
+[313, {'nyy': 4, 'nny': 4, 'nnn': 1, 'yny': 1}], uncertainty: 4, variance: {'nyy': 4, 'nny': 4, 'nnn': 1, 'yny': 1}
+[304, {'eae': 3, 'sae': 4, 'aee': 2, 'aae': 1}], uncertainty: 4, variance: {'eae': 3, 'sae': 4, 'aee': 2, 'aae': 1}
+[976, {'aen': 7, ',n:': 1, 'san': 1, 'ane': 1}], uncertainty: 4, variance: {'aen': 7, ',n:': 1, 'san': 1, 'ane': 1}
+[950, {'eoe': 6, 'soe': 2, 'see': 1, 'oeo': 1}], uncertainty: 4, variance: {'eoe': 6, 'soe': 2, 'see': 1, 'oeo': 1}
+[984, {'aoa': 4, 'soa': 3, 'oaa': 2, 'nb)': 1}], uncertainty: 4, variance: {'aoa': 4, 'soa': 3, 'oaa': 2, 'nb)': 1}
+[280, {'eyt': 7, 'yet': 1, 'ety': 1, 'yte': 1}], uncertainty: 4, variance: {'eyt': 7, 'yet': 1, 'ety': 1, 'yte': 1}
+[513, {'aeo': 6, 'aoe': 2, 'aao': 1, 'aio': 1}], uncertainty: 4, variance: {'aeo': 6, 'aoe': 2, 'aao': 1, 'aio': 1}
+[748, {'yyi': 1, 'yyy': 3, 'iyy': 4, 'yiy': 2}], uncertainty: 4, variance: {'yyi': 1, 'yyy': 3, 'iyy': 4, 'yiy': 2}
+[851, {'eyh': 2, 'yew': 3, 'eyw': 4, 'syh': 1}], uncertainty: 4, variance: {'eyh': 2, 'yew': 3, 'eyw': 4, 'syh': 1}
+[600, {'yye': 6, 'sye': 2, 'yle': 1, 'dye': 1}], uncertainty: 4, variance: {'yye': 6, 'sye': 2, 'yle': 1, 'dye': 1}
+[356, {'mye': 7, 'mey': 1, 'emy': 1, 'mne': 1}], uncertainty: 4, variance: {'mye': 7, 'mey': 1, 'emy': 1, 'mne': 1}
+[206, {'nee': 3, 'nne': 1, 'ene': 5, 'sne': 1}], uncertainty: 4, variance: {'nee': 3, 'nne': 1, 'ene': 5, 'sne': 1}
+[888, {'aea': 4, 'sae': 4, 'aae': 1, 'eae': 1}], uncertainty: 4, variance: {'aea': 4, 'sae': 4, 'aae': 1, 'eae': 1}
+[611, {'raa': 3, 'rra': 4, 'ara': 2, 'rar': 1}], uncertainty: 4, variance: {'raa': 3, 'rra': 4, 'ara': 2, 'rar': 1}
+[531, {'lly': 7, 'lll': 1, 'lyy': 1, 'lyl': 1}], uncertainty: 4, variance: {'lly': 7, 'lll': 1, 'lyy': 1, 'lyl': 1}
+[259, {'ooe': 2, 'oeo': 6, 'oee': 1, 'eoo': 1}], uncertainty: 4, variance: {'ooe': 2, 'oeo': 6, 'oee': 1, 'eoo': 1}
+[63, {'hth': 6, 'sht': 1, 'thh': 2, 'shh': 1}], uncertainty: 4, variance: {'hth': 6, 'sht': 1, 'thh': 2, 'shh': 1}
+[91, {'lgl': 6, 'lll': 2, 'lgg': 1, 'lgh': 1}], uncertainty: 4, variance: {'lgl': 6, 'lll': 2, 'lgg': 1, 'lgh': 1}
+[929, {'han': 7, 'hna': 1, 'ahn': 1, '```': 1}], uncertainty: 4, variance: {'han': 7, 'hna': 1, 'ahn': 1, '```': 1}
+[645, {'lou': 1, 'luo': 3, 'ulo': 4, 'ulu': 2}], uncertainty: 4, variance: {'lou': 1, 'luo': 3, 'ulo': 4, 'ulu': 2}
+[533, {'yyn': 2, 'nyy': 5, 'nny': 2, 'nvy': 1}], uncertainty: 4, variance: {'yyn': 2, 'nyy': 5, 'nny': 2, 'nvy': 1}
+[22, {'yee': 5, 'yne': 2, 'nye': 2, 'yyy': 1}], uncertainty: 4, variance: {'yee': 5, 'yne': 2, 'nye': 2, 'yyy': 1}
+[261, {'oyo': 1, 'ryo': 7, 'rto': 1, 'roy': 1}], uncertainty: 4, variance: {'oyo': 1, 'ryo': 7, 'rto': 1, 'roy': 1}
+[275, {'aca': 1, 'cya': 7, 'yca': 1, 'caa': 1}], uncertainty: 4, variance: {'aca': 1, 'cya': 7, 'yca': 1, 'caa': 1}
+[536, {'lyh': 3, 'lhy': 5, 'lsh': 1, 'lsy': 1}], uncertainty: 4, variance: {'lyh': 3, 'lhy': 5, 'lsh': 1, 'lsy': 1}
+[544, {'eaa': 7, 'aea': 1, 'eea': 1, 'eia': 1}], uncertainty: 4, variance: {'eaa': 7, 'aea': 1, 'eea': 1, 'eia': 1}
+[927, {'eaa': 7, 'sea': 1, 'aea': 1, 'naa': 1}], uncertainty: 4, variance: {'eaa': 7, 'sea': 1, 'aea': 1, 'naa': 1}
+[684, {'yll': 3, 'yli': 2, 'ylo': 1, 'yly': 4}], uncertainty: 4, variance: {'yll': 3, 'yli': 2, 'ylo': 1, 'yly': 4}
+[977, {'nen': 5, 'nne': 2, 'eon': 1, 'nnn': 2}], uncertainty: 4, variance: {'nen': 5, 'nne': 2, 'eon': 1, 'nnn': 2}
+[208, {'ipn': 6, 'pin': 2, 'snn': 1, 'nip': 1}], uncertainty: 4, variance: {'ipn': 6, 'pin': 2, 'snn': 1, 'nip': 1}
+[962, {'iyy': 2, 'eiy': 3, 'eyy': 2, 'eyi': 3}], uncertainty: 4, variance: {'iyy': 2, 'eiy': 3, 'eyy': 2, 'eyi': 3}
+[340, {'eli': 1, 'eil': 7, 'xt)': 1, 'iel': 1}], uncertainty: 4, variance: {'eli': 1, 'eil': 7, 'xt)': 1, 'iel': 1}
+[997, {'iyy': 3, 'iye': 2, 'eyy': 4, 'eey': 1}], uncertainty: 4, variance: {'iyy': 3, 'iye': 2, 'eyy': 4, 'eey': 1}
+[972, {'meu': 7, 'u*/': 1, 'smu': 1, 'emu': 1}], uncertainty: 4, variance: {'meu': 7, 'u*/': 1, 'smu': 1, 'emu': 1}
+[42, {'tly': 7, 'tyl': 1, 'lyt': 1, 'tld': 1}], uncertainty: 4, variance: {'tly': 7, 'tyl': 1, 'lyt': 1, 'tld': 1}
+[130, {'nay': 1, 'eya': 3, 'ayy': 2, 'eay': 4}], uncertainty: 4, variance: {'nay': 1, 'eya': 3, 'ayy': 2, 'eay': 4}
+[306, {'een': 7, '```': 1, 'enl': 1, 'sen': 1}], uncertainty: 4, variance: {'een': 7, '```': 1, 'enl': 1, 'sen': 1}
+[641, {'inn': 7, 'snn': 1, 'sin': 1, 'nnn': 1}], uncertainty: 4, variance: {'inn': 7, 'snn': 1, 'sin': 1, 'nnn': 1}
+[870, {'yle': 1, 'yel': 6, 'yll': 2, 'sye': 1}], uncertainty: 4, variance: {'yle': 1, 'yel': 6, 'yll': 2, 'sye': 1}
+[535, {'anm': 5, 'amn': 1, 'nam': 3, 'nma': 1}], uncertainty: 4, variance: {'anm': 5, 'amn': 1, 'nam': 3, 'nma': 1}
+[845, {'aao': 2, 'oaa': 6, 'soa': 1, 'aoa': 1}], uncertainty: 4, variance: {'aao': 2, 'oaa': 6, 'soa': 1, 'aoa': 1}
+[715, {'eya': 4, 'yae': 1, 'eay': 4, 'ayy': 1}], uncertainty: 4, variance: {'eya': 4, 'yae': 1, 'eay': 4, 'ayy': 1}
+[980, {'aht': 3, 'hat': 3, 'it!': 1, 'ath': 3}], uncertainty: 4, variance: {'aht': 3, 'hat': 3, 'it!': 1, 'ath': 3}
+[857, {'arh': 4, 'rha': 2, 'rah': 3, 'rsh': 1}], uncertainty: 4, variance: {'arh': 4, 'rha': 2, 'rah': 3, 'rsh': 1}
+[468, {'aal': 1, 'yla': 7, 'yal': 1, 'yna': 1}], uncertainty: 4, variance: {'aal': 1, 'yla': 7, 'yal': 1, 'yna': 1}
+[412, {'haa': 7, 'hha': 1, 'aha': 1, 'saa': 1}], uncertainty: 4, variance: {'haa': 7, 'hha': 1, 'aha': 1, 'saa': 1}
+[569, {'yaa': 7, 'yay': 1, 'yya': 1, 'ayy': 1}], uncertainty: 4, variance: {'yaa': 7, 'yay': 1, 'yya': 1, 'ayy': 1}
+[667, {'nnn': 2, 'nny': 3, 'nyy': 4, 'de>': 1}], uncertainty: 4, variance: {'nnn': 2, 'nny': 3, 'nyy': 4, 'de>': 1}
+[82, {'hah': 2, 'haa': 5, 'hha': 2, 'aha': 1}], uncertainty: 4, variance: {'hah': 2, 'haa': 5, 'hha': 2, 'aha': 1}
+[805, {'aay': 2, 'aya': 5, 'ayy': 2, 'aaa': 1}], uncertainty: 4, variance: {'aay': 2, 'aya': 5, 'ayy': 2, 'aaa': 1}
+[672, {'yng': 1, 'ngy': 1, 'nyg': 7, 'neh': 1}], uncertainty: 4, variance: {'yng': 1, 'ngy': 1, 'nyg': 7, 'neh': 1}
+[143, {'hyy': 7, 'hzy': 1, 'hyh': 1, 'hhy': 1}], uncertainty: 4, variance: {'hyy': 7, 'hzy': 1, 'hyh': 1, 'hhy': 1}
+[966, {'eae': 5, 'sae': 2, 'eee': 2, 'aea': 1}], uncertainty: 4, variance: {'eae': 5, 'sae': 2, 'eee': 2, 'aea': 1}
+[706, {'eli': 4, 'eil': 4, 'lni': 1, 'iel': 1}], uncertainty: 4, variance: {'eli': 4, 'eil': 4, 'lni': 1, 'iel': 1}
+[866, {'oee': 5, 'soe': 3, 'eoe': 1, 'one': 1}], uncertainty: 4, variance: {'oee': 5, 'soe': 3, 'eoe': 1, 'one': 1}
+[621, {'eer': 7, 'de>': 1, 'eee': 1, 'err': 1}], uncertainty: 4, variance: {'eer': 7, 'de>': 1, 'eee': 1, 'err': 1}
+[590, {'aao': 7, 'aoa': 1, 'oao': 1, 'sao': 1}], uncertainty: 4, variance: {'aao': 7, 'aoa': 1, 'oao': 1, 'sao': 1}
+[243, {'ry>': 1, 'one': 6, 'oae': 1, 'ore': 2}], uncertainty: 4, variance: {'ry>': 1, 'one': 6, 'oae': 1, 'ore': 2}
+[526, {'nyn': 6, 'ynn': 2, 'syn': 1, 'on2': 1}], uncertainty: 4, variance: {'nyn': 6, 'ynn': 2, 'syn': 1, 'on2': 1}
+[646, {'yol': 7, 'oyi': 1, 'ylo': 1, 'oil': 1}], uncertainty: 4, variance: {'yol': 7, 'oyi': 1, 'ylo': 1, 'oil': 1}
+[59, {'eoi': 6, 'oue': 1, 'oei': 2, 'oio': 1}], uncertainty: 4, variance: {'eoi': 6, 'oue': 1, 'oei': 2, 'oio': 1}
+[314, {'nrn': 7, 'rnr': 1, 'rtn': 1, 'nln': 1}], uncertainty: 4, variance: {'nrn': 7, 'rnr': 1, 'rtn': 1, 'nln': 1}
+[640, {'eoe': 5, 'eoo': 3, 'eao': 1, 'seo': 1}], uncertainty: 4, variance: {'eoe': 5, 'eoo': 3, 'eao': 1, 'seo': 1}
+[780, {'yey': 5, 'eyy': 1, 'eey': 1, 'eye': 3}], uncertainty: 4, variance: {'yey': 5, 'eyy': 1, 'eey': 1, 'eye': 3}
+[512, {'yxe': 1, 'yee': 7, 'eee': 1, 'sye': 1}], uncertainty: 4, variance: {'yxe': 1, 'yee': 7, 'eee': 1, 'sye': 1}
+[973, {'ear': 6, 'aer': 1, 'tar': 1, 'era': 2}], uncertainty: 4, variance: {'ear': 6, 'aer': 1, 'tar': 1, 'era': 2}
+[749, {'oei': 6, 'oie': 2, 'eoi': 1, 'snz': 1}], uncertainty: 4, variance: {'oei': 6, 'oie': 2, 'eoi': 1, 'snz': 1}
+[762, {'lyo': 6, 'lmo': 1, 'loy': 2, 'ylo': 1}], uncertainty: 4, variance: {'lyo': 6, 'lmo': 1, 'loy': 2, 'ylo': 1}
+[982, {'dai': 6, 'adi': 2, 'day': 1, 'sai': 1}], uncertainty: 4, variance: {'dai': 6, 'adi': 2, 'day': 1, 'sai': 1}
+[234, {'mlm': 5, 'sml': 1, 'mlr': 3, 'mrr': 1}], uncertainty: 4, variance: {'mlm': 5, 'sml': 1, 'mlr': 3, 'mrr': 1}
+[701, {'ene': 7, 'dne': 1, 'nee': 1, 'see': 1}], uncertainty: 4, variance: {'ene': 7, 'dne': 1, 'nee': 1, 'see': 1}
+[473, {'aye': 5, 'aey': 3, 'ayy': 1, 'eaa': 1}], uncertainty: 4, variance: {'aye': 5, 'aey': 3, 'ayy': 1, 'eaa': 1}
+[773, {'eye': 4, 'yee': 3, 'yye': 2, 'eee': 1}], uncertainty: 4, variance: {'eye': 4, 'yee': 3, 'yye': 2, 'eee': 1}
+[736, {'eoa': 6, 'eao': 1, 'oae': 1, 'oea': 2}], uncertainty: 4, variance: {'eoa': 6, 'eao': 1, 'oae': 1, 'oea': 2}
+[955, {'edn': 1, 'enh': 5, 'hen': 1, 'ehn': 3}], uncertainty: 4, variance: {'edn': 1, 'enh': 5, 'hen': 1, 'ehn': 3}
+[541, {'oko': 5, 'koo': 3, 'okk': 1, 'oio': 1}], uncertainty: 4, variance: {'oko': 5, 'koo': 3, 'okk': 1, 'oio': 1}
+[479, {'kny': 7, 'kyy': 1, 'ksy': 1, 'nyk': 1}], uncertainty: 4, variance: {'kny': 7, 'kyy': 1, 'ksy': 1, 'nyk': 1}
+[175, {'yeh': 1, 'eye': 3, 'yee': 4, 'yye': 2}], uncertainty: 4, variance: {'yeh': 1, 'eye': 3, 'yee': 4, 'yye': 2}
+[777, {'lya': 6, 'yae': 1, 'yal': 2, 'yla': 1}], uncertainty: 4, variance: {'lya': 6, 'yae': 1, 'yal': 2, 'yla': 1}
+[114, {'aea': 7, 'ana': 1, 'sae': 1, 'aae': 1}], uncertainty: 4, variance: {'aea': 7, 'ana': 1, 'sae': 1, 'aae': 1}
+[30, {'nee': 5, 'net': 1, 'nne': 3, 'eee': 1}], uncertainty: 4, variance: {'nee': 5, 'net': 1, 'nne': 3, 'eee': 1}
+[882, {'yxi': 6, 'xiy': 1, 'yix': 2, 'xyi': 1}], uncertainty: 4, variance: {'yxi': 6, 'xiy': 1, 'yix': 2, 'xyi': 1}
+[677, {'ete': 6, 'tte': 2, 'tie': 1, 'tse': 1}], uncertainty: 4, variance: {'ete': 6, 'tte': 2, 'tie': 1, 'tse': 1}
+[214, {'nay': 7, '2])': 1, 'any': 1, 'nai': 1}], uncertainty: 4, variance: {'nay': 7, '2])': 1, 'any': 1, 'nai': 1}
+[574, {'sey': 7, 'sly': 1, 'esy': 1, 'sse': 1}], uncertainty: 4, variance: {'sey': 7, 'sly': 1, 'esy': 1, 'sse': 1}
+[27, {'slA': 5, 'lAc': 1, 'lca': 1, 'lcA': 3}], uncertainty: 4, variance: {'slA': 5, 'lAc': 1, 'lca': 1, 'lcA': 3}
+[238, {'eer': 5, 'ere': 2, 'err': 2, 'eee': 1}], uncertainty: 4, variance: {'eer': 5, 'ere': 2, 'err': 2, 'eee': 1}
+[826, {'eee': 5, 'ece': 3, 'eae': 1, 'iee': 1}], uncertainty: 4, variance: {'eee': 5, 'ece': 3, 'eae': 1, 'iee': 1}
+[352, {'dnm': 5, 'nme': 3, 'enm': 1, 'eem': 1}], uncertainty: 4, variance: {'dnm': 5, 'nme': 3, 'enm': 1, 'eem': 1}
+[127, {'ahe': 3, 'aeh': 5, '```': 1, ');}': 1}], uncertainty: 4, variance: {'ahe': 3, 'aeh': 5, '```': 1, ');}': 1}
+[911, {'all': 1, 'ala': 8, 'alx': 1}], uncertainty: 3, variance: {'all': 1, 'ala': 8, 'alx': 1}
+[581, {'zna': 8, 'zan': 1, 'nza': 1}], uncertainty: 3, variance: {'zna': 8, 'zan': 1, 'nza': 1}
+[386, {'lge': 8, '```': 1, 'NMB': 1}], uncertainty: 3, variance: {'lge': 8, '```': 1, 'NMB': 1}
+[797, {'ada': 3, 'daa': 6, 'dca': 1}], uncertainty: 3, variance: {'ada': 3, 'daa': 6, 'dca': 1}
+[924, {'iaa': 1, 'iya': 8, 'iay': 1}], uncertainty: 3, variance: {'iaa': 1, 'iya': 8, 'iay': 1}
+[720, {'ysl': 8, 'syl': 1, 'ycl': 1}], uncertainty: 3, variance: {'ysl': 8, 'syl': 1, 'ycl': 1}
+[508, {'oeo': 1, 'eoo': 8, 'ooo': 1}], uncertainty: 3, variance: {'oeo': 1, 'eoo': 8, 'ooo': 1}
+[177, {'eue': 5, 'uee': 4, 'eee': 1}], uncertainty: 3, variance: {'eue': 5, 'uee': 4, 'eee': 1}
+[842, {'yer': 6, 'yrr': 3, 'yur': 1}], uncertainty: 3, variance: {'yer': 6, 'yrr': 3, 'yur': 1}
+[424, {'pey': 1, 'epy': 8, 'eyp': 1}], uncertainty: 3, variance: {'pey': 1, 'epy': 8, 'eyp': 1}
+[398, {'cno': 8, 'noo': 1, 'coo': 1}], uncertainty: 3, variance: {'cno': 8, 'noo': 1, 'coo': 1}
+[848, {'lad': 8, 'lda': 1, 'lrd': 1}], uncertainty: 3, variance: {'lad': 8, 'lda': 1, 'lrd': 1}
+[264, {'yoe': 8, 'yte': 1, 'oey': 1}], uncertainty: 3, variance: {'yoe': 8, 'yte': 1, 'oey': 1}
+[466, {'aon': 8, 'ano': 1, 'rds': 1}], uncertainty: 3, variance: {'aon': 8, 'ano': 1, 'rds': 1}
+[174, {'hta': 8, 'tha': 1, 'hat': 1}], uncertainty: 3, variance: {'hta': 8, 'tha': 1, 'hat': 1}
+[150, {'kre': 1, 'ekr': 8, 'erk': 1}], uncertainty: 3, variance: {'kre': 1, 'ekr': 8, 'erk': 1}
+[741, {'iae': 6, 'aie': 3, '```': 1}], uncertainty: 3, variance: {'iae': 6, 'aie': 3, '```': 1}
+[418, {'ita': 8, 'isi': 1, '***': 1}], uncertainty: 3, variance: {'ita': 8, 'isi': 1, '***': 1}
+[682, {'eyy': 2, 'iey': 7, 'iny': 1}], uncertainty: 3, variance: {'eyy': 2, 'iey': 7, 'iny': 1}
+[776, {'aoa': 7, 'aao': 2, 'oaa': 1}], uncertainty: 3, variance: {'aoa': 7, 'aao': 2, 'oaa': 1}
+[354, {'ldy': 7, 'lyd': 2, 'sdy': 1}], uncertainty: 3, variance: {'ldy': 7, 'lyd': 2, 'sdy': 1}
+[450, {'oea': 2, 'oae': 7, 'rof': 1}], uncertainty: 3, variance: {'oea': 2, 'oae': 7, 'rof': 1}
+[350, {'aya': 8, 'yya': 1, 'yaa': 1}], uncertainty: 3, variance: {'aya': 8, 'yya': 1, 'yaa': 1}
+[554, {'ana': 3, 'naa': 6, 'nna': 1}], uncertainty: 3, variance: {'ana': 3, 'naa': 6, 'nna': 1}
+[178, {'oyy': 6, 'soy': 3, 'ooy': 1}], uncertainty: 3, variance: {'oyy': 6, 'soy': 3, 'ooy': 1}
+[349, {'daa': 8, 'ala': 1, 'dka': 1}], uncertainty: 3, variance: {'daa': 8, 'ala': 1, 'dka': 1}
+[499, {'sao': 6, 'aoa': 2, 'aao': 2}], uncertainty: 3, variance: {'sao': 6, 'aoa': 2, 'aao': 2}
+[474, {'[]:': 1, 'hne': 8, 'nhe': 1}], uncertainty: 3, variance: {'[]:': 1, 'hne': 8, 'nhe': 1}
+[668, {'nna': 2, 'naa': 6, 'ana': 2}], uncertainty: 3, variance: {'nna': 2, 'naa': 6, 'ana': 2}
+[136, {'hyn': 8, 'shn': 1, 'hnk': 1}], uncertainty: 3, variance: {'hyn': 8, 'shn': 1, 'hnk': 1}
+[850, {'hee': 8, 'hhe': 1, 'hte': 1}], uncertainty: 3, variance: {'hee': 8, 'hhe': 1, 'hte': 1}
+[653, {'aoy': 7, 'ayo': 2, 'oay': 1}], uncertainty: 3, variance: {'aoy': 7, 'ayo': 2, 'oay': 1}
+[670, {'oyo': 8, 'yyy': 1, 'ooo': 1}], uncertainty: 3, variance: {'oyo': 8, 'yyy': 1, 'ooo': 1}
+[129, {'nep': 7, 'nip': 2, 'ynp': 1}], uncertainty: 3, variance: {'nep': 7, 'nip': 2, 'ynp': 1}
+[902, {'yng': 1, 'yeg': 8, 'eyg': 1}], uncertainty: 3, variance: {'yng': 1, 'yeg': 8, 'eyg': 1}
+[311, {'pja': 1, 'jap': 8, 'ame': 1}], uncertainty: 3, variance: {'pja': 1, 'jap': 8, 'ame': 1}
+[680, {'aya': 7, 'aaa': 2, 'yya': 1}], uncertainty: 3, variance: {'aya': 7, 'aaa': 2, 'yya': 1}
+[157, {'eel': 7, 'lle': 1, 'ele': 2}], uncertainty: 3, variance: {'eel': 7, 'lle': 1, 'ele': 2}
+[392, {'aea': 3, 'aae': 2, 'sae': 5}], uncertainty: 3, variance: {'aea': 3, 'aae': 2, 'sae': 5}
+[688, {';}}': 1, 'asa': 8, 'aaa': 1}], uncertainty: 3, variance: {';}}': 1, 'asa': 8, 'aaa': 1}
+[816, {'rlh': 1, 'rhl': 8, 'rhh': 1}], uncertainty: 3, variance: {'rlh': 1, 'rhl': 8, 'rhh': 1}
+[401, {'onn': 3, 'ono': 2, 'oon': 5}], uncertainty: 3, variance: {'onn': 3, 'ono': 2, 'oon': 5}
+[864, {'roa': 8, 'ora': 1, 'le)': 1}], uncertainty: 3, variance: {'roa': 8, 'ora': 1, 'le)': 1}
+[359, {'rba': 8, 'bra': 1, 'abr': 1}], uncertainty: 3, variance: {'rba': 8, 'bra': 1, 'abr': 1}
+[594, {'mna': 7, 'nma': 2, 'nda': 1}], uncertainty: 3, variance: {'mna': 7, 'nma': 2, 'nda': 1}
+[436, {'enn': 8, 'ord': 1, 'eee': 1}], uncertainty: 3, variance: {'enn': 8, 'ord': 1, 'eee': 1}
+[573, {'nat': 8, '```': 1, 'nwt': 1}], uncertainty: 3, variance: {'nat': 8, '```': 1, 'nwt': 1}
+[138, {'ooh': 3, 'ohh': 4, 'oho': 3}], uncertainty: 3, variance: {'ooh': 3, 'ohh': 4, 'oho': 3}
+[20, {'iey': 8, 'iyy': 1, 'sey': 1}], uncertainty: 3, variance: {'iey': 8, 'iyy': 1, 'sey': 1}
+[957, {'hey': 8, '#5:': 1, 'hyy': 1}], uncertainty: 3, variance: {'hey': 8, '#5:': 1, 'hyy': 1}
+[427, {'aya': 8, 'aay': 1, 'saa': 1}], uncertainty: 3, variance: {'aya': 8, 'aay': 1, 'saa': 1}
+[84, {'daa': 8, 'ada': 1, 'dda': 1}], uncertainty: 3, variance: {'daa': 8, 'ada': 1, 'dda': 1}
+[995, {'aoy': 8, 'oya': 1, 'sao': 1}], uncertainty: 3, variance: {'aoy': 8, 'oya': 1, 'sao': 1}
+[477, {'due': 5, 'ude': 4, 'dye': 1}], uncertainty: 3, variance: {'due': 5, 'ude': 4, 'dye': 1}
+[910, {'aea': 4, 'sae': 2, 'aae': 4}], uncertainty: 3, variance: {'aea': 4, 'sae': 2, 'aae': 4}
+[605, {'aae': 5, 'aea': 4, 'de>': 1}], uncertainty: 3, variance: {'aae': 5, 'aea': 4, 'de>': 1}
+[572, {'aey': 5, 'aye': 4, 'ayy': 1}], uncertainty: 3, variance: {'aey': 5, 'aye': 4, 'ayy': 1}
+[262, {'ala': 7, 'aal': 2, 'sal': 1}], uncertainty: 3, variance: {'ala': 7, 'aal': 2, 'sal': 1}
+[439, {'nos': 8, 'l5:': 1, 'nso': 1}], uncertainty: 3, variance: {'nos': 8, 'l5:': 1, 'nso': 1}
+[557, {'nna': 1, 'nan': 8, 'naa': 1}], uncertainty: 3, variance: {'nna': 1, 'nan': 8, 'naa': 1}
+[249, {'mhy': 4, 'myh': 5, 'th(': 1}], uncertainty: 3, variance: {'mhy': 4, 'myh': 5, 'th(': 1}
+[846, {'ini': 3, 'inn': 4, 'sin': 3}], uncertainty: 3, variance: {'ini': 3, 'inn': 4, 'sin': 3}
+[455, {'adt': 5, 'dat': 4, 'dta': 1}], uncertainty: 3, variance: {'adt': 5, 'dat': 4, 'dta': 1}
+[140, {'see': 2, 'eee': 2, 'ese': 6}], uncertainty: 3, variance: {'see': 2, 'eee': 2, 'ese': 6}
+[41, {'sey': 6, 'sye': 3, 'esy': 1}], uncertainty: 3, variance: {'sey': 6, 'sye': 3, 'esy': 1}
+[885, {'soe': 4, 'oee': 5, 'oey': 1}], uncertainty: 3, variance: {'soe': 4, 'oee': 5, 'oey': 1}
+[858, {'nea': 4, 'ena': 5, '```': 1}], uncertainty: 3, variance: {'nea': 4, 'ena': 5, '```': 1}
+[139, {'edn': 8, 'den': 1, 'end': 1}], uncertainty: 3, variance: {'edn': 8, 'den': 1, 'end': 1}
+[719, {'nre': 6, '```': 1, 'rne': 3}], uncertainty: 3, variance: {'nre': 6, '```': 1, 'rne': 3}
+[265, {'ynn': 4, 'yyn': 5, 'yln': 1}], uncertainty: 3, variance: {'ynn': 4, 'yyn': 5, 'yln': 1}
+[90, {'amn': 1, 'man': 8, 'SNR': 1}], uncertainty: 3, variance: {'amn': 1, 'man': 8, 'SNR': 1}
+[54, {'oad': 5, 'aod': 4, 'ood': 1}], uncertainty: 3, variance: {'oad': 5, 'aod': 4, 'ood': 1}
+[212, {'nny': 2, 'nyy': 7, 'nry': 1}], uncertainty: 3, variance: {'nny': 2, 'nyy': 7, 'nry': 1}
+[37, {'eww': 1, 'wen': 2, 'ewn': 7}], uncertainty: 3, variance: {'eww': 1, 'wen': 2, 'ewn': 7}
+[817, {'cay': 7, 'ayc': 1, 'acy': 2}], uncertainty: 3, variance: {'cay': 7, 'ayc': 1, 'acy': 2}
+[595, {'aol': 8, 'ola': 1, 'oal': 1}], uncertainty: 3, variance: {'aol': 8, 'ola': 1, 'oal': 1}
+[409, {'oae': 8, 'oea': 1, ';}}': 1}], uncertainty: 3, variance: {'oae': 8, 'oea': 1, ';}}': 1}
+[162, {'lni': 8, 'nni': 1, 'nli': 1}], uncertainty: 3, variance: {'lni': 8, 'nni': 1, 'nli': 1}
+[68, {'ynn': 7, 'yyn': 2, 'nnn': 1}], uncertainty: 3, variance: {'ynn': 7, 'yyn': 2, 'nnn': 1}
+[833, {'bna': 6, 'nba': 3, 'de>': 1}], uncertainty: 3, variance: {'bna': 6, 'nba': 3, 'de>': 1}
+[435, {'nay': 8, 'ayy': 1, 'any': 1}], uncertainty: 3, variance: {'nay': 8, 'ayy': 1, 'any': 1}
+[384, {'neo': 6, 'noe': 3, 'eno': 1}], uncertainty: 3, variance: {'neo': 6, 'noe': 3, 'eno': 1}
+[47, {'aan': 1, 'aen': 8, 'san': 1}], uncertainty: 3, variance: {'aan': 1, 'aen': 8, 'san': 1}
+[171, {'nyn': 8, 'ynn': 1, 'nyy': 1}], uncertainty: 3, variance: {'nyn': 8, 'ynn': 1, 'nyy': 1}
+[43, {'hae': 8, '```': 1, 'aeh': 1}], uncertainty: 3, variance: {'hae': 8, '```': 1, 'aeh': 1}
+[504, {'snn': 8, 'sns': 1, 'nnn': 1}], uncertainty: 3, variance: {'snn': 8, 'sns': 1, 'nnn': 1}
+[86, {'aha': 8, '333': 1, 'haa': 1}], uncertainty: 3, variance: {'aha': 8, '333': 1, 'haa': 1}
+[856, {'tee': 5, 'tte': 2, 'ete': 3}], uncertainty: 3, variance: {'tee': 5, 'tte': 2, 'ete': 3}
+[458, {'aee': 8, 'aae': 1, 'sae': 1}], uncertainty: 3, variance: {'aee': 8, 'aae': 1, 'sae': 1}
+[726, {'tga': 8, 'der': 1, 'tag': 1}], uncertainty: 3, variance: {'tga': 8, 'der': 1, 'tag': 1}
+[818, {'eea': 1, 'ena': 8, 'nea': 1}], uncertainty: 3, variance: {'eea': 1, 'ena': 8, 'nea': 1}
+[403, {'eys': 4, 'yss': 1, 'yes': 5}], uncertainty: 3, variance: {'eys': 4, 'yss': 1, 'yes': 5}
+[226, {'aac': 2, 'aca': 7, 'acc': 1}], uncertainty: 3, variance: {'aac': 2, 'aca': 7, 'acc': 1}
+[335, {'ooo': 8, 'o*/': 1, 'odo': 1}], uncertainty: 3, variance: {'ooo': 8, 'o*/': 1, 'odo': 1}
+[472, {'onx': 1, 'ont': 8, '```': 1}], uncertainty: 3, variance: {'onx': 1, 'ont': 8, '```': 1}
+[297, {'yae': 8, 'um_': 1, 'yea': 1}], uncertainty: 3, variance: {'yae': 8, 'um_': 1, 'yea': 1}
+[996, {'els': 2, 'esl': 7, 'sel': 1}], uncertainty: 3, variance: {'els': 2, 'esl': 7, 'sel': 1}
+[707, {'ray': 5, 'rya': 4, 'rry': 1}], uncertainty: 3, variance: {'ray': 5, 'rya': 4, 'rry': 1}
+[377, {'aea': 7, 'aae': 2, 'eae': 1}], uncertainty: 3, variance: {'aea': 7, 'aae': 2, 'eae': 1}
+[903, {'aao': 5, 'aoa': 4, 'aaa': 1}], uncertainty: 3, variance: {'aao': 5, 'aoa': 4, 'aaa': 1}
+[502, {'yah': 2, 'ayh': 6, 'ahy': 2}], uncertainty: 3, variance: {'yah': 2, 'ayh': 6, 'ahy': 2}
+[260, {'ava': 5, 'aav': 1, 'vaa': 4}], uncertainty: 3, variance: {'ava': 5, 'aav': 1, 'vaa': 4}
+[564, {'nss': 8, 'nes': 1, 'nsn': 1}], uncertainty: 3, variance: {'nss': 8, 'nes': 1, 'nsn': 1}
+[495, {'aoa': 7, 'aao': 2, 'ado': 1}], uncertainty: 3, variance: {'aoa': 7, 'aao': 2, 'ado': 1}
+[35, {'nii': 8, 'iii': 1, 'ice': 1}], uncertainty: 3, variance: {'nii': 8, 'iii': 1, 'ice': 1}
+[383, {'rli': 8, 'lri': 1, 'srl': 1}], uncertainty: 3, variance: {'rli': 8, 'lri': 1, 'srl': 1}
+[648, {'ano': 8, 'ana': 1, 'n()': 1}], uncertainty: 3, variance: {'ano': 8, 'ana': 1, 'n()': 1}
+[503, {'yny': 7, 'nyy': 2, 'yyn': 1}], uncertainty: 3, variance: {'yny': 7, 'nyy': 2, 'yyn': 1}
+[116, {'aya': 3, 'yya': 6, 'yaa': 1}], uncertainty: 3, variance: {'aya': 3, 'yya': 6, 'yaa': 1}
+[421, {'eaa': 6, 'sea': 1, 'aea': 3}], uncertainty: 3, variance: {'eaa': 6, 'sea': 1, 'aea': 3}
+[422, {'sae': 3, 'aea': 3, 'aae': 4}], uncertainty: 3, variance: {'sae': 3, 'aea': 3, 'aae': 4}
+[556, {'heh': 4, 'hhe': 5, ':**': 1}], uncertainty: 3, variance: {'heh': 4, 'hhe': 5, ':**': 1}
+[634, {'onr': 8, 'orn': 1, 'te>': 1}], uncertainty: 3, variance: {'onr': 8, 'orn': 1, 'te>': 1}
+[291, {'yaa': 6, 'yya': 3, 'aaa': 1}], uncertainty: 3, variance: {'yaa': 6, 'yya': 3, 'aaa': 1}
+[227, {'oea': 1, 'eoa': 8, 'oae': 1}], uncertainty: 3, variance: {'oea': 1, 'eoa': 8, 'oae': 1}
+[518, {'mia': 8, 'mai': 1, 't(r': 1}], uncertainty: 3, variance: {'mia': 8, 'mai': 1, 't(r': 1}
+[651, {'dos': 8, 'dds': 1, 'dso': 1}], uncertainty: 3, variance: {'dos': 8, 'dds': 1, 'dso': 1}
+[619, {'nae': 8, 'nne': 1, 'nat': 1}], uncertainty: 3, variance: {'nae': 8, 'nne': 1, 'nat': 1}
+[601, {'yaa': 8, 'aya': 1, 'yya': 1}], uncertainty: 3, variance: {'yaa': 8, 'aya': 1, 'yya': 1}
+[437, {'ooa': 1, 'oaa': 8, 'aoa': 1}], uncertainty: 3, variance: {'ooa': 1, 'oaa': 8, 'aoa': 1}
+[268, {'eoi': 8, 'wer': 1, 'sei': 1}], uncertainty: 3, variance: {'eoi': 8, 'wer': 1, 'sei': 1}
+[588, {'nio': 1, 'noi': 6, 'oni': 3}], uncertainty: 3, variance: {'nio': 1, 'noi': 6, 'oni': 3}
+[36, {'nyo': 6, 'bra': 1, 'noy': 3}], uncertainty: 3, variance: {'nyo': 6, 'bra': 1, 'noy': 3}
+[152, {'yao': 8, 'ayo': 1, 'aao': 1}], uncertainty: 3, variance: {'yao': 8, 'ayo': 1, 'aao': 1}
+[960, {'sar': 8, 's;}': 1, 'sra': 1}], uncertainty: 3, variance: {'sar': 8, 's;}': 1, 'sra': 1}
+[118, {'woy': 8, 'you': 1, 'yoy': 1}], uncertainty: 3, variance: {'woy': 8, 'you': 1, 'yoy': 1}
+[303, {'ojj': 4, 'ooj': 3, 'ojo': 3}], uncertainty: 3, variance: {'ojj': 4, 'ooj': 3, 'ojo': 3}
+[716, {'gnl': 8, 'nrl': 1, 'gln': 1}], uncertainty: 3, variance: {'gnl': 8, 'nrl': 1, 'gln': 1}
+[158, {'nil': 2, 'nli': 1, 'inl': 7}], uncertainty: 3, variance: {'nil': 2, 'nli': 1, 'inl': 7}
+[725, {'zya': 2, 'yza': 7, 'yna': 1}], uncertainty: 3, variance: {'zya': 2, 'yza': 7, 'yna': 1}
+[751, {'iri': 6, 'rii': 3, 'rir': 1}], uncertainty: 3, variance: {'iri': 6, 'rii': 3, 'rir': 1}
+[15, {'naa': 4, 'ana': 3, 'nka': 3}], uncertainty: 3, variance: {'naa': 4, 'ana': 3, 'nka': 3}
+[74, {'aya': 5, 'aay': 1, 'ayy': 4}], uncertainty: 3, variance: {'aya': 5, 'aay': 1, 'ayy': 4}
+[951, {'eaa': 7, 'sea': 2, 'aea': 1}], uncertainty: 3, variance: {'eaa': 7, 'sea': 2, 'aea': 1}
+[307, {'ooa': 3, 'oaa': 6, 'noa': 1}], uncertainty: 3, variance: {'ooa': 3, 'oaa': 6, 'noa': 1}
+[608, {'aaj': 3, 'aja': 5, 'ajj': 2}], uncertainty: 3, variance: {'aaj': 3, 'aja': 5, 'ajj': 2}
+[122, {'a*/': 1, 'lna': 8, 'laa': 1}], uncertainty: 3, variance: {'a*/': 1, 'lna': 8, 'laa': 1}
+[292, {'noa': 8, 'ona': 1, 'soa': 1}], uncertainty: 3, variance: {'noa': 8, 'ona': 1, 'soa': 1}
+[553, {'oom': 8, 'mom': 1, 'omm': 1}], uncertainty: 3, variance: {'oom': 8, 'mom': 1, 'omm': 1}
+[51, {'elt': 8, '-10086': 1, 'ise': 1}], uncertainty: 3, variance: {'elt': 8, '-10086': 1, 'ise': 1}
+[453, {'nlt': 8, 'ntt': 1, 'ing': 1}], uncertainty: 3, variance: {'nlt': 8, 'ntt': 1, 'ing': 1}
+[520, {'mao': 7, 'moa': 2, 'amo': 1}], uncertainty: 3, variance: {'mao': 7, 'moa': 2, 'amo': 1}
+[829, {'nne': 1, 'yen': 3, 'nye': 6}], uncertainty: 3, variance: {'nne': 1, 'yen': 3, 'nye': 6}
+[705, {'aea': 8, 'aae': 1, 'ara': 1}], uncertainty: 3, variance: {'aea': 8, 'aae': 1, 'ara': 1}
+[111, {'orl': 7, 'ocr': 1, 'orr': 2}], uncertainty: 3, variance: {'orl': 7, 'ocr': 1, 'orr': 2}
+[938, {'yll': 8, 'syl': 1, 'nyl': 1}], uncertainty: 3, variance: {'yll': 8, 'syl': 1, 'nyl': 1}
+[433, {'eye': 8, 'yee': 1, 'ype': 1}], uncertainty: 3, variance: {'eye': 8, 'yee': 1, 'ype': 1}
+[123, {'ayz': 7, 'azy': 2, 'saz': 1}], uncertainty: 3, variance: {'ayz': 7, 'azy': 2, 'saz': 1}
+[831, {'ese': 8, 'sse': 1, 'eee': 1}], uncertainty: 3, variance: {'ese': 8, 'sse': 1, 'eee': 1}
+[687, {'eio': 8, 'ieo': 1, 'ioo': 1}], uncertainty: 3, variance: {'eio': 8, 'ieo': 1, 'ioo': 1}
+[844, {'yee': 1, 'yeo': 6, 'yoe': 3}], uncertainty: 3, variance: {'yee': 1, 'yeo': 6, 'yoe': 3}
+[967, {'ero': 8, 'ere': 1, '//*': 1}], uncertainty: 3, variance: {'ero': 8, 'ere': 1, '//*': 1}
+[734, {'ean': 1, 'ena': 8, 'nea': 1}], uncertainty: 3, variance: {'ean': 1, 'ena': 8, 'nea': 1}
+[346, {'sai': 2, 'aai': 7, 'iaa': 1}], uncertainty: 3, variance: {'sai': 2, 'aai': 7, 'iaa': 1}
+[827, {'akn': 4, 'ank': 5, 'kan': 1}], uncertainty: 3, variance: {'akn': 4, 'ank': 5, 'kan': 1}
+[230, {'nna': 7, 'naa': 2, 'a*/': 1}], uncertainty: 3, variance: {'nna': 7, 'naa': 2, 'a*/': 1}
+[253, {'tao': 7, 'ato': 1, 'toa': 2}], uncertainty: 3, variance: {'tao': 7, 'ato': 1, 'toa': 2}
+[96, {'bao': 4, 'abo': 4, 'boa': 2}], uncertainty: 3, variance: {'bao': 4, 'abo': 4, 'boa': 2}
+[484, {'eyl': 8, 'yel': 1, 'syl': 1}], uncertainty: 3, variance: {'eyl': 8, 'yel': 1, 'syl': 1}
+[753, {'aea': 7, 'aae': 2, 'eae': 1}], uncertainty: 3, variance: {'aea': 7, 'aae': 2, 'eae': 1}
+[767, {'ery': 4, 'yer': 2, 'eyr': 4}], uncertainty: 3, variance: {'ery': 4, 'yer': 2, 'eyr': 4}
+[338, {'yey': 8, 'syy': 1, 'yeo': 1}], uncertainty: 3, variance: {'yey': 8, 'syy': 1, 'yeo': 1}
+[872, {'eek': 5, 'ekk': 2, 'eke': 3}], uncertainty: 3, variance: {'eek': 5, 'ekk': 2, 'eke': 3}
+[69, {'eao': 8, 'aeo': 1, '```': 1}], uncertainty: 3, variance: {'eao': 8, 'aeo': 1, '```': 1}
+[724, {'nen': 5, 'nne': 4, 'enn': 1}], uncertainty: 3, variance: {'nen': 5, 'nne': 4, 'enn': 1}
+[72, {'iei': 6, 'eie': 2, 'sei': 2}], uncertainty: 3, variance: {'iei': 6, 'eie': 2, 'sei': 2}
+[808, {'hoi': 7, 'hio': 2, 'hpi': 1}], uncertainty: 3, variance: {'hoi': 7, 'hio': 2, 'hpi': 1}
+[543, {'oyo': 8, 'yoo': 1, 'yyo': 1}], uncertainty: 3, variance: {'oyo': 8, 'yoo': 1, 'yyo': 1}
+[511, {'ree': 4, 'ere': 5, 'eee': 1}], uncertainty: 3, variance: {'ree': 4, 'ere': 5, 'eee': 1}
+[580, {'yhn': 5, 'ynn': 4, 'ynh': 1}], uncertainty: 3, variance: {'yhn': 5, 'ynn': 4, 'ynh': 1}
+[67, {'yon': 6, 'yen': 1, 'ron': 3}], uncertainty: 3, variance: {'yon': 6, 'yen': 1, 'ron': 3}
+[787, {'aao': 6, 'aoa': 3, 'sao': 1}], uncertainty: 3, variance: {'aao': 6, 'aoa': 3, 'sao': 1}
+[11, {'aee': 8, 'abe': 1, 'sae': 1}], uncertainty: 3, variance: {'aee': 8, 'abe': 1, 'sae': 1}
+[551, {'aie': 6, 'e*/': 1, 'iae': 3}], uncertainty: 3, variance: {'aie': 6, 'e*/': 1, 'iae': 3}
+[57, {'sei': 8, 'i*/': 1, 'sii': 1}], uncertainty: 3, variance: {'sei': 8, 'i*/': 1, 'sii': 1}
+[156, {'yna': 2, 'nay': 2, 'nya': 6}], uncertainty: 3, variance: {'yna': 2, 'nay': 2, 'nya': 6}
+[3, {'ees': 6, 'ses': 1, 'ess': 3}], uncertainty: 3, variance: {'ees': 6, 'ses': 1, 'ess': 3}
+[445, {'lkr': 8, 'lrr': 1, 'lkz': 1}], uncertainty: 3, variance: {'lkr': 8, 'lrr': 1, 'lkz': 1}
+[998, {'osa': 1, '//*': 1, 'soa': 8}], uncertainty: 3, variance: {'osa': 1, '//*': 1, 'soa': 8}
+[141, {'aae': 5, 'aea': 4, 'de>': 1}], uncertainty: 3, variance: {'aae': 5, 'aea': 4, 'de>': 1}
+[881, {'eoi': 8, 'oie': 1, 'les': 1}], uncertainty: 3, variance: {'eoi': 8, 'oie': 1, 'les': 1}
+[597, {'iai': 7, 'aai': 1, 'iia': 2}], uncertainty: 3, variance: {'iai': 7, 'aai': 1, 'iia': 2}
+[438, {'kra': 1, 'mka': 7, 'kma': 2}], uncertainty: 3, variance: {'kra': 1, 'mka': 7, 'kma': 2}
+[746, {'soy': 2, 'oyy': 6, 'yoy': 2}], uncertainty: 3, variance: {'soy': 2, 'oyy': 6, 'yoy': 2}
+[907, {'n()': 1, 'yza': 8, 'rza': 1}], uncertainty: 3, variance: {'n()': 1, 'yza': 8, 'rza': 1}
+[663, {'aea': 5, 'sae': 1, 'aae': 4}], uncertainty: 3, variance: {'aea': 5, 'sae': 1, 'aae': 4}
+[970, {'noa': 8, 'ona': 1, 'nna': 1}], uncertainty: 3, variance: {'noa': 8, 'ona': 1, 'nna': 1}
+[225, {'tae': 7, 'ate': 2, 'tee': 1}], uncertainty: 3, variance: {'tae': 7, 'ate': 2, 'tee': 1}
+[429, {'tlt': 1, 'elt': 8, 'eet': 1}], uncertainty: 3, variance: {'tlt': 1, 'elt': 8, 'eet': 1}
+[220, {'ely': 8, 'lye': 1, 'ley': 1}], uncertainty: 3, variance: {'ely': 8, 'lye': 1, 'ley': 1}
+[964, {'rih': 6, 'hih': 2, 'rhi': 2}], uncertainty: 3, variance: {'rih': 6, 'hih': 2, 'rhi': 2}
+[714, {'zeo': 2, 'zoe': 7, 'oez': 1}], uncertainty: 3, variance: {'zeo': 2, 'zoe': 7, 'oez': 1}
+[228, {'yyn': 3, 'ynn': 6, 'yny': 1}], uncertainty: 3, variance: {'yyn': 3, 'ynn': 6, 'yny': 1}
+[32, {'anl': 8, 'nal': 1, 'aln': 1}], uncertainty: 3, variance: {'anl': 8, 'nal': 1, 'aln': 1}
+[604, {'naa': 5, 'nna': 2, 'ana': 3}], uncertainty: 3, variance: {'naa': 5, 'nna': 2, 'ana': 3}
+[643, {'ahC': 8, 'ahc': 1, 'saC': 1}], uncertainty: 3, variance: {'ahC': 8, 'ahc': 1, 'saC': 1}
+[947, {'lya': 7, 'sla': 1, 'yla': 2}], uncertainty: 3, variance: {'lya': 7, 'sla': 1, 'yla': 2}
+[887, {'yzy': 5, 'yzz': 3, 'syz': 2}], uncertainty: 3, variance: {'yzy': 5, 'yzz': 3, 'syz': 2}
+[875, {'eha': 6, 'hae': 1, 'hea': 3}], uncertainty: 3, variance: {'eha': 6, 'hae': 1, 'hea': 3}
+[650, {'enn': 7, 'een': 2, 'ann': 1}], uncertainty: 3, variance: {'enn': 7, 'een': 2, 'ann': 1}
+[867, {'iam': 8, '```': 1, 'iym': 1}], uncertainty: 3, variance: {'iam': 8, '```': 1, 'iym': 1}
+[367, {'tan': 2, 'atn': 7, 'ant': 1}], uncertainty: 3, variance: {'tan': 2, 'atn': 7, 'ant': 1}
+[565, {'hea': 5, 'eha': 4, 'hae': 1}], uncertainty: 3, variance: {'hea': 5, 'eha': 4, 'hae': 1}
+[387, {'osn': 8, 'onn': 1, 'nt(': 1}], uncertainty: 3, variance: {'osn': 8, 'onn': 1, 'nt(': 1}
+[549, {'sae': 6, 'ase': 1, 'sea': 3}], uncertainty: 3, variance: {'sae': 6, 'ase': 1, 'sea': 3}
+[44, {'yaa': 6, 'yya': 3, 'aaa': 1}], uncertainty: 3, variance: {'yaa': 6, 'yya': 3, 'aaa': 1}
+[965, {'oay': 9, 'oya': 1}], uncertainty: 2, variance: {'oay': 9, 'oya': 1}
+[414, {'eia': 8, 'iaa': 2}], uncertainty: 2, variance: {'eia': 8, 'iaa': 2}
+[589, {'gik': 9, 'iok': 1}], uncertainty: 2, variance: {'gik': 9, 'iok': 1}
+[38, {'ynh': 9, 'hnh': 1}], uncertainty: 2, variance: {'ynh': 9, 'hnh': 1}
+[506, {'syo': 9, 'sso': 1}], uncertainty: 2, variance: {'syo': 9, 'sso': 1}
+[891, {'aoe': 5, 'aeo': 5}], uncertainty: 2, variance: {'aoe': 5, 'aeo': 5}
+[299, {'smk': 9, 'msk': 1}], uncertainty: 2, variance: {'smk': 9, 'msk': 1}
+[16, {'neo': 9, 'eno': 1}], uncertainty: 2, variance: {'neo': 9, 'eno': 1}
+[202, {'iaa': 8, 'iia': 2}], uncertainty: 2, variance: {'iaa': 8, 'iia': 2}
+[630, {'yis': 6, 'ysi': 4}], uncertainty: 2, variance: {'yis': 6, 'ysi': 4}
+[940, {'alo': 3, 'aol': 7}], uncertainty: 2, variance: {'alo': 3, 'aol': 7}
+[369, {'aen': 9, 'aan': 1}], uncertainty: 2, variance: {'aen': 9, 'aan': 1}
+[596, {'ean': 9, 'uan': 1}], uncertainty: 2, variance: {'ean': 9, 'uan': 1}
+[765, {'sma': 1, 'sya': 9}], uncertainty: 2, variance: {'sma': 1, 'sya': 9}
+[293, {'ysq': 8, 'yqq': 2}], uncertainty: 2, variance: {'ysq': 8, 'yqq': 2}
+[538, {'any': 8, 'ayn': 2}], uncertainty: 2, variance: {'any': 8, 'ayn': 2}
+[528, {'ndi': 9, 'nid': 1}], uncertainty: 2, variance: {'ndi': 9, 'nid': 1}
+[34, {'hon': 1, 'ohn': 9}], uncertainty: 2, variance: {'hon': 1, 'ohn': 9}
+[928, {'yae': 9, 'aye': 1}], uncertainty: 2, variance: {'yae': 9, 'aye': 1}
+[185, {'yae': 9, 'yea': 1}], uncertainty: 2, variance: {'yae': 9, 'yea': 1}
+[809, {'nai': 9, '1]`': 1}], uncertainty: 2, variance: {'nai': 9, '1]`': 1}
+[507, {'oya': 1, 'ayo': 9}], uncertainty: 2, variance: {'oya': 1, 'ayo': 9}
+[922, {'yhl': 5, 'ylh': 5}], uncertainty: 2, variance: {'yhl': 5, 'ylh': 5}
+[483, {'oya': 9, '```': 1}], uncertainty: 2, variance: {'oya': 9, '```': 1}
+[750, {'eas': 9, 'eea': 1}], uncertainty: 2, variance: {'eas': 9, 'eea': 1}
+[523, {'ens': 9, 'ose': 1}], uncertainty: 2, variance: {'ens': 9, 'ose': 1}
+[614, {'ala': 9, 'sal': 1}], uncertainty: 2, variance: {'ala': 9, 'sal': 1}
+[365, {'rse': 9, 'hse': 1}], uncertainty: 2, variance: {'rse': 9, 'hse': 1}
+[770, {'isa': 9, 'ias': 1}], uncertainty: 2, variance: {'isa': 9, 'ias': 1}
+[617, {'lte': 9, 'ltd': 1}], uncertainty: 2, variance: {'lte': 9, 'ltd': 1}
+[697, {'nyy': 4, 'nny': 6}], uncertainty: 2, variance: {'nyy': 4, 'nny': 6}
+[50, {'ydn': 8, 'ynd': 2}], uncertainty: 2, variance: {'ydn': 8, 'ynd': 2}
+[211, {'eno': 8, 'neo': 2}], uncertainty: 2, variance: {'eno': 8, 'neo': 2}
+[959, {'aea': 9, 'eae': 1}], uncertainty: 2, variance: {'aea': 9, 'eae': 1}
+[934, {'jme': 9, 'mje': 1}], uncertainty: 2, variance: {'jme': 9, 'mje': 1}
+[287, {'ear': 9, 'aer': 1}], uncertainty: 2, variance: {'ear': 9, 'aer': 1}
+[527, {'syu': 1, 'suy': 9}], uncertainty: 2, variance: {'syu': 1, 'suy': 9}
+[475, {'iol': 7, 'oil': 3}], uncertainty: 2, variance: {'iol': 7, 'oil': 3}
+[892, {'aya': 9, 'yya': 1}], uncertainty: 2, variance: {'aya': 9, 'yya': 1}
+[917, {'xio': 9, 'oio': 1}], uncertainty: 2, variance: {'xio': 9, 'oio': 1}
+[489, {'snn': 9, 'nsn': 1}], uncertainty: 2, variance: {'snn': 9, 'nsn': 1}
+[451, {'nna': 1, 'ana': 9}], uncertainty: 2, variance: {'nna': 1, 'ana': 9}
+[637, {'ean': 9, '[]:': 1}], uncertainty: 2, variance: {'ean': 9, '[]:': 1}
+[991, {'yno': 9, 'noy': 1}], uncertainty: 2, variance: {'yno': 9, 'noy': 1}
+[921, {'don': 1, 'ndn': 9}], uncertainty: 2, variance: {'don': 1, 'ndn': 9}
+[490, {'anl': 7, 'nal': 3}], uncertainty: 2, variance: {'anl': 7, 'nal': 3}
+[740, {'aei': 9, 'ani': 1}], uncertainty: 2, variance: {'aei': 9, 'ani': 1}
+[577, {'aca': 5, 'caa': 5}], uncertainty: 2, variance: {'aca': 5, 'caa': 5}
+[612, {'air': 1, 'ira': 9}], uncertainty: 2, variance: {'air': 1, 'ira': 9}
+[417, {'ica': 9, 'ck!': 1}], uncertainty: 2, variance: {'ica': 9, 'ck!': 1}
+[660, {'ten': 9, 'tne': 1}], uncertainty: 2, variance: {'ten': 9, 'tne': 1}
+[325, {'aig': 9, 'aih': 1}], uncertainty: 2, variance: {'aig': 9, 'aih': 1}
+[702, {'nao': 9, 'eno': 1}], uncertainty: 2, variance: {'nao': 9, 'eno': 1}
+[949, {'sna': 9, 'snu': 1}], uncertainty: 2, variance: {'sna': 9, 'snu': 1}
+[515, {'fna': 3, 'nfa': 7}], uncertainty: 2, variance: {'fna': 3, 'nfa': 7}
+[836, {'hon': 9, 'ohn': 1}], uncertainty: 2, variance: {'hon': 9, 'ohn': 1}
+[807, {'ana': 9, 'naa': 1}], uncertainty: 2, variance: {'ana': 9, 'naa': 1}
+[28, {'yya': 6, 'yaa': 4}], uncertainty: 2, variance: {'yya': 6, 'yaa': 4}
+[316, {'eda': 9, '```': 1}], uncertainty: 2, variance: {'eda': 9, '```': 1}
+[241, {'yaa': 5, 'yya': 5}], uncertainty: 2, variance: {'yaa': 5, 'yya': 5}
+[149, {'tyr': 2, 'try': 8}], uncertainty: 2, variance: {'tyr': 2, 'try': 8}
+[4, {'aaa': 9, 'ana': 1}], uncertainty: 2, variance: {'aaa': 9, 'ana': 1}
+[443, {'kah': 9, 'kaa': 1}], uncertainty: 2, variance: {'kah': 9, 'kaa': 1}
+[213, {'dky': 9, 'dyk': 1}], uncertainty: 2, variance: {'dky': 9, 'dyk': 1}
+[804, {'e*/': 1, 'nae': 9}], uncertainty: 2, variance: {'e*/': 1, 'nae': 9}
+[838, {'aea': 9, 'aae': 1}], uncertainty: 2, variance: {'aea': 9, 'aae': 1}
+[627, {'hsy': 9, '));': 1}], uncertainty: 2, variance: {'hsy': 9, '));': 1}
+[582, {'eol': 9, 'oel': 1}], uncertainty: 2, variance: {'eol': 9, 'oel': 1}
+[272, {'ayn': 2, 'any': 8}], uncertainty: 2, variance: {'ayn': 2, 'any': 8}
+[201, {'yaa': 1, 'yta': 9}], uncertainty: 2, variance: {'yaa': 1, 'yta': 9}
+[289, {'ary': 1, 'ray': 9}], uncertainty: 2, variance: {'ary': 1, 'ray': 9}
+[485, {'aaa': 9, 'saa': 1}], uncertainty: 2, variance: {'aaa': 9, 'saa': 1}
+[774, {'aik': 9, 'ark': 1}], uncertainty: 2, variance: {'aik': 9, 'ark': 1}
+[800, {'iee': 9, 'iae': 1}], uncertainty: 2, variance: {'iee': 9, 'iae': 1}
+[840, {'odo': 9, 'ood': 1}], uncertainty: 2, variance: {'odo': 9, 'ood': 1}
+[119, {'ana': 9, 'naa': 1}], uncertainty: 2, variance: {'ana': 9, 'naa': 1}
+[61, {'iaa': 9, 'iia': 1}], uncertainty: 2, variance: {'iaa': 9, 'iia': 1}
+[647, {'nea': 9, '```': 1}], uncertainty: 2, variance: {'nea': 9, '```': 1}
+[232, {'oie': 2, 'oei': 8}], uncertainty: 2, variance: {'oie': 2, 'oei': 8}
+[5, {'iea': 9, 'iae': 1}], uncertainty: 2, variance: {'iea': 9, 'iae': 1}
+[926, {'rea': 1, 'era': 9}], uncertainty: 2, variance: {'rea': 1, 'era': 9}
+[193, {'ein': 9, 'iin': 1}], uncertainty: 2, variance: {'ein': 9, 'iin': 1}
+[547, {'sla': 9, 'ODE': 1}], uncertainty: 2, variance: {'sla': 9, 'ODE': 1}
+[843, {'dna': 9, 'nda': 1}], uncertainty: 2, variance: {'dna': 9, 'nda': 1}
+[10, {'de>': 1, 'sna': 9}], uncertainty: 2, variance: {'de>': 1, 'sna': 9}
+[147, {'aoy': 1, 'ayo': 9}], uncertainty: 2, variance: {'aoy': 1, 'ayo': 9}
+[148, {'yea': 8, 'yae': 2}], uncertainty: 2, variance: {'yea': 8, 'yae': 2}
+[454, {'yna': 9, 'nya': 1}], uncertainty: 2, variance: {'yna': 9, 'nya': 1}
+[761, {'ley': 8, 'lye': 2}], uncertainty: 2, variance: {'ley': 8, 'lye': 2}
+[813, {'ann': 8, 'nan': 2}], uncertainty: 2, variance: {'ann': 8, 'nan': 2}
+[320, {'nls': 4, 'nsl': 6}], uncertainty: 2, variance: {'nls': 4, 'nsl': 6}
+[457, {'lni': 8, 'nli': 2}], uncertainty: 2, variance: {'lni': 8, 'nli': 2}
+[873, {'eyi': 8, 'yie': 2}], uncertainty: 2, variance: {'eyi': 8, 'yie': 2}
+[575, {'doy': 9, 'dyy': 1}], uncertainty: 2, variance: {'doy': 9, 'dyy': 1}
+[632, {'zes': 9, 'zse': 1}], uncertainty: 2, variance: {'zes': 9, 'zse': 1}
+[385, {'ety': 9, 'tyy': 1}], uncertainty: 2, variance: {'ety': 9, 'tyy': 1}
+[935, {'snz': 8, 'szn': 2}], uncertainty: 2, variance: {'snz': 8, 'szn': 2}
+[237, {'nno': 9, 'noo': 1}], uncertainty: 2, variance: {'nno': 9, 'noo': 1}
+[400, {'zyd': 9, 'ydz': 1}], uncertainty: 2, variance: {'zyd': 9, 'ydz': 1}
+[78, {'lea': 9, 'ela': 1}], uncertainty: 2, variance: {'lea': 9, 'ela': 1}
+[878, {'rnl': 9, 'nrl': 1}], uncertainty: 2, variance: {'rnl': 9, 'nrl': 1}
+[125, {'ayo': 9, '444': 1}], uncertainty: 2, variance: {'ayo': 9, '444': 1}
+[23, {'yhn': 8, 'ynh': 2}], uncertainty: 2, variance: {'yhn': 8, 'ynh': 2}
+[802, {'oas': 9, 'oso': 1}], uncertainty: 2, variance: {'oas': 9, 'oso': 1}
+[703, {'asy': 9, 'ays': 1}], uncertainty: 2, variance: {'asy': 9, 'ays': 1}
+[415, {'aro': 5, 'aor': 5}], uncertainty: 2, variance: {'aro': 5, 'aor': 5}
+[635, {'ank': 6, 'akn': 4}], uncertainty: 2, variance: {'ank': 6, 'akn': 4}
+[678, {'aya': 9, 'aaa': 1}], uncertainty: 2, variance: {'aya': 9, 'aaa': 1}
+[120, {'nty': 8, 'nyt': 2}], uncertainty: 2, variance: {'nty': 8, 'nyt': 2}
+[155, {'eai': 9, 'aai': 1}], uncertainty: 2, variance: {'eai': 9, 'aai': 1}
+[154, {'aea': 9, 'eaa': 1}], uncertainty: 2, variance: {'aea': 9, 'eaa': 1}
+[757, {'lta': 9, 'UIZ': 1}], uncertainty: 2, variance: {'lta': 9, 'UIZ': 1}
+[160, {'yae': 9, 'ris': 1}], uncertainty: 2, variance: {'yae': 9, 'ris': 1}
+[402, {'toe': 6, 'teo': 4}], uncertainty: 2, variance: {'toe': 6, 'teo': 4}
+[539, {'ale': 6, 'ahe': 4}], uncertainty: 2, variance: {'ale': 6, 'ahe': 4}
+[793, {'set': 9, 'ar]': 1}], uncertainty: 2, variance: {'set': 9, 'ar]': 1}
+[339, {'eaa': 7, 'aea': 3}], uncertainty: 2, variance: {'eaa': 7, 'aea': 3}
+[524, {'noy': 9, 'nyo': 1}], uncertainty: 2, variance: {'noy': 9, 'nyo': 1}
+[186, {'ayo': 9, 'yao': 1}], uncertainty: 2, variance: {'ayo': 9, 'yao': 1}
+[345, {'ine': 8, 'ire': 2}], uncertainty: 2, variance: {'ine': 8, 'ire': 2}
+[711, {'yes': 8, 'yse': 2}], uncertainty: 2, variance: {'yes': 8, 'yse': 2}
+[868, {'ada': 9, 'daa': 1}], uncertainty: 2, variance: {'ada': 9, 'daa': 1}
+[431, {'aaa': 8, 'aia': 2}], uncertainty: 2, variance: {'aaa': 8, 'aia': 2}
+[542, {'aaa': 9, 'ine': 1}], uncertainty: 2, variance: {'aaa': 9, 'ine': 1}
+[97, {'aen': 9, 'ise': 1}], uncertainty: 2, variance: {'aen': 9, 'ise': 1}
+[368, {'eun': 9, 'een': 1}], uncertainty: 2, variance: {'eun': 9, 'een': 1}
+[568, {'The': 1, 'nae': 9}], uncertainty: 2, variance: {'The': 1, 'nae': 9}
+[266, {'ysa': 2, 'yas': 8}], uncertainty: 2, variance: {'ysa': 2, 'yas': 8}
+[782, {'oal': 9, 'onl': 1}], uncertainty: 2, variance: {'oal': 9, 'onl': 1}
+[937, {'ajh': 9, 'ahj': 1}], uncertainty: 2, variance: {'ajh': 9, 'ahj': 1}
+[695, {'rla': 8, 'ral': 2}], uncertainty: 2, variance: {'rla': 8, 'ral': 2}
+[395, {'eny': 9, 'eee': 1}], uncertainty: 2, variance: {'eny': 9, 'eee': 1}
+[442, {'dan': 9, 'Ser': 1}], uncertainty: 2, variance: {'dan': 9, 'Ser': 1}
+[985, {'hoe': 9, 'hoo': 1}], uncertainty: 2, variance: {'hoe': 9, 'hoo': 1}
+[337, {'ani': 9, 'nai': 1}], uncertainty: 2, variance: {'ani': 9, 'nai': 1}
+[652, {'uel': 4, 'eul': 6}], uncertainty: 2, variance: {'uel': 4, 'eul': 6}
+[779, {'nna': 6, 'naa': 4}], uncertainty: 2, variance: {'nna': 6, 'naa': 4}
+[832, {'lar': 9, 'alr': 1}], uncertainty: 2, variance: {'lar': 9, 'alr': 1}
+[8, {'aya': 9, 'yaa': 1}], uncertainty: 2, variance: {'aya': 9, 'yaa': 1}
+[309, {'yan': 9, 'ayn': 1}], uncertainty: 2, variance: {'yan': 9, 'ayn': 1}
+[743, {'oea': 5, 'oae': 5}], uncertainty: 2, variance: {'oea': 5, 'oae': 5}
+[471, {'iao': 9, 'ioa': 1}], uncertainty: 2, variance: {'iao': 9, 'ioa': 1}
+[481, {'aya': 9, 'yaa': 1}], uncertainty: 2, variance: {'aya': 9, 'yaa': 1}
+[39, {'roy': 9, 'ryo': 1}], uncertainty: 2, variance: {'roy': 9, 'ryo': 1}
+[391, {'min': 1, 'nnn': 9}], uncertainty: 2, variance: {'min': 1, 'nnn': 9}
+[357, {'aea': 9, 'aae': 1}], uncertainty: 2, variance: {'aea': 9, 'aae': 1}
+[662, {'yop': 9, 'opy': 1}], uncertainty: 2, variance: {'yop': 9, 'opy': 1}
+[75, {'ian': 9, 'nia': 1}], uncertainty: 2, variance: {'ian': 9, 'nia': 1}
+[102, {'yya': 1, 'yaa': 9}], uncertainty: 2, variance: {'yya': 1, 'yaa': 9}
+[745, {'say': 9, 'sya': 1}], uncertainty: 2, variance: {'say': 9, 'sya': 1}
+[700, {'zen': 9, 'een': 1}], uncertainty: 2, variance: {'zen': 9, 'een': 1}
+[366, {'oie': 8, 'ioe': 2}], uncertainty: 2, variance: {'oie': 8, 'ioe': 2}
+[133, {'zoa': 9, 'szo': 1}], uncertainty: 2, variance: {'zoa': 9, 'szo': 1}
+[45, {'ylo': 9, 'yol': 1}], uncertainty: 2, variance: {'ylo': 9, 'yol': 1}
+[288, {'nay': 2, 'nya': 8}], uncertainty: 2, variance: {'nay': 2, 'nya': 8}
+[278, {'dls': 2, 'lds': 8}], uncertainty: 2, variance: {'dls': 2, 'lds': 8}
+[106, {'leh': 6, 'lhe': 4}], uncertainty: 2, variance: {'leh': 6, 'lhe': 4}
+[968, {'ynn': 7, 'yyn': 3}], uncertainty: 2, variance: {'ynn': 7, 'yyn': 3}
+[555, {'neh': 8, 'nhe': 2}], uncertainty: 2, variance: {'neh': 8, 'nhe': 2}
+[593, {'oay': 9, 'soy': 1}], uncertainty: 2, variance: {'oay': 9, 'soy': 1}
+[837, {'oya': 9, 'oha': 1}], uncertainty: 2, variance: {'oya': 9, 'oha': 1}
+[218, {'hau': 9, 'hat': 1}], uncertainty: 2, variance: {'hau': 9, 'hat': 1}
+[134, {'ran': 9, 'aan': 1}], uncertainty: 2, variance: {'ran': 9, 'aan': 1}
+[859, {'eos': 7, 'oes': 3}], uncertainty: 2, variance: {'eos': 7, 'oes': 3}
+[592, {'nao': 9, 'aoa': 1}], uncertainty: 2, variance: {'nao': 9, 'aoa': 1}
+[583, {'oni': 9, 'tem': 1}], uncertainty: 2, variance: {'oni': 9, 'tem': 1}
+[240, {'iah': 7, 'aih': 3}], uncertainty: 2, variance: {'iah': 7, 'aih': 3}
+[723, {'sao': 1, 'ato': 9}], uncertainty: 2, variance: {'sao': 1, 'ato': 9}
+[609, {'ada': 9, 'add': 1}], uncertainty: 2, variance: {'ada': 9, 'add': 1}
+[766, {'sir': 9, 'ssr': 1}], uncertainty: 2, variance: {'sir': 9, 'ssr': 1}
+[669, {'eon': 9, 'oen': 1}], uncertainty: 2, variance: {'eon': 9, 'oen': 1}
+[689, {'neo': 8, 'noe': 2}], uncertainty: 2, variance: {'neo': 8, 'noe': 2}
+[55, {'a))': 1, 'ada': 9}], uncertainty: 2, variance: {'a))': 1, 'ada': 9}
+[420, {'eyo': 7, 'yoe': 3}], uncertainty: 2, variance: {'eyo': 7, 'yoe': 3}
+[897, {'ias': 9, 'ios': 1}], uncertainty: 2, variance: {'ias': 9, 'ios': 1}
+[988, {'yri': 9, 'e4:': 1}], uncertainty: 2, variance: {'yri': 9, 'e4:': 1}
+[2, {'ean': 9, 'for': 1}], uncertainty: 2, variance: {'ean': 9, 'for': 1}
+[886, {'oyd': 9, 'ody': 1}], uncertainty: 2, variance: {'oyd': 9, 'ody': 1}
+[77, {'ath': 1, 'atn': 9}], uncertainty: 2, variance: {'ath': 1, 'atn': 9}
+[255, {'nja': 9, 'naj': 1}], uncertainty: 2, variance: {'nja': 9, 'naj': 1}
+[514, {'ena': 8, 'nea': 2}], uncertainty: 2, variance: {'ena': 8, 'nea': 2}
+[847, {'ory': 9, 'orf': 1}], uncertainty: 2, variance: {'ory': 9, 'orf': 1}
+[814, {'azn': 5, 'anz': 5}], uncertainty: 2, variance: {'azn': 5, 'anz': 5}
+[923, {'yma': 9, 'and': 1}], uncertainty: 2, variance: {'yma': 9, 'and': 1}
+[540, {'ela': 9, 'els': 1}], uncertainty: 2, variance: {'ela': 9, 'els': 1}
+[855, {'nty': 9, 'nyt': 1}], uncertainty: 2, variance: {'nty': 9, 'nyt': 1}
+[971, {'ine': 8, 'nie': 2}], uncertainty: 2, variance: {'ine': 8, 'nie': 2}
+[319, {'nsa': 2, 'sna': 8}], uncertainty: 2, variance: {'nsa': 2, 'sna': 8}
+[235, {'yia': 8, 'yaa': 2}], uncertainty: 2, variance: {'yia': 8, 'yaa': 2}
+[362, {'nne': 6, 'nee': 4}], uncertainty: 2, variance: {'nne': 6, 'nee': 4}
+[194, {'aen': 9, 'ean': 1}], uncertainty: 2, variance: {'aen': 9, 'ean': 1}
+[709, {'eia': 8, 'iea': 2}], uncertainty: 2, variance: {'eia': 8, 'iea': 2}
+[584, {'oya': 9, 'oye': 1}], uncertainty: 2, variance: {'oya': 9, 'oye': 1}
+[728, {'nnd': 3, 'ndn': 7}], uncertainty: 2, variance: {'nnd': 3, 'ndn': 7}
+[60, {'ery': 9, 'rye': 1}], uncertainty: 2, variance: {'ery': 9, 'rye': 1}
+[7, {'aeh': 5, 'ahe': 5}], uncertainty: 2, variance: {'aeh': 5, 'ahe': 5}
+[245, {'soa': 4, 'aoa': 6}], uncertainty: 2, variance: {'soa': 4, 'aoa': 6}
+[19, {'lii': 1, 'lie': 9}], uncertainty: 2, variance: {'lii': 1, 'lie': 9}
+[500, {'egi': 9, 'gii': 1}], uncertainty: 2, variance: {'egi': 9, 'gii': 1}
+[108, {'aan': 9, 'ana': 1}], uncertainty: 2, variance: {'aan': 9, 'ana': 1}
+[182, {'sro': 9, 'soo': 1}], uncertainty: 2, variance: {'sro': 9, 'soo': 1}
+[0, {'ate': 9, 'aoe': 1}], uncertainty: 2, variance: {'ate': 9, 'aoe': 1}
+[552, {'nln': 5, 'nll': 5}], uncertainty: 2, variance: {'nln': 5, 'nll': 5}
+[165, {'ear': 9, 'ast': 1}], uncertainty: 2, variance: {'ear': 9, 'ast': 1}
+[486, {'aaa': 9, 'aca': 1}], uncertainty: 2, variance: {'aaa': 9, 'aca': 1}
+[131, {'aet': 1, 'ate': 9}], uncertainty: 2, variance: {'aet': 1, 'ate': 9}
+[128, {'ada': 9, '```': 1}], uncertainty: 2, variance: {'ada': 9, '```': 1}
+[545, {'yso': 9, 'oso': 1}], uncertainty: 2, variance: {'yso': 9, 'oso': 1}
+[217, {'noa': 9, 'ona': 1}], uncertainty: 2, variance: {'noa': 9, 'ona': 1}
+[322, {'esy': 9, 'sye': 1}], uncertainty: 2, variance: {'esy': 9, 'sye': 1}
+[216, {'oai': 9, 'aiu': 1}], uncertainty: 2, variance: {'oai': 9, 'aiu': 1}
+[274, {'yeo': 7, 'yoe': 3}], uncertainty: 2, variance: {'yeo': 7, 'yoe': 3}
+[768, {'eao': 9, 'soa': 1}], uncertainty: 2, variance: {'eao': 9, 'soa': 1}
+[936, {'kda': 9, 'aka': 1}], uncertainty: 2, variance: {'kda': 9, 'aka': 1}
+[738, {'enl': 6, 'nel': 4}], uncertainty: 2, variance: {'enl': 6, 'nel': 4}
+[271, {'yjr': 9, 'yrj': 1}], uncertainty: 2, variance: {'yjr': 9, 'yrj': 1}
+[146, {'tie': 9, 'tei': 1}], uncertainty: 2, variance: {'tie': 9, 'tei': 1}
+[824, {'ray': 9, 'aya': 1}], uncertainty: 2, variance: {'ray': 9, 'aya': 1}
+[224, {'hyy': 9, 'hhy': 1}], uncertainty: 2, variance: {'hyy': 9, 'hhy': 1}
+[570, {'rhk': 9, 'rkh': 1}], uncertainty: 2, variance: {'rhk': 9, 'rkh': 1}
+[704, {'ndn': 9, 'dnn': 1}], uncertainty: 2, variance: {'ndn': 9, 'dnn': 1}
+[655, {'iay': 9, 'ayi': 1}], uncertainty: 2, variance: {'iay': 9, 'ayi': 1}
+[276, {'ied': 9, 'edi': 1}], uncertainty: 2, variance: {'ied': 9, 'edi': 1}
+[388, {'ane': 9, 'aen': 1}], uncertainty: 2, variance: {'ane': 9, 'aen': 1}
+[167, {'oeh': 7, 'ohe': 3}], uncertainty: 2, variance: {'oeh': 7, 'ohe': 3}
+[994, {'xnl': 8, 'nxl': 2}], uncertainty: 2, variance: {'xnl': 8, 'nxl': 2}
+[811, {'lme': 9, 'lem': 1}], uncertainty: 2, variance: {'lme': 9, 'lem': 1}
+[93, {'eon': 9, 'nne': 1}], uncertainty: 2, variance: {'eon': 9, 'nne': 1}
+[161, {'ife': 8, 'fie': 2}], uncertainty: 2, variance: {'ife': 8, 'fie': 2}
+[925, {'```': 1, 'hai': 9}], uncertainty: 2, variance: {'```': 1, 'hai': 9}
+[408, {'rdr': 6, 'rrd': 4}], uncertainty: 2, variance: {'rdr': 6, 'rrd': 4}
+[598, {'nts': 9, 'tts': 1}], uncertainty: 2, variance: {'nts': 9, 'tts': 1}
+[257, {'aah': 9, 'df[': 1}], uncertainty: 2, variance: {'aah': 9, 'df[': 1}
+[963, {'oaa': 9, 'iz!': 1}], uncertainty: 2, variance: {'oaa': 9, 'iz!': 1}
+[65, {'oin': 9, 'ion': 1}], uncertainty: 2, variance: {'oin': 9, 'ion': 1}
+[610, {'aye': 9, 'ee#': 1}], uncertainty: 2, variance: {'aye': 9, 'ee#': 1}
+[956, {'seo': 9, 'soe': 1}], uncertainty: 2, variance: {'seo': 9, 'soe': 1}
+[546, {'hom': 9, 'the': 1}], uncertainty: 2, variance: {'hom': 9, 'the': 1}
+[623, {'isa': 9, 'iaa': 1}], uncertainty: 2, variance: {'isa': 9, 'iaa': 1}
+[73, {'aaa': 9, 'ana': 1}], uncertainty: 2, variance: {'aaa': 9, 'ana': 1}
+[6, {'kyo': 5, 'koy': 5}], uncertainty: 2, variance: {'kyo': 5, 'koy': 5}
+[284, {'vay': 9, 'avy': 1}], uncertainty: 2, variance: {'vay': 9, 'avy': 1}
+[603, {'`,`': 1, 'rll': 9}], uncertainty: 2, variance: {'`,`': 1, 'rll': 9}
+[163, {'edo': 9, 'eeo': 1}], uncertainty: 2, variance: {'edo': 9, 'eeo': 1}
+[825, {'isa': 1, 'ark': 9}], uncertainty: 2, variance: {'isa': 1, 'ark': 9}
+[104, {'yla': 8, 'yal': 2}], uncertainty: 2, variance: {'yla': 8, 'yal': 2}
+[95, {'soy': 5, 'oyy': 5}], uncertainty: 2, variance: {'soy': 5, 'oyy': 5}
+[913, {'roo': 9, 'oro': 1}], uncertainty: 2, variance: {'roo': 9, 'oro': 1}
+[758, {'boa': 8, 'oba': 2}], uncertainty: 2, variance: {'boa': 8, 'oba': 2}
+[692, {'yal': 9, 'ayl': 1}], uncertainty: 2, variance: {'yal': 9, 'ayl': 1}
+[46, {'ine': 9, 'nie': 1}], uncertainty: 2, variance: {'ine': 9, 'nie': 1}
+[721, {'aaa': 8, 'saa': 2}], uncertainty: 2, variance: {'aaa': 8, 'saa': 2}
+[196, {'lao': 6, 'alo': 4}], uncertainty: 2, variance: {'lao': 6, 'alo': 4}
+[591, {'lod': 8, 'old': 2}], uncertainty: 2, variance: {'lod': 8, 'old': 2}
+[103, {'ybi': 9, 'byi': 1}], uncertainty: 2, variance: {'ybi': 9, 'byi': 1}
+[978, {'zra': 1, 'rza': 9}], uncertainty: 2, variance: {'zra': 1, 'rza': 9}
+[233, {'ena': 9, 'nea': 1}], uncertainty: 2, variance: {'ena': 9, 'nea': 1}
+[686, {'eki': 9, 'eik': 1}], uncertainty: 2, variance: {'eki': 9, 'eik': 1}
+[363, {'dda': 7, 'daa': 3}], uncertainty: 2, variance: {'dda': 7, 'daa': 3}
+[379, {'iah': 9, 'ah,': 1}], uncertainty: 2, variance: {'iah': 9, 'ah,': 1}
+[373, {'rsa': 9, 'asa': 1}], uncertainty: 2, variance: {'rsa': 9, 'asa': 1}
+[954, {'seo': 2, 'soe': 8}], uncertainty: 2, variance: {'seo': 2, 'soe': 8}
+[203, {'yii': 8, 'iyi': 2}], uncertainty: 2, variance: {'yii': 8, 'iyi': 2}
+[616, {'aer': 9, 'atr': 1}], uncertainty: 2, variance: {'aer': 9, 'atr': 1}
+[517, {'yla': 8, 'yal': 2}], uncertainty: 2, variance: {'yla': 8, 'yal': 2}
+[223, {'iaa': 9, 'sai': 1}], uncertainty: 2, variance: {'iaa': 9, 'sai': 1}
+[94, {'yea': 9, 'yaa': 1}], uncertainty: 2, variance: {'yea': 9, 'yaa': 1}
+[80, {'yaa': 6, 'yya': 4}], uncertainty: 2, variance: {'yaa': 6, 'yya': 4}
+[470, {'yng': 9, 'nng': 1}], uncertainty: 2, variance: {'yng': 9, 'nng': 1}
+[747, {'asg': 1, 'sag': 9}], uncertainty: 2, variance: {'asg': 1, 'sag': 9}
+[189, {'sae': 10}], uncertainty: 1, variance: {'sae': 10}
+[666, {'dij': 10}], uncertainty: 1, variance: {'dij': 10}
+[247, {'aye': 10}], uncertainty: 1, variance: {'aye': 10}
+[713, {'nki': 10}], uncertainty: 1, variance: {'nki': 10}
+[76, {'iaa': 10}], uncertainty: 1, variance: {'iaa': 10}
+[364, {'aaa': 10}], uncertainty: 1, variance: {'aaa': 10}
+[334, {'nso': 10}], uncertainty: 1, variance: {'nso': 10}
+[1, {'sel': 10}], uncertainty: 1, variance: {'sel': 10}
+[53, {'snd': 10}], uncertainty: 1, variance: {'snd': 10}
+[426, {'ata': 10}], uncertainty: 1, variance: {'ata': 10}
+[200, {'kis': 10}], uncertainty: 1, variance: {'kis': 10}
+[909, {'hse': 10}], uncertainty: 1, variance: {'hse': 10}
+[24, {'aro': 10}], uncertainty: 1, variance: {'aro': 10}
+[607, {'ald': 10}], uncertainty: 1, variance: {'ald': 10}
+[298, {'ltu': 10}], uncertainty: 1, variance: {'ltu': 10}
+[56, {'rie': 10}], uncertainty: 1, variance: {'rie': 10}
+[772, {'noi': 10}], uncertainty: 1, variance: {'noi': 10}
+[789, {'iml': 10}], uncertainty: 1, variance: {'iml': 10}
+[760, {'nyr': 10}], uncertainty: 1, variance: {'nyr': 10}
+[732, {'bgn': 10}], uncertainty: 1, variance: {'bgn': 10}
+[336, {'onr': 10}], uncertainty: 1, variance: {'onr': 10}
+[895, {'tln': 10}], uncertainty: 1, variance: {'tln': 10}
+[85, {'nza': 10}], uncertainty: 1, variance: {'nza': 10}
+[622, {'ane': 10}], uncertainty: 1, variance: {'ane': 10}
+[476, {'ale': 10}], uncertainty: 1, variance: {'ale': 10}
+[282, {'set': 10}], uncertainty: 1, variance: {'set': 10}
+[939, {'yra': 10}], uncertainty: 1, variance: {'yra': 10}
+[606, {'ana': 10}], uncertainty: 1, variance: {'ana': 10}
+[731, {'lat': 10}], uncertainty: 1, variance: {'lat': 10}
+[342, {'nay': 10}], uncertainty: 1, variance: {'nay': 10}
+[308, {'eln': 10}], uncertainty: 1, variance: {'eln': 10}
+[88, {'nci': 10}], uncertainty: 1, variance: {'nci': 10}
+[327, {'can': 10}], uncertainty: 1, variance: {'can': 10}
+[981, {'oen': 10}], uncertainty: 1, variance: {'oen': 10}
+[375, {'ysa': 10}], uncertainty: 1, variance: {'ysa': 10}
+[251, {'tte': 10}], uncertainty: 1, variance: {'tte': 10}
+[769, {'ion': 10}], uncertainty: 1, variance: {'ion': 10}
+[744, {'ysa': 10}], uncertainty: 1, variance: {'ysa': 10}
+[522, {'lsy': 10}], uncertainty: 1, variance: {'lsy': 10}
+[631, {'sam': 10}], uncertainty: 1, variance: {'sam': 10}
+[195, {'ian': 10}], uncertainty: 1, variance: {'ian': 10}
+[256, {'ian': 10}], uncertainty: 1, variance: {'ian': 10}
+[693, {'tza': 10}], uncertainty: 1, variance: {'tza': 10}
+[942, {'san': 10}], uncertainty: 1, variance: {'san': 10}
+[463, {'rla': 10}], uncertainty: 1, variance: {'rla': 10}
+[198, {'ype': 10}], uncertainty: 1, variance: {'ype': 10}
+[877, {'aoz': 10}], uncertainty: 1, variance: {'aoz': 10}
+[188, {'ean': 10}], uncertainty: 1, variance: {'ean': 10}
+[66, {'aca': 10}], uncertainty: 1, variance: {'aca': 10}
+[799, {'nea': 10}], uncertainty: 1, variance: {'nea': 10}
+[374, {'ela': 10}], uncertainty: 1, variance: {'ela': 10}
+[819, {'ine': 10}], uncertainty: 1, variance: {'ine': 10}
+[914, {'nsa': 10}], uncertainty: 1, variance: {'nsa': 10}
+[510, {'sdl': 10}], uncertainty: 1, variance: {'sdl': 10}
+[795, {'dnt': 10}], uncertainty: 1, variance: {'dnt': 10}
+[681, {'nic': 10}], uncertainty: 1, variance: {'nic': 10}
+[482, {'ais': 10}], uncertainty: 1, variance: {'ais': 10}
+[239, {'yko': 10}], uncertainty: 1, variance: {'yko': 10}
+[561, {'syn': 10}], uncertainty: 1, variance: {'syn': 10}
+[144, {'dah': 10}], uncertainty: 1, variance: {'dah': 10}
+[64, {'xas': 10}], uncertainty: 1, variance: {'xas': 10}
+[411, {'eas': 10}], uncertainty: 1, variance: {'eas': 10}
+[333, {'dxe': 10}], uncertainty: 1, variance: {'dxe': 10}
+[192, {'ael': 10}], uncertainty: 1, variance: {'ael': 10}
+[639, {'eat': 10}], uncertainty: 1, variance: {'eat': 10}
+[729, {'kda': 10}], uncertainty: 1, variance: {'kda': 10}
+[626, {'ner': 10}], uncertainty: 1, variance: {'ner': 10}
+[571, {'ane': 10}], uncertainty: 1, variance: {'ane': 10}
+[17, {'loh': 10}], uncertainty: 1, variance: {'loh': 10}
+[180, {'shn': 10}], uncertainty: 1, variance: {'shn': 10}
+[534, {'ate': 10}], uncertainty: 1, variance: {'ate': 10}
+[883, {'and': 10}], uncertainty: 1, variance: {'and': 10}
+[173, {'lin': 10}], uncertainty: 1, variance: {'lin': 10}
+[419, {'kte': 10}], uncertainty: 1, variance: {'kte': 10}
+[961, {'aoe': 10}], uncertainty: 1, variance: {'aoe': 10}
+[975, {'osn': 10}], uncertainty: 1, variance: {'osn': 10}
+[318, {'nar': 10}], uncertainty: 1, variance: {'nar': 10}
+[279, {'orm': 10}], uncertainty: 1, variance: {'orm': 10}
+[901, {'hyi': 10}], uncertainty: 1, variance: {'hyi': 10}
+[456, {'aky': 10}], uncertainty: 1, variance: {'aky': 10}
+[932, {'oai': 10}], uncertainty: 1, variance: {'oai': 10}
+[624, {'iot': 10}], uncertainty: 1, variance: {'iot': 10}
+[326, {'nmi': 10}], uncertainty: 1, variance: {'nmi': 10}
+[548, {'ane': 10}], uncertainty: 1, variance: {'ane': 10}
+[710, {'lsy': 10}], uncertainty: 1, variance: {'lsy': 10}
+[31, {'oan': 10}], uncertainty: 1, variance: {'oan': 10}
+[579, {'dol': 10}], uncertainty: 1, variance: {'dol': 10}
+[404, {'ean': 10}], uncertainty: 1, variance: {'ean': 10}
+[444, {'yen': 10}], uncertainty: 1, variance: {'yen': 10}
+[860, {'hke': 10}], uncertainty: 1, variance: {'hke': 10}
+[898, {'osa': 10}], uncertainty: 1, variance: {'osa': 10}
+[839, {'ayb': 10}], uncertainty: 1, variance: {'ayb': 10}
+[380, {'lan': 10}], uncertainty: 1, variance: {'lan': 10}
+[124, {'ipa': 10}], uncertainty: 1, variance: {'ipa': 10}
+[491, {'nhl': 10}], uncertainty: 1, variance: {'nhl': 10}
+[430, {'aek': 10}], uncertainty: 1, variance: {'aek': 10}
+[945, {'nsa': 10}], uncertainty: 1, variance: {'nsa': 10}
+[397, {'erc': 10}], uncertainty: 1, variance: {'erc': 10}
+[993, {'eda': 10}], uncertainty: 1, variance: {'eda': 10}
+[258, {'ays': 10}], uncertainty: 1, variance: {'ays': 10}
+[286, {'ara': 10}], uncertainty: 1, variance: {'ara': 10}
+[353, {'iae': 10}], uncertainty: 1, variance: {'iae': 10}
+[101, {'syn': 10}], uncertainty: 1, variance: {'syn': 10}
+[115, {'iae': 10}], uncertainty: 1, variance: {'iae': 10}
+[317, {'kna': 10}], uncertainty: 1, variance: {'kna': 10}
+[145, {'oen': 10}], uncertainty: 1, variance: {'oen': 10}
+[376, {'rra': 10}], uncertainty: 1, variance: {'rra': 10}
+[530, {'zan': 10}], uncertainty: 1, variance: {'zan': 10}
+[447, {'any': 10}], uncertainty: 1, variance: {'any': 10}
+[107, {'oai': 10}], uncertainty: 1, variance: {'oai': 10}
+[587, {'jla': 10}], uncertainty: 1, variance: {'jla': 10}
+[176, {'kie': 10}], uncertainty: 1, variance: {'kie': 10}
+[778, {'ale': 10}], uncertainty: 1, variance: {'ale': 10}
+[756, {'ahn': 10}], uncertainty: 1, variance: {'ahn': 10}
+[487, {'npz': 10}], uncertainty: 1, variance: {'npz': 10}
+[893, {'ale': 10}], uncertainty: 1, variance: {'ale': 10}
+[952, {'sea': 10}], uncertainty: 1, variance: {'sea': 10}
+[673, {'lta': 10}], uncertainty: 1, variance: {'lta': 10}
+[987, {'jan': 10}], uncertainty: 1, variance: {'jan': 10}
+[164, {'aaa': 10}], uncertainty: 1, variance: {'aaa': 10}
+[916, {'nle': 10}], uncertainty: 1, variance: {'nle': 10}
+[153, {'aon': 10}], uncertainty: 1, variance: {'aon': 10}
+[852, {'anr': 10}], uncertainty: 1, variance: {'anr': 10}
+[449, {'oya': 10}], uncertainty: 1, variance: {'oya': 10}
+[14, {'ond': 10}], uncertainty: 1, variance: {'ond': 10}
+[480, {'nse': 10}], uncertainty: 1, variance: {'nse': 10}
+[295, {'eth': 10}], uncertainty: 1, variance: {'eth': 10}
+[460, {'yla': 10}], uncertainty: 1, variance: {'yla': 10}
+[310, {'alt': 10}], uncertainty: 1, variance: {'alt': 10}
+[690, {'ona': 10}], uncertainty: 1, variance: {'ona': 10}
+[801, {'nat': 10}], uncertainty: 1, variance: {'nat': 10}
+[806, {'oya': 10}], uncertainty: 1, variance: {'oya': 10}
+[659, {'sao': 10}], uncertainty: 1, variance: {'sao': 10}
+[636, {'ans': 10}], uncertainty: 1, variance: {'ans': 10}
+[407, {'gln': 10}], uncertainty: 1, variance: {'gln': 10}
+[948, {'aos': 10}], uncertainty: 1, variance: {'aos': 10}
+[52, {'hto': 10}], uncertainty: 1, variance: {'hto': 10}
+[821, {'yal': 10}], uncertainty: 1, variance: {'yal': 10}
+[599, {'ael': 10}], uncertainty: 1, variance: {'ael': 10}
+[351, {'ael': 10}], uncertainty: 1, variance: {'ael': 10}
+[215, {'iro': 10}], uncertainty: 1, variance: {'iro': 10}
+[812, {'yoe': 10}], uncertainty: 1, variance: {'yoe': 10}
+[183, {'khe': 10}], uncertainty: 1, variance: {'khe': 10}
+[181, {'ale': 10}], uncertainty: 1, variance: {'ale': 10}
+[904, {'phe': 10}], uncertainty: 1, variance: {'phe': 10}
+[822, {'enn': 10}], uncertainty: 1, variance: {'enn': 10}
+[378, {'ayn': 10}], uncertainty: 1, variance: {'ayn': 10}
+[889, {'agi': 10}], uncertainty: 1, variance: {'agi': 10}
+[815, {'eja': 10}], uncertainty: 1, variance: {'eja': 10}
+[312, {'ney': 10}], uncertainty: 1, variance: {'ney': 10}
+[204, {'uob': 10}], uncertainty: 1, variance: {'uob': 10}
+[110, {'ryn': 10}], uncertainty: 1, variance: {'ryn': 10}
+[629, {'hal': 10}], uncertainty: 1, variance: {'hal': 10}
+[550, {'nyl': 10}], uncertainty: 1, variance: {'nyl': 10}
+[576, {'hee': 10}], uncertainty: 1, variance: {'hee': 10}
+[861, {'vas': 10}], uncertainty: 1, variance: {'vas': 10}
+[919, {'asn': 10}], uncertainty: 1, variance: {'asn': 10}
+[785, {'rah': 10}], uncertainty: 1, variance: {'rah': 10}
+[341, {'aof': 10}], uncertainty: 1, variance: {'aof': 10}
+[803, {'nha': 10}], uncertainty: 1, variance: {'nha': 10}
+[283, {'adh': 10}], uncertainty: 1, variance: {'adh': 10}
+[440, {'aso': 10}], uncertainty: 1, variance: {'aso': 10}
+[151, {'des': 10}], uncertainty: 1, variance: {'des': 10}
+[676, {'eda': 10}], uncertainty: 1, variance: {'eda': 10}
+[820, {'san': 10}], uncertainty: 1, variance: {'san': 10}
+[109, {'vyi': 10}], uncertainty: 1, variance: {'vyi': 10}
+[941, {'nnc': 10}], uncertainty: 1, variance: {'nnc': 10}
+[137, {'oha': 10}], uncertainty: 1, variance: {'oha': 10}
+[209, {'ynt': 10}], uncertainty: 1, variance: {'ynt': 10}
+[267, {'ols': 10}], uncertainty: 1, variance: {'ols': 10}
+[578, {'sta': 10}], uncertainty: 1, variance: {'sta': 10}
+[83, {'obg': 10}], uncertainty: 1, variance: {'obg': 10}
+[40, {'ihl': 10}], uncertainty: 1, variance: {'ihl': 10}
+[58, {'ean': 10}], uncertainty: 1, variance: {'ean': 10}
+[321, {'ale': 10}], uncertainty: 1, variance: {'ale': 10}
+[691, {'ods': 10}], uncertainty: 1, variance: {'ods': 10}
+[222, {'mlh': 10}], uncertainty: 1, variance: {'mlh': 10}
+[492, {'ale': 10}], uncertainty: 1, variance: {'ale': 10}
+[170, {'ale': 10}], uncertainty: 1, variance: {'ale': 10}
+[242, {'nit': 10}], uncertainty: 1, variance: {'nit': 10}
+[9, {'eal': 10}], uncertainty: 1, variance: {'eal': 10}
+[884, {'ori': 10}], uncertainty: 1, variance: {'ori': 10}
+[244, {'snn': 10}], uncertainty: 1, variance: {'snn': 10}
+[853, {'iah': 10}], uncertainty: 1, variance: {'iah': 10}
+[413, {'ndi': 10}], uncertainty: 1, variance: {'ndi': 10}
+[62, {'nal': 10}], uncertainty: 1, variance: {'nal': 10}
+[100, {'aik': 10}], uncertainty: 1, variance: {'aik': 10}
+[661, {'aaa': 10}], uncertainty: 1, variance: {'aaa': 10}
+[478, {'nde': 10}], uncertainty: 1, variance: {'nde': 10}
+[755, {'ali': 10}], uncertainty: 1, variance: {'ali': 10}
+[498, {'nma': 10}], uncertainty: 1, variance: {'nma': 10}
+[465, {'lyn': 10}], uncertainty: 1, variance: {'lyn': 10}
+[399, {'eal': 10}], uncertainty: 1, variance: {'eal': 10}
+[168, {'ael': 10}], uncertainty: 1, variance: {'ael': 10}
+[989, {'ane': 10}], uncertainty: 1, variance: {'ane': 10}
+[563, {'ann': 10}], uncertainty: 1, variance: {'ann': 10}
+[912, {'ays': 10}], uncertainty: 1, variance: {'ays': 10}
+[717, {'arl': 10}], uncertainty: 1, variance: {'arl': 10}
+[876, {'ota': 10}], uncertainty: 1, variance: {'ota': 10}
+[783, {'eri': 10}], uncertainty: 1, variance: {'eri': 10}
+[488, {'leh': 10}], uncertainty: 1, variance: {'leh': 10}
+[347, {'kdl': 10}], uncertainty: 1, variance: {'kdl': 10}
+[205, {'nsy': 10}], uncertainty: 1, variance: {'nsy': 10}
+[784, {'eon': 10}], uncertainty: 1, variance: {'eon': 10}
+[169, {'ean': 10}], uncertainty: 1, variance: {'ean': 10}
+[462, {'drm': 10}], uncertainty: 1, variance: {'drm': 10}
+[448, {'psa': 10}], uncertainty: 1, variance: {'psa': 10}
+[730, {'ane': 10}], uncertainty: 1, variance: {'ane': 10}
+[567, {'hea': 10}], uncertainty: 1, variance: {'hea': 10}
+[602, {'iao': 10}], uncertainty: 1, variance: {'iao': 10}
+[21, {'syn': 10}], uncertainty: 1, variance: {'syn': 10}
+[441, {'tay': 10}], uncertainty: 1, variance: {'tay': 10}
+[674, {'ytr': 10}], uncertainty: 1, variance: {'ytr': 10}
+[946, {'yen': 10}], uncertainty: 1, variance: {'yen': 10}
+[416, {'any': 10}], uncertainty: 1, variance: {'any': 10}
+[248, {'eao': 10}], uncertainty: 1, variance: {'eao': 10}
+[135, {'lhl': 10}], uncertainty: 1, variance: {'lhl': 10}
+[219, {'ean': 10}], uncertainty: 1, variance: {'ean': 10}
+[285, {'naw': 10}], uncertainty: 1, variance: {'naw': 10}
+[874, {'yon': 10}], uncertainty: 1, variance: {'yon': 10}
+[933, {'ynk': 10}], uncertainty: 1, variance: {'ynk': 10}
+[865, {'yel': 10}], uncertainty: 1, variance: {'yel': 10}
+[371, {'sar': 10}], uncertainty: 1, variance: {'sar': 10}
+[796, {'sig': 10}], uncertainty: 1, variance: {'sig': 10}
+[999, {'pyn': 10}], uncertainty: 1, variance: {'pyn': 10}
+[305, {'eki': 10}], uncertainty: 1, variance: {'eki': 10}
+[519, {'aaa': 10}], uncertainty: 1, variance: {'aaa': 10}
+[331, {'nve': 10}], uncertainty: 1, variance: {'nve': 10}
+[382, {'eio': 10}], uncertainty: 1, variance: {'eio': 10}
+[562, {'dar': 10}], uncertainty: 1, variance: {'dar': 10}
+[675, {'ony': 10}], uncertainty: 1, variance: {'ony': 10}
+[70, {'aea': 10}], uncertainty: 1, variance: {'aea': 10}
+[87, {'dye': 10}], uncertainty: 1, variance: {'dye': 10}
+[671, {'ane': 10}], uncertainty: 1, variance: {'ane': 10}
+[735, {'njo': 10}], uncertainty: 1, variance: {'njo': 10}
+[410, {'oan': 10}], uncertainty: 1, variance: {'oan': 10}
+[656, {'ani': 10}], uncertainty: 1, variance: {'ani': 10}
+[899, {'ion': 10}], uncertainty: 1, variance: {'ion': 10}
+[698, {'nyl': 10}], uncertainty: 1, variance: {'nyl': 10}
+[830, {'nea': 10}], uncertainty: 1, variance: {'nea': 10}
+[252, {'ynn': 10}], uncertainty: 1, variance: {'ynn': 10}
+[658, {'eao': 10}], uncertainty: 1, variance: {'eao': 10}
+[405, {'erk': 10}], uncertainty: 1, variance: {'erk': 10}
+[323, {'nka': 10}], uncertainty: 1, variance: {'nka': 10}
+[841, {'alg': 10}], uncertainty: 1, variance: {'alg': 10}
+[786, {'ana': 10}], uncertainty: 1, variance: {'ana': 10}
+[863, {'idi': 10}], uncertainty: 1, variance: {'idi': 10}
+[332, {'aen': 10}], uncertainty: 1, variance: {'aen': 10}
+[696, {'lti': 10}], uncertainty: 1, variance: {'lti': 10}
+[958, {'ahn': 10}], uncertainty: 1, variance: {'ahn': 10}
+[48, {'oni': 10}], uncertainty: 1, variance: {'oni': 10}
+[739, {'tns': 10}], uncertainty: 1, variance: {'tns': 10}
+[908, {'azr': 10}], uncertainty: 1, variance: {'azr': 10}
+[931, {'onr': 10}], uncertainty: 1, variance: {'onr': 10}
+[764, {'oof': 10}], uncertainty: 1, variance: {'oof': 10}
+[269, {'lye': 10}], uncertainty: 1, variance: {'lye': 10}
+[566, {'aye': 10}], uncertainty: 1, variance: {'aye': 10}
+[699, {'rnm': 10}], uncertainty: 1, variance: {'rnm': 10}
+[273, {'ora': 10}], uncertainty: 1, variance: {'ora': 10}
+[890, {'onl': 10}], uncertainty: 1, variance: {'onl': 10}
+[828, {'ady': 10}], uncertainty: 1, variance: {'ady': 10}
+[459, {'lay': 10}], uncertainty: 1, variance: {'lay': 10}
+[781, {'dia': 10}], uncertainty: 1, variance: {'dia': 10}
+[159, {'ead': 10}], uncertainty: 1, variance: {'ead': 10}
+[983, {'eln': 10}], uncertainty: 1, variance: {'eln': 10}
+[754, {'iol': 10}], uncertainty: 1, variance: {'iol': 10}
+[142, {'any': 10}], uncertainty: 1, variance: {'any': 10}
+[250, {'asb': 10}], uncertainty: 1, variance: {'asb': 10}
+[281, {'hyn': 10}], uncertainty: 1, variance: {'hyn': 10}
+[759, {'aye': 10}], uncertainty: 1, variance: {'aye': 10}
+[25, {'ban': 10}], uncertainty: 1, variance: {'ban': 10}
+[654, {'ote': 10}], uncertainty: 1, variance: {'ote': 10}
+[432, {'zay': 10}], uncertainty: 1, variance: {'zay': 10}
+[558, {'ide': 10}], uncertainty: 1, variance: {'ide': 10}
+[370, {'lai': 10}], uncertainty: 1, variance: {'lai': 10}
+[906, {'dom': 10}], uncertainty: 1, variance: {'dom': 10}
+[296, {'nom': 10}], uncertainty: 1, variance: {'nom': 10}
+[166, {'nel': 10}], uncertainty: 1, variance: {'nel': 10}
+[854, {'ano': 10}], uncertainty: 1, variance: {'ano': 10}
+[464, {'yla': 10}], uncertainty: 1, variance: {'yla': 10}
+[718, {'nlo': 10}], uncertainty: 1, variance: {'nlo': 10}
+[665, {'ies': 10}], uncertainty: 1, variance: {'ies': 10}
+[733, {'sya': 10}], uncertainty: 1, variance: {'sya': 10}
+[618, {'aah': 10}], uncertainty: 1, variance: {'aah': 10}
+[99, {'ial': 10}], uncertainty: 1, variance: {'ial': 10}
+[389, {'lss': 10}], uncertainty: 1, variance: {'lss': 10}
+[849, {'hea': 10}], uncertainty: 1, variance: {'hea': 10}
+[300, {'gty': 10}], uncertainty: 1, variance: {'gty': 10}

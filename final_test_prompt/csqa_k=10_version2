@@ -1,0 +1,39 @@
+{
+    "prompt":[
+        {
+            "question": "Q: Where would you find a sloth that is not afraid of being hunted? Answer Choices: (A) forest canopy (B) nature preserve (C) zoo (D) tropical rainforest (E) commercial\nA:",
+            "pred_ans": "B",
+            "rationale": "Let's think step by step. (B) Nature preserve protects the sloth's habitats and a sloth is not afraid of being hunted. (A) forest canopy, (C) zoom, (D) tropical rainforest, and (E) commercial cannot protect a sloth well."
+        },
+        {
+            "question": "Q: What gift do people claim that god has for people? Answer Choices: (A) bible (B) everywhere (C) judge people (D) care for people (E) work miracles\nA:",
+            "pred_ans": "E",
+            "rationale": "Let's think step by step. (E) work miracles is one of the gifts people claim that god has for people. (A) bible, (B) everywhere, (C) judge people, and (D) care for people are not the gift."
+        },
+        {
+            "question": "Q: What is probably not built out of a wooden rod? Answer Choices: (A) broom (B) broom closet (C) old clock (D) hardware store (E) old houses\nA:",
+            "pred_ans": "E",
+            "rationale": "Let's think step by step. (E) old houses are probably not built out of a wooden rod. (A) Broom, (B) broom closet, (C) old clock, and (D) hardware store can be built out of wooden rods."
+        },
+        {
+            "question": "Q: Where do you use condoms? Answer Choices: (A) supermarket (B) dick (C) bedroom (D) medicine chest (E) bed\nA:",
+            "pred_ans": "C",
+            "rationale": "Let's think step by step. (C) bedroom is the place where people usually have sex. (A) supermarket, (B) dick, (D) medicine chest, and (E) bed are not the place where people usually have sex."
+        },
+        {
+            "question": "Q: What happens soon after Christmas? Answer Choices: (A) buy presents for others (B) summer (C) easter (D) see work (E) halloween\nA:",
+            "pred_ans": "C",
+            "rationale": "Let's think step by step. (C) easter is usually in March or April which is soon after christmas (December). (A) buy presents for others, (B) summer, (D) see work, and (E) halloween are not soon after christmas."
+        },
+        {
+            "question": "Q: Finding information requires what other than research materials? Answer Choices: (A) internet (B) ask questions (C) time (D) searching for (E) logic\nA:",
+            "pred_ans": "C",
+            "rationale": "Let's think step by step. (C) time is the most important thing for finding information other than research materials. (A) internet, (B) ask questions, (D) searching for, and (E) logic are not as important as time."
+        },
+        {
+            "question": "Q: Before someone can adopt the parent must do what with their offspring? Answer Choices: (A) biological child (B) give away (C) birth (D) abandon (E) orphan\nA:",
+            "pred_ans": "B",
+            "rationale": "Let's think step by step. (B) give away is necessary. Before someone can adopt, the parent must legally give away their offspring and give up their parental rights over their offspring. Biological child, birth, abandon, and orphan are not necessary for adoption. (A) biological child, (C) birth, (D) abandon, and (E) orphan are not necessary."
+        }
+    ]
+}

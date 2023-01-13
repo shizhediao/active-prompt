@@ -8,6 +8,7 @@ import time
 import argparse
 import numpy as np
 import math
+from API_POOL_REPO import *
 
 
 def main():
@@ -16,6 +17,7 @@ def main():
     print(args)
     print('*****************************')
 
+    print(f"NUM_API_KEYS: {NUM_API_KEYS}")
     set_random_seed(args.random_seed)
 
     dataloader = create_dataloader(args)
@@ -74,7 +76,8 @@ def generate_uncertainty_batch(args, question_pool, batch_limit=None, worker_id=
                 prompt_list.append(prompt)
 
             # get the first stage zero-shot result
-            responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=args.max_length_cot, stop=['Question:', "Q:"], worker_id=worker_id)
+            responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=args.max_length_cot, stop=['Question:', "Q:"], worker_id=worker_id,
+            API_PARTITION_POOL=API_PARTITION_POOL)
                 
             # construct second stage prompt, to generate a single arabic num answer
             if args.method == "zero_shot_cot":
@@ -82,7 +85,8 @@ def generate_uncertainty_batch(args, question_pool, batch_limit=None, worker_id=
                     prompt_list[i] += responses.choices[i].text + args.direct_answer_trigger
 
                 # get the second stage zero-shot rationale result -> arabic num answer
-                responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=args.max_length_cot, stop='.', worker_id=worker_id)
+                responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=args.max_length_cot, stop='.', worker_id=worker_id,
+                API_PARTITION_POOL=API_PARTITION_POOL)
 
             # check uncertainty
             ans_list = answer_extraction(args, responses)
@@ -240,10 +244,27 @@ def arg_parser():
         "--setting", type=str, default='unfair', choices=['fair', 'unfair'], help="decide whether annotate on test data or not"
     )
     parser.add_argument(
-        "--concat_length", type=int, default=3, help='Used for task last_letters, indicates length of last letter concat'
+        "--concat_length", type=int, default=2, help='Used for task last_letters, indicates length of last letter concat'
+    )
+    parser.add_argument(
+        "--api_pool_idx", type=int, default=1, choices=[0,1,2,3], help='Choose which API pool to use'
     )
     
     args = parser.parse_args()
+
+    global API_KEY_POOL
+    global NUM_API_KEYS
+    global API_PARTITION_POOL
+    API_KEY_POOL = POOL_REPO[args.api_pool_idx]
+    NUM_API_KEYS = len(API_KEY_POOL)
+
+    API_PARTITION_POOL = [
+        {"cur_index":0, "keys":API_KEY_POOL[0:40]},
+        {"cur_index":0, "keys":API_KEY_POOL[40:80]},
+        {"cur_index":0, "keys":API_KEY_POOL[80:120]},
+        {"cur_index":0, "keys":API_KEY_POOL[120:160]},
+        {"cur_index":0, "keys":API_KEY_POOL[160:]},
+    ]
     
     # Fill in the dataset path
     if args.dataset == "gsm8k":
@@ -278,7 +299,7 @@ def arg_parser():
         if args.setting == "unfair":
             args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\last_letters\last_letters_test.json" # test(dev) data path
         elif args.setting == "fair":
-            args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\last_letters\last_letters_train.json" # train data path
+            args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\last_letters\last_letters_train2.json" # train data path
         args.direct_answer_trigger = "\nTherefore, the answer is"
     else:
         raise ValueError("dataset is not properly defined ...")

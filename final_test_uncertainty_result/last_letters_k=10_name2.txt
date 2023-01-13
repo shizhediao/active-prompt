@@ -1,0 +1,1000 @@
+[308, {'oy': 7, 't=': 1, '``': 1, 'on': 1}], uncertainty: 4, variance: {'oy': 7, 't=': 1, '``': 1, 'on': 1}
+[795, {'en': 2, 'er': 2, 'el': 4, 'ee': 2}], uncertainty: 4, variance: {'en': 2, 'er': 2, 'el': 4, 'ee': 2}
+[636, {'yn': 1, 'ln': 7, 'eo': 1, 'rs': 1}], uncertainty: 4, variance: {'yn': 1, 'ln': 7, 'eo': 1, 'rs': 1}
+[971, {':)': 1, 'e#': 1, 'aa': 7, 'sa': 1}], uncertainty: 4, variance: {':)': 1, 'e#': 1, 'aa': 7, 'sa': 1}
+[753, {'an': 1, 'yn': 7, '*/': 1, '3)': 1}], uncertainty: 4, variance: {'an': 1, 'yn': 7, '*/': 1, '3)': 1}
+[284, {'``': 1, 'nk': 7, 'at': 1, 't(': 1}], uncertainty: 4, variance: {'``': 1, 'nk': 7, 'at': 1, 't(': 1}
+[202, {'ly': 8, 'em': 1, 'on': 1}], uncertainty: 3, variance: {'ly': 8, 'em': 1, 'on': 1}
+[891, {'ae': 8, 'ep': 1, 'gs': 1}], uncertainty: 3, variance: {'ae': 8, 'ep': 1, 'gs': 1}
+[720, {'ll': 7, 'lh': 2, '``': 1}], uncertainty: 3, variance: {'ll': 7, 'lh': 2, '``': 1}
+[392, {'ne': 8, 'e>': 1, 'o,': 1}], uncertainty: 3, variance: {'ne': 8, 'e>': 1, 'o,': 1}
+[178, {'ls': 8, 'T)': 1, 'ds': 1}], uncertainty: 3, variance: {'ls': 8, 'T)': 1, 'ds': 1}
+[957, {'me': 1, 'ae': 8, '``': 1}], uncertainty: 3, variance: {'me': 1, 'ae': 8, '``': 1}
+[802, {'ea': 8, 'ia': 1, 'ya': 1}], uncertainty: 3, variance: {'ea': 8, 'ia': 1, 'ya': 1}
+[90, {'na': 8, 'w)': 1, 'em': 1}], uncertainty: 3, variance: {'na': 8, 'w)': 1, 'em': 1}
+[130, {'``': 1, 'hu': 8, '--': 1}], uncertainty: 3, variance: {'``': 1, 'hu': 8, '--': 1}
+[152, {'al': 8, '))': 1, 'e:': 1}], uncertainty: 3, variance: {'al': 8, '))': 1, 'e:': 1}
+[691, {'le': 8, 't(': 1, 'er': 1}], uncertainty: 3, variance: {'le': 8, 't(': 1, 'er': 1}
+[332, {'em': 1, 'te': 1, 'nd': 8}], uncertainty: 3, variance: {'em': 1, 'te': 1, 'nd': 8}
+[521, {'ew': 8, 'eh': 1, '//': 1}], uncertainty: 3, variance: {'ew': 8, 'eh': 1, '//': 1}
+[764, {'ye': 8, 'em': 1, 'al': 1}], uncertainty: 3, variance: {'ye': 8, 'em': 1, 'al': 1}
+[48, {'oa': 8, '``': 1, 'DE': 1}], uncertainty: 3, variance: {'oa': 8, '``': 1, 'DE': 1}
+[300, {'yr': 8, '()': 1, '];': 1}], uncertainty: 3, variance: {'yr': 8, '()': 1, '];': 1}
+[618, {'yr': 1, 'ye': 8, 'e#': 1}], uncertainty: 3, variance: {'yr': 1, 'ye': 8, 'e#': 1}
+[965, {'ko': 9, '10': 1}], uncertainty: 2, variance: {'ko': 9, '10': 1}
+[334, {'ea': 9, 'ia': 1}], uncertainty: 2, variance: {'ea': 9, 'ia': 1}
+[290, {'``': 1, 'be': 9}], uncertainty: 2, variance: {'``': 1, 'be': 9}
+[776, {'ls': 9, 'le': 1}], uncertainty: 2, variance: {'ls': 9, 'le': 1}
+[523, {'yk': 9, '3:': 1}], uncertainty: 2, variance: {'yk': 9, '3:': 1}
+[615, {'sd': 9, '``': 1}], uncertainty: 2, variance: {'sd': 9, '``': 1}
+[177, {'ha': 9, 'e>': 1}], uncertainty: 2, variance: {'ha': 9, 'e>': 1}
+[200, {'ye': 9, '``': 1}], uncertainty: 2, variance: {'ye': 9, '``': 1}
+[694, {'sh': 9, 'ly': 1}], uncertainty: 2, variance: {'sh': 9, 'ly': 1}
+[210, {'en': 9, 'd`': 1}], uncertainty: 2, variance: {'en': 9, 'd`': 1}
+[398, {'yn': 9, 'an': 1}], uncertainty: 2, variance: {'yn': 9, 'an': 1}
+[848, {'nt': 1, 'ne': 9}], uncertainty: 2, variance: {'nt': 1, 'ne': 9}
+[450, {'od': 9, 'g>': 1}], uncertainty: 2, variance: {'od': 9, 'g>': 1}
+[614, {'eo': 9, 'e?': 1}], uncertainty: 2, variance: {'eo': 9, 'e?': 1}
+[770, {'il': 9, 'it': 1}], uncertainty: 2, variance: {'il': 9, 'it': 1}
+[940, {'ey': 9, 'he': 1}], uncertainty: 2, variance: {'ey': 9, 'he': 1}
+[920, {'an': 9, 'e>': 1}], uncertainty: 2, variance: {'an': 9, 'e>': 1}
+[680, {'rl': 9, 'l#': 1}], uncertainty: 2, variance: {'rl': 9, 'l#': 1}
+[195, {'sc': 9, 'cs': 1}], uncertainty: 2, variance: {'sc': 9, 'cs': 1}
+[198, {'he': 9, 't2': 1}], uncertainty: 2, variance: {'he': 9, 't2': 1}
+[585, {'ey': 9, 'ee': 1}], uncertainty: 2, variance: {'ey': 9, 'ee': 1}
+[823, {'na': 9, 'ls': 1}], uncertainty: 2, variance: {'na': 9, 'ls': 1}
+[359, {'ya': 9, 'as': 1}], uncertainty: 2, variance: {'ya': 9, 'as': 1}
+[594, {'aa': 9, 'in': 1}], uncertainty: 2, variance: {'aa': 9, 'in': 1}
+[188, {'aa': 9, '``': 1}], uncertainty: 2, variance: {'aa': 9, '``': 1}
+[668, {'ei': 9, 'e>': 1}], uncertainty: 2, variance: {'ei': 9, 'e>': 1}
+[282, {'ne': 9, 'ns': 1}], uncertainty: 2, variance: {'ne': 9, 'ns': 1}
+[28, {'ee': 9, 'rd': 1}], uncertainty: 2, variance: {'ee': 9, 'rd': 1}
+[361, {'re': 9, 'ie': 1}], uncertainty: 2, variance: {'re': 9, 'ie': 1}
+[92, {'oy': 9, 'om': 1}], uncertainty: 2, variance: {'oy': 9, 'om': 1}
+[129, {'ea': 9, '){': 1}], uncertainty: 2, variance: {'ea': 9, '){': 1}
+[26, {'zn': 9, '/*': 1}], uncertainty: 2, variance: {'zn': 9, '/*': 1}
+[50, {'rb': 9, '*/': 1}], uncertainty: 2, variance: {'rb': 9, '*/': 1}
+[121, {'yn': 9, 'e5': 1}], uncertainty: 2, variance: {'yn': 9, 'e5': 1}
+[729, {'le': 9, 'ms': 1}], uncertainty: 2, variance: {'le': 9, 'ms': 1}
+[683, {'rn': 1, 'ha': 9}], uncertainty: 2, variance: {'rn': 1, 'ha': 9}
+[454, {'sa': 1, 'ao': 9}], uncertainty: 2, variance: {'sa': 1, 'ao': 9}
+[423, {'el': 9, 'n:': 1}], uncertainty: 2, variance: {'el': 9, 'n:': 1}
+[843, {'oh': 2, 'on': 8}], uncertainty: 2, variance: {'oh': 2, 'on': 8}
+[173, {'ny': 9, 'ey': 1}], uncertainty: 2, variance: {'ny': 9, 'ey': 1}
+[147, {'e>': 1, 'le': 9}], uncertainty: 2, variance: {'e>': 1, 'le': 9}
+[914, {'ae': 9, 'om': 1}], uncertainty: 2, variance: {'ae': 9, 'om': 1}
+[443, {'ni': 9, '``': 1}], uncertainty: 2, variance: {'ni': 9, '``': 1}
+[213, {'he': 9, 'hn': 1}], uncertainty: 2, variance: {'he': 9, 'hn': 1}
+[64, {'ol': 9, 'oe': 1}], uncertainty: 2, variance: {'ol': 9, 'oe': 1}
+[301, {'an': 9, 'in': 1}], uncertainty: 2, variance: {'an': 9, 'in': 1}
+[664, {'nn': 9, '*/': 1}], uncertainty: 2, variance: {'nn': 9, '*/': 1}
+[804, {'ao': 9, 'em': 1}], uncertainty: 2, variance: {'ao': 9, 'em': 1}
+[482, {'al': 9, 't?': 1}], uncertainty: 2, variance: {'al': 9, 't?': 1}
+[627, {'es': 9, 'e0': 1}], uncertainty: 2, variance: {'es': 9, 'e0': 1}
+[272, {'ae': 9, 'an': 1}], uncertainty: 2, variance: {'ae': 9, 'an': 1}
+[78, {'oy': 9, 'so': 1}], uncertainty: 2, variance: {'oy': 9, 'so': 1}
+[537, {'ey': 9, 'ye': 1}], uncertainty: 2, variance: {'ey': 9, 'ye': 1}
+[632, {'nn': 9, 'ed': 1}], uncertainty: 2, variance: {'nn': 9, 'ed': 1}
+[943, {'ye': 9, '``': 1}], uncertainty: 2, variance: {'ye': 9, '``': 1}
+[124, {'iy': 9, 'se': 1}], uncertainty: 2, variance: {'iy': 9, 'se': 1}
+[945, {'de': 6, 'ee': 4}], uncertainty: 2, variance: {'de': 6, 'ee': 4}
+[125, {'aa': 9, 'e>': 1}], uncertainty: 2, variance: {'aa': 9, 'e>': 1}
+[839, {'ee': 9, 'ei': 1}], uncertainty: 2, variance: {'ee': 9, 'ei': 1}
+[435, {'en': 8, 'tn': 2}], uncertainty: 2, variance: {'en': 8, 'tn': 2}
+[171, {'se': 9, 'e>': 1}], uncertainty: 2, variance: {'se': 9, 'e>': 1}
+[145, {'ta': 9, 'a#': 1}], uncertainty: 2, variance: {'ta': 9, 'a#': 1}
+[530, {'ld': 1, 'ed': 9}], uncertainty: 2, variance: {'ld': 1, 'ed': 9}
+[304, {'ho': 9, '*/': 1}], uncertainty: 2, variance: {'ho': 9, '*/': 1}
+[935, {'aa': 9, 'od': 1}], uncertainty: 2, variance: {'aa': 9, 'od': 1}
+[932, {'ym': 9, 'ew': 1}], uncertainty: 2, variance: {'ym': 9, 'ew': 1}
+[708, {'nn': 9, ',,': 1}], uncertainty: 2, variance: {'nn': 9, ',,': 1}
+[915, {'ne': 9, ');': 1}], uncertainty: 2, variance: {'ne': 9, ');': 1}
+[449, {'by': 9, 'ly': 1}], uncertainty: 2, variance: {'by': 9, 'ly': 1}
+[431, {'sn': 9, '!)': 1}], uncertainty: 2, variance: {'sn': 9, '!)': 1}
+[260, {'ao': 9, 'nd': 1}], uncertainty: 2, variance: {'ao': 9, 'nd': 1}
+[442, {'ny': 9, '==': 1}], uncertainty: 2, variance: {'ny': 9, '==': 1}
+[160, {'em': 9, 'kc': 1}], uncertainty: 2, variance: {'em': 9, 'kc': 1}
+[164, {'sa': 9, '``': 1}], uncertainty: 2, variance: {'sa': 9, '``': 1}
+[458, {'eo': 9, 'e>': 1}], uncertainty: 2, variance: {'eo': 9, 'e>': 1}
+[985, {'yx': 9, '``': 1}], uncertainty: 2, variance: {'yx': 9, '``': 1}
+[801, {'nu': 9, 'ne': 1}], uncertainty: 2, variance: {'nu': 9, 'ne': 1}
+[806, {'yo': 9, 'ge': 1}], uncertainty: 2, variance: {'yo': 9, 'ge': 1}
+[737, {'nn': 9, '--': 1}], uncertainty: 2, variance: {'nn': 9, '--': 1}
+[748, {'ne': 9, 'eR': 1}], uncertainty: 2, variance: {'ne': 9, 'eR': 1}
+[893, {'oy': 9, 'd?': 1}], uncertainty: 2, variance: {'oy': 9, 'd?': 1}
+[952, {'ne': 9, 'nt': 1}], uncertainty: 2, variance: {'ne': 9, 'nt': 1}
+[343, {'al': 9, '``': 1}], uncertainty: 2, variance: {'al': 9, '``': 1}
+[568, {'eu': 9, '_H': 1}], uncertainty: 2, variance: {'eu': 9, '_H': 1}
+[690, {'ss': 9, '``': 1}], uncertainty: 2, variance: {'ss': 9, '``': 1}
+[782, {'oe': 9, '22': 1}], uncertainty: 2, variance: {'oe': 9, '22': 1}
+[937, {'ea': 9, 'e>': 1}], uncertainty: 2, variance: {'ea': 9, 'e>': 1}
+[927, {'ca': 9, '``': 1}], uncertainty: 2, variance: {'ca': 9, '``': 1}
+[446, {'ia': 9, '``': 1}], uncertainty: 2, variance: {'ia': 9, '``': 1}
+[358, {'en': 9, 'on': 1}], uncertainty: 2, variance: {'en': 9, 'on': 1}
+[391, {'aa': 9, 'ca': 1}], uncertainty: 2, variance: {'aa': 9, 'ca': 1}
+[972, {'oe': 9, 'ot': 1}], uncertainty: 2, variance: {'oe': 9, 'ot': 1}
+[743, {'ey': 9, '=`': 1}], uncertainty: 2, variance: {'ey': 9, '=`': 1}
+[712, {'ee': 9, '``': 1}], uncertainty: 2, variance: {'ee': 9, '``': 1}
+[550, {'ny': 9, 'em': 1}], uncertainty: 2, variance: {'ny': 9, 'em': 1}
+[102, {'an': 9, 'PU': 1}], uncertainty: 2, variance: {'an': 9, 'PU': 1}
+[576, {'yn': 9, 'ly': 1}], uncertainty: 2, variance: {'yn': 9, 'ly': 1}
+[340, {'--': 1, 'da': 9}], uncertainty: 2, variance: {'--': 1, 'da': 9}
+[183, {'ee': 9, 'el': 1}], uncertainty: 2, variance: {'ee': 9, 'el': 1}
+[861, {'ke': 9, 'er': 1}], uncertainty: 2, variance: {'ke': 9, 'er': 1}
+[919, {'da': 1, 'na': 9}], uncertainty: 2, variance: {'da': 1, 'na': 9}
+[36, {'yy': 9, ';}': 1}], uncertainty: 2, variance: {'yy': 9, ';}': 1}
+[268, {'ya': 9, 'e>': 1}], uncertainty: 2, variance: {'ya': 9, 'e>': 1}
+[341, {'ye': 9, 'yt': 1}], uncertainty: 2, variance: {'ye': 9, 'yt': 1}
+[652, {'da': 9, 'e>': 1}], uncertainty: 2, variance: {'da': 9, 'e>': 1}
+[948, {'ey': 8, 'ty': 2}], uncertainty: 2, variance: {'ey': 8, 'ty': 2}
+[208, {'en': 1, 'nm': 9}], uncertainty: 2, variance: {'en': 1, 'nm': 9}
+[351, {'yr': 9, 's)': 1}], uncertainty: 2, variance: {'yr': 9, 's)': 1}
+[215, {'>>': 1, 'ay': 9}], uncertainty: 2, variance: {'>>': 1, 'ay': 9}
+[106, {'ya': 9, ');': 1}], uncertainty: 2, variance: {'ya': 9, ');': 1}
+[306, {'oy': 9, 'me': 1}], uncertainty: 2, variance: {'oy': 9, 'me': 1}
+[111, {'es': 9, '*/': 1}], uncertainty: 2, variance: {'es': 9, '*/': 1}
+[412, {'sa': 8, 'ma': 2}], uncertainty: 2, variance: {'sa': 8, 'ma': 2}
+[62, {'on': 9, '``': 1}], uncertainty: 2, variance: {'on': 9, '``': 1}
+[478, {'ta': 9, 'f)': 1}], uncertainty: 2, variance: {'ta': 9, 'f)': 1}
+[725, {'ey': 9, '([': 1}], uncertainty: 2, variance: {'ey': 9, '([': 1}
+[592, {'hn': 1, 'en': 9}], uncertainty: 2, variance: {'hn': 1, 'en': 9}
+[583, {'as': 9, 'T:': 1}], uncertainty: 2, variance: {'as': 9, 'T:': 1}
+[876, {'��y': 5, 'ay': 5}], uncertainty: 2, variance: {'��y': 5, 'ay': 5}
+[805, {'aa': 9, 'em': 1}], uncertainty: 2, variance: {'aa': 9, 'em': 1}
+[672, {'an': 9, 'nt': 1}], uncertainty: 2, variance: {'an': 9, 'nt': 1}
+[951, {'ya': 9, '44': 1}], uncertainty: 2, variance: {'ya': 9, '44': 1}
+[468, {'ai': 9, '2:': 1}], uncertainty: 2, variance: {'ai': 9, '2:': 1}
+[870, {'er': 9, '))': 1}], uncertainty: 2, variance: {'er': 9, '))': 1}
+[303, {'hr': 1, 'rr': 9}], uncertainty: 2, variance: {'hr': 1, 'rr': 9}
+[716, {'\\n': 1, 'py': 9}], uncertainty: 2, variance: {'\\n': 1, 'py': 9}
+[569, {'zp': 9, '``': 1}], uncertainty: 2, variance: {'zp': 9, '``': 1}
+[465, {'``': 1, 'oy': 9}], uncertainty: 2, variance: {'``': 1, 'oy': 9}
+[886, {'od': 9, '2=': 1}], uncertainty: 2, variance: {'od': 9, '2=': 1}
+[168, {'or': 9, 'on': 1}], uncertainty: 2, variance: {'or': 9, 'on': 1}
+[724, {'ad': 9, '33': 1}], uncertainty: 2, variance: {'ad': 9, '33': 1}
+[72, {'py': 9, 'he': 1}], uncertainty: 2, variance: {'py': 9, 'he': 1}
+[319, {'ll': 9, 'sl': 1}], uncertainty: 2, variance: {'ll': 9, 'sl': 1}
+[730, {'eh': 9, 'e>': 1}], uncertainty: 2, variance: {'eh': 9, 'e>': 1}
+[205, {'``': 1, 'at': 9}], uncertainty: 2, variance: {'``': 1, 'at': 9}
+[706, {'ao': 9, '``': 1}], uncertainty: 2, variance: {'ao': 9, '``': 1}
+[621, {'se': 9, 'te': 1}], uncertainty: 2, variance: {'se': 9, 'te': 1}
+[169, {'oa': 9, 'co': 1}], uncertainty: 2, variance: {'oa': 9, 'co': 1}
+[131, {'ln': 9, '``': 1}], uncertainty: 2, variance: {'ln': 9, '``': 1}
+[545, {'in': 9, '``': 1}], uncertainty: 2, variance: {'in': 9, '``': 1}
+[933, {'nn': 9, 'nr': 1}], uncertainty: 2, variance: {'nn': 9, 'nr': 1}
+[246, {'na': 9, 'E)': 1}], uncertainty: 2, variance: {'na': 9, 'E)': 1}
+[808, {'``': 1, 'na': 9}], uncertainty: 2, variance: {'``': 1, 'na': 9}
+[500, {'ro': 9, '=`': 1}], uncertainty: 2, variance: {'ro': 9, '=`': 1}
+[613, {'nn': 9, 'of': 1}], uncertainty: 2, variance: {'nn': 9, 'of': 1}
+[543, {'aa': 9, ';}': 1}], uncertainty: 2, variance: {'aa': 9, ';}': 1}
+[552, {'on': 9, '``': 1}], uncertainty: 2, variance: {'on': 9, '``': 1}
+[798, {'an': 9, '}}': 1}], uncertainty: 2, variance: {'an': 9, '}}': 1}
+[834, {'zr': 9, 'sk': 1}], uncertainty: 2, variance: {'zr': 9, 'sk': 1}
+[973, {'dl': 9, 'er': 1}], uncertainty: 2, variance: {'dl': 9, 'er': 1}
+[894, {'nn': 9, '``': 1}], uncertainty: 2, variance: {'nn': 9, '``': 1}
+[512, {'ti': 9, 'ye': 1}], uncertainty: 2, variance: {'ti': 9, 'ye': 1}
+[362, {'ei': 9, 'se': 1}], uncertainty: 2, variance: {'ei': 9, 'se': 1}
+[441, {'yi': 9, '$/': 1}], uncertainty: 2, variance: {'yi': 9, '$/': 1}
+[709, {'ae': 9, 's(': 1}], uncertainty: 2, variance: {'ae': 9, 's(': 1}
+[135, {'dy': 9, '9,': 1}], uncertainty: 2, variance: {'dy': 9, '9,': 1}
+[285, {'nh': 9, 'th': 1}], uncertainty: 2, variance: {'nh': 9, 'th': 1}
+[735, {'ae': 9, '``': 1}], uncertainty: 2, variance: {'ae': 9, '``': 1}
+[274, {'ee': 8, 'ey': 2}], uncertainty: 2, variance: {'ee': 8, 'ey': 2}
+[824, {'sa': 9, 'ng': 1}], uncertainty: 2, variance: {'sa': 9, 'ng': 1}
+[473, {'ne': 9, '``': 1}], uncertainty: 2, variance: {'ne': 9, '``': 1}
+[175, {'oe': 9, ';}': 1}], uncertainty: 2, variance: {'oe': 9, ';}': 1}
+[273, {'mn': 9, '()': 1}], uncertainty: 2, variance: {'mn': 9, '()': 1}
+[141, {'ar': 9, 'e>': 1}], uncertainty: 2, variance: {'ar': 9, 'e>': 1}
+[881, {'aa': 9, 'ew': 1}], uncertainty: 2, variance: {'aa': 9, 'ew': 1}
+[925, {'ly': 9, '``': 1}], uncertainty: 2, variance: {'ly': 9, '``': 1}
+[974, {'me': 9, 'p>': 1}], uncertainty: 2, variance: {'me': 9, 'p>': 1}
+[271, {'an': 9, '``': 1}], uncertainty: 2, variance: {'an': 9, '``': 1}
+[469, {'ao': 9, 'z4': 1}], uncertainty: 2, variance: {'ao': 9, 'z4': 1}
+[479, {'ne': 9, 'er': 1}], uncertainty: 2, variance: {'ne': 9, 'er': 1}
+[394, {'ea': 9, 'tc': 1}], uncertainty: 2, variance: {'ea': 9, 'tc': 1}
+[956, {'aa': 9, '##': 1}], uncertainty: 2, variance: {'aa': 9, '##': 1}
+[156, {'sa': 9, 'ta': 1}], uncertainty: 2, variance: {'sa': 9, 'ta': 1}
+[112, {'ai': 9, 'i]': 1}], uncertainty: 2, variance: {'ai': 9, 'i]': 1}
+[736, {'dn': 9, 'et': 1}], uncertainty: 2, variance: {'dn': 9, 'et': 1}
+[955, {'na': 9, 'ia': 1}], uncertainty: 2, variance: {'na': 9, 'ia': 1}
+[899, {'ir': 9, 't6': 1}], uncertainty: 2, variance: {'ir': 9, 't6': 1}
+[936, {'hy': 9, '[-': 1}], uncertainty: 2, variance: {'hy': 9, '[-': 1}
+[363, {'yl': 9, '2:': 1}], uncertainty: 2, variance: {'yl': 9, '2:': 1}
+[81, {'ay': 9, 'gn': 1}], uncertainty: 2, variance: {'ay': 9, 'gn': 1}
+[882, {'wn': 9, 'es': 1}], uncertainty: 2, variance: {'wn': 9, 'es': 1}
+[387, {'ya': 8, '``': 2}], uncertainty: 2, variance: {'ya': 8, '``': 2}
+[470, {'ar': 9, '``': 1}], uncertainty: 2, variance: {'ar': 9, '``': 1}
+[747, {'ln': 9, 'ae': 1}], uncertainty: 2, variance: {'ln': 9, 'ae': 1}
+[665, {'jk': 9, 's/': 1}], uncertainty: 2, variance: {'jk': 9, 's/': 1}
+[203, {'en': 9, '->': 1}], uncertainty: 2, variance: {'en': 9, '->': 1}
+[27, {'on': 9, 'n#': 1}], uncertainty: 2, variance: {'on': 9, 'n#': 1}
+[517, {'ra': 9, 'n:': 1}], uncertainty: 2, variance: {'ra': 9, 'n:': 1}
+[238, {'de': 9, 'ng': 1}], uncertainty: 2, variance: {'de': 9, 'ng': 1}
+[826, {'hh': 9, 'st': 1}], uncertainty: 2, variance: {'hh': 9, 'st': 1}
+[867, {'yl': 9, '_4': 1}], uncertainty: 2, variance: {'yl': 9, '_4': 1}
+[367, {'so': 9, 'in': 1}], uncertainty: 2, variance: {'so': 9, 'in': 1}
+[558, {'oj': 9, '``': 1}], uncertainty: 2, variance: {'oj': 9, '``': 1}
+[913, {'ae': 9, 'at': 1}], uncertainty: 2, variance: {'ae': 9, 'at': 1}
+[758, {'ln': 9, '**': 1}], uncertainty: 2, variance: {'ln': 9, '**': 1}
+[692, {'ae': 9, ');': 1}], uncertainty: 2, variance: {'ae': 9, ');': 1}
+[25, {'ye': 9, 'sn': 1}], uncertainty: 2, variance: {'ye': 9, 'sn': 1}
+[114, {'hy': 9, 'e?': 1}], uncertainty: 2, variance: {'hy': 9, 'e?': 1}
+[654, {'cs': 9, 'e>': 1}], uncertainty: 2, variance: {'cs': 9, 'e>': 1}
+[56, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[264, {'ye': 10}], uncertainty: 1, variance: {'ye': 10}
+[772, {'na': 10}], uncertainty: 1, variance: {'na': 10}
+[185, {'an': 10}], uncertainty: 1, variance: {'an': 10}
+[466, {'ny': 10}], uncertainty: 1, variance: {'ny': 10}
+[789, {'yl': 10}], uncertainty: 1, variance: {'yl': 10}
+[174, {'le': 10}], uncertainty: 1, variance: {'le': 10}
+[150, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[741, {'ny': 10}], uncertainty: 1, variance: {'ny': 10}
+[113, {'ko': 10}], uncertainty: 1, variance: {'ko': 10}
+[428, {'ne': 10}], uncertainty: 1, variance: {'ne': 10}
+[18, {'ee': 10}], uncertainty: 1, variance: {'ee': 10}
+[189, {'as': 10}], uncertainty: 1, variance: {'as': 10}
+[414, {'ya': 10}], uncertainty: 1, variance: {'ya': 10}
+[589, {'he': 10}], uncertainty: 1, variance: {'he': 10}
+[666, {'ai': 10}], uncertainty: 1, variance: {'ai': 10}
+[763, {'as': 10}], uncertainty: 1, variance: {'as': 10}
+[221, {'ee': 10}], uncertainty: 1, variance: {'ee': 10}
+[586, {'ad': 10}], uncertainty: 1, variance: {'ad': 10}
+[581, {'hn': 10}], uncertainty: 1, variance: {'hn': 10}
+[299, {'ae': 10}], uncertainty: 1, variance: {'ae': 10}
+[638, {'ka': 10}], uncertainty: 1, variance: {'ka': 10}
+[386, {'eo': 10}], uncertainty: 1, variance: {'eo': 10}
+[364, {'se': 10}], uncertainty: 1, variance: {'se': 10}
+[879, {'eo': 10}], uncertainty: 1, variance: {'eo': 10}
+[16, {'yy': 10}], uncertainty: 1, variance: {'yy': 10}
+[1, {'jo': 10}], uncertainty: 1, variance: {'jo': 10}
+[38, {'eo': 10}], uncertainty: 1, variance: {'eo': 10}
+[493, {'ia': 10}], uncertainty: 1, variance: {'ia': 10}
+[247, {'se': 10}], uncertainty: 1, variance: {'se': 10}
+[506, {'kr': 10}], uncertainty: 1, variance: {'kr': 10}
+[896, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[713, {'he': 10}], uncertainty: 1, variance: {'he': 10}
+[76, {'al': 10}], uncertainty: 1, variance: {'al': 10}
+[911, {'nn': 10}], uncertainty: 1, variance: {'nn': 10}
+[507, {'la': 10}], uncertainty: 1, variance: {'la': 10}
+[895, {'yo': 10}], uncertainty: 1, variance: {'yo': 10}
+[922, {'et': 10}], uncertainty: 1, variance: {'et': 10}
+[33, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[483, {'me': 10}], uncertainty: 1, variance: {'me': 10}
+[85, {'ns': 10}], uncertainty: 1, variance: {'ns': 10}
+[750, {'nr': 10}], uncertainty: 1, variance: {'nr': 10}
+[354, {'oa': 10}], uncertainty: 1, variance: {'oa': 10}
+[184, {'sc': 10}], uncertainty: 1, variance: {'sc': 10}
+[809, {'oi': 10}], uncertainty: 1, variance: {'oi': 10}
+[418, {'to': 10}], uncertainty: 1, variance: {'to': 10}
+[682, {'en': 10}], uncertainty: 1, variance: {'en': 10}
+[501, {'ah': 10}], uncertainty: 1, variance: {'ah': 10}
+[760, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[49, {'ln': 10}], uncertainty: 1, variance: {'ln': 10}
+[732, {'oe': 10}], uncertainty: 1, variance: {'oe': 10}
+[336, {'ed': 10}], uncertainty: 1, variance: {'ed': 10}
+[792, {'nn': 10}], uncertainty: 1, variance: {'nn': 10}
+[508, {'ai': 10}], uncertainty: 1, variance: {'ai': 10}
+[842, {'si': 10}], uncertainty: 1, variance: {'si': 10}
+[765, {'nr': 10}], uncertainty: 1, variance: {'nr': 10}
+[909, {'oe': 10}], uncertainty: 1, variance: {'oe': 10}
+[293, {'ia': 10}], uncertainty: 1, variance: {'ia': 10}
+[538, {'ia': 10}], uncertainty: 1, variance: {'ia': 10}
+[24, {'gr': 10}], uncertainty: 1, variance: {'gr': 10}
+[424, {'la': 10}], uncertainty: 1, variance: {'la': 10}
+[528, {'yn': 10}], uncertainty: 1, variance: {'yn': 10}
+[34, {'xy': 10}], uncertainty: 1, variance: {'xy': 10}
+[928, {'oa': 10}], uncertainty: 1, variance: {'oa': 10}
+[607, {'ss': 10}], uncertainty: 1, variance: {'ss': 10}
+[298, {'ie': 10}], uncertainty: 1, variance: {'ie': 10}
+[790, {'nz': 10}], uncertainty: 1, variance: {'nz': 10}
+[350, {'is': 10}], uncertainty: 1, variance: {'is': 10}
+[467, {'dy': 10}], uncertainty: 1, variance: {'dy': 10}
+[622, {'sd': 10}], uncertainty: 1, variance: {'sd': 10}
+[476, {'lo': 10}], uncertainty: 1, variance: {'lo': 10}
+[554, {'sn': 10}], uncertainty: 1, variance: {'sn': 10}
+[365, {'en': 10}], uncertainty: 1, variance: {'en': 10}
+[630, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[797, {'ya': 10}], uncertainty: 1, variance: {'ya': 10}
+[496, {'an': 10}], uncertainty: 1, variance: {'an': 10}
+[924, {'ya': 10}], uncertainty: 1, variance: {'ya': 10}
+[369, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[596, {'eo': 10}], uncertainty: 1, variance: {'eo': 10}
+[53, {'oa': 10}], uncertainty: 1, variance: {'oa': 10}
+[426, {'ya': 10}], uncertainty: 1, variance: {'ya': 10}
+[902, {'yy': 10}], uncertainty: 1, variance: {'yy': 10}
+[942, {'nn': 10}], uncertainty: 1, variance: {'nn': 10}
+[330, {'ei': 10}], uncertainty: 1, variance: {'ei': 10}
+[727, {'ln': 10}], uncertainty: 1, variance: {'ln': 10}
+[396, {'lh': 10}], uncertainty: 1, variance: {'lh': 10}
+[463, {'ye': 10}], uncertainty: 1, variance: {'ye': 10}
+[393, {'ak': 10}], uncertainty: 1, variance: {'ak': 10}
+[311, {'et': 10}], uncertainty: 1, variance: {'et': 10}
+[744, {'sz': 10}], uncertainty: 1, variance: {'sz': 10}
+[921, {'ai': 10}], uncertainty: 1, variance: {'ai': 10}
+[461, {'yo': 10}], uncertainty: 1, variance: {'yo': 10}
+[522, {'zo': 10}], uncertainty: 1, variance: {'zo': 10}
+[631, {'an': 10}], uncertainty: 1, variance: {'an': 10}
+[490, {'na': 10}], uncertainty: 1, variance: {'na': 10}
+[256, {'ad': 10}], uncertainty: 1, variance: {'ad': 10}
+[693, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[740, {'oy': 10}], uncertainty: 1, variance: {'oy': 10}
+[516, {'hy': 10}], uncertainty: 1, variance: {'hy': 10}
+[417, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[660, {'oa': 10}], uncertainty: 1, variance: {'oa': 10}
+[325, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[702, {'aq': 10}], uncertainty: 1, variance: {'aq': 10}
+[949, {'ym': 10}], uncertainty: 1, variance: {'ym': 10}
+[515, {'yo': 10}], uncertainty: 1, variance: {'yo': 10}
+[864, {'at': 10}], uncertainty: 1, variance: {'at': 10}
+[836, {'yn': 10}], uncertainty: 1, variance: {'yn': 10}
+[877, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[788, {'my': 10}], uncertainty: 1, variance: {'my': 10}
+[66, {'yo': 10}], uncertainty: 1, variance: {'yo': 10}
+[355, {'so': 10}], uncertainty: 1, variance: {'so': 10}
+[799, {'oj': 10}], uncertainty: 1, variance: {'oj': 10}
+[939, {'ko': 10}], uncertainty: 1, variance: {'ko': 10}
+[944, {'eo': 10}], uncertainty: 1, variance: {'eo': 10}
+[606, {'yy': 10}], uncertainty: 1, variance: {'yy': 10}
+[959, {'og': 10}], uncertainty: 1, variance: {'og': 10}
+[934, {'yt': 10}], uncertainty: 1, variance: {'yt': 10}
+[731, {'ol': 10}], uncertainty: 1, variance: {'ol': 10}
+[287, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[527, {'rn': 10}], uncertainty: 1, variance: {'rn': 10}
+[807, {'ok': 10}], uncertainty: 1, variance: {'ok': 10}
+[229, {'ko': 10}], uncertainty: 1, variance: {'ko': 10}
+[436, {'ye': 10}], uncertainty: 1, variance: {'ye': 10}
+[374, {'na': 10}], uncertainty: 1, variance: {'na': 10}
+[819, {'yl': 10}], uncertainty: 1, variance: {'yl': 10}
+[316, {'m��': 10}], uncertainty: 1, variance: {'m��': 10}
+[560, {'an': 10}], uncertainty: 1, variance: {'an': 10}
+[241, {'ye': 10}], uncertainty: 1, variance: {'ye': 10}
+[149, {'mn': 10}], uncertainty: 1, variance: {'mn': 10}
+[577, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[157, {'ya': 10}], uncertainty: 1, variance: {'ya': 10}
+[612, {'oy': 10}], uncertainty: 1, variance: {'oy': 10}
+[969, {'eo': 10}], uncertainty: 1, variance: {'eo': 10}
+[688, {'sk': 10}], uncertainty: 1, variance: {'sk': 10}
+[816, {'es': 10}], uncertainty: 1, variance: {'es': 10}
+[401, {'te': 10}], uncertainty: 1, variance: {'te': 10}
+[917, {'ae': 10}], uncertainty: 1, variance: {'ae': 10}
+[489, {'ym': 10}], uncertainty: 1, variance: {'ym': 10}
+[451, {'la': 10}], uncertainty: 1, variance: {'la': 10}
+[251, {'oe': 10}], uncertainty: 1, variance: {'oe': 10}
+[653, {'en': 10}], uncertainty: 1, variance: {'en': 10}
+[769, {'le': 10}], uncertainty: 1, variance: {'le': 10}
+[670, {'na': 10}], uncertainty: 1, variance: {'na': 10}
+[637, {'an': 10}], uncertainty: 1, variance: {'an': 10}
+[991, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[342, {'la': 10}], uncertainty: 1, variance: {'la': 10}
+[136, {'an': 10}], uncertainty: 1, variance: {'an': 10}
+[88, {'ry': 10}], uncertainty: 1, variance: {'ry': 10}
+[327, {'ti': 10}], uncertainty: 1, variance: {'ti': 10}
+[475, {'yy': 10}], uncertainty: 1, variance: {'yy': 10}
+[981, {'ye': 10}], uncertainty: 1, variance: {'ye': 10}
+[850, {'oi': 10}], uncertainty: 1, variance: {'oi': 10}
+[892, {'da': 10}], uncertainty: 1, variance: {'da': 10}
+[375, {'ya': 10}], uncertainty: 1, variance: {'ya': 10}
+[349, {'zn': 10}], uncertainty: 1, variance: {'zn': 10}
+[499, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[474, {'la': 10}], uncertainty: 1, variance: {'la': 10}
+[617, {'ia': 10}], uncertainty: 1, variance: {'ia': 10}
+[697, {'na': 10}], uncertainty: 1, variance: {'na': 10}
+[211, {'li': 10}], uncertainty: 1, variance: {'li': 10}
+[381, {'an': 10}], uncertainty: 1, variance: {'an': 10}
+[119, {'dn': 10}], uncertainty: 1, variance: {'dn': 10}
+[477, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[144, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[29, {'lk': 10}], uncertainty: 1, variance: {'lk': 10}
+[910, {'er': 10}], uncertainty: 1, variance: {'er': 10}
+[605, {'eh': 10}], uncertainty: 1, variance: {'eh': 10}
+[61, {'da': 10}], uncertainty: 1, variance: {'da': 10}
+[871, {'tt': 10}], uncertainty: 1, variance: {'tt': 10}
+[572, {'ia': 10}], uncertainty: 1, variance: {'ia': 10}
+[5, {'rl': 10}], uncertainty: 1, variance: {'rl': 10}
+[926, {'ah': 10}], uncertainty: 1, variance: {'ah': 10}
+[639, {'ye': 10}], uncertainty: 1, variance: {'ye': 10}
+[439, {'lo': 10}], uncertainty: 1, variance: {'lo': 10}
+[193, {'yi': 10}], uncertainty: 1, variance: {'yi': 10}
+[752, {'im': 10}], uncertainty: 1, variance: {'im': 10}
+[626, {'ny': 10}], uncertainty: 1, variance: {'ny': 10}
+[571, {'ya': 10}], uncertainty: 1, variance: {'ya': 10}
+[17, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[329, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[318, {'oy': 10}], uncertainty: 1, variance: {'oy': 10}
+[249, {'el': 10}], uncertainty: 1, variance: {'el': 10}
+[846, {'sy': 10}], uncertainty: 1, variance: {'sy': 10}
+[279, {'nr': 10}], uncertainty: 1, variance: {'nr': 10}
+[455, {'yh': 10}], uncertainty: 1, variance: {'yh': 10}
+[901, {'nr': 10}], uncertainty: 1, variance: {'nr': 10}
+[761, {'ac': 10}], uncertainty: 1, variance: {'ac': 10}
+[547, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[180, {'nl': 10}], uncertainty: 1, variance: {'nl': 10}
+[557, {'an': 10}], uncertainty: 1, variance: {'an': 10}
+[628, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[10, {'nn': 10}], uncertainty: 1, variance: {'nn': 10}
+[199, {'eo': 10}], uncertainty: 1, variance: {'eo': 10}
+[425, {'yh': 10}], uncertainty: 1, variance: {'yh': 10}
+[534, {'oy': 10}], uncertainty: 1, variance: {'oy': 10}
+[883, {'nf': 10}], uncertainty: 1, variance: {'nf': 10}
+[419, {'ne': 10}], uncertainty: 1, variance: {'ne': 10}
+[961, {'yy': 10}], uncertainty: 1, variance: {'yy': 10}
+[148, {'en': 10}], uncertainty: 1, variance: {'en': 10}
+[975, {'ll': 10}], uncertainty: 1, variance: {'ll': 10}
+[79, {'si': 10}], uncertainty: 1, variance: {'si': 10}
+[775, {'re': 10}], uncertainty: 1, variance: {'re': 10}
+[302, {'si': 10}], uncertainty: 1, variance: {'si': 10}
+[995, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[525, {'mn': 10}], uncertainty: 1, variance: {'mn': 10}
+[774, {'ya': 10}], uncertainty: 1, variance: {'ya': 10}
+[231, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[625, {'aj': 10}], uncertainty: 1, variance: {'aj': 10}
+[800, {'im': 10}], uncertainty: 1, variance: {'im': 10}
+[561, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[509, {'yo': 10}], uncertainty: 1, variance: {'yo': 10}
+[840, {'nn': 10}], uncertainty: 1, variance: {'nn': 10}
+[494, {'it': 10}], uncertainty: 1, variance: {'it': 10}
+[742, {'la': 10}], uncertainty: 1, variance: {'la': 10}
+[510, {'oy': 10}], uncertainty: 1, variance: {'oy': 10}
+[573, {'ha': 10}], uncertainty: 1, variance: {'ha': 10}
+[138, {'oa': 10}], uncertainty: 1, variance: {'oa': 10}
+[191, {'as': 10}], uncertainty: 1, variance: {'as': 10}
+[4, {'be': 10}], uncertainty: 1, variance: {'be': 10}
+[20, {'ek': 10}], uncertainty: 1, variance: {'ek': 10}
+[411, {'oa': 10}], uncertainty: 1, variance: {'oa': 10}
+[333, {'oa': 10}], uncertainty: 1, variance: {'oa': 10}
+[192, {'na': 10}], uncertainty: 1, variance: {'na': 10}
+[262, {'ym': 10}], uncertainty: 1, variance: {'ym': 10}
+[647, {'en': 10}], uncertainty: 1, variance: {'en': 10}
+[810, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[232, {'ee': 10}], uncertainty: 1, variance: {'ee': 10}
+[681, {'ge': 10}], uncertainty: 1, variance: {'ge': 10}
+[360, {'or': 10}], uncertainty: 1, variance: {'or': 10}
+[838, {'ho': 10}], uncertainty: 1, variance: {'ho': 10}
+[236, {'an': 10}], uncertainty: 1, variance: {'an': 10}
+[582, {'ok': 10}], uncertainty: 1, variance: {'ok': 10}
+[201, {'ad': 10}], uncertainty: 1, variance: {'ad': 10}
+[13, {'yn': 10}], uncertainty: 1, variance: {'yn': 10}
+[427, {'hh': 10}], uncertainty: 1, variance: {'hh': 10}
+[239, {'ny': 10}], uncertainty: 1, variance: {'ny': 10}
+[84, {'ah': 10}], uncertainty: 1, variance: {'ah': 10}
+[532, {'ee': 10}], uncertainty: 1, variance: {'ee': 10}
+[172, {'ns': 10}], uncertainty: 1, variance: {'ns': 10}
+[289, {'sn': 10}], uncertainty: 1, variance: {'sn': 10}
+[485, {'ke': 10}], uncertainty: 1, variance: {'ke': 10}
+[31, {'se': 10}], uncertainty: 1, variance: {'se': 10}
+[579, {'gy': 10}], uncertainty: 1, variance: {'gy': 10}
+[404, {'yz': 10}], uncertainty: 1, variance: {'yz': 10}
+[277, {'sd': 10}], uncertainty: 1, variance: {'sd': 10}
+[444, {'nx': 10}], uncertainty: 1, variance: {'nx': 10}
+[771, {'lt': 10}], uncertainty: 1, variance: {'lt': 10}
+[372, {'bn': 10}], uncertainty: 1, variance: {'bn': 10}
+[722, {'ir': 10}], uncertainty: 1, variance: {'ir': 10}
+[400, {'ol': 10}], uncertainty: 1, variance: {'ol': 10}
+[575, {'tn': 10}], uncertainty: 1, variance: {'tn': 10}
+[548, {'en': 10}], uncertainty: 1, variance: {'en': 10}
+[710, {'rr': 10}], uncertainty: 1, variance: {'rr': 10}
+[41, {'ed': 10}], uncertainty: 1, variance: {'ed': 10}
+[885, {'re': 10}], uncertainty: 1, variance: {'re': 10}
+[858, {'as': 10}], uncertainty: 1, variance: {'as': 10}
+[139, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[385, {'la': 10}], uncertainty: 1, variance: {'la': 10}
+[406, {'an': 10}], uncertainty: 1, variance: {'an': 10}
+[380, {'dy': 10}], uncertainty: 1, variance: {'dy': 10}
+[491, {'oi': 10}], uncertainty: 1, variance: {'oi': 10}
+[900, {'yn': 10}], uncertainty: 1, variance: {'yn': 10}
+[430, {'oa': 10}], uncertainty: 1, variance: {'oa': 10}
+[703, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[294, {'an': 10}], uncertainty: 1, variance: {'an': 10}
+[878, {'li': 10}], uncertainty: 1, variance: {'li': 10}
+[212, {'oe': 10}], uncertainty: 1, variance: {'oe': 10}
+[918, {'o��': 10}], uncertainty: 1, variance: {'o��': 10}
+[37, {'ey': 10}], uncertainty: 1, variance: {'ey': 10}
+[860, {'so': 10}], uncertainty: 1, variance: {'so': 10}
+[898, {'gh': 10}], uncertainty: 1, variance: {'gh': 10}
+[23, {'ec': 10}], uncertainty: 1, variance: {'ec': 10}
+[976, {'yi': 10}], uncertainty: 1, variance: {'yi': 10}
+[101, {'os': 10}], uncertainty: 1, variance: {'os': 10}
+[115, {'nl': 10}], uncertainty: 1, variance: {'nl': 10}
+[950, {'en': 10}], uncertainty: 1, variance: {'en': 10}
+[120, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[384, {'yt': 10}], uncertainty: 1, variance: {'yt': 10}
+[47, {'ob': 10}], uncertainty: 1, variance: {'ob': 10}
+[317, {'yl': 10}], uncertainty: 1, variance: {'yl': 10}
+[324, {'ai': 10}], uncertainty: 1, variance: {'ai': 10}
+[880, {'ne': 10}], uncertainty: 1, variance: {'ne': 10}
+[263, {'yy': 10}], uncertainty: 1, variance: {'yy': 10}
+[43, {'tn': 10}], uncertainty: 1, variance: {'tn': 10}
+[504, {'pa': 10}], uncertainty: 1, variance: {'pa': 10}
+[86, {'er': 10}], uncertainty: 1, variance: {'er': 10}
+[376, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[984, {'hy': 10}], uncertainty: 1, variance: {'hy': 10}
+[409, {'ll': 10}], uncertainty: 1, variance: {'ll': 10}
+[162, {'oa': 10}], uncertainty: 1, variance: {'oa': 10}
+[286, {'ye': 10}], uncertainty: 1, variance: {'ye': 10}
+[644, {'oa': 10}], uncertainty: 1, variance: {'oa': 10}
+[635, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[353, {'no': 10}], uncertainty: 1, variance: {'no': 10}
+[68, {'oe': 10}], uncertainty: 1, variance: {'oe': 10}
+[678, {'ai': 10}], uncertainty: 1, variance: {'ai': 10}
+[833, {'ae': 10}], uncertainty: 1, variance: {'ae': 10}
+[679, {'ah': 10}], uncertainty: 1, variance: {'ah': 10}
+[719, {'on': 10}], uncertainty: 1, variance: {'on': 10}
+[237, {'ey': 10}], uncertainty: 1, variance: {'ey': 10}
+[265, {'le': 10}], uncertainty: 1, variance: {'le': 10}
+[835, {'uk': 10}], uncertainty: 1, variance: {'uk': 10}
+[862, {'lt': 10}], uncertainty: 1, variance: {'lt': 10}
+[54, {'yy': 10}], uncertainty: 1, variance: {'yy': 10}
+[657, {'ro': 10}], uncertainty: 1, variance: {'ro': 10}
+[456, {'ee': 10}], uncertainty: 1, variance: {'ee': 10}
+[813, {'ed': 10}], uncertainty: 1, variance: {'ed': 10}
+[140, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[624, {'ii': 10}], uncertainty: 1, variance: {'ii': 10}
+[320, {'ll': 10}], uncertainty: 1, variance: {'ll': 10}
+[457, {'ka': 10}], uncertainty: 1, variance: {'ka': 10}
+[873, {'av': 10}], uncertainty: 1, variance: {'av': 10}
+[326, {'ne': 10}], uncertainty: 1, variance: {'ne': 10}
+[126, {'eo': 10}], uncertainty: 1, variance: {'eo': 10}
+[132, {'gs': 10}], uncertainty: 1, variance: {'gs': 10}
+[817, {'ye': 10}], uncertainty: 1, variance: {'ye': 10}
+[397, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[993, {'ze': 10}], uncertainty: 1, variance: {'ze': 10}
+[415, {'ah': 10}], uncertainty: 1, variance: {'ah': 10}
+[595, {'ey': 10}], uncertainty: 1, variance: {'ey': 10}
+[258, {'ni': 10}], uncertainty: 1, variance: {'ni': 10}
+[313, {'ny': 10}], uncertainty: 1, variance: {'ny': 10}
+[297, {'ny': 10}], uncertainty: 1, variance: {'ny': 10}
+[91, {'ar': 10}], uncertainty: 1, variance: {'ar': 10}
+[929, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[645, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[14, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[480, {'yo': 10}], uncertainty: 1, variance: {'yo': 10}
+[996, {'hr': 10}], uncertainty: 1, variance: {'hr': 10}
+[868, {'ae': 10}], uncertainty: 1, variance: {'ae': 10}
+[695, {'lb': 10}], uncertainty: 1, variance: {'lb': 10}
+[502, {'sl': 10}], uncertainty: 1, variance: {'sl': 10}
+[328, {'na': 10}], uncertainty: 1, variance: {'na': 10}
+[179, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[564, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[395, {'oa': 10}], uncertainty: 1, variance: {'oa': 10}
+[495, {'na': 10}], uncertainty: 1, variance: {'na': 10}
+[35, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[533, {'ak': 10}], uncertainty: 1, variance: {'ak': 10}
+[22, {'ad': 10}], uncertainty: 1, variance: {'ad': 10}
+[542, {'sk': 10}], uncertainty: 1, variance: {'sk': 10}
+[97, {'da': 10}], uncertainty: 1, variance: {'da': 10}
+[295, {'ee': 10}], uncertainty: 1, variance: {'ee': 10}
+[460, {'yl': 10}], uncertainty: 1, variance: {'yl': 10}
+[197, {'sa': 10}], uncertainty: 1, variance: {'sa': 10}
+[707, {'ta': 10}], uncertainty: 1, variance: {'ta': 10}
+[261, {'al': 10}], uncertainty: 1, variance: {'al': 10}
+[310, {'ln': 10}], uncertainty: 1, variance: {'ln': 10}
+[979, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[402, {'eo': 10}], uncertainty: 1, variance: {'eo': 10}
+[539, {'ye': 10}], uncertainty: 1, variance: {'ye': 10}
+[176, {'za': 10}], uncertainty: 1, variance: {'za': 10}
+[726, {'yn': 10}], uncertainty: 1, variance: {'yn': 10}
+[793, {'yl': 10}], uncertainty: 1, variance: {'yl': 10}
+[818, {'nt': 10}], uncertainty: 1, variance: {'nt': 10}
+[778, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[756, {'le': 10}], uncertainty: 1, variance: {'le': 10}
+[851, {'ny': 10}], uncertainty: 1, variance: {'ny': 10}
+[345, {'nk': 10}], uncertainty: 1, variance: {'nk': 10}
+[403, {'le': 10}], uncertainty: 1, variance: {'le': 10}
+[226, {'yo': 10}], uncertainty: 1, variance: {'yo': 10}
+[987, {'he': 10}], uncertainty: 1, variance: {'he': 10}
+[335, {'it': 10}], uncertainty: 1, variance: {'it': 10}
+[600, {'kn': 10}], uncertainty: 1, variance: {'kn': 10}
+[916, {'na': 10}], uncertainty: 1, variance: {'na': 10}
+[472, {'he': 10}], uncertainty: 1, variance: {'he': 10}
+[447, {'ca': 10}], uncertainty: 1, variance: {'ca': 10}
+[107, {'an': 10}], uncertainty: 1, variance: {'an': 10}
+[856, {'ad': 10}], uncertainty: 1, variance: {'ad': 10}
+[155, {'es': 10}], uncertainty: 1, variance: {'es': 10}
+[280, {'oy': 10}], uncertainty: 1, variance: {'oy': 10}
+[207, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[154, {'tt': 10}], uncertainty: 1, variance: {'tt': 10}
+[587, {'ne': 10}], uncertainty: 1, variance: {'ne': 10}
+[757, {'yy': 10}], uncertainty: 1, variance: {'yy': 10}
+[383, {'la': 10}], uncertainty: 1, variance: {'la': 10}
+[648, {'yi': 10}], uncertainty: 1, variance: {'yi': 10}
+[536, {'oo': 10}], uncertainty: 1, variance: {'oo': 10}
+[503, {'nn': 10}], uncertainty: 1, variance: {'nn': 10}
+[559, {'oa': 10}], uncertainty: 1, variance: {'oa': 10}
+[544, {'nr': 10}], uncertainty: 1, variance: {'nr': 10}
+[356, {'oo': 10}], uncertainty: 1, variance: {'oo': 10}
+[206, {'de': 10}], uncertainty: 1, variance: {'de': 10}
+[888, {'to': 10}], uncertainty: 1, variance: {'to': 10}
+[611, {'an': 10}], uncertainty: 1, variance: {'an': 10}
+[711, {'ya': 10}], uncertainty: 1, variance: {'ya': 10}
+[531, {'il': 10}], uncertainty: 1, variance: {'il': 10}
+[259, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[153, {'ei': 10}], uncertainty: 1, variance: {'ei': 10}
+[852, {'nn': 10}], uncertainty: 1, variance: {'nn': 10}
+[63, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[434, {'nn': 10}], uncertainty: 1, variance: {'nn': 10}
+[339, {'ro': 10}], uncertainty: 1, variance: {'ro': 10}
+[513, {'ae': 10}], uncertainty: 1, variance: {'ae': 10}
+[487, {'oa': 10}], uncertainty: 1, variance: {'oa': 10}
+[524, {'an': 10}], uncertainty: 1, variance: {'an': 10}
+[186, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[673, {'na': 10}], uncertainty: 1, variance: {'na': 10}
+[377, {'na': 10}], uncertainty: 1, variance: {'na': 10}
+[903, {'ae': 10}], uncertainty: 1, variance: {'ae': 10}
+[368, {'nn': 10}], uncertainty: 1, variance: {'nn': 10}
+[275, {'kn': 10}], uncertainty: 1, variance: {'kn': 10}
+[266, {'on': 10}], uncertainty: 1, variance: {'on': 10}
+[659, {'lg': 10}], uncertainty: 1, variance: {'lg': 10}
+[98, {'yo': 10}], uncertainty: 1, variance: {'yo': 10}
+[337, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[12, {'ra': 10}], uncertainty: 1, variance: {'ra': 10}
+[684, {'yt': 10}], uncertainty: 1, variance: {'yt': 10}
+[116, {'ne': 10}], uncertainty: 1, variance: {'ne': 10}
+[407, {'nn': 10}], uncertainty: 1, variance: {'nn': 10}
+[815, {'ae': 10}], uncertainty: 1, variance: {'ae': 10}
+[312, {'da': 10}], uncertainty: 1, variance: {'da': 10}
+[471, {'da': 10}], uncertainty: 1, variance: {'da': 10}
+[204, {'sn': 10}], uncertainty: 1, variance: {'sn': 10}
+[227, {'ry': 10}], uncertainty: 1, variance: {'ry': 10}
+[481, {'aj': 10}], uncertainty: 1, variance: {'aj': 10}
+[39, {'ns': 10}], uncertainty: 1, variance: {'ns': 10}
+[110, {'oa': 10}], uncertainty: 1, variance: {'oa': 10}
+[8, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[822, {'oy': 10}], uncertainty: 1, variance: {'oy': 10}
+[309, {'ne': 10}], uncertainty: 1, variance: {'ne': 10}
+[556, {'nl': 10}], uncertainty: 1, variance: {'nl': 10}
+[634, {'jd': 10}], uncertainty: 1, variance: {'jd': 10}
+[291, {'na': 10}], uncertainty: 1, variance: {'na': 10}
+[378, {'oy': 10}], uncertainty: 1, variance: {'oy': 10}
+[889, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[629, {'ya': 10}], uncertainty: 1, variance: {'ya': 10}
+[357, {'ee': 10}], uncertainty: 1, variance: {'ee': 10}
+[620, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[518, {'ne': 10}], uncertainty: 1, variance: {'ne': 10}
+[662, {'ya': 10}], uncertainty: 1, variance: {'ya': 10}
+[75, {'tk': 10}], uncertainty: 1, variance: {'tk': 10}
+[832, {'ya': 10}], uncertainty: 1, variance: {'ya': 10}
+[812, {'ee': 10}], uncertainty: 1, variance: {'ee': 10}
+[962, {'ta': 10}], uncertainty: 1, variance: {'ta': 10}
+[421, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[997, {'ds': 10}], uncertainty: 1, variance: {'ds': 10}
+[422, {'oa': 10}], uncertainty: 1, variance: {'oa': 10}
+[181, {'ng': 10}], uncertainty: 1, variance: {'ng': 10}
+[904, {'ee': 10}], uncertainty: 1, variance: {'ee': 10}
+[649, {'ha': 10}], uncertainty: 1, variance: {'ha': 10}
+[745, {'ry': 10}], uncertainty: 1, variance: {'ry': 10}
+[700, {'se': 10}], uncertainty: 1, variance: {'se': 10}
+[105, {'ey': 10}], uncertainty: 1, variance: {'ey': 10}
+[651, {'en': 10}], uncertainty: 1, variance: {'en': 10}
+[366, {'id': 10}], uncertainty: 1, variance: {'id': 10}
+[619, {'no': 10}], uncertainty: 1, variance: {'no': 10}
+[905, {'da': 10}], uncertainty: 1, variance: {'da': 10}
+[315, {'an': 10}], uncertainty: 1, variance: {'an': 10}
+[42, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[440, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[151, {'na': 10}], uncertainty: 1, variance: {'na': 10}
+[588, {'ln': 10}], uncertainty: 1, variance: {'ln': 10}
+[676, {'ye': 10}], uncertainty: 1, variance: {'ye': 10}
+[960, {'se': 10}], uncertainty: 1, variance: {'se': 10}
+[601, {'er': 10}], uncertainty: 1, variance: {'er': 10}
+[437, {'ha': 10}], uncertainty: 1, variance: {'ha': 10}
+[452, {'tk': 10}], uncertainty: 1, variance: {'tk': 10}
+[785, {'oo': 10}], uncertainty: 1, variance: {'oo': 10}
+[133, {'se': 10}], uncertainty: 1, variance: {'se': 10}
+[803, {'yy': 10}], uncertainty: 1, variance: {'yy': 10}
+[45, {'hh': 10}], uncertainty: 1, variance: {'hh': 10}
+[283, {'ya': 10}], uncertainty: 1, variance: {'ya': 10}
+[52, {'na': 10}], uncertainty: 1, variance: {'na': 10}
+[821, {'ta': 10}], uncertainty: 1, variance: {'ta': 10}
+[779, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[977, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[599, {'el': 10}], uncertainty: 1, variance: {'el': 10}
+[288, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[278, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[953, {'oh': 10}], uncertainty: 1, variance: {'oh': 10}
+[820, {'nl': 10}], uncertainty: 1, variance: {'nl': 10}
+[109, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[118, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[941, {'ee': 10}], uncertainty: 1, variance: {'ee': 10}
+[137, {'ao': 10}], uncertainty: 1, variance: {'ao': 10}
+[187, {'no': 10}], uncertainty: 1, variance: {'no': 10}
+[829, {'on': 10}], uncertainty: 1, variance: {'on': 10}
+[143, {'en': 10}], uncertainty: 1, variance: {'en': 10}
+[966, {'ec': 10}], uncertainty: 1, variance: {'ec': 10}
+[814, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[705, {'rn': 10}], uncertainty: 1, variance: {'rn': 10}
+[923, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[254, {'hn': 10}], uncertainty: 1, variance: {'hn': 10}
+[347, {'on': 10}], uncertainty: 1, variance: {'on': 10}
+[100, {'io': 10}], uncertainty: 1, variance: {'io': 10}
+[661, {'ey': 10}], uncertainty: 1, variance: {'ey': 10}
+[669, {'oy': 10}], uncertainty: 1, variance: {'oy': 10}
+[689, {'ae': 10}], uncertainty: 1, variance: {'ae': 10}
+[55, {'ao': 10}], uncertainty: 1, variance: {'ao': 10}
+[420, {'oo': 10}], uncertainty: 1, variance: {'oo': 10}
+[755, {'ye': 10}], uncertainty: 1, variance: {'ye': 10}
+[869, {'jt': 10}], uncertainty: 1, variance: {'jt': 10}
+[218, {'le': 10}], uncertainty: 1, variance: {'le': 10}
+[492, {'oy': 10}], uncertainty: 1, variance: {'oy': 10}
+[715, {'ro': 10}], uncertainty: 1, variance: {'ro': 10}
+[751, {'yn': 10}], uncertainty: 1, variance: {'yn': 10}
+[170, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[242, {'as': 10}], uncertainty: 1, variance: {'as': 10}
+[980, {'re': 10}], uncertainty: 1, variance: {'re': 10}
+[15, {'ye': 10}], uncertainty: 1, variance: {'ye': 10}
+[553, {'ok': 10}], uncertainty: 1, variance: {'ok': 10}
+[667, {'yk': 10}], uncertainty: 1, variance: {'yk': 10}
+[51, {'ey': 10}], uncertainty: 1, variance: {'ey': 10}
+[989, {'ta': 10}], uncertainty: 1, variance: {'ta': 10}
+[563, {'ae': 10}], uncertainty: 1, variance: {'ae': 10}
+[453, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[77, {'na': 10}], uncertainty: 1, variance: {'na': 10}
+[255, {'yh': 10}], uncertainty: 1, variance: {'yh': 10}
+[912, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[717, {'sa': 10}], uncertainty: 1, variance: {'sa': 10}
+[608, {'my': 10}], uncertainty: 1, variance: {'my': 10}
+[853, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[122, {'gn': 10}], uncertainty: 1, variance: {'gn': 10}
+[413, {'nn': 10}], uncertainty: 1, variance: {'nn': 10}
+[240, {'ti': 10}], uncertainty: 1, variance: {'ti': 10}
+[723, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[609, {'ao': 10}], uncertainty: 1, variance: {'ao': 10}
+[766, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[190, {'ca': 10}], uncertainty: 1, variance: {'ca': 10}
+[82, {'ya': 10}], uncertainty: 1, variance: {'ya': 10}
+[520, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[783, {'rr': 10}], uncertainty: 1, variance: {'rr': 10}
+[514, {'me': 10}], uncertainty: 1, variance: {'me': 10}
+[488, {'rl': 10}], uncertainty: 1, variance: {'rl': 10}
+[847, {'ya': 10}], uncertainty: 1, variance: {'ya': 10}
+[857, {'te': 10}], uncertainty: 1, variance: {'te': 10}
+[9, {'re': 10}], uncertainty: 1, variance: {'re': 10}
+[74, {'ie': 10}], uncertainty: 1, variance: {'ie': 10}
+[307, {'sa': 10}], uncertainty: 1, variance: {'sa': 10}
+[134, {'an': 10}], uncertainty: 1, variance: {'an': 10}
+[859, {'na': 10}], uncertainty: 1, variance: {'na': 10}
+[884, {'ho': 10}], uncertainty: 1, variance: {'ho': 10}
+[244, {'ss': 10}], uncertainty: 1, variance: {'ss': 10}
+[641, {'an': 10}], uncertainty: 1, variance: {'an': 10}
+[209, {'da': 10}], uncertainty: 1, variance: {'da': 10}
+[267, {'iy': 10}], uncertainty: 1, variance: {'iy': 10}
+[535, {'ky': 10}], uncertainty: 1, variance: {'ky': 10}
+[578, {'ye': 10}], uncertainty: 1, variance: {'ye': 10}
+[845, {'ne': 10}], uncertainty: 1, variance: {'ne': 10}
+[968, {'na': 10}], uncertainty: 1, variance: {'na': 10}
+[83, {'ye': 10}], uncertainty: 1, variance: {'ye': 10}
+[40, {'yy': 10}], uncertainty: 1, variance: {'yy': 10}
+[58, {'an': 10}], uncertainty: 1, variance: {'an': 10}
+[321, {'ey': 10}], uncertainty: 1, variance: {'ey': 10}
+[555, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[593, {'eo': 10}], uncertainty: 1, variance: {'eo': 10}
+[837, {'ny': 10}], uncertainty: 1, variance: {'ny': 10}
+[222, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[158, {'ny': 10}], uncertainty: 1, variance: {'ny': 10}
+[498, {'sl': 10}], uncertainty: 1, variance: {'sl': 10}
+[897, {'yr': 10}], uncertainty: 1, variance: {'yr': 10}
+[292, {'as': 10}], uncertainty: 1, variance: {'as': 10}
+[988, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[399, {'dn': 10}], uncertainty: 1, variance: {'dn': 10}
+[2, {'ya': 10}], uncertainty: 1, variance: {'ya': 10}
+[728, {'es': 10}], uncertainty: 1, variance: {'es': 10}
+[338, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[872, {'af': 10}], uncertainty: 1, variance: {'af': 10}
+[69, {'ie': 10}], uncertainty: 1, variance: {'ie': 10}
+[874, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[60, {'lo': 10}], uncertainty: 1, variance: {'lo': 10}
+[646, {'ny': 10}], uncertainty: 1, variance: {'ny': 10}
+[7, {'nk': 10}], uncertainty: 1, variance: {'nk': 10}
+[967, {'oe': 10}], uncertainty: 1, variance: {'oe': 10}
+[734, {'sa': 10}], uncertainty: 1, variance: {'sa': 10}
+[235, {'ia': 10}], uncertainty: 1, variance: {'ia': 10}
+[567, {'ot': 10}], uncertainty: 1, variance: {'ot': 10}
+[602, {'oa': 10}], uncertainty: 1, variance: {'oa': 10}
+[21, {'sa': 10}], uncertainty: 1, variance: {'sa': 10}
+[346, {'ye': 10}], uncertainty: 1, variance: {'ye': 10}
+[827, {'en': 10}], uncertainty: 1, variance: {'en': 10}
+[230, {'sl': 10}], uncertainty: 1, variance: {'sl': 10}
+[253, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[123, {'ya': 10}], uncertainty: 1, variance: {'ya': 10}
+[462, {'ra': 10}], uncertainty: 1, variance: {'ra': 10}
+[529, {'st': 10}], uncertainty: 1, variance: {'st': 10}
+[448, {'ls': 10}], uncertainty: 1, variance: {'ls': 10}
+[831, {'ln': 10}], uncertainty: 1, variance: {'ln': 10}
+[687, {'nz': 10}], uncertainty: 1, variance: {'nz': 10}
+[844, {'ly': 10}], uncertainty: 1, variance: {'ly': 10}
+[938, {'en': 10}], uncertainty: 1, variance: {'en': 10}
+[784, {'mn': 10}], uncertainty: 1, variance: {'mn': 10}
+[866, {'ll': 10}], uncertainty: 1, variance: {'ll': 10}
+[433, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[540, {'ex': 10}], uncertainty: 1, variance: {'ex': 10}
+[855, {'si': 10}], uncertainty: 1, variance: {'si': 10}
+[562, {'ao': 10}], uncertainty: 1, variance: {'ao': 10}
+[486, {'ia': 10}], uncertainty: 1, variance: {'ia': 10}
+[675, {'yn': 10}], uncertainty: 1, variance: {'yn': 10}
+[128, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[70, {'no': 10}], uncertainty: 1, variance: {'no': 10}
+[497, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[749, {'hl': 10}], uncertainty: 1, variance: {'hl': 10}
+[87, {'yn': 10}], uncertainty: 1, variance: {'yn': 10}
+[865, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[59, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[245, {'ae': 10}], uncertainty: 1, variance: {'ae': 10}
+[314, {'ao': 10}], uncertainty: 1, variance: {'ao': 10}
+[371, {'or': 10}], uncertainty: 1, variance: {'or': 10}
+[19, {'ei': 10}], uncertainty: 1, variance: {'ei': 10}
+[331, {'ny': 10}], uncertainty: 1, variance: {'ny': 10}
+[0, {'ya': 10}], uncertainty: 1, variance: {'ya': 10}
+[165, {'ii': 10}], uncertainty: 1, variance: {'ii': 10}
+[382, {'ts': 10}], uncertainty: 1, variance: {'ts': 10}
+[796, {'ae': 10}], uncertainty: 1, variance: {'ae': 10}
+[999, {'ae': 10}], uncertainty: 1, variance: {'ae': 10}
+[305, {'ie': 10}], uncertainty: 1, variance: {'ie': 10}
+[640, {'ex': 10}], uncertainty: 1, variance: {'ex': 10}
+[108, {'ia': 10}], uncertainty: 1, variance: {'ia': 10}
+[519, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[182, {'ye': 10}], uncertainty: 1, variance: {'ye': 10}
+[780, {'ag': 10}], uncertainty: 1, variance: {'ag': 10}
+[674, {'ey': 10}], uncertainty: 1, variance: {'ey': 10}
+[946, {'eo': 10}], uncertainty: 1, variance: {'eo': 10}
+[96, {'gy': 10}], uncertainty: 1, variance: {'gy': 10}
+[194, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[416, {'ln': 10}], uncertainty: 1, variance: {'ln': 10}
+[248, {'fn': 10}], uncertainty: 1, variance: {'fn': 10}
+[484, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[590, {'as': 10}], uncertainty: 1, variance: {'as': 10}
+[584, {'cs': 10}], uncertainty: 1, variance: {'cs': 10}
+[219, {'yn': 10}], uncertainty: 1, variance: {'yn': 10}
+[767, {'ec': 10}], uncertainty: 1, variance: {'ec': 10}
+[685, {'ai': 10}], uncertainty: 1, variance: {'ai': 10}
+[243, {'rn': 10}], uncertainty: 1, variance: {'rn': 10}
+[526, {'ol': 10}], uncertainty: 1, variance: {'ol': 10}
+[511, {'dz': 10}], uncertainty: 1, variance: {'dz': 10}
+[671, {'ey': 10}], uncertainty: 1, variance: {'ey': 10}
+[217, {'sn': 10}], uncertainty: 1, variance: {'sn': 10}
+[322, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[580, {'ae': 10}], uncertainty: 1, variance: {'ae': 10}
+[216, {'ie': 10}], uncertainty: 1, variance: {'ie': 10}
+[67, {'ka': 10}], uncertainty: 1, variance: {'ka': 10}
+[410, {'ss': 10}], uncertainty: 1, variance: {'ss': 10}
+[323, {'dy': 10}], uncertainty: 1, variance: {'dy': 10}
+[982, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[841, {'ni': 10}], uncertainty: 1, variance: {'ni': 10}
+[234, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[57, {'rl': 10}], uncertainty: 1, variance: {'rl': 10}
+[794, {'ne': 10}], uncertainty: 1, variance: {'ne': 10}
+[786, {'ey': 10}], uncertainty: 1, variance: {'ey': 10}
+[863, {'ao': 10}], uncertainty: 1, variance: {'ao': 10}
+[701, {'wn': 10}], uncertainty: 1, variance: {'wn': 10}
+[224, {'er': 10}], uncertainty: 1, variance: {'er': 10}
+[570, {'ao': 10}], uncertainty: 1, variance: {'ao': 10}
+[704, {'ze': 10}], uncertainty: 1, variance: {'ze': 10}
+[655, {'ya': 10}], uncertainty: 1, variance: {'ya': 10}
+[276, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[388, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[167, {'oy': 10}], uncertainty: 1, variance: {'oy': 10}
+[994, {'ns': 10}], uncertainty: 1, variance: {'ns': 10}
+[746, {'di': 10}], uncertainty: 1, variance: {'di': 10}
+[546, {'ra': 10}], uncertainty: 1, variance: {'ra': 10}
+[907, {'ae': 10}], uncertainty: 1, variance: {'ae': 10}
+[623, {'ae': 10}], uncertainty: 1, variance: {'ae': 10}
+[73, {'eo': 10}], uncertainty: 1, variance: {'eo': 10}
+[663, {'ni': 10}], uncertainty: 1, variance: {'ni': 10}
+[699, {'er': 10}], uncertainty: 1, variance: {'er': 10}
+[970, {'re': 10}], uncertainty: 1, variance: {'re': 10}
+[408, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[597, {'ao': 10}], uncertainty: 1, variance: {'ao': 10}
+[438, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[598, {'re': 10}], uncertainty: 1, variance: {'re': 10}
+[269, {'rn': 10}], uncertainty: 1, variance: {'rn': 10}
+[551, {'ao': 10}], uncertainty: 1, variance: {'ao': 10}
+[762, {'sa': 10}], uncertainty: 1, variance: {'sa': 10}
+[252, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[992, {'le': 10}], uncertainty: 1, variance: {'le': 10}
+[146, {'ni': 10}], uncertainty: 1, variance: {'ni': 10}
+[658, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[405, {'ee': 10}], uncertainty: 1, variance: {'ee': 10}
+[566, {'dh': 10}], uncertainty: 1, variance: {'dh': 10}
+[257, {'is': 10}], uncertainty: 1, variance: {'is': 10}
+[541, {'na': 10}], uncertainty: 1, variance: {'na': 10}
+[963, {'oy': 10}], uncertainty: 1, variance: {'oy': 10}
+[390, {'ie': 10}], uncertainty: 1, variance: {'ie': 10}
+[65, {'ah': 10}], uncertainty: 1, variance: {'ah': 10}
+[610, {'ly': 10}], uncertainty: 1, variance: {'ly': 10}
+[696, {'ne': 10}], uncertainty: 1, variance: {'ne': 10}
+[811, {'ni': 10}], uncertainty: 1, variance: {'ni': 10}
+[958, {'ra': 10}], uncertainty: 1, variance: {'ra': 10}
+[642, {'dn': 10}], uncertainty: 1, variance: {'dn': 10}
+[773, {'oy': 10}], uncertainty: 1, variance: {'oy': 10}
+[93, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[505, {'ia': 10}], uncertainty: 1, variance: {'ia': 10}
+[930, {'la': 10}], uncertainty: 1, variance: {'la': 10}
+[739, {'ln': 10}], uncertainty: 1, variance: {'ln': 10}
+[3, {'jc': 10}], uncertainty: 1, variance: {'jc': 10}
+[908, {'nh': 10}], uncertainty: 1, variance: {'nh': 10}
+[161, {'yy': 10}], uncertainty: 1, variance: {'yy': 10}
+[445, {'nn': 10}], uncertainty: 1, variance: {'nn': 10}
+[931, {'hy': 10}], uncertainty: 1, variance: {'hy': 10}
+[998, {'na': 10}], uncertainty: 1, variance: {'na': 10}
+[656, {'ae': 10}], uncertainty: 1, variance: {'ae': 10}
+[787, {'ae': 10}], uncertainty: 1, variance: {'ae': 10}
+[768, {'ey': 10}], uncertainty: 1, variance: {'ey': 10}
+[698, {'oo': 10}], uncertainty: 1, variance: {'oo': 10}
+[117, {'nt': 10}], uncertainty: 1, variance: {'nt': 10}
+[738, {'es': 10}], uncertainty: 1, variance: {'es': 10}
+[830, {'jo': 10}], uncertainty: 1, variance: {'jo': 10}
+[11, {'ey': 10}], uncertainty: 1, variance: {'ey': 10}
+[686, {'et': 10}], uncertainty: 1, variance: {'et': 10}
+[214, {'eo': 10}], uncertainty: 1, variance: {'eo': 10}
+[379, {'hy': 10}], uncertainty: 1, variance: {'hy': 10}
+[166, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[373, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[854, {'ta': 10}], uncertainty: 1, variance: {'ta': 10}
+[650, {'le': 10}], uncertainty: 1, variance: {'le': 10}
+[464, {'ae': 10}], uncertainty: 1, variance: {'ae': 10}
+[954, {'ae': 10}], uncertainty: 1, variance: {'ae': 10}
+[947, {'nr': 10}], uncertainty: 1, variance: {'nr': 10}
+[103, {'nt': 10}], uncertainty: 1, variance: {'nt': 10}
+[887, {'nl': 10}], uncertainty: 1, variance: {'nl': 10}
+[978, {'ny': 10}], uncertainty: 1, variance: {'ny': 10}
+[875, {'ny': 10}], uncertainty: 1, variance: {'ny': 10}
+[296, {'rn': 10}], uncertainty: 1, variance: {'rn': 10}
+[791, {'or': 10}], uncertainty: 1, variance: {'or': 10}
+[233, {'en': 10}], uncertainty: 1, variance: {'en': 10}
+[677, {'at': 10}], uncertainty: 1, variance: {'at': 10}
+[46, {'yo': 10}], uncertainty: 1, variance: {'yo': 10}
+[71, {'ly': 10}], uncertainty: 1, variance: {'ly': 10}
+[721, {'eh': 10}], uncertainty: 1, variance: {'eh': 10}
+[196, {'aj': 10}], uncertainty: 1, variance: {'aj': 10}
+[591, {'ea': 10}], uncertainty: 1, variance: {'ea': 10}
+[370, {'ey': 10}], uncertainty: 1, variance: {'ey': 10}
+[906, {'ap': 10}], uncertainty: 1, variance: {'ap': 10}
+[633, {'ae': 10}], uncertainty: 1, variance: {'ae': 10}
+[643, {'yi': 10}], uncertainty: 1, variance: {'yi': 10}
+[849, {'ia': 10}], uncertainty: 1, variance: {'ia': 10}
+[565, {'ma': 10}], uncertainty: 1, variance: {'ma': 10}
+[80, {'yy': 10}], uncertainty: 1, variance: {'yy': 10}
+[127, {'ma': 10}], uncertainty: 1, variance: {'ma': 10}
+[549, {'ln': 10}], uncertainty: 1, variance: {'ln': 10}
+[44, {'ne': 10}], uncertainty: 1, variance: {'ne': 10}
+[777, {'yi': 10}], uncertainty: 1, variance: {'yi': 10}
+[6, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[890, {'aa': 10}], uncertainty: 1, variance: {'aa': 10}
+[828, {'an': 10}], uncertainty: 1, variance: {'an': 10}
+[603, {'ar': 10}], uncertainty: 1, variance: {'ar': 10}
+[459, {'hr': 10}], uncertainty: 1, variance: {'hr': 10}
+[225, {'ur': 10}], uncertainty: 1, variance: {'ur': 10}
+[429, {'ty': 10}], uncertainty: 1, variance: {'ty': 10}
+[986, {'yn': 10}], uncertainty: 1, variance: {'yn': 10}
+[718, {'yn': 10}], uncertainty: 1, variance: {'yn': 10}
+[733, {'tn': 10}], uncertainty: 1, variance: {'tn': 10}
+[574, {'ny': 10}], uncertainty: 1, variance: {'ny': 10}
+[616, {'la': 10}], uncertainty: 1, variance: {'la': 10}
+[223, {'yd': 10}], uncertainty: 1, variance: {'yd': 10}
+[270, {'ys': 10}], uncertainty: 1, variance: {'ys': 10}
+[352, {'ta': 10}], uncertainty: 1, variance: {'ta': 10}
+[99, {'oi': 10}], uncertainty: 1, variance: {'oi': 10}
+[389, {'bn': 10}], uncertainty: 1, variance: {'bn': 10}
+[94, {'ae': 10}], uncertainty: 1, variance: {'ae': 10}
+[990, {'ao': 10}], uncertainty: 1, variance: {'ao': 10}
+[344, {'os': 10}], uncertainty: 1, variance: {'os': 10}
+[781, {'ne': 10}], uncertainty: 1, variance: {'ne': 10}
+[220, {'ya': 10}], uncertainty: 1, variance: {'ya': 10}
+[159, {'oa': 10}], uncertainty: 1, variance: {'oa': 10}
+[964, {'ay': 10}], uncertainty: 1, variance: {'ay': 10}
+[348, {'rl': 10}], uncertainty: 1, variance: {'rl': 10}
+[983, {'eo': 10}], uncertainty: 1, variance: {'eo': 10}
+[714, {'nh': 10}], uncertainty: 1, variance: {'nh': 10}
+[163, {'na': 10}], uncertainty: 1, variance: {'na': 10}
+[825, {'nn': 10}], uncertainty: 1, variance: {'nn': 10}
+[95, {'yd': 10}], uncertainty: 1, variance: {'yd': 10}
+[30, {'es': 10}], uncertainty: 1, variance: {'es': 10}
+[32, {'ke': 10}], uncertainty: 1, variance: {'ke': 10}
+[432, {'ya': 10}], uncertainty: 1, variance: {'ya': 10}
+[604, {'yh': 10}], uncertainty: 1, variance: {'yh': 10}
+[89, {'ye': 10}], uncertainty: 1, variance: {'ye': 10}
+[104, {'rd': 10}], uncertainty: 1, variance: {'rd': 10}
+[754, {'ly': 10}], uncertainty: 1, variance: {'ly': 10}
+[142, {'en': 10}], uncertainty: 1, variance: {'en': 10}
+[228, {'na': 10}], uncertainty: 1, variance: {'na': 10}
+[250, {'io': 10}], uncertainty: 1, variance: {'io': 10}
+[281, {'la': 10}], uncertainty: 1, variance: {'la': 10}
+[759, {'rz': 10}], uncertainty: 1, variance: {'rz': 10}

@@ -5,6 +5,7 @@ from tqdm import tqdm
 import concurrent
 import time
 import argparse
+from API_POOL_REPO import *
 
 
 def main():
@@ -13,6 +14,8 @@ def main():
     print('*****************************')
     print(args)
     print('*****************************')
+
+    print(f"NUM_API_KEYS: {NUM_API_KEYS}")
 
     set_random_seed(args.random_seed)
 
@@ -29,7 +32,7 @@ def main():
     start = time.time()
     if args.max_num_workers > 1:
         print("Parallel Inference")
-        inference_cot_parallel(args, dataloader, input_prompt) # run cot parallel
+        wrong_list = inference_cot_parallel(args, dataloader, input_prompt) # run cot parallel
     else:
         print("Single Thread Inference")
         if args.limit_batch_size == 0:
@@ -41,10 +44,16 @@ def main():
     end = time.time()
     print(f"Execution time: {end - start} seconds")
 
+    print(f"wrong: {wrong_list}")
+    path = Path(f"D:\HKUST_NLP_Research\cot_active_learning\wrong_{args.dataset}.txt")
+    with open(path, 'w') as f:
+        f.write(str(wrong_list))
+
 
 def inference_cot_parallel(args, question_pool, given_prompt):
     MAX_WORKERS = args.max_num_workers
     batch_limit = args.limit_batch_size
+    wrong_list = []
     # batch_count = 0
 
     if batch_limit is None:
@@ -78,17 +87,20 @@ def inference_cot_parallel(args, question_pool, given_prompt):
             idx_count += 1
 
         for future in concurrent.futures.as_completed(futures):
-            correct += future.result()
+            correct += future.result()[0]
+            for wrong in future.result()[1]:
+                wrong_list.append(wrong)
             print("Done one chunk")
         print(f"correct: {correct}")
         print(f"total: {total}")
         print(f"Accuracy: {correct / total}")
-    return correct / total
+    return wrong_list
 
 
 def inference_cot(args, question_pool, batch_limit, given_prompt, worker_id):
     correct = 0
     batch_count = 0
+    wrong_list = []
 
     for batch in question_pool:
         if batch_limit is not None and batch_count == batch_limit:
@@ -98,11 +110,15 @@ def inference_cot(args, question_pool, batch_limit, given_prompt, worker_id):
         
         prompt_list = []
         for qes in batch:
-            prompt = given_prompt + "Question: " + qes['question'] + "\nA: Let's think step by step."
+            if args.dataset == "last_letters":
+                prompt = given_prompt + "Q: " + qes['question'] + "\nA: Let's think step by step in Python."
+            else:
+                prompt = given_prompt + "Q: " + qes['question'] + "\nA: Let's think step by step."
             prompt_list.append(prompt)
 
         for path in range(0, args.multipath):
-            responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=256, temperature=args.temperature, stop='\n', worker_id=worker_id)
+            responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=256, temperature=args.temperature, stop='\n', worker_id=worker_id,
+            API_PARTITION_POOL=API_PARTITION_POOL)
             # if args.dataset == "gsm8k":
             #     responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=256, temperature=0, stop='\n', worker_id=worker_id)
             # elif args.dataset == "aqua":
@@ -126,10 +142,12 @@ def inference_cot(args, question_pool, batch_limit, given_prompt, worker_id):
         for ans_idx in range(len(final_consistent_ans)):
             if final_consistent_ans[ans_idx] == batch[ans_idx]['answer']:
                 correct += 1
+            else:
+                wrong_list.append({'idx':batch[ans_idx]['question_idx'], 'pred':final_consistent_ans[ans_idx]})
 
         batch_count += 1
 
-    return correct
+    return correct, wrong_list
 
 
 def arg_parser():
@@ -179,9 +197,26 @@ def arg_parser():
     parser.add_argument(
         "--concat_length", type=int, default=4, help='Used for task last_letters, indicates length of last letter concat'
     )
+    parser.add_argument(
+        "--api_pool_idx", type=int, default=1, choices=[0,1,2,3], help='Choose which API pool to use'
+    )
     
     args = parser.parse_args()
     args.output_dir = Path(args.output_dir)
+
+    global API_KEY_POOL
+    global NUM_API_KEYS
+    global API_PARTITION_POOL
+    API_KEY_POOL = POOL_REPO[args.api_pool_idx]
+    NUM_API_KEYS = len(API_KEY_POOL)
+
+    API_PARTITION_POOL = [
+        {"cur_index":0, "keys":API_KEY_POOL[0:40]},
+        {"cur_index":0, "keys":API_KEY_POOL[40:80]},
+        {"cur_index":0, "keys":API_KEY_POOL[80:120]},
+        {"cur_index":0, "keys":API_KEY_POOL[120:160]},
+        {"cur_index":0, "keys":API_KEY_POOL[160:]},
+    ]
 
     if args.multipath > 1:
         args.temperature = 0.7

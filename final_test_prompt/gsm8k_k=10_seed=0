@@ -1,0 +1,44 @@
+{
+    "prompt": [
+        {
+            "question": "Q: John decides to stop delivering the newspapers he is supposed to deliver and instead steals them to recycle them for cash.  The Monday-Saturday papers weigh 8 ounces each.  The Sunday paper weighs twice as much.  He is supposed to deliver 250 papers a day.  He doesn't deliver them for 10 weeks.  If one ton of paper recycles for $20, how much did he make?\nA:",
+            "rationale": "We know that 7-1=6 days the paper weighs 8 ounces. So those contribute 6*8=48 ounces per week. So in total a weekly delivery of papers weighs 48+16=64 ounces. That means it weighs 64/16=4 pounds. So each week he delivers 4*250=1000 pounds of paper. So in 10 weeks, he delivers 10*1000=10000 pounds of paper. That weighs 10000/2000=5 tons of paper. So he makes 5*20=$100 from recycling the paper",
+            "pred_ans": "100"
+        },
+        {
+            "question": "Q: As a freelancer, Baylor is paid for every finished work of a client he does on a freelance marketplace. Currently, he has $4000 on his dashboard from previous work done. He is currently working for three clients, with the first client paying him half the amount of money he currently has on his dashboard once the job is done. The second client will pay him 2/5 times more money than the first client once Baylor finishes his work. The third client will pay him twice the amount of money the first and second clients pay him together once he finishes the job. How much money will Baylor have in his dashboard after all the clients pay him for his work?\nA:",
+            "rationale": "The first client will pay Baylor 1/2*$4000=$2000. The second client will pay Baylor 2/5 times more money than the first client, a total of 2/5*$2000 = $800. The total amount of money the second client will pay Baylor once the job is done is $2000+$800 = $2800. The total amount of money the first and the second client will pay Baylor after their work is finished is $2800+$2000 = $4800. The third client will pay him twice the amount of money the first and second clients pay him together, a total of 2*$4800 = $9600. Together, the three clients will pay Baylor $9600+$4800 = $14400 once he finishes their jobs. In his dashboard, Baylor will have $14400+$4000 = $18400",
+            "pred_ans": "18400"
+        },
+        {
+            "question": "Q: Magdalena has an apple tree on their farm, producing very few apples each year for a while now. However, this year, the apple tree yield was excellent, and it grew 200 apples. Magdalena picked 1/5 of the fruits on the first day, twice that number on the second day, and 20 more apples than he picked on the first day on the third day. Calculate the total number of apples remaining in the tree.\nA:",
+            "rationale": "Magdalena picked 1/5 * 200 apples = 40 apples on the first day. On the second day, she picked 2 * 40 apples = 80 apples from the tree. The total number of apples that he picked on the third day is 40 apples + 20 apples = 60 apples. In total, she picked 40 apples + 80 apples + 60 apples = 180 apples in the three days. The total number of apples remaining in the tree is 200 apples - 180 apples = 20 apples",
+            "pred_ans": "20"
+        },
+        {
+            "question": "Q: Valerie needs to put stamps on the envelopes she is about to mail. She has thank you cards for each of her grandmother, uncle and aunt for the birthday presents they sent. She also has to pay the water bill and the electric bill separately. She wants to send three more mail-in rebates than she does bills and she has twice as many job applications as rebates to mail. How many stamps does she need if everything needs 1 stamp except the electric bill, which needs 2?\nA:",
+            "rationale": "Valerie has to send a thank you card to each of 3 people, so she has 3 * 1 = 3 thank you cards to mail. She has 2 bills to mail. She has 3 more rebates than bills, so 3 + 2 = 5 mail-in rebates to mail. She has twice as many job applications as rebates, so she has 2 * 5 = 10 applications to mail. She has 3 + 2 + 5 + 10 = 20 pieces of mail to send. The electric bill needs an extra stamp, so she needs 20 + 1 = 21 stamps.",
+            "pred_ans": "21"
+        },
+        {
+            "question": "Q: In a graveyard, there are 20 skeletons.  Half of these skeletons are adult women, and the remaining number are split evenly between adult men and children.  If an adult woman has 20 bones in their body, and a male has 5 more than this, and a child has half as many as an adult woman, how many bones are in the graveyard?\nA:",
+            "rationale": "We first need to figure out how many of each type of skeleton there are. Since half the 20 skeletons are adult women, that means there are 20/2=10 adult women's skeletons. The remaining half, 10, is split between adult men and children, meaning there are 10/2= 5 of each. Since an adult woman has 20 bones in their body, this means that the 10 skeletons have 20*10=200 bones in total. Since an adult man has 5 more bones in their body than an adult woman, this means they have 20+5= 25 bones in their body. There are 5 adult men, meaning there are 25*5=125 bones in the adult male skeletons in total. Since a child has half as many bones as the 20 in an adult woman, this means the children have 20/2= 10 bones in their body. Since there are 5 children, this means there are 5*10= 50 bones in the children's skeletons in total. Therefore, altogether there are 50+125+200= 375 bones in total in the graveyard.",
+            "pred_ans": "375"
+        },
+        {
+            "question": "Q: Jim decides to open up a bike shop.  The most common repair he does is fixing bike tires.  He charges $20 for this and it cost him $5 in parts.  In one month Jim does 300 of these repairs.  He also does 2 more complex repairs for $300 each and cost $50 in parts.  He also sells $2000 profit worth of things from his retail shop.  If rent and other fixed expense for the shop is $4000 a month how much profit did the shop make?\nA:",
+            "rationale": "From each tire repair, he made 20-5=$15 profit. So repairs made him a profit of 15*300=$4500. The two complex repairs each made him 300-50=$250 profit. So those added 250*2=$500. So his total profit from everything was 4500+500+2000=$7000. So he made a profit of 7000-4000=$3000",
+            "pred_ans": "3000"
+        },
+        {
+            "question": "Q: John buys a chair. He then buys a table that is 3 times the price of the chair. Then, he buys a couch that is 5 times the price of the table. If John paid $380 for all these items, what is the price of the couch?\nA:",
+            "rationale": "Let x be the price of the chair. The table costs 3*x. The couch costs 3*x*5=15*x. x+3*x+15*x=380. 19*x=380. x=20. The couch costs 20*15=300 dollars.",
+            "pred_ans": "300"
+        },
+        {
+            "question": "Q: James turned 23 the same time John turned 35.  Tim is 5 years less than twice John's age.  If Tim is 79 how old is James?\nA:",
+            "rationale": "James is 35-23=12 years younger than John. 5 years less than Tim's age is 79-5=74 years old. So John is 74/2=37 years old. That means James is 37-12=25 years old",
+            "pred_ans": "25"
+        }
+    ]
+}

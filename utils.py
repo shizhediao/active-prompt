@@ -15,20 +15,8 @@ import time
 from API_POOL_REPO import *
 
 # put your API key in the list
-API_KEY_POOL = None
-NUM_API_KEYS = None
 # NO_SOLUTION = '<NO_SOL>'
 NO_SOLUTION = '-10086'
-
-API_PARTITION_POOL = None
-
-# API_PARTITION_POOL = [
-#     {"cur_index":0, "keys":API_KEY_POOL[0:60]},
-#     {"cur_index":0, "keys":API_KEY_POOL[60:120]},
-#     {"cur_index":0, "keys":API_KEY_POOL[120:180]},
-#     {"cur_index":0, "keys":API_KEY_POOL[180:240]},
-#     {"cur_index":0, "keys":API_KEY_POOL[240:296]},
-# ]
 
 # set the random seed for reproducibility
 def set_random_seed(seed):
@@ -45,8 +33,11 @@ def GPT3_request(model:str, input_prompt:list, max_tokens:int, temperature=0.7, 
     done = False
     while not done:
         try:
+            # random select key
             # key_index = random.randint(0, NUM_API_KEYS - 1)
             # openai.api_key = API_KEY_POOL[key_index]
+
+            # api key polling request
             key_index = API_PARTITION_POOL[worker_id]['cur_index']
             openai.api_key = API_PARTITION_POOL[worker_id]["keys"][key_index]
             resp = openai.Completion.create(
@@ -98,7 +89,7 @@ def load_data(args):
             for line in lines:
                 json_res = decoder.raw_decode(line)[0]
                 questions.append(json_res["question"].strip())
-                answers.append(json_res["answer"].split("#### ")[-1])
+                answers.append(json_res["answer"].split("#### ")[-1].replace(",", ""))
     elif args.dataset == "aqua":
         with open(args.dataset_path) as f:
             lines = f.readlines()
@@ -153,16 +144,29 @@ def load_data(args):
                 questions.append(json_res["question"]["stem"].strip() + " " + choice)
                 answers.append(json_res["answerKey"])
     elif args.dataset == "strategyqa":
-        with open(args.dataset_path, encoding='utf-8') as f:
-            json_data = json.load(f)
-            for line in json_data:
-                q = line["question"].strip() 
-                if line['answer']:
-                    a = 'yes'
-                else:
-                    a = 'no'
-                questions.append(q)
-                answers.append(a)
+        if 'task' in args.dataset_path:
+            with open(args.dataset_path) as f:
+                json_data = json.load(f)["examples"]
+                for line in json_data:
+                    q = line["input"].strip()
+                    a = int(line["target_scores"]["Yes"])
+                    if a == 1:
+                        a = "yes"
+                    else:
+                        a = "no"
+                    questions.append(q)
+                    answers.append(a)
+        else:
+            with open(args.dataset_path, encoding='utf-8') as f:
+                json_data = json.load(f)
+                for line in json_data:
+                    q = line["question"].strip() 
+                    if line['answer']:
+                        a = 'yes'
+                    else:
+                        a = 'no'
+                    questions.append(q)
+                    answers.append(a)
     elif args.dataset in ("coin_flip", "last_letters"):
         with open(args.dataset_path) as f:
             json_data = json.load(f)
@@ -194,7 +198,6 @@ def batchlize(examples:list, batch_size:int):
         else:
             questions.append(examples[size:size+(length-size)])
             size += (length - size)
-        # print(f"size: {size}")
     return questions
 
 
@@ -230,8 +233,12 @@ def create_input_prompt(args, cot_flag:bool)->str:
     prompt_text = ""
     for i in index_list:
         if cot_flag:
-            prompt_text += x[i] + " " + z[i] + " " + \
-                        args.direct_answer_trigger_for_fewshot + " " + y[i] + ".\n\n"
+            if args.dataset == "strategyqa":
+                prompt_text += x[i] + " " + z[i] + " " + \
+                            "So the answer is" + " " + y[i] + ".\n\n"
+            else:
+                prompt_text += x[i] + " " + z[i] + " " + \
+                            args.direct_answer_trigger_for_fewshot + " " + y[i] + ".\n\n"
         else:
             prompt_text += x[i] + " " + args.direct_answer_trigger_for_fewshot + " " + y[i] + ".\n\n"
     return prompt_text
@@ -278,83 +285,6 @@ def answer_extraction(args, responses):
         else:
             ans_list[resp_idx] = ""
     return ans_list
-
-
-def get_gsm8k_examples(args):
-    path = args.dataset_path
-    with open(path) as fh:
-        examples = [json.loads(line) for line in fh.readlines() if line]
-
-    for idx, ex in enumerate(examples):
-        ex.update(question=ex["question"] + "\n")
-        ex.update(answer=ex["answer"] + "<|endoftext|>")
-        ex.update(q_idx = idx)
-        # ex.update(answer=ex["answer"])
-
-    if args.setting == "fair":
-        split = 'train'
-    else:
-        split = 'test'
-    print(f"{len(examples)} {split} examples")
-    return examples
-
-ANS_RE = re.compile(r"#### (\-?[0-9\.\,]+)")
-INVALID_ANS = "[invalid]"
-
-def extract_answer(completion):
-    match = ANS_RE.search(completion)
-    if match:
-        match_str = match.group(1).strip()
-        match_str = match_str.replace(",", "")
-        return match_str
-    else:
-        return INVALID_ANS
-
-def generate_prompt_file(args, result, output_dir=None):
-    examples = get_gsm8k_examples(args)
-    output_prompt = {"prompt" : []}
-
-    experiment_seeds = [0, 1, 42]
-
-    for seed in experiment_seeds:
-        if args.sort_by == "variance":
-            # take the first 8 samples according to sorted list
-            selected_idx = [0,1,2,3,4,5,6,7]
-            selected_questions = [result[i][0] for i in selected_idx]
-        elif args.sort_by == "disagreement":
-            set_random_seed(seed)
-            args.random_seed = seed
-            count = 0
-            for item in result:
-                if len(item[-1]) == args.num_trails:
-                    count += 1
-                else:
-                    break
-            selected_idx = random.sample(range(0,count), 8)
-            selected_questions = [result[i][0] for i in selected_idx]
-
-        for idx in selected_questions:
-            prompt = {}
-            prompt['question'] = "Q: " + examples[idx]['question'].replace("\n", "") + "\nA: "
-            
-            # clean the rationale
-            t = examples[idx]['answer'][:examples[idx]['answer'].find('\n####')]
-            while t.find("<<") != -1 and t.find(">>") != -1:
-                t = t[:t.find("<<")] + "" + t[t.find(">>")+2:]
-
-            t = t.replace("\n\n", "\n")
-            t = t.replace("\n", ". ").replace("..", ".")
-            prompt['rationale'] = t
-
-            prompt['pred_ans'] = extract_answer(examples[idx]['answer'])
-
-            output_prompt['prompt'].append(prompt)
-        
-        with open(f'./test_prompts_{args.setting}/{args.method}_k={args.num_trails}_seed{seed}', 'w') as f:
-            json.dump(result, f, indent=4)
-        
-        if args.sort_by == "variance":
-            return
 
 
 def find_most_frequent(arr, n):

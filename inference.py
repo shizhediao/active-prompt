@@ -45,17 +45,19 @@ def main():
     print(f"Execution time: {end - start} seconds")
 
     print(f"wrong: {wrong_list}")
-    path = Path(f"D:\HKUST_NLP_Research\cot_active_learning\wrong_{args.dataset}.txt")
-    with open(path, 'w') as f:
-        f.write(str(wrong_list))
+    # save the wrong predictions
+    # if args.output_dir is not None:
+        # path = f"{args.output_dir}/wrong_{args.dataset}.txt"
+        # with open(args.output_dir, 'w') as f:
+            # f.write(str(wrong_list))
 
 
 def inference_cot_parallel(args, question_pool, given_prompt):
     MAX_WORKERS = args.max_num_workers
     batch_limit = args.limit_batch_size
     wrong_list = []
-    # batch_count = 0
 
+    # if the batch_limit is not given or is 0, assume inference entire dataset
     if batch_limit is None:
         total = args.dataset_size
     elif batch_limit > len(question_pool) or batch_limit == 0:
@@ -66,7 +68,6 @@ def inference_cot_parallel(args, question_pool, given_prompt):
 
     question_bank = question_pool[:batch_limit]
 
-    # work_size = int(len(question_bank) / MAX_WORKERS)
     if len(question_bank) < MAX_WORKERS:
         work_size = 1
     else:
@@ -105,27 +106,21 @@ def inference_cot(args, question_pool, batch_limit, given_prompt, worker_id):
     for batch in question_pool:
         if batch_limit is not None and batch_count == batch_limit:
             break
-        if args.multipath > 1:
-            all_self_consistency_ans = [[] for i in range(len(batch))]
+        all_self_consistency_ans = [[] for i in range(len(batch))]
         
         prompt_list = []
         for qes in batch:
             if args.dataset == "last_letters":
+                # code style prompt
                 prompt = given_prompt + "Q: " + qes['question'] + "\nA: Let's think step by step in Python."
             else:
                 prompt = given_prompt + "Q: " + qes['question'] + "\nA: Let's think step by step."
             prompt_list.append(prompt)
 
+        # self-consistency if multipath > 1
         for path in range(0, args.multipath):
-            responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=256, temperature=args.temperature, stop='\n', worker_id=worker_id,
+            responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=args.max_length_cot, temperature=args.temperature, stop='\n', worker_id=worker_id,
             API_PARTITION_POOL=API_PARTITION_POOL)
-            # if args.dataset == "gsm8k":
-            #     responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=256, temperature=0, stop='\n', worker_id=worker_id)
-            # elif args.dataset == "aqua":
-            #     responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=256, temperature=0, stop='\n', worker_id=worker_id)
-            # else:
-            #     print("Dataset process not implemented")
-            #     raise NotImplementedError
 
             ans_list = answer_extraction(args, responses)
 
@@ -134,10 +129,6 @@ def inference_cot(args, question_pool, batch_limit, given_prompt, worker_id):
                 all_self_consistency_ans[ans_idx].append(ans_list[ans_idx])
 
         final_consistent_ans = [find_most_frequent(x, args.multipath)[-1] for x in all_self_consistency_ans]
-        # with open(r'D:\HKUST_NLP_Research\cot_active_learning\temp_ans_result.txt', 'w') as f:
-        #     for idx, answers in enumerate(final_consistent_ans):
-        #         temp = "idx: " + str(batch[idx]["question_idx"]) + " " + str(answers) + "\n"
-        #         f.write(temp)
 
         for ans_idx in range(len(final_consistent_ans)):
             if final_consistent_ans[ans_idx] == batch[ans_idx]['answer']:
@@ -159,9 +150,6 @@ def arg_parser():
     parser.add_argument(
         "--prompt_path", type=str, default="prompts/active", help="type of prompts to use"
     )
-    # parser.add_argument(
-    #     "--resume_id", type=int, default=0, help="whether to limit test dataset size. if 0, the dataset size is unlimited and we use all the samples in the dataset for testing."
-    # )
     parser.add_argument("--minibatch_size", type=int, default=1, choices=[1, 5, 10], help="batch size (num_prompts) for each request")
     
     parser.add_argument("--max_num_workers", type=int, default=0, help="maximum number of workers for inference")
@@ -174,7 +162,7 @@ def arg_parser():
         "--method", type=str, default="active_cot", choices=["zero_shot", "zero_shot_cot", "few_shot", "few_shot_cot", "auto_cot", "active_cot"], help="method"
     )
     parser.add_argument(
-        "--output_dir", type=str, default="experiment/multiarith", help="output directory"
+        "--output_dir", type=str, default="./", help="output directory"
     )
     parser.add_argument(
         "--max_length_cot", type=int, default=256, help="maximum length of output tokens by model for reasoning extraction"
@@ -242,6 +230,7 @@ def arg_parser():
         args.direct_answer_trigger = "So the answer is"
     elif args.dataset == "strategyqa":
         args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\strategyqa\dev.json"
+        # args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\strategyqa\task.json"
         args.direct_answer_trigger = "\nTherefore, the answer (Yes or No) is"
     elif args.dataset == "last_letters":
         args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\last_letters\last_letters_test.json"

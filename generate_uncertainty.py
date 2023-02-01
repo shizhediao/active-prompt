@@ -27,6 +27,8 @@ def main():
             batch_amount = math.floor(1000 / args.minibatch_size)
             dataloader = dataloader[:batch_amount] # only take 1000 questions randomly to annotate, randomness decided by seed
         print(f"Use Fair Setting, dataloader size: {len(dataloader)}")
+    else:
+        print(f"Use Unfair Setting, dataloader size: {len(dataloader)}")
 
     start =time.time()
     result = create_uncertainty(args, dataloader)
@@ -34,14 +36,12 @@ def main():
     # output the results
     with open(args.output_dir, 'w') as f:
         for item in result:
-            f.write(f"{item}, uncertainty: {len(item[-1])}, variance: {item[1]}\n")
-
+            try:
+                f.write(f"{item}, uncertainty: {len(item[-1])}, variance: {item[1]}\n")
+            except:
+                pass
     end = time.time()
     print('Total Execution Time: ', end - start, " seconds")
-
-    # if args.dataset == "gsm8k":
-    #     print("Start generates prompt files")
-    #     generate_prompt_file(args, result)
 
 
 # give the questions bank, and how many trails to run for each question
@@ -57,22 +57,21 @@ def generate_uncertainty_batch(args, question_pool, batch_limit=None, worker_id=
     for _, batch in enumerate(question_pool):
         if batch_limit is not None and batch_count == batch_limit:
             break
-        if args.dataset == "gsm8k":
+        if args.dataset in ("gsm8k", "asdiv", "svamp", "singleeq"):
             uncertainty_batch = [[qes['question_idx'], float, {}] for qes in batch]
         elif args.dataset == "strategyqa":
             uncertainty_batch = [[qes['question_idx'], {"yes":0, "no":0}] for qes in batch]
         else:
             uncertainty_batch = [[qes['question_idx'], {}] for qes in batch]
-            # NO_SOLUTION = '<NO_SOL>'
 
         for trail in range(args.num_trails):
-            # construct first stage zero-shot prompt (step by step)
+            # if zero-shot, construct first stage zero-shot prompt (step by step)
             prompt_list = []
             for example in batch:
                 if args.method == "few_shot_cot":
-                    prompt = given_prompt + "Question: " + example['question'] + "\nA: Let's think step by step."
+                    prompt = given_prompt + "Q: " + example['question'] + "\nA: Let's think step by step."
                 elif args.method == "zero_shot_cot":
-                    prompt = "Question: " + example['question'] + "\nA: Let's think step by step."
+                    prompt = "Q: " + example['question'] + "\nA: Let's think step by step."
                 prompt_list.append(prompt)
 
             # get the first stage zero-shot result
@@ -88,9 +87,10 @@ def generate_uncertainty_batch(args, question_pool, batch_limit=None, worker_id=
                 responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=args.max_length_cot, stop='.', worker_id=worker_id,
                 API_PARTITION_POOL=API_PARTITION_POOL)
 
-            # check uncertainty
+            # extract the pred answer
             ans_list = answer_extraction(args, responses)
 
+            # check uncertainty
             for ans_idx in range(len(ans_list)):
                 answer = ans_list[ans_idx]
                 if answer != "":
@@ -106,7 +106,7 @@ def generate_uncertainty_batch(args, question_pool, batch_limit=None, worker_id=
                         uncertainty_batch[ans_idx][-1][NO_SOLUTION] = 1
 
         # calculate variance for each question
-        if args.dataset == "gsm8k":
+        if args.dataset in ("gsm8k", "asdiv", "svamp", "singleeq"):
             for uncertainty in uncertainty_batch:
                 ans_list = []
                 for ans, occurs in uncertainty[-1].items():
@@ -123,7 +123,6 @@ def generate_uncertainty_batch(args, question_pool, batch_limit=None, worker_id=
 
 
 def generate_uncertainty_parallel(args, question_pool, batch_limit):
-    # MAX_WORKERS = args.max_num_workers
     st = time.time()
     MAX_WORKERS = args.max_num_workers
 
@@ -171,24 +170,27 @@ def create_uncertainty(args, questions):
         if len(questions) - count > args.partition:
             temp = generate_uncertainty_parallel(args, questions[count:count+args.partition], args.partition)
             count += args.partition
-            print(count)
+            print(f"Done: {count}")
         else:
             temp = generate_uncertainty_parallel(args, questions[count:len(questions)], len(questions)-count)
             count += len(questions) - count
-            print(count)
+            print(f"Done: {count}")
 
         for item in temp:
             result.append(item)
-        time.sleep(5)
+        time.sleep(args.api_time_interval)
     if args.sort_by == "disagreement":
         if args.dataset == "strategyqa":
             try:
+                # sort based on the entropy or the difference between yes and no answers
                 result.sort(key=lambda x: abs(x[-1]['yes'] - x[-1]['no']))
             except:
+                # sort by disagreement
                 result.sort(key=lambda x: -len(x[-1]))
         else:
             result.sort(key=lambda x: -len(x[-1]))
     elif args.sort_by == "variance":
+        # sort by variance
         result.sort(key=lambda x: -x[1])
     return result
 
@@ -197,7 +199,7 @@ def arg_parser():
     parser = argparse.ArgumentParser(description="Uncertainty_Generation")
     parser.add_argument("--random_seed", type=int, default=1, help="random seed")
     parser.add_argument(
-        "--dataset", type=str, default="gsm8k", choices=["gsm8k","svamp", "aqua", "csqa", "last_letters", "strategyqa"], help="dataset to inference"
+        "--dataset", type=str, default="gsm8k", choices=["gsm8k","svamp", "aqua", "csqa", "last_letters", "strategyqa", "asdiv", "singleeq"], help="dataset to inference"
     )
     parser.add_argument(
         "--prompt_path", type=str, default="prompts/active", help="type of prompts to use"
@@ -247,7 +249,7 @@ def arg_parser():
         "--concat_length", type=int, default=2, help='Used for task last_letters, indicates length of last letter concat'
     )
     parser.add_argument(
-        "--api_pool_idx", type=int, default=1, choices=[0,1,2,3], help='Choose which API pool to use'
+        "--api_pool_idx", type=int, default=1, choices=[0,1,2,3,4], help='Choose which API pool to use, pool 4 only has 100 keys'
     )
     
     args = parser.parse_args()
@@ -258,13 +260,22 @@ def arg_parser():
     API_KEY_POOL = POOL_REPO[args.api_pool_idx]
     NUM_API_KEYS = len(API_KEY_POOL)
 
-    API_PARTITION_POOL = [
-        {"cur_index":0, "keys":API_KEY_POOL[0:40]},
-        {"cur_index":0, "keys":API_KEY_POOL[40:80]},
-        {"cur_index":0, "keys":API_KEY_POOL[80:120]},
-        {"cur_index":0, "keys":API_KEY_POOL[120:160]},
-        {"cur_index":0, "keys":API_KEY_POOL[160:]},
-    ]
+    if args.api_pool_idx == 4:
+        API_PARTITION_POOL = [
+            {"cur_index":0, "keys":API_KEY_POOL[0:20]},
+            {"cur_index":0, "keys":API_KEY_POOL[20:40]},
+            {"cur_index":0, "keys":API_KEY_POOL[40:60]},
+            {"cur_index":0, "keys":API_KEY_POOL[60:80]},
+            {"cur_index":0, "keys":API_KEY_POOL[80:]},
+        ]
+    else:
+        API_PARTITION_POOL = [
+            {"cur_index":0, "keys":API_KEY_POOL[0:40]},
+            {"cur_index":0, "keys":API_KEY_POOL[40:80]},
+            {"cur_index":0, "keys":API_KEY_POOL[80:120]},
+            {"cur_index":0, "keys":API_KEY_POOL[120:160]},
+            {"cur_index":0, "keys":API_KEY_POOL[160:]},
+        ]
     
     # Fill in the dataset path
     if args.dataset == "gsm8k":
@@ -275,7 +286,24 @@ def arg_parser():
         args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
         # args.datset_size = 1319
     elif args.dataset == "svamp":
-        raise ValueError("dataset is not properly defined ...")
+        if args.setting == "unfair":
+            args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\SVAMP.json"
+        else:
+            raise NotImplementedError
+        args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
+    elif args.dataset == "asdiv":
+        if args.setting == "unfair":
+            args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\ASDiv.json"
+        else:
+            args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\ASDiv.json"
+            # raise NotImplementedError
+        args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
+    elif args.dataset == "singleeq":
+        if args.setting == "unfair":
+            args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\MAWPS\SingleEq.json"
+        else:
+            raise NotImplementedError
+        args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
     elif args.dataset == "aqua":
         if args.setting == "unfair":
             args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\AQuA\test.json" # test data path
@@ -291,7 +319,8 @@ def arg_parser():
         args.direct_answer_trigger = "\nSo the answer is"
     elif args.dataset == "strategyqa":
         if args.setting == "unfair":
-            args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\strategyqa\dev.json" # test(dev) data path
+            # args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\strategyqa\dev.json" # test(dev) data path
+            args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\strategyqa\task.json" # test(dev) data path
         elif args.setting == "fair":
             args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\strategyqa\train.json" # train data path
         args.direct_answer_trigger = "\nTherefore, the answer (Yes or No) is"

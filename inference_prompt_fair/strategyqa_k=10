@@ -1,0 +1,34 @@
+{
+    "prompt": [
+        {
+            "question": "Q: Is it possible to get killed walking to the Very Large Telescope?\nA:",
+            "pred_ans": "yes",
+            "rationale": "Let's think step by step. The Very Large Telescope is in the Atacama Desert. The Atacama Desert is the driest hot desert in the world. Thus, it is possible to get killed walking in the Atacama desert."
+        },
+        {
+            "question": "Q: Did Clark Gable marry more women once than Richard Burton?\nA:",
+            "pred_ans": "yes",
+            "rationale": "Let's think step by step. Richard Burton was married to four different women. Clark Gable was married to five different women, one time each. Thus, Clark Gable married more women than Richard Burton."
+        },
+        {
+            "question": "Q: Can a human heart last from NYC to Raleigh NC by Toyota Hiux?\nA:",
+            "pred_ans": "yes",
+            "rationale": "Let's think step by step. Human hearts can last up to 6 hours outside the body. The distance from NYC to Raleigh, NC is 505 miles. The top speed of a Toyota Hilux is 105 miles per hour. The time needed to travel from NYC to Raleigh, NC is 505 miles / 105 miles per hour = 4.8 hours. Thus, the time needed to travel from NYC to Raleigh NC is less than 6 hours."
+        },
+        {
+            "question": "Q: Is H's most common two letter pair partner a freebie in Wheel of Fortune bonus round?\nA:",
+            "pred_ans": "yes",
+            "rationale": "Let's think step by step. H forms the most common two letter pair in the English language along with the letter T. The Wheel of Fortune bonus round gives the player six free letters: R, S, T, L, N, E. Thus, The letter T is inclued in the given six free letters in the Wheel of Fortune bonus round."
+        },
+        {
+            "question": "Q: Could someone in Tokyo take a taxi to the The Metropolitan Museum of Art?\nA:",
+            "pred_ans": "no",
+            "rationale": "Let's think step by step. Tokyo is located in Japan. The Metropolitan Museum of Art is in the United States. Japan and the United States are separated by the Pacific Ocean. A taxi is not capable of travelling over the Pacific Ocean. Thus, someone in Tokyo cannot take a taxi to the The Metropolitan Museum of Art."
+        },
+        {
+            "question": "Q: Does Olympia Washington share name with Hephaestus's workshop location?\nA:",
+            "pred_ans": "yes",
+            "rationale": "Let's think step by step. Olympia Washington is named after Mount Olympus, which is a mountain range in Washington named after the ancient Greek Mount Olympus. Hephaestus was the ancient Greek god of the forge and had a workshop on Mount Olympus. Thus, Olympia Washington share name with Hephaestus's workshop location."
+        }
+    ]
+}

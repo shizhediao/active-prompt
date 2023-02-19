@@ -1,0 +1,24 @@
+{
+    "prompt": [
+        {
+            "question": "Q: Take the last letters of each words in \"Isaac Reyes\" and concatenate them.\nA:",
+            "rationale": "Let's think step by step. The last letter of \"Isaac\" is \"c\". The last letter of \"Reyes\" is \"s\". Concatenating them is \"cs\".",
+            "pred_ans": "cs"
+        },
+        {
+            "question": "Q: Take the last letters of each words in \"Ashish Tracey\" and concatenate them.\nA:",
+            "rationale": "Let's think step by step. The last letter of \"Ashish\" is \"h\". The last letter of \"Tracey\" is \"y\". Concatenating them is \"hy\".",
+            "pred_ans": "hy"
+        },
+        {
+            "question": "Q: Take the last letters of each words in \"Patsy Denise\" and concatenate them.\nA:",
+            "rationale": "Let's think step by step. The last letter of \"Patsy\" is \"y\". The last letter of \"Denise\" is \"e\". Concatenating them is \"ye\".",
+            "pred_ans": "ye"
+        },
+        {
+            "question": "Q: Take the last letters of each words in \"Sameer Martinez\" and concatenate them.\nA:",
+            "rationale": "Let's think step by step. The last letter of \"Sameer\" is \"r\". The last letter of \"Martinez\" is \"z\". Concatenating them is \"rz\".",
+            "pred_ans": "rz"
+        }
+    ]
+}

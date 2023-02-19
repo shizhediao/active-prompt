@@ -1,0 +1,34 @@
+{
+    "prompt": [
+        {
+            "question": "Q: Have any murderers outlasted Kane's Royal Rumble record?\nA:",
+            "pred_ans": "yes",
+            "rationale": "Let's think step by step. The longest Kane lasted in the Royal Rumble was 53:46 in 2001. Chris Benoit lasted over an hour in the 2004 Royal Rumble. Chris Benoit murdered his own wife and son in 2007. Thus, there are murderers outlasted Kane's Royal Rumble record."
+        },
+        {
+            "question": "Q: Did U.S. soldiers listen to Justin Bieber's Believe album during the Battle of Baghdad?\nA:",
+            "pred_ans": "no",
+            "rationale": "Let's think step by step. The Battle of Baghdad was the U.S. invasion of Baghdad in the year 2003. Justin Bieber's album Believe was released in 2012. The battle of Gaghdad happened before the release of Justin Bieber's Believe album. Thus, U.S. soldiers did not listen to Justin Bieber's Believe album during the Battle of Baghdad."
+        },
+        {
+            "question": "Q: Are most mall Santa Claus actors white?\nA:",
+            "pred_ans": "yes",
+            "rationale": "In 2016, a black man playing Santa Claus at the Mall of America made national headlines.. There are map websites dedicated to locating black Santa Claus mall actors. Thus, most mall Santa Claus actors are white."
+        },
+        {
+            "question": "Q: Could a two-year old win a Scrabble tournament?\nA:",
+            "pred_ans": "no",
+            "rationale": "Let's think step by step. Scrabble is a word game that requires a large vocabulary in order to play well. A two-year old has a very limited vocabulary and lacks the reasoning capability needed to perform well in Scrabble. Thus, a two-year old cannot win a Scrabble tournament."
+        },
+        {
+            "question": "Q: Has type of political association Pompey had with Caesar influenced reality TV?\nA:",
+            "pred_ans": "yes",
+            "rationale": "Let's think step by step. Pompey, Julius Caesar, and Marcus Licinius Crassus formed a political association called a triumvirate. A triumvirate spits rule between three powerful people that get to make decisions. Reality show The Challenge: Total Madness appoints three weekly winners to make decisions for the group, known as the Tribunal. Reality show American Idol has had three judges making decisions about which contestants advance. Thus, the type of political association Pompey had with Caesar has influenced reality TV."
+        },
+        {
+            "question": "Q: Did any cultures associate celery with death?\nA:",
+            "pred_ans": "yes",
+            "rationale": "Let's think step by step. Ancient Greece was considered a culture. Ancient Greeks used garlands of celery leafs to bury their dead. Thus, there are cultures associate celery with death."
+        }
+    ]
+}

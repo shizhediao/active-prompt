@@ -1,0 +1,39 @@
+{
+    "prompt": [
+        {
+            "question": "Q: What would rain do if you didn't have an umbrella? Answer Choices: (A) tickle (B) water garden (C) wet clothes (D) wet ground (E) start to fall\nA:",
+            "pred_ans": "C",
+            "rationale": "Let's think step by step. To answer the question of what would rain do if you didn't have an umbrella, we need to know what will happen when you expose to rain without an umbrella. When you expose to rain without an umbrella, the rain will fall on you and make your clothes wet. Of the above choices, (C) wet clothes make the most sense because the rain falling on you will make you wet."
+        },
+        {
+            "question": "Q: What is the main ingredient in making bread? Answer Choices: (A) yeast (B) oven (C) flour (D) bread pan (E) kitchen light\nA:",
+            "pred_ans": "C",
+            "rationale": "Let's think step by step. To answer the question of what is the main ingredient in making bread, we need to know what is the most fundamental component of bread. The most fundamental component of making bread is flour. Of the above choices, (C) flour makes the most sense because you cannot make bread without flour."
+        },
+        {
+            "question": "Q: Although he didn't reply to the email, what did he do with it since he found it funny? Answer Choices: (A) ignore (B) delete (C) forward (D) question (E) ask\nA:",
+            "pred_ans": "C",
+            "rationale": "Let's think step by step. To answer the question of what did he do with it since he found it funny, we need to know what operation to an unanswered email is funny. A forward of an unanswered email is a funny misoperation. Of the above choices, (C) forward makes the most sense because this is the most common misoperation people do to an unanswered email."
+        },
+        {
+            "question": "Q: What can happen to water at different temperatures? Answer Choices: (A) melts (B) wet clothes (C) move mountains (D) thin blood (E) take several forms\nA:",
+            "pred_ans": "E",
+            "rationale": "Let's think step by step. To answer the question of what can happen to water at different temperatures, we need to know what transformation will water do under different temperatures. Water can freeze to ice when the temperature is low, and water can evaporate to steam. Of the above choices, (E) take several forms make the most sense because water can change between 3 forms under different temperatures."
+        },
+        {
+            "question": "Q: Where might I find the names of a place to stay? Answer Choices: (A) hotel (B) phone book (C) motel (D) in a story book (E) city\nA:",
+            "pred_ans": "B",
+            "rationale": "Let's think step by step. To answer the question of where might I find the names of a place to stay, we need to know where can people find names and contact info of a place. People usually find names and contact info from a book with recorded telephone numbers and places. Of the above choices, (B) phone book makes the most sense because the phone book might record a hotel's address and contact info."
+        },
+        {
+            "question": "Q: Billy and Marge were a couple.  They weren't serious and they didn't get frisky, but they always enjoyed going and doing what? Answer Choices: (A) dance (B) marry each other (C) french kissing (D) make sex (E) plan to marry\nA:",
+            "pred_ans": "A",
+            "rationale": "Let's think step by step. To answer the question of what they are always enjoyed going and doing, we need to know what kind of activities that a couple would do whose are not serious and not frisky. A couple whose is not serious and not frisky would always do something polite and non-sexual. Of the above choices, (A) dance makes the most sense because dance is a polite and non-sexual activity that a couple would do."
+        },
+        {
+            "question": "Q: Why would a person go to school? Answer Choices: (A) party (B) own house (C) more leisure time (D) successful in life (E) not feel pain\nA:",
+            "pred_ans": "D",
+            "rationale": "Let's think step by step. To answer the question of why would a person go to school, we need to know what do people do when they go to school. When people go to school, they will learn knowledge that are useful in their future life and career path. Of the above choices, (D) successful in life makes the most sense because learning knowledge in school will help them get success in the future life."
+        }
+    ]
+}

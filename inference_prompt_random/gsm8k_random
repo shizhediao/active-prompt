@@ -1,0 +1,44 @@
+{
+    "prompt": [
+        {
+            "question": "Q: Connor is taking his date to the movies.  The tickets cost $10.00 each.  They decided to get the large popcorn & 2 drink combo meal for $11.00 and each grab a box of candy for $2.50 each.  How much will Connor spend on his date?\nA:",
+            "pred_ans": "36",
+	        "rationale": "Let's think step by step. To calculate how much Connor will spend on his date, we need to know the cost of each item. The tickets cost $10.00 each, and he has to buy 2 tickets, so that is 10 * 2 = $20.00. They each grab a box of candy that's $2.50 a box, so that will cost 2 * 2.50 = $5.00. The tickets cost $20.00, the candy is $5.00, and the combo is $11.00, so Connor will spend 20 + 5 + 11 = $36.00 during his date."
+        },
+        {
+            "question": "Q: John watches a TV show and they announce they are going to do 1 more season.  Each season is 22 episodes except for the last season which is 4 episodes longer.  There were 9 seasons before the announcement.  If each episode is .5 hours how long will it take to watch them all after the last season finishes?\nA:",
+            "pred_ans": "112",
+	        "rationale": "Let's think step by step. To calculate how long it will take to watch them all after the last season finishes, we need to know how many episodes and how long it will take to watch one episode. There are currently 9 * 22 = 198 episodes out. The new season will have 22 + 4=26 episodes. So the total number of episodes is 198 + 26 = 224 episodes. So it will take 224 * 0.5 = 112 hours to watch them all."
+        },
+        {
+            "question": "Q: Allie's making guacamole for a party. Each batch requires 4 avocados and serves about 6 people. If 42 people are going to be at the party including her, how many avocados does she need?\nA:",
+            "pred_ans": "28",
+	        "rationale": "Let's think step by step. To calculate how many avocados she needs, we need to know how many people are there and how many people a batch could serve. Each batch serves 6 people, and there are 42 people coming to the party, so she needs to make 42 / 6 = 7 batches. Each batch requires 4 avocados, so she will need 4 * 7 = 28 avocados."
+        },
+        {
+            "question": "Q: Joel is 5 years old and his dad is 32 years old.  How old will Joel be when his dad is twice as old as him?\nA:",
+            "pred_ans": "27",
+	        "rationale": "Let's think step by step. To calculate how old Joel will be when his dad is twice as old as him, we need to know the difference in age between them. The difference in age between Joel and his dad is 32 - 5 = 27 years. When you double this gap in years, you have 27 x 2 = 54. When his dad is 54, Joel will be 54 / 2 = 27 years old."
+        },
+        {
+            "question": "Q: To make a cherry pie, Veronica needs 3 pounds of pitted cherries.  There are 80 single cherries in one pound of cherries.   It takes 10 minutes to pit 20 cherries.  How many hours will it take Veronica to pit all the cherries?\nA:",
+            "pred_ans": "2",
+	        "rationale": "Let's think step by step. To calculate how many hours it takes Veronica to pit all the cherries, we need to know how many cherries are in total and how many hours it takes for a unit of cherries. There are 80 cherries in a pound, and she needs 3 pounds to make a pie, so she needs 80 * 3 = 240 cherries. It takes her 10 minutes to pit a unit of 20 cherries. She has 240 / 20 = 12 units of cherries to pit. It takes 10 minutes to pit a unit of cherries, and she has 12 units, so that it will take her 10 * 12 = 120 minutes. 60 minutes are in 1 hour, and it takes her 120 minutes so that\u2019s 120 / 60 = 2 hours."
+        },
+        {
+            "question": "Q: For a school fundraiser, Chandler needs to sell 12 rolls of wrapping paper. So far, he has sold 3 rolls to his grandmother, 4 rolls to his uncle, and 3 rolls to a neighbor. How many more rolls of wrapping paper does Chandler need to sell?\nA:",
+            "pred_ans": "2",
+	        "rationale": "Let's think step by step. To calculate how many more rolls of wrapping paper Chandler need to sell, we need to know how many rolls of wrapping paper Chandler has sold. The number of rolls of wrapping paper Chandler has sold is 3 + 4 + 3 = 10 rolls. Therefore, Chandler needs to sell 12 - 10 = 2 more rolls of wrapping paper."
+        },
+        {
+            "question": "Q: At its current growth rate, a certain plant will be 80 feet tall after a year. If the plant grows at the same rate every month and is currently 20 feet tall, what's its monthly growth rate in feet?\nA:",
+            "pred_ans": "5",
+	        "rationale": "Let's think step by step. To calculate what's its monthly growth rate in feet, we need to know how many feet the plant will grow in a year when it is currently 20 feet tall. Since the plant will be 80 feet tall at most after a year, it will have grown by 80 - 20 = 60 feet tall after a year. Since a year has 12 months, the tree will grow at 60 / 12 = 5 feet every month."
+        },
+        {
+            "question": "Q: Adam has 50 balls. 20 balls are red, 10 are blue, and the rest are either pink or orange. If there are 3 times as many pink as orange balls, how many orange balls are there?\nA:",
+            "pred_ans": "5",
+	        "rationale": "Let's think step by step. To calculate how many orange balls there are, we need to know the total number of pink balls and orange balls, the equation between the number of pink balls, the number of orange balls, and the total number of them. The number of pink and orange balls is 50 - 20 - 10 = 20. Let x be the number of orange balls. Since there are 3 times as many pink balls as orange balls, the number of pink balls is 3 * x. Then we have the equation x + 3 * x = 20, and solve for x = 5."
+        }
+    ]
+}

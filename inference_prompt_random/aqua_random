@@ -1,0 +1,24 @@
+{
+    "prompt": [
+        {
+            "question": "Q: 45 men working 8 hours per day dig 30 m deep. How many extra men should be put to dig to a depth of 50 m working 6 hours per day? Answer Choices: (A) 338 (B) 667 (C) 188 (D) 55 (E) 281\nA:",
+            "rationale": "(45 * 8)/30 = (x * 6)/50 => x =100. 100 \u2013 45 = 55",
+            "pred_ans": "D"
+        },
+        {
+            "question": "Q: Linda spent 3/4 of her savings on furniture and the rest on a TV. If the TV cost her $210, what were her original savings? Answer Choices: (A) $840 (B) $800 (C) $1000 (D) $700 (E) $1500\nA:",
+            "rationale": "If Linda spent 3/4 of her savings on furnitute, the rest. 4 / 4 - 3 / 4 = 1 / 4 on a TV. But the TV cost her $210. So 1 / 4 of her savings is $210. So her original savings are 4 times $210 = $840",
+            "pred_ans": "A"
+        },
+        {
+            "question": "Q: The perimeter of one square is 48 cm and that of another is 20 cm. Find the perimeter and the diagonal of a square which is equal in area to these two combined? Answer Choices: (A) 13\u221a4 (B) 13\u221a2 (C) 23\u221a2 (D) 12\u221a4 (E) 13\u221a9\nA:",
+            "rationale": "4a = 48 4a = 20. a = 12 a = 5. a2 = 144 a2 = 25. Combined area = a2 = 169 => a = 13. d = 13\u221a2",
+            "pred_ans": "B"
+        },
+        {
+            "question": "Q: A bag contains 9 wool scarves, exactly one of which is red and exactly one of which is green. If Deborah reaches in and draws three scarves, simultaneously and at random, what is the probability that she selects the red scarf but not the green scarf? Answer Choices: (A) 1/4 (B) 2/9 (C) 3/11 (D) 4/19 (E) 5/26\nA:",
+            "rationale": "Total possible ways to choose three scarves is 9C3 = 84. We need to choose the red scarf and two of 7 other scarves (not the green scarf). The number of successful possibilities is 7C2 = 21. P(red scarf but not green scarf) = 21/84 = 1/4. The answer is A",
+            "pred_ans": "A"
+        }
+    ]
+}

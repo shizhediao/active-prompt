@@ -1,0 +1,39 @@
+{
+    "prompt": [
+        {
+            "question": "Q: Jodie felt a tightness in her chest. She was worried but didn't want to go to the hospital. Where might she go instead? Answer Choices: (A) istanbul (B) concert (C) bedroom (D) antique shop (E) human being\nA:",
+            "rationale": "Let's think step by step. To answer the question of where might she go instead, what do people need when they feel a tightness in their chest and where is the place can get some rest. When people feel a tightness in their chest, they need to get some rest. When people need rest, they go to sleep in their room. Of the above choices, (C) bedroom makes the most sense because people usually sleep in their bedroom to get some rest.",
+            "pred_ans": "C"
+        },
+        {
+            "question": "Q: What do you need to wear when hiking? Answer Choices: (A) cast iron stomach (B) physical exertion (C) shin splints (D) adventure (E) fatigue\nA:",
+            "rationale": "Let's think step by step. To answer the question of what do you need to wear when hiking, we need to know what hiking is and which part of the body easily gets hurt when hiking. Hiking is a long, vigorous walk, usually on trails or footpaths in the countryside. During hiking, people easily hurt their feet or shin. Of the above choices, (C) shin splints make the most sense because they can protect people from hurting their shin during hiking.",
+            "pred_ans": "C"
+        },
+        {
+            "question": "Q: Where is a good idea but not required to have a fire extinguisher? Answer Choices: (A) school bus (B) boat (C) house (D) hospital (E) school\nA:",
+            "rationale": "Let's think step by step. To answer the question of where is a good idea but not required to have a fire extinguisher, we need to know what kind of places will definitely need a fire extinguisher. Those places where lots of people gather will definitely require fire extinguishers, such as school buses, boats, hospitals and schools. Of the above choices, (C) house makes the most sense because usually there are not too many people gathered in a house.",
+            "pred_ans": "C"
+        },
+        {
+            "question": "Q: Where has the newest baseball stadium? Answer Choices: (A) phoenix (B) chicago (C) antarctica (D) san francisco (E) urban areas\nA:",
+            "rationale": "Let's think step by step. To answer the question of where has the newest baseball stadium, we need to know why does a place has the newest baseball stadium and which place is most popular for baseball. When a city has its own baseball team, then there will be a baseball stadium. Phoenix is the place which has the largest baseball team. Of the above choices, (A) phoenix makes the most sense because it has the most popular baseball team with the newest baseball stadium called Chase Field.",
+            "pred_ans": "A"
+        },
+        {
+            "question": "Q: Where is a ferret unlikely to be? Answer Choices: (A) classroom (B) outdoors (C) aquarium (D) north carolina (E) great britain\nA:",
+            "rationale": "Let's think step by step. To answer the question of where is a ferret unlikely to be, we need to know what is a ferret and where a ferret usually appears. The ferret is a small, domesticated species belonging to the family Mustelidae. A ferret normally lives in wild places instead of indoors, mostly plain areas. Of the above choices, (A) classroom makes the most sense because ferrets are not indoor animals.",
+            "pred_ans": "A"
+        },
+        {
+            "question": "Q: When you get together with friends to watch film, you might do plenty of this? Answer Choices: (A) see what happens (B) enjoy stories (C) pass time (D) have fun (E) interesting\nA:",
+            "rationale": "Let's think step by step. To answer the question of what you might do plenty of, we need to know what do people do to get together with their friends and how people will feel when they watch films with their friends. People get together with their friends to share happiness and have fun. When people watch films with their friends, they usually enjoy the time staying together and having fun. Of the above choices, (D) have fun makes the most sense because people who watch films with their friends have the purpose of having fun.",
+            "pred_ans": "D"
+        },
+        {
+            "question": "Q: What could go to a tennis court? Answer Choices: (A) desert (B) college campus (C) recreational center (D) athletic club (E) park\nA:",
+            "rationale": "Let's think step by step. To answer the question of what could go to a tennis court, we need to know what is a tennis court and what will need a tennis court. A tennis court is a place for people to play tennis, which is an athletic sport. Usually, a sports club will need a tennis court as their training court. Of the above choices, (D) athletic club makes the most sense because it needs a tennis court for their club members to play and practice.",
+            "pred_ans": "D"
+        }
+    ]
+}

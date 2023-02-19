@@ -1,0 +1,24 @@
+{
+    "prompt": [
+        {
+            "question": "Q: On dividing 2272 and 875 by a 3-digit number N, we get the same remainder. The sum of the digits of N is: Answer Choices: (A) 10 (B) 11 (C) 12 (D) 13 (E) 14\nA:",
+            "rationale": "Let's think step by step. (2272 - 875) = 1397, is exactly divisible by N. Now, 1397 = 11 * 127. The required 3-digit number is 127, the sum of whose digit is 10",
+            "pred_ans": "A"
+        },
+        {
+            "question": "Q: If one gallon of soft drink is made of 40% orange juice and 60% water, how many additional gallons of orange juice must be mixed in order to make the orange juice 60% of the soft drink? Answer Choices: (A) 0.5 (B) 1 (C) 1.25 (D) 1.5 (E) 2\nA:",
+            "rationale": "Let's think step by step. Let x be the quantity to be added. (0.4+y) / 1+y = 60/100. => 4+10y = 6+6y. => y = 2/4 = 0.5",
+            "pred_ans": "A"
+        },
+        {
+            "question": "Q: [5 + ? * 19 - 15 - 7]/[13 * 13 - 156] = 6 Answer Choices: (A) 4 (B) 4.5 (C) 5 (D) 5.5 (E) 6.5\nA:",
+            "rationale": "Let's think step by step. (? * 19 - 17)/(169 - 156) = 6. => ? * 19 - 17 = 13 * 6 = 76. => ? * 19 = 78 + 17 = 95. ? = 95/19 = 5",
+            "pred_ans": "C"
+        },
+        {
+            "question": "Q: John likes to have lightly flavored tea every evening. In a 50% strong milk tea, he replaces 15% of it with milk twice. Then, he replaces 10 percent of the resultant solution with more milk.What is the final concentration of tea John drinks? Answer Choices: (A) 15.38% (B) 42% (C) 39.86% (D) 22.35% (E) 32.51%\nA:",
+            "rationale": "Let's think step by step. Imagine starting out with 100 ml of 50% milk tea. In step 1, 15% of the tea is replaced with milk. Thus, 85% of the original tea remains. Since this is done twice, we have a concentration of 50x0.85x0.85% (=36.125%) of tea solution. Finally, 10% of this solution is replaced with milk again. So, the final concentration of tea is 36.125*0.9%. This equals 32.51% of tea solution",
+            "pred_ans": "E"
+        }
+    ]
+}

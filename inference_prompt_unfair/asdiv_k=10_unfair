@@ -1,0 +1,44 @@
+{
+    "prompt": [
+        {
+            "question": "Q: Martin is pasting pieces of square colored paper of equal size onto a board measuring 72 cm by 90 cm. If only whole square pieces are used, and the board is to be completely covered, what is the largest possible length of the side of each square colored paper?\nA:",
+            "rationale": "Let's think step by step. To answer the question of what is the largest possible length of the side of each square colored paper if only whole square pieces are used, and the board is to be completely covered, we need to know what is the largest possible length of the square side that is divisible by both 72 and 90. The largest possible length of the square side that is divisible by both 72 and 90 is the greatest common divisor of 72 and 90. The greatest common divisor can be calculated by a Python function called math.gcd(x1, x2). Let variable solution1 = math.gcd(72, 90) and solution1 is 18, which is the largest possible length of the side of each square colored paper.",
+            "pred_ans": "18"
+        },
+        {
+            "question": "Q: Rose bought a blouse at a discount of 18% for 147.60. What was the marked price of the blouse?\nA:",
+            "rationale": "Let's think step by step. To answer the question of what was the marked price of the blouse, we need to know the equation between the market price of the blouse and the discount price of the blouse. Let x be the market price of the blouse. Since Rose bought the blouse for 147.60 with a discount of 18% based on the market price, we have the equation  x - x * 0.18 = 147.60. We can solve the equation in the following step. #1: x * (1 - 0.18) = 147.60. #2: x = 180. The market price of the blouse is 180.",
+            "pred_ans": "180"
+        },
+        {
+            "question": "Q: 650 lollipops are to be distributed to 42 kids. If all the kids share all of the lollipops equally, at least how many more lollipops are needed?\nA:",
+            "rationale": "Let's think step by step. To answer the question of at least how many more lollipops are needed, we need to know the surplus of lollipops after 42 kids evenly share 650 lollipops, which is the remainder of 650 / 42. Then we use 42 minus the remainder to obtain how many more lollipops are needed. 650 / 42 = 15 with a remainder of 20. We still at least need 42 - 20 = 22 lollipops to let all the kids share all of the lollipops equally.",
+            "pred_ans": "22"
+        },
+        {
+            "question": "Q: The weight of 4 watermelons is 5 kg 200 g. The total weight of 3 such watermelons and 4 pineapples is 5 kg 700 g. How much heavier is a watermelon than a pineapple?\nA:",
+            "rationale": "Let's think step by step. To answer the question of how much heavier is a watermelon than a pineapple, we need to know the weight of a single watermelon, the total weight of 3 watermelons, the total weight of 4 pineapples, and the weight of a single pineapple. The weight of a single watermelon is (5 * 1000 g + 200 g) / 4 = 1300 g. The total weight of 3 watermelons is 3 * 1300 g = 3900 g. The total weight of 4 pineapples is (5 * 1000  g + 700 g) - 3900 g = 1800 g. The weight of a single pineapple is 1800 g / 4 = 450 g. Therefore, a watermelon is heavier than a pineapple by 1300 g - 450 g = 850 g.",
+            "pred_ans": "850"
+        },
+        {
+            "question": "Q: Peter's Party Zone sells cups in packages of 6 and plates in packages of 8. Shaniya is hosting a birthday party for her little sister and wants to have the same number of each item. What is the least number of packages of plates Shaniya needs to buy?\nA:",
+            "rationale": "Let's think step by step. To answer the question of what is the least number of packages of plates Shaniya needs to buy, we need to know the least number that is the multiple of both 6 and 8, which is the least common multiple of 6 and 8. The least common multiple can be calculated by a Python function called math.lcm(x1, x2). Let variable solution1 = math.lcm(6, 8) and solution1 is 24, which is the least number of packages of plates Shaniya needs to buy.",
+            "pred_ans": "24 "
+        },
+        {
+            "question": "Q: The sum of the digits of a two-digit number is 9. Also, nine times this number is twice the number obtained by reversing the order of the digits. Find the number.\nA:",
+            "rationale": "Let's think step by step. To answer the question of finding the number, we need to know the equation between the two numbers and their sum. We also need to know the equation between nine times the number and the twice of the number with digits reversed. Then solve the two equations together. Let x be the first digit of the number and y be the second digit of the number. Since the sum of the two digits of the number is 9, we have the first equation x + y = 9. Since nine times this number is twice the number obtained by reversing the order of the digits, we have the second equation 9 * (10 * x + y) = 2 * (10 * y + x). To solve the two equations, we first isolate x in the first equation and use it to solve y in the second equation. After isolating x in the first equation, we get x = 9 - y. Now we substitute that into the second equation and solve the new equation 9 * (10 * (9 - y) + y) = 2 * (10 * y + (9 - y)) in the following step. #1: 810 - 81 * y = 18 * y + 18. #2: 99 * y = 792. #3: y = 8. Since x = 9 - y, we substitute y = 8 and solve for x = 1. So we have the unique solution x = 1 and y = 8. The two-digit number is 10 * x + y = 10 * 1 + 8 = 18.",
+            "pred_ans": "18"
+        },
+        {
+            "question": "Q: Mrs.Martin is 27 years older than her daughter Neil. After 8 years she will be twice as old as Neil. Find their present ages.\nA:",
+            "rationale": "Let's think step by step. To answer the question of their present age, we need to know the equation between Mrs. Martin's present age and her daughter Neil's present age. We also need to know the equation between Mrs. Martin's age after 8 years and her daughter Neil's age after 8 years. Then we solve the two equations together. Let x be the present age of Mrs. Martin and y be the present age of Neil. Since Mrs. Martin is 27 years older than her daughter Neil, we have the first equation x - y = 27. Since Mrs. Martin will be twice as old as Neil after 8 years, we have the second equation x + 8 = 2 * (y + 8). To solve the two equations, we first isolate x in the first equation and use it to solve y in the second equation. After isolating x in the first equation, we get x = 27 + y. Now we substitute that into the second equation and solve the new equation (27 + y) + 8 = 2 * (y + 8) in the following step. #1: 35 + y = 2 * y + 16. #2: y = 19. Since x = 27 + y, we substitute y = 19 and solve for x = 46. So we have the unique solution x = 46 and y = 19. We only report the solution x = 46 as the final answer, which is the present age of Mrs. Martin.",
+            "pred_ans": "46"
+        },
+        {
+            "question": "Q: Craig and Brian looked for seashells. For every 9 seashells Craig found, Brian found 7. Craig found 54 seashells. How many fewer seashells did Brian find than Craig?\nA:",
+            "rationale": "Let's think step by step. To answer the question of how many fewer seashells did Brian find than Craig, we need to know how many times Craig found 9 seashells and how many seashells Brian found in total. Craig found 54 / 9 = 6 times of 9 seashells. Every time when Craig found 9 seashells, Brain found 7. So Brian found 6 * 7 = 42 seashells in total. Brian found 54 - 42 = 12 seashells fewer than Craig found.",
+            "pred_ans": "12"
+        }
+    ]
+}

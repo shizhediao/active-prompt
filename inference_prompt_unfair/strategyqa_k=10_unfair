@@ -1,0 +1,34 @@
+{
+    "prompt": [
+        {
+            "question": "Q: Does Amtrak operate four wheel vehicles?\nA:",
+            "pred_ans": "yes",
+            "rationale": "Let's think step by step. Amtrak is a transportation service. Based on that Amtrak is a transportation service, Amtrak transports people with trains and buses. Based on that Amtrak transports people with buses, a bus is a four wheel vehicle. Thus, Amtrak operates four wheel vehicles."
+        },
+        {
+            "question": "Q: Is World of Warcraft heavier than a loaf of bread?\nA:",
+            "pred_ans": "no",
+            "rationale": "Let's think step by step. World of Warcraft is a piece of software. Based on World of Warcarft is a piece of software, software is digital. Based on software is digital, digital items do not have weight. Thus, World of Warcraft is not heavier than a loaf of bread."
+        },
+        {
+            "question": "Q: Does a person need to be a parent to become a grandparent?\nA:",
+            "pred_ans": "yes",
+            "rationale": "Let's think step by step. Parents can have their own children. Based on that parents can have their own children, when the children grow up and have kids of their own, the parents become grandparents to those kids. Based on that parents become grandparents when their children have children, a person who is not a parent has no kids, therefore nobody to produce grandchildren for them. Thus, a person need to be a parent to become a grandparent."
+        },
+        {
+            "question": "Q: Would a binge watch of entire Young and the Restless take longer than a leap year?\nA:",
+            "pred_ans": "yes",
+            "rationale": "Let's think step by step. A leap year has 366 total days. Based on that a leap year has 366 total days, as of March 19th, 2018 every episode of the Young and the Restless would take 467 days and 2 hours to watch. Thus, a binge watch of entire Young and the Restless would take longer than a leap year."
+        },
+        {
+            "question": "Q: Would nickel boil in the outer core of the earth?\nA:",
+            "pred_ans": "yes",
+            "rationale": "Let's think step by step. The boiling point of nickel is 3003 Kelvin. Based on that the boiling point of nickel is 3003 Kelvin, the temperature of earth's outer core is 3,000 to 4,500 Kelvin. Thus, nickel would boil in the outer core of the earth."
+        },
+        {
+            "question": "Q: Have any murderers outlasted Kane's Royal Rumble record?\nA:",
+            "pred_ans": "yes",
+            "rationale": "Let's think step by step. The longest Kane lasted in the Royal Rumble was 53:46 in 2001. Based on that Kane's longest record in Royal Rumble was 53:46 in 2001, Chris Benoit lasted over an hour in the 2004 Royal Rumble. Based on that Chris Benoit had longer record than Kane in Royal Rumble, Chris Benoit murdered his own wife and son in 2007. Thus, there are murderers outlasted Kane's Royal Rumble record."
+        }
+    ]
+}

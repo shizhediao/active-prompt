@@ -1,0 +1,44 @@
+{
+    "prompt": [
+        {
+            "question": "Q: Lewis earns $ 28 every week during the 1091 weeks of harvest. He also earns $ 939 per week for working overtime. If he works overtime every week How much money does he earn during harvest season?\nA:",
+            "rationale": "Let's think step by step. To answer the question of how much time he earns during harvest season, we need to know how many weeks of harvest and how much money he can earn for a week. There are 1091 weeks of harvest. Since he earns $ 28 every week and $ 939 per week for working overtime, he can earn $ 28 + $ 939 = $ 967 for each week. In total, he earns 1091 * $ 967 = $ 1054997.",
+            "pred_ans": "1054997"
+        },
+        {
+            "question": "Q: After eating a hearty meal they went to see the Buckingham palace. There, Rachel learned that 512 visitors came to the Buckingham palace that day. If there were 471 visitors the previous day and 808 visitors the day before that How many visited the Buckingham palace within the past 89 days?\nA:",
+            "rationale": "Let's think step by step. To answer the question of how many visitors within the past 89 days, we need to know how many visitors for each day. Since there are 512 visitors that day, 471 visitors the previous day and 808 visitors the day before, the total number of visitors to Buckingham Palace would be 512 + 471 + 808 = 1791 visitors.",
+            "pred_ans": "1791"
+        },
+        {
+            "question": "Q: He then went to see the oranges being harvested. He found out that they harvest 38 sacks per day and that each sack containes 42 oranges. How many sacks of oranges will they have after 49 days of harvest?\nA:",
+            "rationale": "Let's think step by step. To answer the question of how many sacks of oranges they will have after 49 days of harvest, we need to know how many sacks per day. Since he found out that they harvest 38 sacks per day, after 49 days, they will have 38 * 49 = 1862 sacks of oranges.",
+            "pred_ans": "1862"
+        },
+        {
+            "question": "Q: If Lewis earns $ 1357 every week during the 223 weeks of a harvest season. How much money will he earn if he works for 73 harvest seasons?\nA:",
+            "rationale": "Let's think step by step. To answer the question of how much money he will earn if he works for 73 harvest seasons, we need to know how much money he can earn every week, and how many weeks of a harvest season. Since Lewis earns $ 1357 every week during the 223 weeks of a harvest season, he can earn $ 1357 * 223 = $ 302611 for a harvest season. If he works for 73 harvest seasons, he will earn $ 302611 * 73 = $ 22090603.",
+            "pred_ans": "22090603"
+        },
+        {
+            "question": "Q: Being his favorite, he saved checking on the grapevines for his last stop. He was told by 235 of the pickers that they fill 100 drums of raspberries per day and 221 drums of grapes per day. How many drums of grapes would be filled in 77 days?\nA:",
+            "rationale": "Let's think step by step. To answer the question of how many drums of grapes would be filled in 77 days, we need to know how many drums would be filled per day. Since he was told that 221 drums of grapes would be filled per day, 221 * 77 = 17017 drums of grapes would be filled in 77 days.",
+            "pred_ans": "17017"
+        },
+        {
+            "question": "Q: Nell collects cards. She had 438 baseball cards and 18 Ace cards. She gave some of her cards to Jeff and now has 55 Ace cards and 178 baseball cards left. How many more baseball cards than Ace cards does Nell have?\nA:",
+            "rationale": "Let's think step by step. To answer the question of how many more baseball cards than Ace cards does Nell has, we need to know how many baseball cards and Ace cards Nell has after she gave some of her cards to Jeff. After she gives some of her cards to Jeff, Nell has 55 Ace cards, and 178 baseball cards left. Therefore, she has 178 - 55 = 123 more baseball cards than Aces cards.",
+            "pred_ans": "123"
+        },
+        {
+            "question": "Q: There are 17 different movies and 11 different books in the ' crazy silly school ' series. If you read 13 of the books and watched 63 of the movies. How many more movies than books are there in the ' crazy silly school ' series?\nA:",
+            "rationale": "Let's think step by step. To answer the question of how many more movies than books are there in the ' crazy silly school ' series, we need to know how many movies and how many books of the ' crazy silly school ' series are there. Since the number of movies watched and books read is irrelevant in this question, there are 17 - 11 = 6 more movies than books in the ' crazy silly school ' series.",
+            "pred_ans": "6"
+        },
+        {
+            "question": "Q: The school is planning a field trip. The school has 21 classrooms. There are 98 students in the school and 7 school buses. If all buses are full How many seats are in each bus?\nA:",
+            "rationale": "Let's think step by step. To answer the question of how many seats are in each bus if all buses are full, we need to know how many seats are needed when the 7 school buses are full of 98 students. Since all student has a seat on the bus, there are 98 / 7 = 14 seats on each bus.",
+            "pred_ans": "14"
+        }
+    ]
+}

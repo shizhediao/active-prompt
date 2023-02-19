@@ -1,0 +1,44 @@
+{
+    "prompt": [
+        {
+            "question": "Q: The sum of three consecutive even numbers is 162. What is the smallest of the three numbers ?\nA:",
+            "rationale": "Let's think step by step. To answer the question of what is the smallest of the three numbers, we need to know the relationship between the three consecutive even numbers and their sum. Let x be the smallest number. Since all three even numbers are consecutive, we let the second number be x + 2, and the third number be x + 4. Since the sum of three consecutive even numbers is 162, we have the equation x + (x + 2) + (x + 4) = 162. Solve the equation we have x = 52, which is the smallest number.",
+            "pred_ans": "52"
+        },
+        {
+            "question": "Q: Alyssa spent half of her allowance going to the movies. She washed the family car and earned 8 dollars. What is her weekly allowance if she ended with 12 dollars ?\nA:",
+            "rationale": "Let's think step by step. To answer the question of what is her weekly allowance if she ended with 12 dollars, we need to know the relation between her weekly allowance, the 8 dollars earned from washing the family car, and the 12 dollars ended. Let x be her allowance. Since Alyssa spent half of her allowance going to the movies and then earned 8 dollars from washing the family car and ended with 12 dollars, we have the equation (x / 2) + 8 = 12. Solve the equation we have x = 8, which is her weekly allowance.",
+            "pred_ans": "8"
+        },
+        {
+            "question": "Q: For his long distance phone service Milan pays a 2 dollars monthly fee plus 12 cents per minute. Last month, Milan's long distance bill was 23.36 dollars. For how many minutes was Milan billed for ?\nA:",
+            "rationale": "Let's think step by step. To answer the question of how many minutes was Milan billed for, we need to know what is the billing fee per minute in dollars, the relation between the 2 dollars monthly fee, the per-minute fee, and the total bill. Since the per-minute fee is 12 cents, it is 12 * 0.01 = 0.12 dollars per minute. Let x be the minutes Milan was billed for. Since the total bill consists of 2 dollars monthly fee and 0.12 dollars per minute fee, we have the equation 2 + 0.12 * x = 23.36. Solve the equation we have x = 178 minutes, which is the total number of minutes Milan was billed for.",
+            "pred_ans": "178"
+        },
+        {
+            "question": "Q: Tim got 3 nickels and 13 dimes for shining shoes, and in his tip jar found 7 dimes and 9 half-dollars. How much money did Tim get?\nA:",
+            "rationale": "Let's think step by step. To answer the question of how much money did Tim get, we need to know the total number of nickels Tim got, the total number of dimes Tim got, the total number of half-dollars Tim got, and their values in terms of dollars. Tim got a total of 3 nickels, which is 3 * 0.05 = 0.15 dollars. Tim got a total of 13 + 7 = 20 dimes, which is 20 * 0.1 = 2 dollars. Tim got a total of 9 half-dollars, which is a total of 9 * 0.5 = 4.5 dollars. Therefore, Tim got a total of 0.15 + 2 + 4.5 = 6.65 dollars.",
+            "pred_ans": "6.65"
+        },
+        {
+            "question": "Q: On Monday, 375 students went on a trip to the zoo. All 7 buses were filled and 4 students had to travel in cars. How many students were in each bus?\nA:",
+            "rationale": "Let's think step by step. To answer the question of how many students were in each bus, we need to know how many students got on the buses and then divide the number of buses by the number of students that got on the buses. Since all 7 buses were filled and 4 students had to travel in cars, there were a total of 375 - 4 = 371 students got on the buses. Since all buses are full and all students evenly got on buses, we have 371 / 7 = 53, which is the number of students in each bus.",
+            "pred_ans": "53"
+        },
+        {
+            "question": "Q: 0.20 of a number decreased by 4 is equal to 6. Find the number.\nA:",
+            "rationale": "Let's think step by step. To answer the question of finding the number, we need to know the relation between the number and 6. Let x be the number. Since 0.20 of the number decreased by 4 is equal to 6, we have the equation 0.20 * x - 4 = 6. Solve the equation we have x = 50, which is the number..",
+            "pred_ans": "50"
+        },
+        {
+            "question": "Q: Trenton sells electronic supplies. Each week he earns 190 dollars plus commission equal to 0.04 of his sales. This week his goal is to earn no less than 500 dollars. How much sales he must make to reach his goal?\nA:",
+            "rationale": "Let's think step by step. To answer the question of how much sales he must make to reach his goal, we need to know the relation between his 190 basic salary, his commissions earned, and his minimum goal of earns. Let x be the number of his sales. Since he earns 190 dollars plus commission equals to 0.04 of his sales and it must be no less than 500 dollars, we have the equation 190 + 0.04 * x = 500. Solve the equation we have x = 7750, which is the number of sales he must make to reach his goal.",
+            "pred_ans": "7750"
+        },
+        {
+            "question": "Q: A mechanic charged 45 dollars an hour, plus 225 dollars for the parts. If the total bill was 450 dollars, how many hours did the job take?\nA:",
+            "rationale": "Let's think step by step. To answer the question of how many hours did the job take if the total bill was 450 dollars, we need to know the relation between the number hourly charged fees, the number of the parts fees, and the number of the total bill. Let x be the number of the hours his job takes. Since the total bill is equal to 225 dollars for the parts plus the 45 dollars times the number of hours his job takes, we have the equation 225 + 45 * x = 450. Solve the equation we have x = 5, which is the number of hours his job takes.",
+            "pred_ans": "5"
+        }
+    ]
+}

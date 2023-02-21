@@ -56,6 +56,7 @@ def inference_cot_parallel(args, question_pool, given_prompt):
     MAX_WORKERS = args.max_num_workers
     batch_limit = args.limit_batch_size
     wrong_list = []
+    QA_record_list = []
 
     # if the batch_limit is not given or is 0, assume inference entire dataset
     if batch_limit is None:
@@ -91,10 +92,29 @@ def inference_cot_parallel(args, question_pool, given_prompt):
             correct += future.result()[0]
             for wrong in future.result()[1]:
                 wrong_list.append(wrong)
+            for QA in future.result()[2]:
+                QA_record_list.append(QA)
             print("Done one chunk")
         print(f"correct: {correct}")
         print(f"total: {total}")
         print(f"Accuracy: {correct / total}")
+        try:
+            QA_record_list.sort(key=lambda x: x['qes_idx'])
+        except:
+            pass
+        original_stdout = sys.stdout
+        # if args.dataset == 'gsm8k':
+        path = f"./{args.dataset}_wrong_QA.txt"
+        path = Path(path)
+        with open(path, 'w') as f:
+            sys.stdout = f
+            for QA in QA_record_list:
+                try:
+                    print(str(QA))
+                    print()
+                except:
+                    pass
+            sys.stdout = original_stdout
     return wrong_list
 
 
@@ -102,6 +122,7 @@ def inference_cot(args, question_pool, batch_limit, given_prompt, worker_id):
     correct = 0
     batch_count = 0
     wrong_list = []
+    QA_record = []
 
     for batch in question_pool:
         if batch_limit is not None and batch_count == batch_limit:
@@ -122,6 +143,13 @@ def inference_cot(args, question_pool, batch_limit, given_prompt, worker_id):
             responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=args.max_length_cot, temperature=args.temperature, stop='\n', worker_id=worker_id,
             API_PARTITION_POOL=API_PARTITION_POOL)
 
+            for i in range(len(responses['choices'])):
+                QA = {}
+                QA['qes_idx'] = batch[i]['question_idx']
+                QA['Q'] = batch[i]['question']
+                QA['A'] = responses['choices'][i]['text']
+                QA_record.append(QA)
+
             ans_list = answer_extraction(args, responses)
 
             # record all answers into the self-consistency list to find the most frequent one
@@ -138,14 +166,14 @@ def inference_cot(args, question_pool, batch_limit, given_prompt, worker_id):
 
         batch_count += 1
 
-    return correct, wrong_list
+    return correct, wrong_list, QA_record
 
 
 def arg_parser():
     parser = argparse.ArgumentParser(description="CoT")
     parser.add_argument("--random_seed", type=int, default=1, help="random seed")
     parser.add_argument(
-        "--dataset", type=str, default="gsm8k", choices=["gsm8k","svamp", "aqua", "csqa", "asdiv", "last_letters", "addsub", "singleeq", "strategyqa"], help="dataset to inference"
+        "--dataset", type=str, default="gsm8k", choices=["gsm8k","svamp", "aqua", "csqa", "asdiv", "last_letters", "addsub", "singleeq", "strategyqa", "multiarith"], help="dataset to inference"
     )
     parser.add_argument(
         "--prompt_path", type=str, default="prompts/active", help="type of prompts to use"
@@ -186,11 +214,16 @@ def arg_parser():
         "--concat_length", type=int, default=4, help='Used for task last_letters, indicates length of last letter concat'
     )
     parser.add_argument(
-        "--api_pool_idx", type=int, default=1, choices=[0,1,2,3], help='Choose which API pool to use'
+        "--api_pool_idx", type=int, default=1, choices=[0,1,2,3,4,5,6], help='Choose which API pool to use'
     )
     
     args = parser.parse_args()
     args.output_dir = Path(args.output_dir)
+
+    if args.model == "text-davinci-002":
+        if args.api_pool_idx not in (4,5,6):
+            print("text davinci should use pool 4, 5, or 6")
+            raise IndexError
 
     global API_KEY_POOL
     global NUM_API_KEYS
@@ -213,33 +246,36 @@ def arg_parser():
     print(f"Temperature: {args.temperature}")
     
     if args.dataset == "gsm8k":
-        args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\grade_school_math\data\test.jsonl"
+        args.dataset_path = "./dataset/GSM8K/test.jsonl"
         args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
         args.datset_size = 1319
     elif args.dataset == "svamp":
-        args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\SVAMP.json"
+        args.dataset_path = "./dataset/SVAMP/SVAMP.json"
         args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
     elif args.dataset == "asdiv":
-        args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\ASDiv.json"
+        args.dataset_path = "./dataset/ASDiv/ASDiv.json"
         args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
     elif args.dataset == "aqua":
-        args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\AQuA\test.json"
+        args.dataset_path = "./dataset/AQuA/test.json"
         args.direct_answer_trigger = "The answer is"
     elif args.dataset == "csqa":
-        args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\CSQA\dev_rand_split.jsonl"
+        args.dataset_path = "./dataset/CSQA/dev_rand_split.jsonl"
         args.direct_answer_trigger = "So the answer is"
     elif args.dataset == "strategyqa":
-        args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\strategyqa\dev.json"
-        # args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\strategyqa\task.json"
+        args.dataset_path = "./dataset/strategyQA/dev.json"
+        # args.dataset_path = "./strategyqa/task.json"
         args.direct_answer_trigger = "\nTherefore, the answer (Yes or No) is"
     elif args.dataset == "last_letters":
-        args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\last_letters\last_letters_test.json"
+        args.dataset_path = "./dataset/last_letters/last_letters_test.json"
         args.direct_answer_trigger = "\nTherefore, the answer is"
     elif args.dataset == "addsub":
-        args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\MAWPS\AddSub.json"
+        args.dataset_path = "./dataset/MAWPS/AddSub.json"
         args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
     elif args.dataset == "singleeq":
-        args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\MAWPS\SingleEq.json"
+        args.dataset_path = "./dataset/MAWPS/SingleEq.json"
+        args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
+    elif args.dataset == "multiarith":
+        args.dataset_path = "./dataset/MAWPS/MultiArith.json"
         args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
     else:
         raise ValueError("dataset is not properly defined ...")

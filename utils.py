@@ -98,6 +98,7 @@ def load_data(args):
                 qes = json_res["question"].strip() + " Answer Choices:"
 
                 for opt in json_res["options"]:
+                    opt = opt.replace(')', ') ')
                     qes += f" ({opt}"
 
                 questions.append(qes)
@@ -120,7 +121,7 @@ def load_data(args):
                 a = line['output'][0]
                 questions.append(q)
                 answers.append(a)
-    elif args.dataset in ("addsub", "singleeq"):
+    elif args.dataset in ("addsub", "singleeq", "multiarith"):
         with open(args.dataset_path) as f:
             json_data = json.load(f)
             for line in json_data:
@@ -248,7 +249,7 @@ def answer_extraction(args, responses):
     ans_list = ["" for i in range(len(responses['choices']))]
     for resp_idx in range(len(responses['choices'])):
         temp = responses['choices'][resp_idx].text
-        if args.dataset in ("gsm8k", "svamp", "asdiv", "addsub", "singleeq"):
+        if args.dataset in ("gsm8k", "svamp", "asdiv", "addsub", "singleeq", "multiarith"):
             temp = temp.replace(",", "")
             temp = [s for s in re.findall(r'-?\d+\.?\d*', temp)]
         elif args.dataset in ("aqua", "csqa"):

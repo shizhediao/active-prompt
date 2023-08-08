@@ -1,0 +1,24 @@
+{
+    "prompt": [
+        {
+            "question": "Q: Take the last letters of each words in \"Elon Musk\" and concatenate them.\nA:",
+            "rationale": "The last letter of \"Elon\" is \"n\". The last letter of \"Musk\" is \"k\". Concatenating them is \"nk\".",
+            "pred_ans": "nk"
+        },
+        {
+            "question": "Question: Take the last letters of the words in \"Larry Page\" and concatenate them.\nA:",
+            "rationale": "The last letter of \"Larry\" is \"y\". The last letter of \"Page\" is \"e\". Concatenating them is \"ye\".",
+            "pred_ans": "ye"
+        },
+        {
+            "question": "Question: Take the last letters of the words in \"Sergey Brin\" and concatenate them.\nA:",
+            "rationale": "The last letter of \"Sergey\" is \"y\". The last letter of \"Brin\" is \"n\". Concatenating them is \"yn\".",
+            "pred_ans": "yn"
+        },
+        {
+            "question": "Question: Take the last letters of the words in \"Bill Gates\" and concatenate them.\nA:",
+            "rationale": "The last letter of \"Bill\" is \"l\". The last letter of \"Gates\" is \"s\". Concatenating them is \"ls\".",
+            "pred_ans": "ls"
+        }
+    ]
+}

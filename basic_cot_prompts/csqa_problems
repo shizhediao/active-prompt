@@ -1,0 +1,39 @@
+{
+    "prompt": [
+        {
+            "question": "Q: What do people use to absorb extra ink from a fountain pen? Answer Choices: (A) shirt pocket (B) calligrapher's hand (C) inkwell (D) desk drawer (E) blotter\nA:",
+            "rationale": "The answer must be an item that can absorb ink. Of the above choices, only blotters are used to absorb ink.",
+            "pred_ans": "E"
+        },
+        {
+            "question": "Q: What home entertainment equipment requires cable? Answer Choices: (A) radio shack (B) substation (C) television (D) cabinet\nA:",
+            "rationale": "The answer must require cable. Of the above choices, only television requires cable.",
+            "pred_ans": "C"
+        },
+        {
+            "question": "Q: The fox walked from the city into the forest, what was it looking for? Answer Choices: (A) pretty flowers (B) hen house (C) natural habitat (D) storybook\nA:",
+            "rationale": "The answer must be something in the forest. Of the above choices, only natural habitat is in the forest.",
+            "pred_ans": "B"
+        },
+        {
+            "question": "Q: Sammy wanted to go to where the people were. Where might he go? Answer Choices: (A) populated areas (B) race track (C) desert (D) apartment (E) roadblock\nA:",
+            "rationale": "The answer must be a place with a lot of people. Of the above choices, only populated areas have a lot of people.",
+            "pred_ans": "A"
+        },
+        {
+            "question": "Q: Where do you put your grapes just before checking out? Answer Choices: (A) mouth (B) grocery cart (C)supermarket (D) fruit basket (E) fruit market\nA:",
+            "rationale": "The answer should be the place where grocery items are placed before checking out. Of the above choices, grocery cart makes the most sense for holding grocery items.",
+            "pred_ans": "B"
+        },
+        {
+            "question": "Q: Google Maps and other highway and street GPS services have replaced what? Answer Choices: (A) united states (B) mexico (C) countryside (D) atlas\nA:",
+            "rationale": "The answer must be something that used to do what Google Maps and GPS services do, which is to give directions. Of the above choices, only atlases are used to give directions.",
+            "pred_ans": "D"
+        },
+        {
+            "question": "Q: Before getting a divorce, what did the wife feel who was doing all the work? Answer Choices: (A) harder (B) anguish (C) bitterness (D) tears (E) sadness\nA:",
+            "rationale": "The answer should be the feeling of someone getting divorced who was doing all the work. Of the above choices, the closest feeling is bitterness.",
+            "pred_ans": "C"
+        }
+    ]
+}

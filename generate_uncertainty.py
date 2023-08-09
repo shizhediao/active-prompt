@@ -199,7 +199,7 @@ def arg_parser():
     parser = argparse.ArgumentParser(description="Uncertainty_Generation")
     parser.add_argument("--random_seed", type=int, default=1, help="random seed")
     parser.add_argument(
-        "--dataset", type=str, default="gsm8k", choices=["gsm8k","svamp", "aqua", "csqa", "last_letters", "strategyqa", "asdiv", "singleeq"], help="dataset to inference"
+        "--dataset", type=str, default="gsm8k", choices=["gsm8k","svamp", "aqua", "csqa", "last_letters", "strategyqa", "asdiv", "singleeq", "time_zone"], help="dataset to inference"
     )
     parser.add_argument(
         "--prompt_path", type=str, default="prompts/active", help="type of prompts to use"
@@ -249,7 +249,7 @@ def arg_parser():
         "--concat_length", type=int, default=2, help='Used for task last_letters, indicates length of last letter concat'
     )
     parser.add_argument(
-        "--api_pool_idx", type=int, default=1, choices=[0,1,2,3,4], help='Choose which API pool to use, pool 4 only has 100 keys'
+        "--api_pool_idx", type=int, default=1, choices=[0,1,2,3,4,5,6,7], help='Choose which API pool to use, pool 4 only has 100 keys'
     )
     
     args = parser.parse_args()
@@ -267,6 +267,10 @@ def arg_parser():
             {"cur_index":0, "keys":API_KEY_POOL[40:60]},
             {"cur_index":0, "keys":API_KEY_POOL[60:80]},
             {"cur_index":0, "keys":API_KEY_POOL[80:]},
+        ]
+    elif args.api_pool_idx == 7:
+        API_PARTITION_POOL = [
+            {"cur_index":0, "keys":API_KEY_POOL[0:]}
         ]
     else:
         API_PARTITION_POOL = [
@@ -329,6 +333,12 @@ def arg_parser():
             args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\last_letters\last_letters_test.json" # test(dev) data path
         elif args.setting == "fair":
             args.dataset_path = r"D:\HKUST_NLP_Research\cot_active_learning\last_letters\last_letters_train2.json" # train data path
+        args.direct_answer_trigger = "\nTherefore, the answer is"
+    elif args.dataset == "time_zone":
+        if args.setting == 'unfair':
+            args.dataset_path = "./dataset/timezone_convert/timezone_convertion_test.json"
+        elif args.setting == 'fair':
+            args.dataset_path = "./dataset/timezone_convert/timezone_convertion_train.json"
         args.direct_answer_trigger = "\nTherefore, the answer is"
     else:
         raise ValueError("dataset is not properly defined ...")

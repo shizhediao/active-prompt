@@ -6,6 +6,7 @@ import concurrent
 import time
 import argparse
 from API_POOL_REPO import *
+import asyncio
 
 
 def main():
@@ -30,7 +31,7 @@ def main():
         pass
 
     start = time.time()
-    if args.max_num_workers > 1:
+    if args.max_num_workers >= 1:
         print("Parallel Inference")
         wrong_list = inference_cot_parallel(args, dataloader, input_prompt) # run cot parallel
     else:
@@ -50,6 +51,7 @@ def main():
         # path = f"{args.output_dir}/wrong_{args.dataset}.txt"
         # with open(args.output_dir, 'w') as f:
             # f.write(str(wrong_list))
+
 
 
 def inference_cot_parallel(args, question_pool, given_prompt):
@@ -131,32 +133,50 @@ def inference_cot(args, question_pool, batch_limit, given_prompt, worker_id):
         
         prompt_list = []
         for qes in batch:
-            if args.dataset == "last_letters":
+            if args.dataset == "last_letters" and args.code_style == True:
                 # code style prompt
                 prompt = given_prompt + "Q: " + qes['question'] + "\nA: Let's think step by step in Python."
+            elif args.basic_cot is True:
+                prompt = given_prompt + "Q: " + qes['question'] + "\nA:"
             else:
                 prompt = given_prompt + "Q: " + qes['question'] + "\nA: Let's think step by step."
             prompt_list.append(prompt)
+        
+        if args.model == 'gpt-3.5-turbo':
+            message_list = []
+            for prompt in prompt_list:
+                message_list.append([{"role": "user", "content": prompt}])
 
         # self-consistency if multipath > 1
+        # 需要轮询API
         for path in range(0, args.multipath):
-            responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=args.max_length_cot, temperature=args.temperature, stop='\n', worker_id=worker_id,
-            API_PARTITION_POOL=API_PARTITION_POOL)
+            if args.model == 'gpt-3.5-turbo':
+                responses = chatgpt_request(model=args.model, message_list=message_list, max_tokens=args.max_length_cot, temperature=args.temperature, sleep=args.api_time_interval, worker_id=worker_id,
+                API_PARTITION_POOL=API_PARTITION_POOL)
+            else:
+                responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=args.max_length_cot, temperature=args.temperature, stop='\n', worker_id=worker_id,
+                API_PARTITION_POOL=API_PARTITION_POOL)
 
             for i in range(len(responses['choices'])):
                 QA = {}
                 QA['qes_idx'] = batch[i]['question_idx']
                 QA['Q'] = batch[i]['question']
-                QA['A'] = responses['choices'][i]['text']
+                if args.model == 'gpt-3.5-turbo':
+                    QA['A'] = responses['choices'][i]['message']['content']
+                else:
+                    QA['A'] = responses['choices'][i]['text']
                 QA_record.append(QA)
 
             ans_list = answer_extraction(args, responses)
+            #print(ans_list)
 
             # record all answers into the self-consistency list to find the most frequent one
             for ans_idx in range(len(ans_list)):
                 all_self_consistency_ans[ans_idx].append(ans_list[ans_idx])
+            # print(all_self_consistency_ans)
 
         final_consistent_ans = [find_most_frequent(x, args.multipath)[-1] for x in all_self_consistency_ans]
+        # final_consistent_ans = ans_list
 
         for ans_idx in range(len(final_consistent_ans)):
             if final_consistent_ans[ans_idx] == batch[ans_idx]['answer']:
@@ -173,17 +193,17 @@ def arg_parser():
     parser = argparse.ArgumentParser(description="CoT")
     parser.add_argument("--random_seed", type=int, default=1, help="random seed")
     parser.add_argument(
-        "--dataset", type=str, default="gsm8k", choices=["gsm8k","svamp", "aqua", "csqa", "asdiv", "last_letters", "addsub", "singleeq", "strategyqa", "multiarith"], help="dataset to inference"
+        "--dataset", type=str, default="gsm8k", choices=["gsm8k","svamp", "aqua", "csqa", "asdiv", "last_letters", "addsub", "singleeq", "strategyqa", "multiarith", "time_zone"], help="dataset to inference"
     )
     parser.add_argument(
         "--prompt_path", type=str, default="prompts/active", help="type of prompts to use"
     )
-    parser.add_argument("--minibatch_size", type=int, default=1, choices=[1, 5, 10], help="batch size (num_prompts) for each request")
+    parser.add_argument("--minibatch_size", type=int, default=1, choices=[1, 3, 5, 10], help="batch size (num_prompts) for each request")
     
     parser.add_argument("--max_num_workers", type=int, default=0, help="maximum number of workers for inference")
     
     parser.add_argument(
-        "--model", type=str, default="code-davinci-002", choices=["text-davinci-002", "code-davinci-002"], help="model used for decoding."
+        "--model", type=str, default="code-davinci-002", choices=["text-davinci-002", "code-davinci-002", "text-davinci-003", "gpt-3.5-turbo"], help="model used for decoding."
     )
     
     parser.add_argument(
@@ -199,7 +219,7 @@ def arg_parser():
         "--limit_batch_size", type=int, default=0, help="whether to limit test dataset size. if 0, the dataset size is unlimited and we use all the samples in the dataset for testing."
     )
     parser.add_argument(
-        "--api_time_interval", type=float, default=1.0, help="how many seconds to sleep between each request"
+        "--api_time_interval", type=float, default=3.0, help="how many seconds to sleep between each request"
     )
     parser.add_argument(
         "--temperature", type=float, default=0, help=""
@@ -214,15 +234,20 @@ def arg_parser():
         "--concat_length", type=int, default=4, help='Used for task last_letters, indicates length of last letter concat'
     )
     parser.add_argument(
-        "--api_pool_idx", type=int, default=1, choices=[0,1,2,3,4,5,6], help='Choose which API pool to use'
+        "--api_pool_idx", type=int, default=1, choices=[0,1,2,3,4,5,6,7,8,9], help='Choose which API pool to use'
     )
-    
+    parser.add_argument(
+        "--code_style", type=bool, default=False, help='use code style prompt of not'
+    )
+    parser.add_argument(
+        "--basic_cot", type=bool, default=False, help='use code style prompt of not'
+    )
     args = parser.parse_args()
     args.output_dir = Path(args.output_dir)
 
     if args.model == "text-davinci-002":
-        if args.api_pool_idx not in (4,5,6):
-            print("text davinci should use pool 4, 5, or 6")
+        if args.api_pool_idx not in (4,5,6,7):
+            print("text davinci should use pool 4, 5, or 6, 7")
             raise IndexError
 
     global API_KEY_POOL
@@ -231,14 +256,29 @@ def arg_parser():
     API_KEY_POOL = POOL_REPO[args.api_pool_idx]
     NUM_API_KEYS = len(API_KEY_POOL)
 
-    API_PARTITION_POOL = [
-        {"cur_index":0, "keys":API_KEY_POOL[0:40]},
-        {"cur_index":0, "keys":API_KEY_POOL[40:80]},
-        {"cur_index":0, "keys":API_KEY_POOL[80:120]},
-        {"cur_index":0, "keys":API_KEY_POOL[120:160]},
-        {"cur_index":0, "keys":API_KEY_POOL[160:]},
-    ]
-
+    if int(args.api_pool_idx) in (0,1,2,3,4,5,6):
+        API_PARTITION_POOL = [
+            {"cur_index":0, "keys":API_KEY_POOL[0:40]},
+            {"cur_index":0, "keys":API_KEY_POOL[40:80]},
+            {"cur_index":0, "keys":API_KEY_POOL[80:120]},
+            {"cur_index":0, "keys":API_KEY_POOL[120:160]},
+            {"cur_index":0, "keys":API_KEY_POOL[160:]},
+        ]
+    elif int(args.api_pool_idx) == 8:
+        API_PARTITION_POOL = [
+            {"cur_index":0, "keys":API_KEY_POOL[0:20]},
+            {"cur_index":0, "keys":API_KEY_POOL[20:40]},
+            {"cur_index":0, "keys":API_KEY_POOL[40:60]},
+            {"cur_index":0, "keys":API_KEY_POOL[60:80]},
+            {"cur_index":0, "keys":API_KEY_POOL[80:]},
+        ]
+    else:
+        API_PARTITION_POOL = [
+            # {"cur_index":0, "keys":API_KEY_POOL[0:5]},
+            # {"cur_index":0, "keys":API_KEY_POOL[5:]},
+            {"cur_index":0, "keys":API_KEY_POOL[0:]},
+        ]
+    
     if args.multipath > 1:
         args.temperature = 0.7
     else:
@@ -277,6 +317,9 @@ def arg_parser():
     elif args.dataset == "multiarith":
         args.dataset_path = "./dataset/MAWPS/MultiArith.json"
         args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
+    elif args.dataset == "time_zone":
+        args.dataset_path = "./dataset/timezone_convert/timezone_convertion_test.json"
+        args.direct_answer_trigger = "\nTherefore, the answer is"
     else:
         raise ValueError("dataset is not properly defined ...")
         

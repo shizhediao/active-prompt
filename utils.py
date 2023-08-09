@@ -13,10 +13,11 @@ import re
 from collections import Counter
 import time
 from API_POOL_REPO import *
+import asyncio
 
 # put your API key in the list
 # NO_SOLUTION = '<NO_SOL>'
-NO_SOLUTION = '-10086'
+NO_SOLUTION = '-10086' # use this when calculating numerical results
 
 # set the random seed for reproducibility
 def set_random_seed(seed):
@@ -25,6 +26,104 @@ def set_random_seed(seed):
     torch.manual_seed(seed)
     if torch.cuda.is_available():
         torch.cuda.manual_seed_all(seed)
+
+
+async def dispatch_openai_requests(
+    #messages_list: list[list[dict[str,Any]]],
+    messages_list,
+    model: str,
+    temperature: float,
+    max_tokens: int,
+    top_p: float,
+):
+# -> list[str]
+    """Dispatches requests to OpenAI API asynchronously.
+    
+    Args:
+        messages_list: List of messages to be sent to OpenAI ChatCompletion API.
+        model: OpenAI model to use.
+        temperature: Temperature to use for the model.
+        max_tokens: Maximum number of tokens to generate.
+        top_p: Top p to use for the model.
+
+    Returns:
+        List of responses from OpenAI API.
+    """
+    async_responses = [
+        openai.ChatCompletion.acreate(
+            model=model,
+            messages=x,
+            temperature=temperature,
+            max_tokens=max_tokens,
+            top_p=top_p,
+        )
+        for x in messages_list
+    ]
+    return await asyncio.gather(*async_responses)
+
+
+def chatgpt_request(model:str, message_list:list, max_tokens:int, temperature=0.7, sleep=3, worker_id=None, API_PARTITION_POOL=None):
+    resp = None
+    done = False
+    while not done:
+        try:
+            # random select key
+            # key_index = random.randint(0, NUM_API_KEYS - 1)
+            # openai.api_key = API_KEY_POOL[key_index]
+
+            # api key polling request
+            key_index = API_PARTITION_POOL[worker_id]['cur_index']
+
+            # if use API KEY POOL, use this line
+            openai.api_key = API_PARTITION_POOL[worker_id]["keys"][key_index]
+
+            # if only use one key, then comment the above line and use this one
+            # openai.api_key = "YOUR_API_KEY"
+
+            predictions = asyncio.run(
+                dispatch_openai_requests(
+                    messages_list=message_list,
+                    model=model,
+                    temperature=temperature,
+                    max_tokens=max_tokens,
+                    top_p=1.0,
+                )
+            )
+
+            resp = {'choices':[]}
+            for pred in predictions:
+                resp['choices'].append(pred['choices'][0])
+            
+            done = True
+            key_index += 1
+            if key_index == len(API_PARTITION_POOL[worker_id]['keys']):
+                API_PARTITION_POOL[worker_id]['cur_index'] = 0
+            else:
+                API_PARTITION_POOL[worker_id]['cur_index'] = key_index
+        except:
+            errno = sys.exc_info()[:2]
+            if errno[0] == openai.error.InvalidRequestError:
+                # print(f"Invalid Request\nPrompt: {message_list}\n")
+                print(f"Reason: {errno[1]}")
+                key_index = API_PARTITION_POOL[worker_id]['cur_index']
+                print(f"invalid key: {API_PARTITION_POOL[worker_id]['keys'][key_index]}")
+                assert False
+            else:
+                print(f"Error: {errno[0]}\n")
+                print(f"Reason: {errno[1]}\n")
+                print(f"key_index: {key_index}")
+                print(f"worker_id: {worker_id}")
+                print(f"len of pool: {len(API_PARTITION_POOL[worker_id]['keys'])}")
+
+            key_index = API_PARTITION_POOL[worker_id]['cur_index']
+            key_index += 1
+            if key_index == len(API_PARTITION_POOL[worker_id]['keys']):
+                API_PARTITION_POOL[worker_id]['cur_index'] = 0
+            else:
+                API_PARTITION_POOL[worker_id]['cur_index'] = key_index
+            time.sleep(sleep)
+    return resp
+
 
 
 # pass in a list of prompts and returns a response body contains a list of responses
@@ -39,7 +138,14 @@ def GPT3_request(model:str, input_prompt:list, max_tokens:int, temperature=0.7, 
 
             # api key polling request
             key_index = API_PARTITION_POOL[worker_id]['cur_index']
+
+            # if use API KEY POOL, use this line
             openai.api_key = API_PARTITION_POOL[worker_id]["keys"][key_index]
+
+            # if only use one key, then comment the above line and use this one
+            # openai.api_key = "YOUR_API_KEY"
+
+
             resp = openai.Completion.create(
                 model=model,
                 prompt=input_prompt,
@@ -67,6 +173,9 @@ def GPT3_request(model:str, input_prompt:list, max_tokens:int, temperature=0.7, 
             else:
                 print(f"Error: {errno[0]}\n")
                 print(f"Reason: {errno[1]}\n")
+                print(f"key_index: {key_index}")
+                print(f"worker_id: {worker_id}")
+                print(f"len of pool: {len(API_PARTITION_POOL[worker_id]['keys'])}")
 
             key_index = API_PARTITION_POOL[worker_id]['cur_index']
             key_index += 1
@@ -177,6 +286,14 @@ def load_data(args):
                 a = line["answer"]
                 questions.append(q)
                 answers.append(a)
+    elif args.dataset == 'time_zone':
+        with open(args.dataset_path) as f:
+            json_data = json.load(f)
+            for line in json_data:
+                q = line['question'].strip()
+                a = line["answer"]
+                questions.append(q)
+                answers.append(a)
     else:
         raise NotImplementedError
 
@@ -248,7 +365,10 @@ def create_input_prompt(args, cot_flag:bool)->str:
 def answer_extraction(args, responses):
     ans_list = ["" for i in range(len(responses['choices']))]
     for resp_idx in range(len(responses['choices'])):
-        temp = responses['choices'][resp_idx].text
+        if args.model == 'gpt-3.5-turbo':
+            temp = responses['choices'][resp_idx]['message']['content']
+        else:
+            temp = responses['choices'][resp_idx].text
         if args.dataset in ("gsm8k", "svamp", "asdiv", "addsub", "singleeq", "multiarith"):
             temp = temp.replace(",", "")
             temp = [s for s in re.findall(r'-?\d+\.?\d*', temp)]
@@ -261,6 +381,9 @@ def answer_extraction(args, responses):
             temp = [i for i in temp if i in ("yes", "no")]
         elif args.dataset in ("last_letters"):
             temp = re.sub("\"|\'|\n|\.|\s","", temp)
+            temp = [temp]
+        elif args.dataset in ('time_zone'):
+            temp = temp.split('The answer is ')[-1].replace('.', '')
             temp = [temp]
         if len(temp) != 0:
             answer = temp[-1]

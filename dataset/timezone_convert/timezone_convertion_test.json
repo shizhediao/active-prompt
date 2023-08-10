@@ -1,0 +1,502 @@
+[
+    {
+        "question_idx": 0,
+        "question": "The time in Fortaleza is 03/19/01:16. What is the time in Johannesburg?",
+        "answer": "03/19/06:16"
+    },
+    {
+        "question_idx": 1,
+        "question": "The time in Katmandu is 03/19/10:01. What is the time in Bishkek?",
+        "answer": "03/19/10:16"
+    },
+    {
+        "question_idx": 2,
+        "question": "The time in Palmer is 03/19/01:16. What is the time in Kentucky?",
+        "answer": "03/19/00:16"
+    },
+    {
+        "question_idx": 3,
+        "question": "The time in Dawson Creek is 03/18/21:16. What is the time in Caracas?",
+        "answer": "03/19/00:16"
+    },
+    {
+        "question_idx": 4,
+        "question": "The time in Stockholm is 03/19/05:16. What is the time in Libreville?",
+        "answer": "03/19/05:16"
+    },
+    {
+        "question_idx": 5,
+        "question": "The time in Kinshasa is 03/19/05:16. What is the time in Ciudad Juarez?",
+        "answer": "03/18/22:16"
+    },
+    {
+        "question_idx": 6,
+        "question": "The time in Davis is 03/19/11:16. What is the time in Anadyr?",
+        "answer": "03/19/16:16"
+    },
+    {
+        "question_idx": 7,
+        "question": "The time in Kampala is 03/19/07:16. What is the time in St Barthelemy?",
+        "answer": "03/19/00:16"
+    },
+    {
+        "question_idx": 8,
+        "question": "The time in Simferopol is 03/19/07:16. What is the time in Macquarie?",
+        "answer": "03/19/15:16"
+    },
+    {
+        "question_idx": 9,
+        "question": "The time in BajaSur is 03/18/21:16. What is the time in Krasnoyarsk?",
+        "answer": "03/19/11:16"
+    },
+    {
+        "question_idx": 10,
+        "question": "The time in Bamako is 03/19/04:16. What is the time in Moncton?",
+        "answer": "03/19/01:16"
+    },
+    {
+        "question_idx": 11,
+        "question": "The time in Stockholm is 03/19/05:16. What is the time in Brisbane?",
+        "answer": "03/19/14:16"
+    },
+    {
+        "question_idx": 12,
+        "question": "The time in Krasnoyarsk is 03/19/11:16. What is the time in Merida?",
+        "answer": "03/18/22:16"
+    },
+    {
+        "question_idx": 13,
+        "question": "The time in Yakutat is 03/18/20:16. What is the time in St Helena?",
+        "answer": "03/19/04:16"
+    },
+    {
+        "question_idx": 14,
+        "question": "The time in Dawson Creek is 03/18/21:16. What is the time in Chihuahua?",
+        "answer": "03/18/22:16"
+    },
+    {
+        "question_idx": 15,
+        "question": "The time in Berlin is 03/19/05:16. What is the time in Creston?",
+        "answer": "03/18/21:16"
+    },
+    {
+        "question_idx": 16,
+        "question": "The time in Australia West is 03/19/12:16. What is the time in Darwin?",
+        "answer": "03/19/13:46"
+    },
+    {
+        "question_idx": 17,
+        "question": "The time in Hovd is 03/19/11:16. What is the time in Ndjamena?",
+        "answer": "03/19/05:16"
+    },
+    {
+        "question_idx": 18,
+        "question": "The time in Fiji is 03/19/16:16. What is the time in Indiana?",
+        "answer": "03/19/00:16"
+    },
+    {
+        "question_idx": 19,
+        "question": "The time in Belfast is 03/19/04:16. What is the time in Belize?",
+        "answer": "03/18/22:16"
+    },
+    {
+        "question_idx": 20,
+        "question": "The time in Pontianak is 03/19/11:16. What is the time in DeNoronha?",
+        "answer": "03/19/02:16"
+    },
+    {
+        "question_idx": 21,
+        "question": "The time in Santarem is 03/19/01:16. What is the time in Argentina?",
+        "answer": "03/19/01:16"
+    },
+    {
+        "question_idx": 22,
+        "question": "The time in Nouakchott is 03/19/04:16. What is the time in Vostok?",
+        "answer": "03/19/10:16"
+    },
+    {
+        "question_idx": 23,
+        "question": "The time in Novosibirsk is 03/19/11:16. What is the time in Blanc-Sablon?",
+        "answer": "03/19/00:16"
+    },
+    {
+        "question_idx": 24,
+        "question": "The time in Anadyr is 03/19/16:16. What is the time in Dawson?",
+        "answer": "03/18/21:16"
+    },
+    {
+        "question_idx": 25,
+        "question": "The time in Berlin is 03/19/05:16. What is the time in Krasnoyarsk?",
+        "answer": "03/19/11:16"
+    },
+    {
+        "question_idx": 26,
+        "question": "The time in Chatham is 03/19/18:01. What is the time in Atlantic?",
+        "answer": "03/19/01:16"
+    },
+    {
+        "question_idx": 27,
+        "question": "The time in Montreal is 03/19/00:16. What is the time in Saskatchewan?",
+        "answer": "03/18/22:16"
+    },
+    {
+        "question_idx": 28,
+        "question": "The time in South is 03/19/14:46. What is the time in Toronto?",
+        "answer": "03/19/00:16"
+    },
+    {
+        "question_idx": 29,
+        "question": "The time in Jakarta is 03/19/11:16. What is the time in Asuncion?",
+        "answer": "03/19/01:16"
+    },
+    {
+        "question_idx": 30,
+        "question": "The time in North Dakota is 03/18/23:16. What is the time in Bishkek?",
+        "answer": "03/19/10:16"
+    },
+    {
+        "question_idx": 31,
+        "question": "The time in Montserrat is 03/19/00:16. What is the time in Gambier?",
+        "answer": "03/18/19:16"
+    },
+    {
+        "question_idx": 32,
+        "question": "The time in Belgrade is 03/19/05:16. What is the time in Kabul?",
+        "answer": "03/19/08:46"
+    },
+    {
+        "question_idx": 33,
+        "question": "The time in DumontDUrville is 03/19/14:16. What is the time in Yekaterinburg?",
+        "answer": "03/19/09:16"
+    },
+    {
+        "question_idx": 34,
+        "question": "The time in Antigua is 03/19/00:16. What is the time in Longyearbyen?",
+        "answer": "03/19/05:16"
+    },
+    {
+        "question_idx": 35,
+        "question": "The time in Libreville is 03/19/05:16. What is the time in Ujung Pandang?",
+        "answer": "03/19/12:16"
+    },
+    {
+        "question_idx": 36,
+        "question": "The time in London is 03/19/04:16. What is the time in Jayapura?",
+        "answer": "03/19/13:16"
+    },
+    {
+        "question_idx": 37,
+        "question": "The time in Argentina is 03/19/01:16. What is the time in Vancouver?",
+        "answer": "03/18/21:16"
+    },
+    {
+        "question_idx": 38,
+        "question": "The time in Tomsk is 03/19/11:16. What is the time in Virgin?",
+        "answer": "03/19/00:16"
+    },
+    {
+        "question_idx": 39,
+        "question": "The time in Hawaii is 03/18/18:16. What is the time in Kiev?",
+        "answer": "03/19/06:16"
+    },
+    {
+        "question_idx": 40,
+        "question": "The time in Fakaofo is 03/19/17:16. What is the time in Lima?",
+        "answer": "03/18/23:16"
+    },
+    {
+        "question_idx": 41,
+        "question": "The time in Irkutsk is 03/19/12:16. What is the time in Kentucky?",
+        "answer": "03/19/00:16"
+    },
+    {
+        "question_idx": 42,
+        "question": "The time in Calcutta is 03/19/09:46. What is the time in Hong Kong?",
+        "answer": "03/19/12:16"
+    },
+    {
+        "question_idx": 43,
+        "question": "The time in Vaduz is 03/19/05:16. What is the time in Lisbon?",
+        "answer": "03/19/04:16"
+    },
+    {
+        "question_idx": 44,
+        "question": "The time in DeNoronha is 03/19/02:16. What is the time in DumontDUrville?",
+        "answer": "03/19/14:16"
+    },
+    {
+        "question_idx": 45,
+        "question": "The time in Kentucky is 03/19/00:16. What is the time in Alaska?",
+        "answer": "03/18/20:16"
+    },
+    {
+        "question_idx": 46,
+        "question": "The time in Chicago is 03/18/23:16. What is the time in Porto-Novo?",
+        "answer": "03/19/05:16"
+    },
+    {
+        "question_idx": 47,
+        "question": "The time in Fort Nelson is 03/18/21:16. What is the time in Mazatlan?",
+        "answer": "03/18/21:16"
+    },
+    {
+        "question_idx": 48,
+        "question": "The time in Moncton is 03/19/01:16. What is the time in Stockholm?",
+        "answer": "03/19/05:16"
+    },
+    {
+        "question_idx": 49,
+        "question": "The time in Argentina is 03/19/01:16. What is the time in Busingen?",
+        "answer": "03/19/05:16"
+    },
+    {
+        "question_idx": 50,
+        "question": "The time in Bratislava is 03/19/05:16. What is the time in Kiritimati?",
+        "answer": "03/19/18:16"
+    },
+    {
+        "question_idx": 51,
+        "question": "The time in Colombo is 03/19/09:46. What is the time in Brazzaville?",
+        "answer": "03/19/05:16"
+    },
+    {
+        "question_idx": 52,
+        "question": "The time in Goose Bay is 03/19/01:16. What is the time in Jakarta?",
+        "answer": "03/19/11:16"
+    },
+    {
+        "question_idx": 53,
+        "question": "The time in Brisbane is 03/19/14:16. What is the time in Fortaleza?",
+        "answer": "03/19/01:16"
+    },
+    {
+        "question_idx": 54,
+        "question": "The time in Pontianak is 03/19/11:16. What is the time in Zaporozhye?",
+        "answer": "03/19/06:16"
+    },
+    {
+        "question_idx": 55,
+        "question": "The time in Mexico City is 03/18/22:16. What is the time in Chatham?",
+        "answer": "03/19/18:01"
+    },
+    {
+        "question_idx": 56,
+        "question": "The time in Algiers is 03/19/05:16. What is the time in Hong Kong?",
+        "answer": "03/19/12:16"
+    },
+    {
+        "question_idx": 57,
+        "question": "The time in Indiana-Starke is 03/18/23:16. What is the time in Port-au-Prince?",
+        "answer": "03/19/00:16"
+    },
+    {
+        "question_idx": 58,
+        "question": "The time in Edmonton is 03/18/22:16. What is the time in Rangoon?",
+        "answer": "03/19/10:46"
+    },
+    {
+        "question_idx": 59,
+        "question": "The time in St Barthelemy is 03/19/00:16. What is the time in Mazatlan?",
+        "answer": "03/18/21:16"
+    },
+    {
+        "question_idx": 60,
+        "question": "The time in EasterIsland is 03/18/23:16. What is the time in Montevideo?",
+        "answer": "03/19/01:16"
+    },
+    {
+        "question_idx": 61,
+        "question": "The time in Abidjan is 03/19/04:16. What is the time in Yangon?",
+        "answer": "03/19/10:46"
+    },
+    {
+        "question_idx": 62,
+        "question": "The time in Tongatapu is 03/19/17:16. What is the time in Djibouti?",
+        "answer": "03/19/07:16"
+    },
+    {
+        "question_idx": 63,
+        "question": "The time in Fortaleza is 03/19/01:16. What is the time in East?",
+        "answer": "03/19/01:16"
+    },
+    {
+        "question_idx": 64,
+        "question": "The time in Taipei is 03/19/12:16. What is the time in Bahrain?",
+        "answer": "03/19/07:16"
+    },
+    {
+        "question_idx": 65,
+        "question": "The time in Argentina is 03/19/01:16. What is the time in Baku?",
+        "answer": "03/19/08:16"
+    },
+    {
+        "question_idx": 66,
+        "question": "The time in Belize is 03/18/22:16. What is the time in Campo Grande?",
+        "answer": "03/19/00:16"
+    },
+    {
+        "question_idx": 67,
+        "question": "The time in Samoa is 03/18/17:16. What is the time in Argentina?",
+        "answer": "03/19/01:16"
+    },
+    {
+        "question_idx": 68,
+        "question": "The time in Niue is 03/18/17:16. What is the time in New York?",
+        "answer": "03/19/00:16"
+    },
+    {
+        "question_idx": 69,
+        "question": "The time in Irkutsk is 03/19/12:16. What is the time in Tallinn?",
+        "answer": "03/19/06:16"
+    },
+    {
+        "question_idx": 70,
+        "question": "The time in Vancouver is 03/18/21:16. What is the time in St Kitts?",
+        "answer": "03/19/00:16"
+    },
+    {
+        "question_idx": 71,
+        "question": "The time in Thimbu is 03/19/10:16. What is the time in Lisbon?",
+        "answer": "03/19/04:16"
+    },
+    {
+        "question_idx": 72,
+        "question": "The time in EasterIsland is 03/18/23:16. What is the time in Chagos?",
+        "answer": "03/19/10:16"
+    },
+    {
+        "question_idx": 73,
+        "question": "The time in Auckland is 03/19/17:16. What is the time in Guyana?",
+        "answer": "03/19/00:16"
+    },
+    {
+        "question_idx": 74,
+        "question": "The time in Chita is 03/19/13:16. What is the time in South Pole?",
+        "answer": "03/19/17:16"
+    },
+    {
+        "question_idx": 75,
+        "question": "The time in Argentina is 03/19/01:16. What is the time in ACT?",
+        "answer": "03/19/15:16"
+    },
+    {
+        "question_idx": 76,
+        "question": "The time in El Aaiun is 03/19/04:16. What is the time in Aden?",
+        "answer": "03/19/07:16"
+    },
+    {
+        "question_idx": 77,
+        "question": "The time in Macquarie is 03/19/15:16. What is the time in Bangui?",
+        "answer": "03/19/05:16"
+    },
+    {
+        "question_idx": 78,
+        "question": "The time in Aruba is 03/19/00:16. What is the time in Argentina?",
+        "answer": "03/19/01:16"
+    },
+    {
+        "question_idx": 79,
+        "question": "The time in Longyearbyen is 03/19/05:16. What is the time in Argentina?",
+        "answer": "03/19/01:16"
+    },
+    {
+        "question_idx": 80,
+        "question": "The time in Libreville is 03/19/05:16. What is the time in Faeroe?",
+        "answer": "03/19/04:16"
+    },
+    {
+        "question_idx": 81,
+        "question": "The time in Aruba is 03/19/00:16. What is the time in Atyrau?",
+        "answer": "03/19/09:16"
+    },
+    {
+        "question_idx": 82,
+        "question": "The time in Kuala Lumpur is 03/19/12:16. What is the time in Samoa?",
+        "answer": "03/18/17:16"
+    },
+    {
+        "question_idx": 83,
+        "question": "The time in Winnipeg is 03/18/23:16. What is the time in Indianapolis?",
+        "answer": "03/19/00:16"
+    },
+    {
+        "question_idx": 84,
+        "question": "The time in Midway is 03/18/17:16. What is the time in Barnaul?",
+        "answer": "03/19/11:16"
+    },
+    {
+        "question_idx": 85,
+        "question": "The time in Midway is 03/18/17:16. What is the time in Monaco?",
+        "answer": "03/19/05:16"
+    },
+    {
+        "question_idx": 86,
+        "question": "The time in Rosario is 03/19/01:16. What is the time in Coral Harbour?",
+        "answer": "03/18/23:16"
+    },
+    {
+        "question_idx": 87,
+        "question": "The time in Creston is 03/18/21:16. What is the time in Vilnius?",
+        "answer": "03/19/06:16"
+    },
+    {
+        "question_idx": 88,
+        "question": "The time in Queensland is 03/19/14:16. What is the time in Tallinn?",
+        "answer": "03/19/06:16"
+    },
+    {
+        "question_idx": 89,
+        "question": "The time in Paris is 03/19/05:16. What is the time in Kanton?",
+        "answer": "03/19/17:16"
+    },
+    {
+        "question_idx": 90,
+        "question": "The time in Anchorage is 03/18/20:16. What is the time in Cuiaba?",
+        "answer": "03/19/00:16"
+    },
+    {
+        "question_idx": 91,
+        "question": "The time in Argentina is 03/19/01:16. What is the time in Madrid?",
+        "answer": "03/19/05:16"
+    },
+    {
+        "question_idx": 92,
+        "question": "The time in Adelaide is 03/19/14:46. What is the time in Ensenada?",
+        "answer": "03/18/21:16"
+    },
+    {
+        "question_idx": 93,
+        "question": "The time in Choibalsan is 03/19/12:16. What is the time in Santarem?",
+        "answer": "03/19/01:16"
+    },
+    {
+        "question_idx": 94,
+        "question": "The time in Rosario is 03/19/01:16. What is the time in BajaSur?",
+        "answer": "03/18/21:16"
+    },
+    {
+        "question_idx": 95,
+        "question": "The time in Knox IN is 03/18/23:16. What is the time in Stockholm?",
+        "answer": "03/19/05:16"
+    },
+    {
+        "question_idx": 96,
+        "question": "The time in Punta Arenas is 03/19/01:16. What is the time in Kuala Lumpur?",
+        "answer": "03/19/12:16"
+    },
+    {
+        "question_idx": 97,
+        "question": "The time in Gambier is 03/18/19:16. What is the time in Chongqing?",
+        "answer": "03/19/12:16"
+    },
+    {
+        "question_idx": 98,
+        "question": "The time in Bahia Banderas is 03/18/22:16. What is the time in Mahe?",
+        "answer": "03/19/08:16"
+    },
+    {
+        "question_idx": 99,
+        "question": "The time in Cuiaba is 03/19/00:16. What is the time in Tripoli?",
+        "answer": "03/19/06:16"
+    }
+]

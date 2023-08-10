@@ -5,18 +5,15 @@ import random
 import sys
 import numpy as np
 import torch
-import argparse
-from torch.utils.data import Dataset
-from pathlib import Path
 import json
 import re
 from collections import Counter
 import time
-from API_POOL_REPO import *
-import asyncio
 
-# put your API key in the list
-# NO_SOLUTION = '<NO_SOL>'
+# put your API key here
+API_KEY = "YOUR_KEY"
+# define for no solution if GPT cannot generate a valid solution
+# here define a magic number for the convenience of variance calculatio
 NO_SOLUTION = '-10086' # use this when calculating numerical results
 
 # set the random seed for reproducibility
@@ -28,124 +25,42 @@ def set_random_seed(seed):
         torch.cuda.manual_seed_all(seed)
 
 
-async def dispatch_openai_requests(
-    #messages_list: list[list[dict[str,Any]]],
-    messages_list,
-    model: str,
-    temperature: float,
-    max_tokens: int,
-    top_p: float,
-):
-# -> list[str]
-    """Dispatches requests to OpenAI API asynchronously.
-    
-    Args:
-        messages_list: List of messages to be sent to OpenAI ChatCompletion API.
-        model: OpenAI model to use.
-        temperature: Temperature to use for the model.
-        max_tokens: Maximum number of tokens to generate.
-        top_p: Top p to use for the model.
-
-    Returns:
-        List of responses from OpenAI API.
-    """
-    async_responses = [
-        openai.ChatCompletion.acreate(
-            model=model,
-            messages=x,
-            temperature=temperature,
-            max_tokens=max_tokens,
-            top_p=top_p,
-        )
-        for x in messages_list
-    ]
-    return await asyncio.gather(*async_responses)
-
-
-def chatgpt_request(model:str, message_list:list, max_tokens:int, temperature=0.7, sleep=3, worker_id=None, API_PARTITION_POOL=None):
+def chatgpt_request(model:str, message_list:list, max_tokens:int, temperature=0.7, sleep=3):
     resp = None
     done = False
     while not done:
         try:
-            # random select key
-            # key_index = random.randint(0, NUM_API_KEYS - 1)
-            # openai.api_key = API_KEY_POOL[key_index]
-
-            # api key polling request
-            key_index = API_PARTITION_POOL[worker_id]['cur_index']
-
-            # if use API KEY POOL, use this line
-            openai.api_key = API_PARTITION_POOL[worker_id]["keys"][key_index]
-
-            # if only use one key, then comment the above line and use this one
-            # openai.api_key = "YOUR_API_KEY"
-
-            predictions = asyncio.run(
-                dispatch_openai_requests(
-                    messages_list=message_list,
-                    model=model,
-                    temperature=temperature,
-                    max_tokens=max_tokens,
-                    top_p=1.0,
-                )
+            openai.api_key = API_KEY
+            resp = openai.ChatCompletion.create(
+                model=model,
+                messages=message_list,
+                temperature=temperature,
+                max_tokens=max_tokens,
+                top_p=1.0,
             )
-
-            resp = {'choices':[]}
-            for pred in predictions:
-                resp['choices'].append(pred['choices'][0])
-            
             done = True
-            key_index += 1
-            if key_index == len(API_PARTITION_POOL[worker_id]['keys']):
-                API_PARTITION_POOL[worker_id]['cur_index'] = 0
-            else:
-                API_PARTITION_POOL[worker_id]['cur_index'] = key_index
         except:
             errno = sys.exc_info()[:2]
             if errno[0] == openai.error.InvalidRequestError:
                 # print(f"Invalid Request\nPrompt: {message_list}\n")
+                print("Invalid Request")
                 print(f"Reason: {errno[1]}")
-                key_index = API_PARTITION_POOL[worker_id]['cur_index']
-                print(f"invalid key: {API_PARTITION_POOL[worker_id]['keys'][key_index]}")
                 assert False
             else:
                 print(f"Error: {errno[0]}\n")
                 print(f"Reason: {errno[1]}\n")
-                print(f"key_index: {key_index}")
-                print(f"worker_id: {worker_id}")
-                print(f"len of pool: {len(API_PARTITION_POOL[worker_id]['keys'])}")
-
-            key_index = API_PARTITION_POOL[worker_id]['cur_index']
-            key_index += 1
-            if key_index == len(API_PARTITION_POOL[worker_id]['keys']):
-                API_PARTITION_POOL[worker_id]['cur_index'] = 0
-            else:
-                API_PARTITION_POOL[worker_id]['cur_index'] = key_index
+            # pause between each request to avoid rate limit
             time.sleep(sleep)
     return resp
 
 
-
 # pass in a list of prompts and returns a response body contains a list of responses
-def GPT3_request(model:str, input_prompt:list, max_tokens:int, temperature=0.7, stop=None, worker_id=None, API_PARTITION_POOL=None):
+def GPT3_request(model:str, input_prompt:list, max_tokens:int, time_interval, temperature=0.7, stop=None):
     resp = None
     done = False
     while not done:
         try:
-            # random select key
-            # key_index = random.randint(0, NUM_API_KEYS - 1)
-            # openai.api_key = API_KEY_POOL[key_index]
-
-            # api key polling request
-            key_index = API_PARTITION_POOL[worker_id]['cur_index']
-
-            # if use API KEY POOL, use this line
-            openai.api_key = API_PARTITION_POOL[worker_id]["keys"][key_index]
-
-            # if only use one key, then comment the above line and use this one
-            # openai.api_key = "YOUR_API_KEY"
-
-
+            openai.api_key = API_KEY
             resp = openai.Completion.create(
                 model=model,
                 prompt=input_prompt,
@@ -157,33 +72,17 @@ def GPT3_request(model:str, input_prompt:list, max_tokens:int, temperature=0.7, 
                 stop = stop
             )
             done = True
-            key_index += 1
-            if key_index == len(API_PARTITION_POOL[worker_id]['keys']):
-                API_PARTITION_POOL[worker_id]['cur_index'] = 0
-            else:
-                API_PARTITION_POOL[worker_id]['cur_index'] = key_index
         except:
             errno = sys.exc_info()[:2]
             if errno[0] == openai.error.InvalidRequestError:
                 print(f"Invalid Request\nPrompt: {input_prompt}\n")
                 print(f"Reason: {errno[1]}")
-                key_index = API_PARTITION_POOL[worker_id]['cur_index']
-                print(f"invalid key: {API_PARTITION_POOL[worker_id]['keys'][key_index]}")
                 assert False
             else:
                 print(f"Error: {errno[0]}\n")
                 print(f"Reason: {errno[1]}\n")
-                print(f"key_index: {key_index}")
-                print(f"worker_id: {worker_id}")
-                print(f"len of pool: {len(API_PARTITION_POOL[worker_id]['keys'])}")
-
-            key_index = API_PARTITION_POOL[worker_id]['cur_index']
-            key_index += 1
-            if key_index == len(API_PARTITION_POOL[worker_id]['keys']):
-                API_PARTITION_POOL[worker_id]['cur_index'] = 0
-            else:
-                API_PARTITION_POOL[worker_id]['cur_index'] = key_index
-            time.sleep(3)
+            # pause between each request to avoid rate limit
+            time.sleep(time_interval)
     return resp
 
 
@@ -303,22 +202,6 @@ def load_data(args):
     return questions, answers
 
 
-# process the dataset into a loader of batches
-def batchlize(examples:list, batch_size:int):
-    size = 0
-    questions = []
-    length = len(examples)
-    random.shuffle(examples)
-    while size < length:
-        if length - size > batch_size:
-            questions.append(examples[size:size+batch_size])
-            size += batch_size
-        else:
-            questions.append(examples[size:size+(length-size)])
-            size += (length - size)
-    return questions
-
-
 # return a customized dataloader of batches
 # Not PyTorch dataloader, it supprts random index(slice) access
 def create_dataloader(args)->list:
@@ -328,9 +211,9 @@ def create_dataloader(args)->list:
     for idx in range(len(questions)):
         dataset.append({"question":questions[idx], "answer":answers[idx], "question_idx":idx})
 
-    dataloader = batchlize(dataset, args.minibatch_size)
-    print(f"dataloader size: {len(dataloader)}")
-    return dataloader
+    random.shuffle(dataset)
+    print(f"dataloader size: {len(dataset)}")
+    return dataset
 
 
 # read the generated/prepared prompt json file
@@ -363,52 +246,52 @@ def create_input_prompt(args, cot_flag:bool)->str:
 
 
 def answer_extraction(args, responses):
-    ans_list = ["" for i in range(len(responses['choices']))]
-    for resp_idx in range(len(responses['choices'])):
-        if args.model == 'gpt-3.5-turbo':
-            temp = responses['choices'][resp_idx]['message']['content']
-        else:
-            temp = responses['choices'][resp_idx].text
-        if args.dataset in ("gsm8k", "svamp", "asdiv", "addsub", "singleeq", "multiarith"):
-            temp = temp.replace(",", "")
-            temp = [s for s in re.findall(r'-?\d+\.?\d*', temp)]
-        elif args.dataset in ("aqua", "csqa"):
-            temp = re.findall(r'A|B|C|D|E', temp)
-        elif args.dataset in ("strategyqa", "coin_flip"):
-            temp = temp.lower()
-            temp = re.sub("\"|\'|\n|\.|\s|\:|\,"," ", temp)
-            temp = temp.split(" ")
-            temp = [i for i in temp if i in ("yes", "no")]
-        elif args.dataset in ("last_letters"):
-            temp = re.sub("\"|\'|\n|\.|\s","", temp)
-            temp = [temp]
-        elif args.dataset in ('time_zone'):
-            temp = temp.split('The answer is ')[-1].replace('.', '')
-            temp = [temp]
-        if len(temp) != 0:
-            answer = temp[-1]
-            # if there is . at the end of answer, remove it
-            # e.g. answer = 64.
-            if answer != "":
-                if answer[-1] == ".":
-                    answer = answer[:-1]
+    pred_ans = ""
+    temp = ""
+    if args.model == 'gpt-3.5-turbo':
+        temp = responses['choices'][0]['message']['content']
+    else:
+        temp = responses['choices'][0].text
+    if args.dataset in ("gsm8k", "svamp", "asdiv", "addsub", "singleeq", "multiarith"):
+        temp = temp.replace(",", "")
+        temp = [s for s in re.findall(r'-?\d+\.?\d*', temp)]
+    elif args.dataset in ("aqua", "csqa"):
+        temp = re.findall(r'A|B|C|D|E', temp)
+    elif args.dataset in ("strategyqa", "coin_flip"):
+        temp = temp.lower()
+        temp = re.sub("\"|\'|\n|\.|\s|\:|\,"," ", temp)
+        temp = temp.split(" ")
+        temp = [i for i in temp if i in ("yes", "no")]
+    elif args.dataset in ("last_letters"):
+        temp = re.sub("\"|\'|\n|\.|\s","", temp)
+        temp = [temp]
+    elif args.dataset in ('time_zone'):
+        temp = temp.split('The answer is ')[-1].replace('.', '')
+        temp = [temp]
 
-            # round the answer to nearest integer
-            if args.dataset in ("gsm8k", "svamp"):
-                try:
-                    answer = str(round(float(answer)))
-                except:
-                    answer = "" # no sol or sol doesn't have valid format
-            elif args.dataset in ("last_letters"):
-                try:
-                    answer = answer[-args.concat_length:]
-                except:
-                    answer = ""
-            
-            ans_list[resp_idx] = answer
-        else:
-            ans_list[resp_idx] = ""
-    return ans_list
+    if len(temp) != 0:
+        answer = temp[-1]
+        # if there is . at the end of answer, remove it
+        # e.g. answer = 64.
+        if answer != "":
+            if answer[-1] == ".":
+                answer = answer[:-1]
+
+        # round the answer to nearest integer
+        if args.dataset in ("gsm8k", "svamp"):
+            try:
+                answer = str(round(float(answer)))
+            except:
+                answer = "" # no sol or sol doesn't have valid format
+        elif args.dataset in ("last_letters"):
+            try:
+                answer = answer[-args.concat_length:]
+            except:
+                answer = ""
+        pred_ans = answer
+    else:
+        pred_ans = ""
+    return pred_ans
 
 
 def find_most_frequent(arr, n):

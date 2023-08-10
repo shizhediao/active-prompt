@@ -1,9 +1,7 @@
 from utils import *
+from pathlib import Path
 import time
 import argparse
-import sys
-import json
-
 
 def main():
     # load arguments from terminal
@@ -33,9 +31,9 @@ def main():
     # no limit on how many batches to inference, assume inference all batches
     if args.qes_limit == 0:
         args.qes_limit = len(dataloader)
-    
+
     correct, wrong_list, QA_record = inference_cot(args, dataloader, args.qes_limit, input_prompt)
-    print(f"correct_num: {correct}")
+    print(f"correct: {correct}")
     print(f"total: {args.qes_limit}")
     print(f"Accuracy: {correct / (args.qes_limit)}")
     end = time.time()
@@ -69,26 +67,36 @@ def inference_cot(args, question_pool, qes_limit, given_prompt):
         # create a list for each question to record all answers generated from self-consistency
         all_self_consistency_ans = []
         
-        if args.dataset == "last_letters" and args.use_code_style_prompt is True:
+        if args.dataset == "last_letters" and args.use_code_style_prompt == True:
             # code style prompt
             prompt = given_prompt + "Q: " + qes['question'] + "\nA: Let's think step by step in Python."
+        elif args.basic_cot is True:
+            prompt = given_prompt + "Q: " + qes['question'] + "\nA:"
         else:
             prompt = given_prompt + "Q: " + qes['question'] + "\nA: Let's think step by step."
-        prompt_list = [prompt]
+        
+        if args.model == 'gpt-3.5-turbo':
+            message_list = [{"role": "user", "content": prompt}]
+        else:
+            prompt_list = [prompt]
 
         # enable self-consistency if multipath > 1
         for path in range(0, args.multipath):
-            responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=args.max_length_cot, time_interval=args.api_time_interval,
-                                      temperature=args.temperature, stop='\n')
-
-            pred_ans = answer_extraction(args, responses)
-
-            # create a dict to record each Q&A for later review purposes
+            if args.model == 'gpt-3.5-turbo':
+                responses = chatgpt_request(model=args.model, message_list=message_list, max_tokens=args.max_length_cot, temperature=args.temperature, sleep=args.api_time_interval)
+            else:
+                responses = GPT3_request(model=args.model, input_prompt=prompt_list, max_tokens=args.max_length_cot, time_interval=args.api_time_interval, temperature=args.temperature, stop='\n')
+            
             QA = {}
             QA['qes_idx'] = qes['question_idx']
             QA['Q'] = qes['question']
-            QA['A'] = responses['choices'][0]['text']
+            if args.model == 'gpt-3.5-turbo':
+                QA['A'] = responses['choices'][0]['message']['content']
+            else:
+                QA['A'] = responses['choices'][0]['text']
             QA_record.append(QA)
+
+            pred_ans = answer_extraction(args, responses)
 
             # output current inference result (only works when self-consistency is not enable)
             if args.multipath == 1:
@@ -97,9 +105,11 @@ def inference_cot(args, question_pool, qes_limit, given_prompt):
                 print(f"Dataset index: {qes['question_idx']}")
                 print(f"Q: " + qes['question'])
                 if args.dataset == "last_letters" and args.use_code_style_prompt is True:
-                    print(f"A: Let's think step by step in Python." + responses['choices'][0]['text'])
+                    print(f"A: Let's think step by step in Python." + QA['A'])
+                elif args.basic_cot is True:
+                    print(f"A: {QA['A']}")
                 else:
-                    print(f"A: Let's think step by step." + responses['choices'][0]['text'])
+                    print(f"A: Let's think step by step." + QA['A'])
                 print(f"pred_ans: {pred_ans}")
                 print(f"GT: {qes['answer']}")
 
@@ -157,6 +167,14 @@ def arg_parser():
     parser.add_argument(
         "--use_code_style_prompt", type=bool, default=False, help='Use code-style prompt as mentioned in paper for last_letters dataset'
     )
+    parser.add_argument(
+        "--use_code_style_prompt", type=bool, default=False, help='use code style prompt of not'
+    )
+    parser.add_argument(
+        "--basic_cot", type=bool, default=False, help='use code style prompt of not'
+    )
+    args = parser.parse_args()
+    args.output_dir = Path(args.output_dir)
     
     args = parser.parse_args()
 

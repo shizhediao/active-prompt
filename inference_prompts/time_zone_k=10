@@ -1,0 +1,24 @@
+{
+    "prompt": [
+        {
+            "question": "Q: The time in Australia West is 03/19/14:03. What is the time in Indianapolis?\nA:",
+            "rationale": "Let's think step by step. To answer the question of what is the time in Indianapolis, we need to know what is the timezone of Australia West in GMT, what is the timezone of Indianapolis in GMT, and what is the time difference between the two timezones. The timezone of Australia West is (GMT+8). The timezone of Indianapolis is (GMT-4). The time difference between the two timezones is -4 hours - 8 hours = -12 hours. Therefore, the time in Indianapolis is 03/19/14:03 minus 12 hours, which is 03/19/02:03.",
+            "pred_ans": "03/19/02:03"
+        },
+        {
+            "question": "Q: The time in Australia North is 03/19/15:33. What is the time in Nicosia?\nA:",
+            "rationale": "Let's think step by step. To answer the question of what is the time in Nicosia, we need to know what is the timezone of Australia North in GMT, what is the timezone of Nicosia in GMT, and what is the time difference between the two timezones. The timezone of Australia North is (GMT+9:30). The timezone of Nicosia is (GMT+2). The time difference between the two timezones is 2 hours - (9 hours + 30 minutes) = -7 hours and -30 minutes. Therefore, the time in Indianapolis is 03/19/15:33 minus 7 hours and minus 30 minutes, which is 03/19/08:03.",
+            "pred_ans": "03/19/08:03"
+        },
+        {
+            "question": "Q: The time in Mauritius is 03/19/10:03. What is the time in Chicago?\nA:",
+            "rationale": "Let's think step by step. To answer the question of what is the time in Chicago, we need to know what is the timezone of Mauritius in GMT, what is the timezone of Chicago in GMT, and what is the time difference between the two timezones. The timezone of Mauritius is (GMT+4). The timezone of Chicago is (GMT-5). The time difference between the two timezones is -5 hours - 4 hours  = -9 hours. Therefore, the time in Chicago is 03/19/10:03 minus 9 hours, which is 03/19/01:03.",
+            "pred_ans": "03/19/01:03"
+        },
+        {
+            "question": "Q: The time in Asuncion is 03/19/03:03. What is the time in Sakhalin?\nA:",
+            "rationale": "Let's think step by step. To answer the question of what is the time in Sakhalin, we need to know what is the timezone of Asuncion in GMT, what is the timezone of Sakhalin in GMT, and what is the time difference between the two timezones. The timezone of Asuncion is (GMT-3). The timezone of Sakhalin is (GMT+11). The time difference between the two timezones is 11 hours - (-3) hours  = 14 hours. Therefore, the time in Sakhalin is 03/19/03:03 plus 14 hours, which is 03/19/17:03.",
+            "pred_ans": "03/19/17:03"
+        }
+    ]
+}

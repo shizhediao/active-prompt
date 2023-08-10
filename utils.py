@@ -10,11 +10,11 @@ import re
 from collections import Counter
 import time
 
-# put your Openai API_KEY here
-API_KEY = ""
+# put your API key here
+API_KEY = "YOUR_KEY"
 # define for no solution if GPT cannot generate a valid solution
-# here define a magic number for the convenience of variance calculation
-NO_SOLUTION = '-10086'
+# here define a magic number for the convenience of variance calculatio
+NO_SOLUTION = '-10086' # use this when calculating numerical results
 
 # set the random seed for reproducibility
 def set_random_seed(seed):
@@ -25,7 +25,36 @@ def set_random_seed(seed):
         torch.cuda.manual_seed_all(seed)
 
 
-# pass in a prompt and returns a response body contains response
+def chatgpt_request(model:str, message_list:list, max_tokens:int, temperature=0.7, sleep=3):
+    resp = None
+    done = False
+    while not done:
+        try:
+            openai.api_key = API_KEY
+            resp = openai.ChatCompletion.create(
+                model=model,
+                messages=message_list,
+                temperature=temperature,
+                max_tokens=max_tokens,
+                top_p=1.0,
+            )
+            done = True
+        except:
+            errno = sys.exc_info()[:2]
+            if errno[0] == openai.error.InvalidRequestError:
+                # print(f"Invalid Request\nPrompt: {message_list}\n")
+                print("Invalid Request")
+                print(f"Reason: {errno[1]}")
+                assert False
+            else:
+                print(f"Error: {errno[0]}\n")
+                print(f"Reason: {errno[1]}\n")
+            # pause between each request to avoid rate limit
+            time.sleep(sleep)
+    return resp
+
+
+# pass in a list of prompts and returns a response body contains a list of responses
 def GPT3_request(model:str, input_prompt:list, max_tokens:int, time_interval, temperature=0.7, stop=None):
     resp = None
     done = False
@@ -52,8 +81,8 @@ def GPT3_request(model:str, input_prompt:list, max_tokens:int, time_interval, te
             else:
                 print(f"Error: {errno[0]}\n")
                 print(f"Reason: {errno[1]}\n")
-        # pause between each request to avoid rate limit
-        time.sleep(time_interval)
+            # pause between each request to avoid rate limit
+            time.sleep(time_interval)
     return resp
 
 
@@ -156,6 +185,14 @@ def load_data(args):
                 a = line["answer"]
                 questions.append(q)
                 answers.append(a)
+    elif args.dataset == 'time_zone':
+        with open(args.dataset_path) as f:
+            json_data = json.load(f)
+            for line in json_data:
+                q = line['question'].strip()
+                a = line["answer"]
+                questions.append(q)
+                answers.append(a)
     else:
         raise NotImplementedError
 
@@ -210,7 +247,11 @@ def create_input_prompt(args, cot_flag:bool)->str:
 
 def answer_extraction(args, responses):
     pred_ans = ""
-    temp = responses['choices'][0].text
+    temp = ""
+    if args.model == 'gpt-3.5-turbo':
+        temp = responses['choices'][0]['message']['content']
+    else:
+        temp = responses['choices'][0].text
     if args.dataset in ("gsm8k", "svamp", "asdiv", "addsub", "singleeq", "multiarith"):
         temp = temp.replace(",", "")
         temp = [s for s in re.findall(r'-?\d+\.?\d*', temp)]
@@ -224,7 +265,10 @@ def answer_extraction(args, responses):
     elif args.dataset in ("last_letters"):
         temp = re.sub("\"|\'|\n|\.|\s","", temp)
         temp = [temp]
-    
+    elif args.dataset in ('time_zone'):
+        temp = temp.split('The answer is ')[-1].replace('.', '')
+        temp = [temp]
+
     if len(temp) != 0:
         answer = temp[-1]
         # if there is . at the end of answer, remove it
@@ -251,6 +295,8 @@ def answer_extraction(args, responses):
 
 
 def find_most_frequent(arr, n):
+    # method 1: return max(arr[:n], key=arr.count)
+    # method 2:
     arr_acounts = Counter(arr[:n])
     most_frequent_item, frequency = arr_acounts.most_common(1)[0]
     return frequency, most_frequent_item

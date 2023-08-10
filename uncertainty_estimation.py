@@ -147,7 +147,7 @@ def arg_parser():
     parser = argparse.ArgumentParser(description="Uncertainty_Generation")
     parser.add_argument("--random_seed", type=int, default=1, help="random seed")
     parser.add_argument(
-        "--dataset", type=str, default="gsm8k", choices=["gsm8k","svamp", "aqua", "csqa", "last_letters", "strategyqa", "asdiv", "singleeq", "addsub", "multiarith"], help="dataset to inference"
+        "--dataset", type=str, default="gsm8k", choices=["gsm8k","svamp", "aqua", "csqa", "last_letters", "strategyqa", "asdiv", "singleeq", "addsub", "multiarith, time_zone"], help="dataset to inference"
     )
     parser.add_argument(
         "--prompt_path", type=str, default="./basic_cot_prompts/math_word_problems", help="prompts to use"
@@ -211,6 +211,8 @@ def arg_parser():
     elif args.dataset == "last_letters":
         args.dataset_path = "./dataset/last_letters/last_letters_train2.json" # train data path
         args.direct_answer_trigger = "\nTherefore, the answer is"
+    elif args.dataset == 'time_zone':
+        args.dataset_path = "./dataset/timezone_convert/timezone_convertion_train.json"
     else:
         raise ValueError("dataset is not properly defined ...")
         

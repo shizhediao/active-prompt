@@ -132,13 +132,13 @@ def arg_parser():
     parser = argparse.ArgumentParser(description="CoT")
     parser.add_argument("--random_seed", type=int, default=1, help="random seed")
     parser.add_argument(
-        "--dataset", type=str, default="gsm8k", choices=["gsm8k","svamp", "aqua", "csqa", "asdiv", "last_letters", "addsub", "singleeq", "strategyqa", "multiarith"], help="dataset to inference"
+        "--dataset", type=str, default="gsm8k", choices=["gsm8k","svamp", "aqua", "csqa", "asdiv", "last_letters", "addsub", "singleeq", "strategyqa", "multiarith", "time_zone"], help="dataset to inference"
     )
     parser.add_argument(
         "--prompt_path", type=str, default="./inference_prompts/gsm8k_k=10", help="prompts to use"
     )
     parser.add_argument(
-        "--model", type=str, default="code-davinci-002", choices=["text-davinci-002", "code-davinci-002"], help="model used for decoding."
+        "--model", type=str, default="code-davinci-002", choices=["text-davinci-002", "code-davinci-002", "text-davinci-003", "gpt-3.5-turbo"], help="model used for decoding."
     )
     parser.add_argument(
         "--method", type=str, default="active_cot", choices=["zero_shot", "zero_shot_cot", "few_shot", "few_shot_cot", "auto_cot", "active_cot"], help="method"
@@ -168,10 +168,7 @@ def arg_parser():
         "--use_code_style_prompt", type=bool, default=False, help='Use code-style prompt as mentioned in paper for last_letters dataset'
     )
     parser.add_argument(
-        "--use_code_style_prompt", type=bool, default=False, help='use code style prompt of not'
-    )
-    parser.add_argument(
-        "--basic_cot", type=bool, default=False, help='use code style prompt of not'
+        "--basic_cot", type=bool, default=False, help='use basic google cot prompt of not'
     )
     args = parser.parse_args()
     args.output_dir = Path(args.output_dir)
@@ -214,6 +211,9 @@ def arg_parser():
     elif args.dataset == "multiarith":
         args.dataset_path = "./dataset/MAWPS/MultiArith.json"
         args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
+    elif args.dataset == "time_zone":
+        args.dataset_path = "./dataset/timezone_convert/timezone_convertion_test.json"
+        args.direct_answer_trigger = "\nTherefore, the answer is"
     else:
         raise ValueError("dataset is not properly defined ...")
         

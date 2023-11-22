@@ -64,7 +64,7 @@ For personal communication related to active-prompt, please contact Shizhe Diao 
 
 ## Citation
 
-If you use or extend our work, please cite the following [paper]((https://arxiv.org/abs/2302.12246)):
+If you use or extend our work, please cite the following [paper](https://arxiv.org/abs/2302.12246):
 ```
 @misc{diao2023active,
       title={Active Prompting with Chain-of-Thought for Large Language Models}, 

@@ -74,6 +74,8 @@ def inference_cot(args, question_pool, qes_limit, given_prompt):
             prompt = given_prompt + "Q: " + qes['question'] + "\nA:"
         else:
             prompt = given_prompt + "Q: " + qes['question'] + "\nA: Let's think step by step."
+
+        prompt += "\nWhen answering, please add 'So the answer is [specific answer]' at the end of the answer."
         
         if args.model == 'gpt-3.5-turbo':
             message_list = [{"role": "user", "content": prompt}]
